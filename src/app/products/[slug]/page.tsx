@@ -266,20 +266,6 @@ export default async function ProductPage({
               />
             </div>
 
-            {/* Research-only acknowledgement adjacent to Add to Cart */}
-            <div
-              role="note"
-              aria-label="Research-only notice"
-              className="mt-10 max-w-lg rounded-2xl border border-olive/40 bg-olive/5 p-5 text-sm leading-relaxed text-dark"
-            >
-              <p className="text-[0.65rem] tracking-[0.2em] uppercase text-olive font-semibold">
-                Research use only
-              </p>
-              <p className="mt-2">
-                {DISCLAIMER}
-              </p>
-            </div>
-
             <AddToCart slug={product.slug} />
 
             <p className="mt-8 text-[0.72rem] leading-relaxed text-muted/80 max-w-lg border-t border-line pt-6">

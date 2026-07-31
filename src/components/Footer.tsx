@@ -6,7 +6,19 @@ import Reveal from "./Reveal";
 import { NAV_LINKS, CONTACT, DISCLAIMER } from "@/lib/data";
 import { api, ApiError } from "@/lib/api";
 
-const RANGE = ["Tirzepatide", "Retatrutide", "NAD+", "Glow"];
+const RANGE_LINKS = [
+  { label: "Tirzepatide", href: "/products/tirzepatide" },
+  { label: "Retatrutide", href: "/products/retatrutide" },
+  { label: "NAD+", href: "/products/nad" },
+  { label: "Glow", href: "/products/glow" },
+];
+const LEGAL_LINKS = [
+  { label: "Privacy Policy", href: "/policies/privacy-policy" },
+  { label: "Terms of Service", href: "/policies/terms-of-service" },
+  { label: "Shipping Policy", href: "/policies/shipping-policy" },
+  { label: "Refund Policy", href: "/policies/refund-policy" },
+  { label: "Press", href: "/policies/press" },
+];
 const CHROMELESS_ROUTES = ["/signin"];
 
 export default function Footer() {
@@ -18,7 +30,7 @@ export default function Footer() {
       <div className="container-lux py-20 lg:py-28">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
-          <div className="min-w-0 lg:col-span-5">
+          <div className="min-w-0 lg:col-span-4">
             <Reveal>
               <p className="font-sans font-semibold uppercase text-3xl lg:text-4xl leading-none tracking-[0.22em] text-dark">
                 Novera
@@ -36,17 +48,17 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          <div className="lg:col-span-3 lg:col-start-7">
+          <div className="lg:col-span-2 lg:col-start-6">
             <FooterCol
               title="Explore"
               links={NAV_LINKS.map((l) => ({ label: l.label, href: l.href }))}
             />
           </div>
-          <div className="lg:col-span-3">
-            <FooterCol
-              title="Our Range"
-              links={RANGE.map((r) => ({ label: r, href: "/#products" }))}
-            />
+          <div className="lg:col-span-2 lg:col-start-8">
+            <FooterCol title="Our Range" links={RANGE_LINKS} />
+          </div>
+          <div className="lg:col-span-3 lg:col-start-10">
+            <FooterCol title="Legal" links={LEGAL_LINKS} />
           </div>
         </div>
 
@@ -62,7 +74,6 @@ export default function Footer() {
           </div>
           <div className="md:text-right text-sm text-muted">
             <p>© {new Date().getFullYear()} Novera. All rights reserved.</p>
-            <p className="mt-1">Privacy · Terms</p>
           </div>
         </div>
 
@@ -100,7 +111,7 @@ function NewsletterForm() {
       setStatus({
         kind: "success",
         msg: res.already_subscribed
-          ? "You're already on the list — thank you."
+          ? "You're already on the list, thank you."
           : "Thanks you're on the list.",
       });
       setEmail("");

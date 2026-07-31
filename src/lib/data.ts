@@ -16,6 +16,17 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/#contact" },
 ];
 
+// Category grouping for the /shop listing page. Keyed by product slug so the
+// Product type (and every existing consumer of PRODUCTS) stays untouched.
+export const PRODUCT_CATEGORIES: Record<string, string> = {
+  tirzepatide: "Metabolic Research",
+  retatrutide: "Metabolic Research",
+  "retatrutide-40": "Metabolic Research",
+  "bpc-157-tb-500": "Recovery & Repair",
+  glow: "Recovery & Repair",
+  nad: "Cellular & Longevity",
+};
+
 // "Products" — original descriptions for the research compounds in our range.
 export type CompoundRow = {
   name: string;

@@ -132,11 +132,17 @@ export default function Navigation() {
               ))}
             </ul>
 
-            {/* Cart + CTA + burger */}
+            {/* Shop CTA + Cart + burger */}
             <div className="flex items-center gap-2 sm:gap-4">
               <Link
+                href="/shop"
+                className="btn-lux !py-2.5 !px-6 !text-[0.68rem] hidden sm:inline-flex"
+              >
+                Shop
+              </Link>
+              <Link
                 href="/signin"
-                className="hidden sm:inline-flex link-underline text-sm text-muted hover:text-dark transition-colors duration-500"
+                className="hidden sm:inline-flex text-sm text-muted hover:text-dark transition-colors duration-500"
               >
                 Sign in
               </Link>
@@ -201,7 +207,23 @@ export default function Navigation() {
                 </button>
               </div>
 
-              <ul className="container-lux mt-12 flex flex-col gap-2">
+              <div className="container-lux mt-10">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.15, duration: 0.6, ease: EASE }}
+                >
+                  <Link
+                    href="/shop"
+                    onClick={closeMenu}
+                    className="btn-lux !py-3.5 !px-8"
+                  >
+                    Shop
+                  </Link>
+                </motion.div>
+              </div>
+
+              <ul className="container-lux mt-8 flex flex-col gap-2">
                 {NAV_LINKS.map((l, i) => (
                   <motion.li
                     key={l.href}

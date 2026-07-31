@@ -409,7 +409,7 @@ export default function CheckoutPage() {
                         sizes="56px"
                         className="object-contain img-grade"
                       />
-                      <span className="absolute -top-1.5 -right-1.5 grid h-5 w-5 place-items-center rounded-full bg-dark text-[0.65rem] font-medium text-background">
+                      <span className="absolute bottom-1 right-1 grid h-5 w-5 place-items-center rounded-full bg-dark text-[0.65rem] font-medium text-background">
                         {item.qty}
                       </span>
                     </span>

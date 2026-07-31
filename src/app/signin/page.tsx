@@ -392,9 +392,9 @@ export default function SignInPage() {
                       <input required type="checkbox" className="mt-0.5 h-4 w-4 rounded border-line accent-dark" />
                       <span>
                         I agree to the{" "}
-                        <Link href="#" className="link-underline text-dark">Terms</Link>
+                        <Link href="/policies/terms-of-service" className="link-underline text-dark">Terms</Link>
                         {" "}and{" "}
-                        <Link href="#" className="link-underline text-dark">Privacy Policy</Link>.
+                        <Link href="/policies/privacy-policy" className="link-underline text-dark">Privacy Policy</Link>.
                       </span>
                     </label>
                   )}

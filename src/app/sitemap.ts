@@ -8,6 +8,14 @@ import { absoluteUrl } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
+  const POLICY_SLUGS = [
+    "privacy-policy",
+    "terms-of-service",
+    "shipping-policy",
+    "refund-policy",
+    "press",
+  ];
+
   return [
     {
       url: absoluteUrl("/"),
@@ -15,11 +23,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: absoluteUrl("/shop"),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     ...PRODUCTS.map((product) => ({
       url: absoluteUrl(`/products/${product.slug}`),
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    ...POLICY_SLUGS.map((slug) => ({
+      url: absoluteUrl(`/policies/${slug}`),
+      lastModified,
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
     })),
   ];
 }
