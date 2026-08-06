@@ -206,6 +206,18 @@ html.lenis body {
   color: var(--dark);
 }
 
+/* Contact channel cards sit on the dark CTA section. The global
+   `* { border-color: var(--border) }` reset (unlayered, so it beats Tailwind's
+   border-* utilities) would otherwise force their border to a near-invisible
+   black. This rule is also unlayered and more specific, so it wins — giving a
+   readable light border, warming to sand on hover. */
+.contact-channel {
+  border-color: rgba(248, 244, 239, 0.3);
+}
+.contact-channel:hover {
+  border-color: var(--warm-sand);
+}
+
 ::selection {
   background: var(--accent-beige);
   color: var(--background);

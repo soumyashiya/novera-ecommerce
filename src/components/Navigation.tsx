@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { NAV_LINKS } from "@/lib/data";
+import { clearSession, getCurrentUser, type ApiUser } from "@/lib/api";
 import { useCart } from "./cart/CartContext";
 
 const CHROMELESS_ROUTES = ["/signin"];
@@ -47,14 +48,145 @@ function CartButton({ onClick }: { onClick?: () => void }) {
   );
 }
 
+function UserIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      aria-hidden
+    >
+      <circle cx="12" cy="8" r="3.5" />
+      <path
+        d="M4.5 20c1.4-4.2 4.4-6.4 7.5-6.4s6.1 2.2 7.5 6.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function AccountMenu({ user, onLogout }: { user: ApiUser | null; onLogout: () => void }) {
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e: MouseEvent) => {
+      if (!rootRef.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  const itemCls =
+    "block w-full rounded-xl px-3.5 py-2.5 text-left text-sm text-dark hover:bg-background transition-colors duration-300";
+
+  return (
+    <div className="relative hidden sm:block" ref={rootRef}>
+      <button
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        aria-label={user ? "Account menu" : "Sign in"}
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full text-dark transition-colors duration-500 hover:bg-dark/5"
+      >
+        <UserIcon />
+      </button>
+
+      {open && (
+        <div
+          role="menu"
+          aria-label={user ? "Account" : "Sign in"}
+          className="absolute right-0 mt-2 w-56 rounded-2xl border border-line bg-card p-2 shadow-[0_20px_60px_-25px_rgba(26,26,26,0.3)]"
+        >
+          {user && (
+            <p className="truncate px-3.5 py-2 text-[0.65rem] uppercase tracking-[0.18em] text-muted">
+              {user.name}
+            </p>
+          )}
+          {user && (
+            <Link
+              href="/account/orders"
+              role="menuitem"
+              onClick={() => setOpen(false)}
+              className={itemCls}
+            >
+              My Orders
+            </Link>
+          )}
+          <Link
+            href="/track"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className={itemCls}
+          >
+            Track Order
+          </Link>
+          {user ? (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                setOpen(false);
+                onLogout();
+              }}
+              className={itemCls}
+            >
+              Logout
+            </button>
+          ) : (
+            <Link
+              href="/signin"
+              role="menuitem"
+              onClick={() => setOpen(false)}
+              className={itemCls}
+            >
+              Sign in
+            </Link>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function Navigation() {
   const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [user, setUser] = useState<ApiUser | null>(null);
   const burgerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
   const hidden = CHROMELESS_ROUTES.some((r) => pathname?.startsWith(r));
+
+  useEffect(() => {
+    const syncUser = () => setUser(getCurrentUser());
+    syncUser();
+    window.addEventListener("novera-auth-change", syncUser);
+    window.addEventListener("storage", syncUser);
+    return () => {
+      window.removeEventListener("novera-auth-change", syncUser);
+      window.removeEventListener("storage", syncUser);
+    };
+  }, []);
+
+  const handleLogout = () => {
+    clearSession();
+    router.push("/");
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -140,12 +272,7 @@ export default function Navigation() {
               >
                 Shop
               </Link>
-              <Link
-                href="/signin"
-                className="hidden sm:inline-flex text-sm text-muted hover:text-dark transition-colors duration-500"
-              >
-                Sign in
-              </Link>
+              <AccountMenu user={user} onLogout={handleLogout} />
               <CartButton />
               <button
                 ref={burgerRef}
@@ -244,19 +371,66 @@ export default function Navigation() {
                     </Link>
                   </motion.li>
                 ))}
+                {user && (
+                  <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.55, duration: 0.6, ease: EASE }}
+                  >
+                    <Link
+                      href="/account/orders"
+                      onClick={closeMenu}
+                      className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
+                    >
+                      My Orders
+                    </Link>
+                  </motion.li>
+                )}
                 <motion.li
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.55, duration: 0.6, ease: EASE }}
+                  transition={{ delay: 0.62, duration: 0.6, ease: EASE }}
                 >
                   <Link
-                    href="/signin"
+                    href="/track"
                     onClick={closeMenu}
                     className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
                   >
-                    Sign in
+                    Track Order
                   </Link>
                 </motion.li>
+                {user ? (
+                  <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.69, duration: 0.6, ease: EASE }}
+                  >
+                    <button
+                      type="button"
+                      onClick={() => {
+                        handleLogout();
+                        closeMenu();
+                      }}
+                      className="font-serif text-5xl sm:text-6xl py-3 block leading-tight text-left"
+                    >
+                      Logout
+                    </button>
+                  </motion.li>
+                ) : (
+                  <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.69, duration: 0.6, ease: EASE }}
+                  >
+                    <Link
+                      href="/signin"
+                      onClick={closeMenu}
+                      className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
+                    >
+                      Sign in
+                    </Link>
+                  </motion.li>
+                )}
               </ul>
             </motion.div>
           </motion.div>

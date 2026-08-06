@@ -150,3 +150,140 @@ export async function sendOrderConfirmationEmail(params: {
     console.error("[checkout] order confirmation email failed:", err);
   }
 }
+
+// Manual bank-transfer payment capture — for orders an admin sends a
+// "complete your payment" link for (/payment-capture/[token]). The token
+// itself is the auth; no bearer header is sent. Monetary fields on the order
+// row come back as strings (Postgres NUMERIC), same as elsewhere in this API.
+export type PaymentCaptureOrder = {
+  id: number;
+  order_number: string;
+  customer_email: string;
+  customer_name?: string | null;
+  currency?: string;
+  subtotal?: number | string;
+  shipping?: number | string;
+  total?: number | string;
+  status: string;
+  payment_status: string;
+  promo_code?: string | null;
+  discount_amount?: number | string | null;
+  created_at: string;
+};
+
+export type PaymentCaptureItem = {
+  id: number;
+  name: string;
+  quantity: number;
+  unit_price: number | string;
+  line_total: number | string;
+};
+
+export type PaymentCapturePayment = {
+  id: number;
+  provider: string;
+  amount: number | string;
+  currency: string;
+  status: string;
+  created_at: string;
+};
+
+export type PaymentCaptureBank = {
+  payeeName: string;
+  sortCode: string;
+  accountNumber: string;
+  reference: string;
+};
+
+export type PaymentCaptureValidateResponse = {
+  ok: true;
+  order: PaymentCaptureOrder;
+  items: PaymentCaptureItem[];
+  payments: PaymentCapturePayment[];
+  allowPromo: boolean;
+  bank: PaymentCaptureBank;
+};
+
+export type PaymentCapturePromoResponse = {
+  ok: true;
+  promoCode: string;
+  promoDiscountPercent: number;
+  discountAmount: number;
+  total: number;
+};
+
+export type PaymentCaptureUploadResponse = {
+  ok: true;
+  screenshotUrl: string;
+  screenshotFilename: string;
+  verification: unknown;
+  payment_status: "received" | "rejected" | "pending";
+  verification_error?: string;
+};
+
+// GET /api/user-orders/by-email — used by the account "My Orders" page.
+// Monetary fields come back as strings (Postgres NUMERIC), same convention
+// as the payment-capture types above.
+export type UserOrder = {
+  id: number;
+  order_number: string;
+  customer_email: string;
+  customer_name?: string | null;
+  currency?: string;
+  subtotal?: number | string;
+  shipping?: number | string;
+  total?: number | string;
+  discount_amount?: number | string | null;
+  promo_code?: string | null;
+  status: string;
+  payment_status: string;
+  tracking_number?: string | null;
+  address?: string | null;
+  city?: string | null;
+  postcode?: string | null;
+  country?: string | null;
+  created_at: string;
+};
+
+export function getOrdersByEmail(email: string) {
+  return api<{ orders: UserOrder[] }>(
+    `/api/user-orders/by-email?email=${encodeURIComponent(email)}`
+  );
+}
+
+// GET /api/user-orders/:orderNumber — single-order lookup, used by the public
+// "Track Order" page. No auth; the caller-supplied email is checked
+// client-side against the returned order before anything is shown.
+export function getOrderByNumber(orderNumber: string) {
+  return api<{
+    order: UserOrder;
+    items: PaymentCaptureItem[];
+    payments: PaymentCapturePayment[];
+  }>(`/api/user-orders/${encodeURIComponent(orderNumber)}`);
+}
+
+export const paymentCapture = {
+  validate: (token: string) =>
+    api<PaymentCaptureValidateResponse>("/api/payment-capture/validate", {
+      method: "POST",
+      json: { token },
+    }),
+
+  applyPromo: (token: string, promoCode: string) =>
+    api<PaymentCapturePromoResponse>("/api/payment-capture/apply-promo", {
+      method: "POST",
+      json: { token, promoCode },
+    }),
+
+  // Multipart upload — leave Content-Type unset so the browser attaches its
+  // own boundary, same as every other `body`-based call through `api()`.
+  upload: (token: string, file: File) => {
+    const form = new FormData();
+    form.append("token", token);
+    form.append("paymentScreenshot", file);
+    return api<PaymentCaptureUploadResponse>("/api/payment-capture/upload", {
+      method: "POST",
+      body: form,
+    });
+  },
+};

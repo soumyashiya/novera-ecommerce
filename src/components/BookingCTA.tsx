@@ -106,7 +106,7 @@ export default function Contact() {
                   <a
                     key={label}
                     href={href}
-                    className="group flex items-center gap-4 rounded-2xl border border-background/15 p-4 transition-[border-color,background-color,transform] duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:-translate-y-0.5 hover:border-sand hover:bg-background/[0.04]"
+                    className="group contact-channel flex items-center gap-4 rounded-2xl border p-4 transition-[border-color,background-color,transform] duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:-translate-y-0.5 hover:bg-background/[0.04]"
                   >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-background/10 text-sand">
                       <Icon className="h-5 w-5" />

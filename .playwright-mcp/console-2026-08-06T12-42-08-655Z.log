@@ -1,0 +1,22 @@
+[   43113ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   43129ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   43239ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   43240ms] [LOG] [Fast Refresh] done in 104ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  149266ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  149333ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  176443ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  178492ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer2-seo.webp&w=64&q=75:0
+[  179828ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  183170ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  184481ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer3-seo.webp&w=64&q=75:0
+[  186541ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  189914ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  190504ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer4-seo.webp&w=64&q=75:0
+[  196470ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer-seo1.webp&w=64&q=75:0
+[  197294ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  202449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer2-seo.webp&w=64&q=75:0
+[  204681ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  208482ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer3-seo.webp&w=64&q=75:0
+[  212061ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  214507ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer4-seo.webp&w=64&q=75:0
+[  219465ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
