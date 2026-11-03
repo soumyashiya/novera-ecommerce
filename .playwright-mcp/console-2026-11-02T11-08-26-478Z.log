@@ -1,0 +1,25 @@
+[    1883ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    1883ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    1907ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1930ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1932ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1934ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1935ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1942ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1942ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1944ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    1944ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://assets.absolutecollagen.com/_astro/headerNav.Dnpy0pJh.js?dpl=0:0
+[    2272ms] [LOG] [AAT] Region explicitly set to EU @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    2839ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    2839ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    3713ms] [LOG] [AAT] Region explicitly set to EU @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    3737ms] [INFO] [SFTracker] initialized client @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    3748ms] [LOG] Shopify consent synced with Cookiebot consent @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    3899ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://c.amazon-adsystem.com/aat/amzn.js:1
+[    4005ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://ad.doubleclick.net/ddm/adj/N1561830.197812NSO.CODESRV/B28271162.342119327;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;sz=1x2;ord=1246356082;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?:0
+[    4005ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://ad.doubleclick.net/ddm/adj/N1561830.197812NSO.CODESRV/B28271162.342119327;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;sz=1x2;ord=1246356082;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?:0
+[    4006ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://ad.doubleclick.net/ddm/adj/N1561830.197812NSO.CODESRV/B28271162.342119327;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;sz=1x2;ord=1246356082;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?:147
+[    4006ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://ad.doubleclick.net/ddm/adj/N1561830.197812NSO.CODESRV/B28271162.342119327;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;sz=1x2;ord=1246356082;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?:147
+[    7151ms] [LOG] Shopify consent synced with Cookiebot consent @ https://assets.absolutecollagen.com/_astro/page.CXHnGxdf.js?dpl=0:16
+[    7985ms] [ERROR] Access to XMLHttpRequest at 'https://s.clarity.ms/collect' from origin 'https://www.absolutecollagen.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.absolutecollagen.com/?exp=nav-v2:0
+[    7987ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://s.clarity.ms/collect:0

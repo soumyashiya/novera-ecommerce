@@ -1,0 +1,970 @@
+- generic [active] [ref=f5e1]:
+  - region [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "Cookiebot by Usercentrics - opens in a new window" [ref=f5e6] [cursor=pointer]:
+        - /url: https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2
+      - tablist [ref=f5e34]:
+        - tab "Consent" [selected] [ref=f5e35] [cursor=pointer]
+        - tab "Details" [ref=f5e36] [cursor=pointer]
+        - tab "About" [ref=f5e37] [cursor=pointer]
+      - tabpanel "Consent" [ref=f5e39]:
+        - generic [ref=f5e41]:
+          - heading "A note on privacy" [level=2] [ref=f5e42]
+          - generic [ref=f5e43]:
+            - paragraph [ref=f5e44]
+            - text: By choosing ‘Allow all', you agree to the storing of cookies on your device to enhance site navigation, analyse site usage and ads personalisation to assist our marketing efforts.
+            - paragraph [ref=f5e45]
+      - generic [ref=f5e49]:
+        - button "Customize" [ref=f5e50] [cursor=pointer]
+        - button "Allow all" [ref=f5e52] [cursor=pointer]
+  - generic [ref=f5e54]:
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=3]: Account
+              - generic:
+                - button
+          - text: Send password reset link Login
+  - generic [ref=f5e55]:
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - text: Bag
+                  - generic: (0)
+              - generic:
+                - button
+          - generic:
+            - paragraph: Your bag is empty
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=2]: UNLOCK EXTRA SAVINGS WITH SUBSCRIPTION
+                      - paragraph: Save up to 30% on recurring orders
+                      - paragraph: Just £25.59 for 14 day supply
+                      - paragraph: Free, fast delivery
+                      - paragraph: Exclusive Absolute Rewards loyalty scheme
+                      - paragraph: 90 day money back guarantee
+                      - paragraph: Edit, skip or cancel anytime
+          - generic:
+            - generic:
+              - generic:
+                - link:
+                  - /url: "#"
+                  - generic: Checkout
+              - list:
+                - listitem
+                - listitem
+                - listitem
+                - listitem
+                - listitem
+                - listitem
+  - generic [ref=f5e57]:
+    - generic [ref=f5e58]:
+      - paragraph [ref=f5e59]: Choose another country or region to see content specific to your location and shop online.
+      - generic [ref=f5e60]:
+        - combobox [ref=f5e62]:
+          - option "United Kingdom" [selected]
+          - option "Italy"
+          - option "France"
+          - option "Ireland"
+          - option "Germany"
+          - option "Spain"
+          - option "United States"
+        - button "Continue Continue" [ref=f5e63] [cursor=pointer]
+    - button "Close country picker" [ref=f5e66] [cursor=pointer]
+  - banner [ref=f5e69]:
+    - list [ref=f5e72]:
+      - listitem [ref=f5e73]:
+        - paragraph [ref=f5e75]:
+          - text: Unlock extra savings with subscription |
+          - link "Shop Collagen" [ref=f5e76] [cursor=pointer]:
+            - /url: /collections/shop-marine-collagen-supplements?exp=nav-v2
+      - listitem:
+        - generic:
+          - paragraph:
+            - text: Free Delivery |
+            - link "Shop Now":
+              - /url: /collections/shop-all-collagen?exp=nav-v2
+      - listitem:
+        - generic:
+          - paragraph:
+            - text: Refer a Friend |
+            - link "Give £10. Get £20":
+              - /url: /pages/refer-a-friend?exp=nav-v2
+      - listitem:
+        - generic:
+          - paragraph:
+            - text: Save up to 40% on skincare & bundles |
+            - link "Shop Skincare & Bundles":
+              - /url: /collections/deep-lift-skincare?exp=nav-v2
+    - generic [ref=f5e77]:
+      - link "Go to Homepage" [ref=f5e78] [cursor=pointer]:
+        - /url: /?exp=nav-v2
+      - generic [ref=f5e83]:
+        - button "Account" [ref=f5e84] [cursor=pointer]
+        - button "Bag" [ref=f5e88] [cursor=pointer]
+        - button "Open Mobile Menu" [ref=f5e91] [cursor=pointer]
+    - text: Shop All Shop All Shop All Shop All Shop All Shop All Shop All Start quiz
+    - list [ref=f5e96]:
+      - listitem [ref=f5e97]:
+        - link "Liquid Collagen" [ref=f5e98] [cursor=pointer]:
+          - /url: /collections/liquid-collagen-supplements?exp=nav-v2
+      - listitem [ref=f5e99]:
+        - link "Powder Collagen" [ref=f5e100] [cursor=pointer]:
+          - /url: /collections/powder-collagen-supplements?exp=nav-v2
+      - listitem [ref=f5e101]:
+        - link "Hydration Collagen" [ref=f5e102] [cursor=pointer]:
+          - /url: /products/hydrate-2-glow-collagen-electrolyte-powder?exp=nav-v2
+      - listitem [ref=f5e103]:
+        - link "Offers" [ref=f5e104] [cursor=pointer]:
+          - /url: /pages/offers?exp=nav-v2
+  - main [ref=f5e105]:
+    - generic [ref=f5e108]:
+      - generic [ref=f5e109]:
+        - link [ref=f5e111] [cursor=pointer]:
+          - /url: /products/marine-liquid-collagen-drink?exp=nav-v2
+          - figure [ref=f5e112]:
+            - img "hero model" [ref=f5e114]
+        - generic [ref=f5e115]:
+          - paragraph [ref=f5e128]: Loved by 100,000+ Customers
+          - heading "Collagen that's proven. Not promised." [level=1] [ref=f5e129]
+          - paragraph [ref=f5e130]: In the world's largest* collagen trial, 100% of women saw fewer lines in 12 weeks. Not some. Not most. Every. Single. One.
+          - generic [ref=f5e131]:
+            - link "Shop Bestseller Shop Bestseller" [ref=f5e132] [cursor=pointer]:
+              - /url: /products/marine-liquid-collagen-drink?exp=nav-v2
+            - link "Find Your Match Find Your Match" [ref=f5e135] [cursor=pointer]:
+              - /url: /pages/collagen-calculator-quiz?exp=nav-v2
+      - generic "Awards and certifications" [ref=f5e138]:
+        - generic [ref=f5e141]:
+          - img "vogue" [ref=f5e146]
+          - img "Harper's_Bazaar_Logo" [ref=f5e151]
+          - img "hello" [ref=f5e156]
+          - img "The Sun" [ref=f5e161]
+          - img "mail online" [ref=f5e166]
+          - img "grazia" [ref=f5e171]
+          - img "the-independent" [ref=f5e176]
+          - img "Daily_Mirror" [ref=f5e181]
+          - img "Cosmopolitan" [ref=f5e186]
+          - img "good housekeeping" [ref=f5e191]
+    - heading "Shop our award-winning collagen supplements." [level=2] [ref=f5e248]
+    - generic [ref=f5e251]:
+      - generic [ref=f5e252]:
+        - link "Liquid Pineapple Flavoured Packshot collagen Marine Liquid Collagen Drink From £33.99 £25.59 Ready to drink, fruity sachets Visibly reduces fine lines and wrinkles (2492)" [ref=f5e254] [cursor=pointer]:
+          - /url: /products/marine-liquid-collagen-drink?exp=nav-v2
+          - generic [ref=f5e255]:
+            - img "Liquid Pineapple Flavoured Packshot" [ref=f5e257]
+            - img "collagen" [ref=f5e259]
+            - paragraph [ref=f5e260]
+          - generic [ref=f5e261]:
+            - heading "Marine Liquid Collagen Drink" [level=3] [ref=f5e262]
+            - generic [ref=f5e263]: From £33.99 £25.59
+            - list [ref=f5e267]:
+              - listitem [ref=f5e268]: Ready to drink, fruity sachets
+              - listitem [ref=f5e269]: Visibly reduces fine lines and wrinkles
+            - generic [ref=f5e270]: (2492)
+        - link "Powder Packshot powder Marine Collagen Powder Supplement Pouch From £55.98 £34.98 Mixable, neutral-flavoured powder Visibly reduces fine lines and wrinkles (52)" [ref=f5e284] [cursor=pointer]:
+          - /url: /products/premium-marine-collagen-powder-227g?exp=nav-v2
+          - generic [ref=f5e285]:
+            - img "Powder Packshot" [ref=f5e287]
+            - img "powder" [ref=f5e289]
+            - paragraph [ref=f5e290]
+          - generic [ref=f5e291]:
+            - heading "Marine Collagen Powder Supplement Pouch" [level=3] [ref=f5e292]
+            - generic [ref=f5e293]: From £55.98 £34.98
+            - list [ref=f5e297]:
+              - listitem [ref=f5e298]: Mixable, neutral-flavoured powder
+              - listitem [ref=f5e299]: Visibly reduces fine lines and wrinkles
+            - generic [ref=f5e300]: (52)
+        - 'link "Skin Pro collagen supplement packshot skin pro collagen sachet Skin Pro: Liquid Collagen Supplement From £38.49 £29.64 Ready to drink, tropical sachets Supercharged actives for targeted skin concerns (53)" [ref=f5e314] [cursor=pointer]':
+          - /url: /products/skin-pro-marine-collagen-supplement?exp=nav-v2
+          - generic [ref=f5e315]:
+            - generic:
+              - img "Skin Pro collagen supplement packshot"
+            - generic [ref=f5e316]:
+              - img "skin pro collagen sachet"
+            - paragraph [ref=f5e317]
+          - generic [ref=f5e318]:
+            - 'heading "Skin Pro: Liquid Collagen Supplement" [level=3] [ref=f5e319]'
+            - generic [ref=f5e320]: From £38.49 £29.64
+            - list [ref=f5e324]:
+              - listitem [ref=f5e325]: Ready to drink, tropical sachets
+              - listitem [ref=f5e326]: Supercharged actives for targeted skin concerns
+            - generic [ref=f5e327]: (53)
+        - 'link "Hair Pro supplement packshot Hair pro supplement sachet Hair Pro: Liquid Collagen Supplement From £38.49 £29.64 Ready to drink, tropical sachets Supercharged actives for targeted hair concerns (53)" [ref=f5e341] [cursor=pointer]':
+          - /url: /products/hair-pro-marine-collagen-supplement?exp=nav-v2
+          - generic [ref=f5e342]:
+            - generic:
+              - img "Hair Pro supplement packshot"
+            - generic [ref=f5e343]:
+              - img "Hair pro supplement sachet"
+            - paragraph [ref=f5e344]
+          - generic [ref=f5e345]:
+            - 'heading "Hair Pro: Liquid Collagen Supplement" [level=3] [ref=f5e346]'
+            - generic [ref=f5e347]: From £38.49 £29.64
+            - list [ref=f5e351]:
+              - listitem [ref=f5e352]: Ready to drink, tropical sachets
+              - listitem [ref=f5e353]: Supercharged actives for targeted hair concerns
+            - generic [ref=f5e354]: (53)
+      - button "Navigate to next slide" [ref=f5e367] [cursor=pointer]
+      - generic [ref=f5e371]:
+        - button [ref=f5e373] [cursor=pointer]
+        - button [ref=f5e374] [cursor=pointer]
+        - button [ref=f5e375] [cursor=pointer]
+        - button [ref=f5e376] [cursor=pointer]
+    - heading "The stats don't lie." [level=2] [ref=f5e382]
+    - generic [ref=f5e385]:
+      - generic [ref=f5e386]:
+        - heading "Results. Guaranteed." [level=3] [ref=f5e387]
+        - generic "100" [ref=f5e388]
+        - generic [ref=f5e390]: "%"
+        - paragraph [ref=f5e391]: saw fewer lines and wrinkles**.
+      - generic [ref=f5e392]:
+        - heading "Backed by Science." [level=3] [ref=f5e393]
+        - generic "8000" [ref=f5e394]
+        - generic [ref=f5e396]: mg
+        - paragraph [ref=f5e397]: collagen - the clinically proven dose.
+      - generic [ref=f5e398]:
+        - heading "Worlds largest clinical study." [level=3] [ref=f5e399]
+        - generic "130" [ref=f5e400]
+        - generic [ref=f5e402]: women.
+        - paragraph [ref=f5e403]: 12 weeks. The world's largest* collagen study.
+      - generic [ref=f5e404]:
+        - heading "Real women. Real results." [level=3] [ref=f5e405]
+        - generic "100" [ref=f5e406]
+        - generic [ref=f5e408]: ",000+"
+        - paragraph [ref=f5e409]: Happy customers who've tried and loved it.
+    - generic [ref=f5e412]:
+      - generic [ref=f5e414]:
+        - generic [ref=f5e415]:
+          - heading "The gold standard of collagen clinical trials." [level=3] [ref=f5e416]
+          - paragraph [ref=f5e419]: Our independent, double-blind, placebo-controlled study - the world's largest of its kind - put our collagen supplement to the absolute test.
+        - generic [ref=f5e420]:
+          - text: SEE PROOF. NOT PROMISES.
+          - link "SEE PROOF. NOT PROMISES." [ref=f5e421] [cursor=pointer]:
+            - /url: /pages/collagen-supplement-results-clinical-trial?exp=nav-v2
+      - generic [ref=f5e425]:
+        - img "Emma Timeline"
+    - generic [ref=f5e430]:
+      - heading "The 12-week proof." [level=2] [ref=f5e431]
+      - paragraph [ref=f5e434]:
+        - text: Real women. Real results. See the
+        - emphasis [ref=f5e435]: absolute
+        - text: difference for yourself...
+    - generic [ref=f5e438]:
+      - generic [ref=f5e439]:
+        - generic [ref=f5e441]:
+          - generic [ref=f5e442]:
+            - figure [ref=f5e443]:
+              - generic [ref=f5e444]:
+                - img "before"
+            - figure [ref=f5e445]:
+              - generic [ref=f5e446]:
+                - img "after"
+          - generic [ref=f5e448]:
+            - heading "Rody - Liquid Supplement" [level=3] [ref=f5e449]
+            - paragraph [ref=f5e452]: “I've been taking the sachets for 6 months now and I’m so happy I found you. I’m 47 and I felt like I didn’t like the way my skin and hair looked. My skin was dull looking and my hair was thinning. Since taking your collagen my skin is brighter and plumper and my hair is thicker. I love it!”
+        - generic [ref=f5e466]:
+          - generic [ref=f5e467]:
+            - figure [ref=f5e468]:
+              - generic [ref=f5e469]:
+                - img "before"
+            - figure [ref=f5e470]:
+              - generic [ref=f5e471]:
+                - img "after"
+          - generic [ref=f5e473]:
+            - heading "Liz - Liquid Supplement" [level=3] [ref=f5e474]
+            - paragraph [ref=f5e477]: “Just wanted to share my results from taking Absolute Collagen every day for the past 12-18 months. My rosacea has completely gone and I feel so confident in my skin now. At 44 my skin looks like it did in my 20’s again. Thank you for this wonderful product.”
+        - generic [ref=f5e491]:
+          - generic [ref=f5e492]:
+            - figure [ref=f5e493]:
+              - generic [ref=f5e494]:
+                - img "before"
+            - figure [ref=f5e495]:
+              - generic [ref=f5e496]:
+                - img "after"
+          - generic [ref=f5e498]:
+            - heading "Rebecca - Powder Pouch" [level=3] [ref=f5e499]
+            - paragraph [ref=f5e502]: "\"The doctor diagnosed me with palpolpustular rosacea and when it gets angry, it rears a very ugly head. Attached are photos before AC and with improvements over stages to my skin. I’m on only my second pouch of the collagen powder which I stir in to my morning coffee. Thank you to whoever is responsible for creating this amazing and affordable product.\""
+        - generic [ref=f5e516]:
+          - generic [ref=f5e517]:
+            - figure [ref=f5e518]:
+              - generic [ref=f5e519]:
+                - img "before"
+            - figure [ref=f5e520]:
+              - generic [ref=f5e521]:
+                - img "after"
+          - generic [ref=f5e523]:
+            - heading "Margot - Hair Pro" [level=3] [ref=f5e524]
+            - paragraph [ref=f5e527]: “THANK YOU Absolute Collagen! I was terrified when I started losing hair that I'd be totally bald. I tried so many things with no luck, but after just 2 weeks on Hair Pro I noticed some new hairs growing. A few months later and I can barely tell where the gap was. I really thought I'd have to wear hats forever."
+        - generic [ref=f5e541]:
+          - generic [ref=f5e542]:
+            - figure [ref=f5e543]:
+              - generic [ref=f5e544]:
+                - img "before"
+            - figure [ref=f5e545]:
+              - generic [ref=f5e546]:
+                - img "after"
+          - generic [ref=f5e548]:
+            - heading "Jennifer - Liquid Supplement" [level=3] [ref=f5e549]
+            - paragraph [ref=f5e552]: “Make-up-free photos pre AC and 3 months in. Biggest change is my nails. My hair is in better condition and my skin tone has improved too. Game changer for me - raspberry all the way!”
+        - generic [ref=f5e566]:
+          - generic [ref=f5e567]:
+            - figure [ref=f5e568]:
+              - generic [ref=f5e569]:
+                - img "before"
+            - figure [ref=f5e570]:
+              - generic [ref=f5e571]:
+                - img "after"
+          - generic [ref=f5e573]:
+            - heading "Amanda - Liquid Supplement" [level=3] [ref=f5e574]
+            - paragraph [ref=f5e577]: “Almost 3 months and there is a definite change to my skin tone and under eye lines. My eyes look brighter. Very happy with the results - and it’s not even why I started taking it… so it’s a bonus.”
+        - generic [ref=f5e591]:
+          - generic [ref=f5e592]:
+            - figure [ref=f5e593]:
+              - generic [ref=f5e594]:
+                - img "before"
+            - figure [ref=f5e595]:
+              - generic [ref=f5e596]:
+                - img "after"
+          - generic [ref=f5e598]:
+            - heading "Julie - Liquid Supplement" [level=3] [ref=f5e599]
+            - paragraph [ref=f5e602]: “I’d like to share the improvement to my fingernails since starting on AC a few years ago. Back then, my once strong and healthy nails had become a sorry sight. I put it down to ageing, and kept them covered up with nail polish. Once taking AC however, my nails slowly recovered and they’re now as good as new. I credit this to Absolute Collagen and it’ll always be part of my routine. Pictures taken in 2018 and again in April 2023”
+        - generic [ref=f5e616]:
+          - generic [ref=f5e617]:
+            - figure [ref=f5e618]:
+              - generic [ref=f5e619]:
+                - img "before"
+            - figure [ref=f5e620]:
+              - generic [ref=f5e621]:
+                - img "after"
+          - generic [ref=f5e623]:
+            - heading "Lucia - Liquid Supplement" [level=3] [ref=f5e624]
+            - paragraph [ref=f5e627]: “I noticed my tennis elbow disappeared and ligaments felt less creaky/achy to the point when I’m going to take up tennis again, and nails less brittle. I washed my hair this morning for the first time with the thickening shampoo and conditioner and looks/feels great! ”
+        - generic [ref=f5e641]:
+          - generic [ref=f5e642]:
+            - figure [ref=f5e643]:
+              - generic [ref=f5e644]:
+                - img "before"
+            - figure [ref=f5e645]:
+              - generic [ref=f5e646]:
+                - img "after"
+          - generic [ref=f5e648]:
+            - heading "Debbie - Liquid Supplement" [level=3] [ref=f5e649]
+            - paragraph [ref=f5e652]: “I am honestly amazed at the difference on the lines on my chest area. I saw a difference in how well my mum looked a few months ago and it was real! So I’ve started it and honestly can’t believe how quickly I’ve seen the changes. And in my hands. Still room for more improvement but I’m super happy so far! Favourite flavour is raspberry”
+        - generic [ref=f5e666]:
+          - generic [ref=f5e667]:
+            - figure [ref=f5e668]:
+              - generic [ref=f5e669]:
+                - img "before"
+            - figure [ref=f5e670]:
+              - generic [ref=f5e671]:
+                - img "after"
+          - generic [ref=f5e673]:
+            - heading "Caroline - Liquid Supplement" [level=3] [ref=f5e674]
+            - paragraph [ref=f5e677]: "\"I think the wrinkles around my eyes aren’t quite as deep. Same goes for the deep crease around the right side of my mouth and on my forehead. I started also HRT yesterday. It will be interesting to see what happens next. I’ll be 55 soon so doing everything I can to keep my self feeling healthy and my joints and skin in good condition. Absolute Collagen is a key part of that.\""
+        - generic [ref=f5e691]:
+          - generic [ref=f5e692]:
+            - figure [ref=f5e693]:
+              - generic [ref=f5e694]:
+                - img "before"
+            - figure [ref=f5e695]:
+              - generic [ref=f5e696]:
+                - img "after"
+          - generic [ref=f5e698]:
+            - heading "Hayley - Neck & Dec" [level=3] [ref=f5e699]
+            - paragraph [ref=f5e702]: “I’m on month 8 of collagen, my skin is so much better. I suffer with eczema and I used to have to moisturise every time after a shower but not now. My hairdresser commented on my hair but my biggest notice is the lines of my chest. One in January and one a couple of weeks ago”
+        - generic [ref=f5e716]:
+          - generic [ref=f5e717]:
+            - figure [ref=f5e718]:
+              - generic [ref=f5e719]:
+                - img "before"
+            - figure [ref=f5e720]:
+              - generic [ref=f5e721]:
+                - img "after"
+          - generic [ref=f5e723]:
+            - heading "Aimee - Liquid Supplement" [level=3] [ref=f5e724]
+            - paragraph [ref=f5e727]: “I still have all my lines (probably more in fact, after the few weeks I’ve had!) I’m on the mango & mandarin straight from the packet (and quite enjoying it!) and use the serum every morning before putting on make up.”
+        - generic [ref=f5e741]:
+          - generic [ref=f5e742]:
+            - figure [ref=f5e743]:
+              - generic [ref=f5e744]:
+                - img "before"
+            - figure [ref=f5e745]:
+              - generic [ref=f5e746]:
+                - img "after"
+          - generic [ref=f5e748]:
+            - heading "iida - Liquid Supplement" [level=3] [ref=f5e749]
+            - paragraph [ref=f5e752]: “Around 6 weeks I started to notice difference on my skin. Now around 8 weeks in my lashes look longer too I’ve tried Mango and lemon, I prefer lemon one but still need to try raspberry I’ve tried the hyaluronic acid serum, but only used the sample I got for now. Planning to order it On my wishlist is the eye cream."
+        - generic [ref=f5e766]:
+          - generic [ref=f5e767]:
+            - figure [ref=f5e768]:
+              - generic [ref=f5e769]:
+                - img "before"
+            - figure [ref=f5e770]:
+              - generic [ref=f5e771]:
+                - img "after"
+          - generic [ref=f5e773]:
+            - heading "Siobhan - Liquid Supplement" [level=3] [ref=f5e774]
+            - paragraph [ref=f5e777]: “Over 10 weeks in and I'm really seeing the difference in my skin and hair.”
+        - generic [ref=f5e791]:
+          - generic [ref=f5e792]:
+            - figure [ref=f5e793]:
+              - generic [ref=f5e794]:
+                - img "before"
+            - figure [ref=f5e795]:
+              - generic [ref=f5e796]:
+                - img "after"
+          - generic [ref=f5e798]:
+            - heading "Jane - Liquid / Neck & Dec" [level=3] [ref=f5e799]
+            - paragraph [ref=f5e802]: “Look at the difference in my jawline! I’m absolutely thrilled with the results so far! I have been taking the sachets since July, about 3 months. I started the serum about a week later after trying the sample that came with my first order. The most dramatic change has been since I started using neck and dec cream.”
+        - generic [ref=f5e816]:
+          - generic [ref=f5e817]:
+            - figure [ref=f5e818]:
+              - generic [ref=f5e819]:
+                - img "before"
+            - figure [ref=f5e820]:
+              - generic [ref=f5e821]:
+                - img "after"
+          - generic [ref=f5e823]:
+            - heading "Claire - Liquid Supplement" [level=3] [ref=f5e824]
+            - paragraph [ref=f5e827]: “Can’t believe what a difference it’s actually made to my skin, hair and nails! I feel so much more confident in my 41 year old skin.”
+        - generic [ref=f5e841]:
+          - generic [ref=f5e842]:
+            - figure [ref=f5e843]:
+              - generic [ref=f5e844]:
+                - img "before"
+            - figure [ref=f5e845]:
+              - generic [ref=f5e846]:
+                - img "after"
+          - generic [ref=f5e848]:
+            - heading "Claire - Serum, Shampoo & Conditioner" [level=3] [ref=f5e849]
+            - paragraph [ref=f5e852]: “My hair is really starting to come through now- nice and thick! I absolutely love the products! the Maxerum Boosting Serum, the thickening shampoo and conditioner (amazing!!!) and the daily collagen sachets!!!”
+      - button "Navigate to previous slide" [ref=f5e865] [cursor=pointer]
+      - button "Navigate to next slide" [ref=f5e869] [cursor=pointer]
+    - generic [ref=f5e875]:
+      - generic [ref=f5e877]:
+        - heading "More isn't better. Clinically proven is." [level=3] [ref=f5e879]
+        - generic [ref=f5e880]:
+          - text: SHOP COLLAGEN SUPPLEMENTS
+          - link "SHOP COLLAGEN SUPPLEMENTS" [ref=f5e881] [cursor=pointer]:
+            - /url: /collections/shop-marine-collagen-supplements?exp=nav-v2
+      - generic [ref=f5e885]:
+        - img "collagen"
+    - generic [ref=f5e890]:
+      - generic [ref=f5e892]:
+        - img "collagen"
+      - generic [ref=f5e893]:
+        - generic [ref=f5e894]:
+          - heading "Quality. Hydrolysed. Peptides. Tell everyone." [level=3] [ref=f5e895]
+          - paragraph [ref=f5e898]: Marine? Bovine? Type 1? Type 2? Your body couldn't pick them out of a collagen line up. Once hydrolysed, it's all about the peptide quality for absolute results.
+        - link "EXPLORE THE RANGE EXPLORE THE RANGE" [ref=f5e900] [cursor=pointer]:
+          - /url: /products/marine-liquid-collagen-drink?exp=nav-v2
+    - generic [ref=f5e905]:
+      - generic [ref=f5e907]:
+        - generic [ref=f5e908]:
+          - heading "Which collagen is right for me?" [level=3] [ref=f5e909]
+          - paragraph [ref=f5e912]: Our 1 minute quiz unlocks which of our expert-backed collagen supplements is your perfect match.
+        - generic [ref=f5e913]:
+          - text: Start Quiz
+          - link "Start Quiz" [ref=f5e914] [cursor=pointer]:
+            - /url: /pages/collagen-calculator-quiz?exp=nav-v2
+      - generic "Video player" [ref=f5e919]
+    - generic [ref=f5e921]:
+      - heading [level=3] [ref=f5e926]
+      - generic [ref=f5e927]:
+        - generic [ref=f5e928]:
+          - link [ref=f5e930] [cursor=pointer]:
+            - /url: /collections/liquid-collagen-supplements?exp=nav-v2
+            - figure [ref=f5e931]:
+              - generic [ref=f5e932]:
+                - img "liquid"
+            - heading "Liquid Collagen" [level=3] [ref=f5e936]
+          - link [ref=f5e939] [cursor=pointer]:
+            - /url: /collections/powder-collagen-supplements?exp=nav-v2
+            - figure [ref=f5e940]:
+              - generic [ref=f5e941]:
+                - img "powder"
+            - heading "Powder Collagen" [level=3] [ref=f5e945]
+          - link [ref=f5e948] [cursor=pointer]:
+            - /url: /collections/deep-lift-skincare?exp=nav-v2
+            - figure [ref=f5e949]:
+              - generic [ref=f5e950]:
+                - img "skincare"
+            - heading "Skincare" [level=3] [ref=f5e954]
+          - link [ref=f5e957] [cursor=pointer]:
+            - /url: /collections/shop-haircare?exp=nav-v2
+            - figure [ref=f5e958]:
+              - generic [ref=f5e959]:
+                - img "haircare"
+            - heading "Haircare" [level=3] [ref=f5e963]
+          - link [ref=f5e966] [cursor=pointer]:
+            - /url: /products/sculpt-pro-glp-1-support?exp=nav-v2
+            - figure [ref=f5e967]:
+              - generic [ref=f5e968]:
+                - img "weight loss"
+            - heading "Weight Loss Support" [level=3] [ref=f5e972]
+        - button "Navigate to next slide" [ref=f5e974] [cursor=pointer]
+        - generic [ref=f5e978]:
+          - button [ref=f5e980] [cursor=pointer]
+          - button [ref=f5e981] [cursor=pointer]
+          - button [ref=f5e982] [cursor=pointer]
+          - button [ref=f5e983] [cursor=pointer]
+    - generic [ref=f5e987]:
+      - generic [ref=f5e988]:
+        - heading "Developed by Doctors." [level=2] [ref=f5e989]
+        - paragraph [ref=f5e992]:
+          - text: "The UK's #1"
+          - link "collagen supplement" [ref=f5e993] [cursor=pointer]:
+            - /url: /collections/shop-marine-collagen-supplements?exp=nav-v2
+          - text: . Expert approved. Backed by science.
+      - generic [ref=f5e994]:
+        - text: DISCOVER THE SCIENCE
+        - link "DISCOVER THE SCIENCE" [ref=f5e995] [cursor=pointer]:
+          - /url: /pages/experts?exp=nav-v2
+    - generic [ref=f5e999]:
+      - generic [ref=f5e1000]:
+        - link [ref=f5e1002] [cursor=pointer]:
+          - /url: /pages/meet-our-dermatology-gp?exp=nav-v2
+          - generic [ref=f5e1003]:
+            - generic [ref=f5e1004]:
+              - img "Dr Pyal"
+            - generic [ref=f5e1007]:
+              - heading "Dr Pyal Patel" [level=3] [ref=f5e1008]
+              - paragraph [ref=f5e1009]: Dermatology GP
+              - paragraph [ref=f5e1010]: "\"After 35, collagen stimulation is essential to support healthy skin. Absolute Collagen uses hydrolysed peptides to maximise absorption as it's quality that matters - not the biggest dosage.\""
+        - link [ref=f5e1012] [cursor=pointer]:
+          - /url: /pages/resident-skin-expert?exp=nav-v2
+          - generic [ref=f5e1013]:
+            - generic [ref=f5e1014]:
+              - img "Dr Shotter"
+            - generic [ref=f5e1017]:
+              - heading "Dr Sophie Shotter" [level=3] [ref=f5e1018]
+              - paragraph [ref=f5e1019]: Skincare Aesthetician
+              - paragraph [ref=f5e1020]: "\"Absolute Collagen supplements nourish the skin from within, working synergistically with topical ingredients on the outside. They're clinically proven, effective and SO easy to use.\""
+        - link [ref=f5e1022] [cursor=pointer]:
+          - /url: /pages/meet-our-senior-scientist?exp=nav-v2
+          - generic [ref=f5e1023]:
+            - generic [ref=f5e1024]:
+              - img "Dr Dave"
+            - generic [ref=f5e1027]:
+              - heading "Dr Dave Reilly" [level=3] [ref=f5e1028]
+              - paragraph [ref=f5e1029]: Senior Scientist
+              - paragraph [ref=f5e1030]: "\"Our industry-leading, single-source, fully traceable marine collagen is 100% natural, produced at a world-class facility, and tested for hormones, heavy metals and antibiotics.\""
+        - link [ref=f5e1032] [cursor=pointer]:
+          - /url: /pages/meet-our-nutritionist?exp=nav-v2
+          - generic [ref=f5e1033]:
+            - generic [ref=f5e1034]:
+              - img "Jenna"
+            - generic [ref=f5e1037]:
+              - heading "Jenna Hope" [level=3] [ref=f5e1038]
+              - paragraph [ref=f5e1039]: Nutritionist
+              - paragraph [ref=f5e1040]: "\"Absolute Collagen contains 8,000mg of collagen - a clinically proven dose. Plus, it's formulated with vitamin C - a key ingredient to maximise absorption and efficacy. So I confidently recommend it to my clients.\""
+      - button "Navigate to next slide" [ref=f5e1041] [cursor=pointer]
+      - generic [ref=f5e1045]:
+        - button [ref=f5e1047] [cursor=pointer]
+        - button [ref=f5e1048] [cursor=pointer]
+        - button [ref=f5e1049] [cursor=pointer]
+        - button [ref=f5e1050] [cursor=pointer]
+    - generic [ref=f5e1054]:
+      - generic [ref=f5e1055]:
+        - heading "100,000+ happy customers." [level=2] [ref=f5e1056]
+        - paragraph [ref=f5e1059]: Real women. Real results. Week-by-week.
+      - generic [ref=f5e1060]:
+        - text: SEE THE SUCCESS STORIES
+        - link "SEE THE SUCCESS STORIES" [ref=f5e1061] [cursor=pointer]:
+          - /url: /pages/success-stories?exp=nav-v2
+    - generic [ref=f5e1065]:
+      - generic [ref=f5e1066]:
+        - generic [ref=f5e1069]:
+          - generic [ref=f5e1070] [cursor=pointer]:
+            - generic "Video player" [ref=f5e1071]
+            - button "Play video" [ref=f5e1072]
+            - button "Toggle video audio" [ref=f5e1075]
+          - generic [ref=f5e1081]:
+            - heading "Aysha - Age 42" [level=3] [ref=f5e1082]
+            - paragraph [ref=f5e1083]: Powder Supplement
+            - paragraph [ref=f5e1084]: "\"I love how easy it is to mix and take. I've seen results on my skin, but especially my hair.\""
+        - generic [ref=f5e1098]:
+          - img "testimonial 1"
+        - generic [ref=f5e1101]:
+          - generic [ref=f5e1102] [cursor=pointer]:
+            - generic "Video player" [ref=f5e1103]
+            - button "Play video" [ref=f5e1104]
+            - button "Toggle video audio" [ref=f5e1107]
+          - generic [ref=f5e1113]:
+            - heading "Karen - Age 51" [level=3] [ref=f5e1114]
+            - paragraph [ref=f5e1115]: Liquid Supplement
+            - paragraph [ref=f5e1116]: "\"Another thing that I do to help find my fabulous and keep my face plump. I absolutely love it - it tastes really nice!\""
+        - generic [ref=f5e1130]:
+          - img "testimonial 2"
+        - generic [ref=f5e1133]:
+          - generic [ref=f5e1134] [cursor=pointer]:
+            - generic "Video player" [ref=f5e1135]
+            - button "Play video" [ref=f5e1136]
+            - button "Toggle video audio" [ref=f5e1139]
+          - generic [ref=f5e1145]:
+            - heading "Anna - Age 44" [level=3] [ref=f5e1146]
+            - paragraph [ref=f5e1147]: Liquid Supplement
+            - paragraph [ref=f5e1148]: "\"I'm never going to go without this... I've never known such phenomenal results in any product.\""
+        - generic [ref=f5e1162]:
+          - img "testimonial 3"
+        - generic [ref=f5e1165]:
+          - generic [ref=f5e1166] [cursor=pointer]:
+            - generic "Video player" [ref=f5e1167]
+            - button "Play video" [ref=f5e1168]
+            - button "Toggle video audio" [ref=f5e1171]
+          - generic [ref=f5e1177]:
+            - heading "Nisha - Age 44" [level=3] [ref=f5e1178]
+            - paragraph [ref=f5e1179]: Liquid Supplement
+            - paragraph [ref=f5e1180]: "\"I like the convenience of them and they're doing me a whole load of good. My skin's been in the best condition.\""
+      - button "Navigate to next slide" [ref=f5e1192] [cursor=pointer]
+      - generic [ref=f5e1196]:
+        - button [ref=f5e1198] [cursor=pointer]
+        - button [ref=f5e1199] [cursor=pointer]
+        - button [ref=f5e1200] [cursor=pointer]
+        - button [ref=f5e1201] [cursor=pointer]
+        - button [ref=f5e1202] [cursor=pointer]
+        - button [ref=f5e1203] [cursor=pointer]
+        - button [ref=f5e1204] [cursor=pointer]
+    - generic [ref=f5e1207]:
+      - generic [ref=f5e1210]:
+        - img "Emma"
+      - generic [ref=f5e1212]:
+        - generic [ref=f5e1213]:
+          - heading "game changer." [level=3] [ref=f5e1214]
+          - paragraph [ref=f5e1217]:
+            - text: "\"I'm always on the move, whether it's for work or travel, and Absolute Collagen fits seamlessly into my lifestyle. It's such a game-changer! No need to measure anything, it's all ready to go.\""
+            - emphasis
+            - text: Emma Willis - Chief Absoluter and TV presenter
+        - generic [ref=f5e1218]:
+          - text: Shop Emma's Faves
+          - link "Shop Emma's Faves" [ref=f5e1219] [cursor=pointer]:
+            - /url: /pages/emma-willis?exp=nav-v2
+    - generic [ref=f5e1224]:
+      - generic [ref=f5e1225]:
+        - heading "Not to brag but... we need a bigger trophy cabinet." [level=2] [ref=f5e1226]
+        - paragraph [ref=f5e1229]: Discover award-winning, proven, pure, powerful collagen.
+      - generic [ref=f5e1230]:
+        - text: SUBSCRIBE NOW
+        - link "SUBSCRIBE NOW" [ref=f5e1231] [cursor=pointer]:
+          - /url: /collections/shop-marine-collagen-supplements?exp=nav-v2
+    - generic [ref=f5e1235]:
+      - generic [ref=f5e1236]:
+        - generic [ref=f5e1238]:
+          - generic:
+            - img "get the gloss 2"
+        - generic [ref=f5e1240]:
+          - generic:
+            - img "womens health"
+        - generic [ref=f5e1242]:
+          - generic:
+            - img "CEW"
+        - generic [ref=f5e1244]:
+          - generic:
+            - img "get the gloss"
+      - button "Navigate to previous slide" [ref=f5e1245] [cursor=pointer]
+      - button "Navigate to next slide" [ref=f5e1249] [cursor=pointer]
+    - generic [ref=f5e1255]:
+      - generic [ref=f5e1257] [cursor=pointer]:
+        - generic "Video player" [ref=f5e1258]
+        - button "Play video" [ref=f5e1259]
+        - button "Toggle video audio" [ref=f5e1262]
+      - generic [ref=f5e1267]:
+        - heading "WITH AGE COMES POWER." [level=2] [ref=f5e1268]
+        - paragraph [ref=f5e1270]: "'Age powerfully' is a bold declaration of women embracing strength, confidence, and beauty that comes with age."
+        - link "DISCOVER MORE DISCOVER MORE" [ref=f5e1272] [cursor=pointer]:
+          - /url: /pages/age-powerfully?exp=nav-v2
+    - heading "Why Choose Us?" [level=2] [ref=f5e1280]
+    - generic [ref=f5e1283]:
+      - generic [ref=f5e1284]:
+        - generic [ref=f5e1287]:
+          - heading "1." [level=3] [ref=f5e1288]
+          - paragraph [ref=f5e1291]: World's largest, clinically proven (and published) collagen study
+        - generic [ref=f5e1294]:
+          - heading "2." [level=3] [ref=f5e1295]
+          - paragraph [ref=f5e1298]: Ethically and sustainably sourced
+        - generic [ref=f5e1301]:
+          - heading "3." [level=3] [ref=f5e1302]
+          - paragraph [ref=f5e1305]: Confirmed traceability
+        - generic [ref=f5e1308]:
+          - heading "4." [level=3] [ref=f5e1309]
+          - paragraph [ref=f5e1312]: Purity certification
+        - generic [ref=f5e1315]:
+          - heading "5." [level=3] [ref=f5e1316]
+          - paragraph [ref=f5e1319]: Clinically proven dose
+        - generic [ref=f5e1322]:
+          - heading "6." [level=3] [ref=f5e1323]
+          - paragraph [ref=f5e1326]: 100% natural - no fillers, no nasties
+        - generic [ref=f5e1329]:
+          - heading "7." [level=3] [ref=f5e1330]
+          - paragraph [ref=f5e1333]: Developed by certified experts and doctors
+        - generic [ref=f5e1336]:
+          - heading "8." [level=3] [ref=f5e1337]
+          - paragraph [ref=f5e1340]: Made in the UK
+      - button "Navigate to next slide" [ref=f5e1341] [cursor=pointer]
+      - generic [ref=f5e1345]:
+        - button [ref=f5e1347] [cursor=pointer]
+        - button [ref=f5e1348] [cursor=pointer]
+        - button [ref=f5e1349] [cursor=pointer]
+        - button [ref=f5e1350] [cursor=pointer]
+        - button [ref=f5e1351] [cursor=pointer]
+        - button [ref=f5e1352] [cursor=pointer]
+        - button [ref=f5e1353] [cursor=pointer]
+        - button [ref=f5e1354] [cursor=pointer]
+    - generic [ref=f5e1358]:
+      - heading "Latest tips & advice." [level=2] [ref=f5e1360]
+      - link "Read more articles" [ref=f5e1362] [cursor=pointer]:
+        - /url: /blogs/features-testimonials?exp=nav-v2
+    - generic [ref=f5e1366]:
+      - link [ref=f5e1367] [cursor=pointer]:
+        - /url: /blogs/features-testimonials/what-are-the-best-foods-for-hair-growth-and-thickness?exp=nav-v2
+        - generic [ref=f5e1368]:
+          - heading "Features testimonials" [level=4] [ref=f5e1369]
+          - heading "What are the best foods for hair growth and thickness?" [level=3] [ref=f5e1370]
+          - time [ref=f5e1371]: 4 September 2026
+        - figure [ref=f5e1372]:
+          - img "What are the best foods for hair growth and thickness?" [ref=f5e1373]
+      - link [ref=f5e1374] [cursor=pointer]:
+        - /url: /blogs/features-testimonials/collagen-and-vitamin-c-the-perfect-partnership?exp=nav-v2
+        - generic [ref=f5e1375]:
+          - heading "Features testimonials" [level=4] [ref=f5e1376]
+          - heading "Can I take collagen and vitamin c together?" [level=3] [ref=f5e1377]
+          - time [ref=f5e1378]: 13 August 2026
+        - figure [ref=f5e1379]:
+          - img "Can I take collagen and vitamin c together?" [ref=f5e1380]
+      - link [ref=f5e1381] [cursor=pointer]:
+        - /url: /blogs/features-testimonials/how-does-a-calorie-deficit-work?exp=nav-v2
+        - generic [ref=f5e1382]:
+          - heading "Features testimonials" [level=4] [ref=f5e1383]
+          - 'heading "Calorie deficit diet: How does it actually work?" [level=3] [ref=f5e1384]'
+          - time [ref=f5e1385]: 28 August 2026
+        - figure [ref=f5e1386]:
+          - 'img "Calorie deficit diet: How does it actually work?" [ref=f5e1387]'
+    - generic [ref=f5e1392]:
+      - heading [level=2]
+      - paragraph [ref=f5e1395]:
+        - superscript [ref=f5e1396]: Disclaimer*30,000 data points, 13 clinical measurements, 130 participants.**Based on a 12-week clinical trial with 130 women.
+  - contentinfo [ref=f5e1397]:
+    - generic [ref=f5e1398]:
+      - generic [ref=f5e1399]:
+        - generic [ref=f5e1400]:
+          - 'heading "The #1 collagen experts" [level=5] [ref=f5e1401]'
+          - heading "One sachet a day. That’s all it took." [level=4] [ref=f5e1402]
+          - text: Follow our community
+          - link "Follow our community" [ref=f5e1403] [cursor=pointer]:
+            - /url: /pages/join-the-exclusive-absoluter-community?exp=nav-v2
+        - generic [ref=f5e1405]:
+          - figure [ref=f5e1406]:
+            - generic [ref=f5e1408] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1409]
+              - button "Play video" [ref=f5e1410]
+              - button "Toggle video audio" [ref=f5e1413]
+          - figure [ref=f5e1417]:
+            - generic [ref=f5e1419] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1420]
+              - button "Play video" [ref=f5e1421]
+              - button "Toggle video audio" [ref=f5e1424]
+          - figure [ref=f5e1428]:
+            - generic [ref=f5e1430] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1431]
+              - button "Play video" [ref=f5e1432]
+              - button "Toggle video audio" [ref=f5e1435]
+          - figure [ref=f5e1439]:
+            - generic [ref=f5e1441] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1442]
+              - button "Play video" [ref=f5e1443]
+              - button "Toggle video audio" [ref=f5e1446]
+          - figure [ref=f5e1450]:
+            - generic [ref=f5e1452] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1453]
+              - button "Play video" [ref=f5e1454]
+              - button "Toggle video audio" [ref=f5e1457]
+          - figure [ref=f5e1461]:
+            - generic [ref=f5e1463] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1464]
+              - button "Play video" [ref=f5e1465]
+              - button "Toggle video audio" [ref=f5e1468]
+          - figure [ref=f5e1472]:
+            - generic [ref=f5e1474] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1475]
+              - button "Play video" [ref=f5e1476]
+              - button "Toggle video audio" [ref=f5e1479]
+          - figure [ref=f5e1483]:
+            - generic [ref=f5e1485] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1486]
+              - button "Play video" [ref=f5e1487]
+              - button "Toggle video audio" [ref=f5e1490]
+          - figure [ref=f5e1494]:
+            - generic [ref=f5e1496] [cursor=pointer]:
+              - generic "Video player" [ref=f5e1497]
+              - button "Play video" [ref=f5e1498]
+              - button "Toggle video audio" [ref=f5e1501]
+      - generic [ref=f5e1505]:
+        - generic [ref=f5e1507]:
+          - heading "Subscribe for the latest news, special offers and first look at our new products." [level=3] [ref=f5e1508]
+          - generic [ref=f5e1511]:
+            - textbox "Email" [ref=f5e1513]:
+              - /placeholder: Enter your email
+            - button "Sign Up" [ref=f5e1514] [cursor=pointer]
+        - generic [ref=f5e1515]:
+          - generic [ref=f5e1516]:
+            - generic [ref=f5e1517]:
+              - heading [level=3] [ref=f5e1518]:
+                - button "Products" [ref=f5e1519] [cursor=pointer]
+              - region:
+                - list:
+                  - listitem [ref=f5e1526]:
+                    - link "Marine Collagen Supplements" [ref=f5e1527] [cursor=pointer]:
+                      - /url: /collections/shop-marine-collagen-supplements?exp=nav-v2
+                  - listitem [ref=f5e1528]:
+                    - link "Liquid Collagen Supplements" [ref=f5e1529] [cursor=pointer]:
+                      - /url: /collections/liquid-collagen-supplements?exp=nav-v2
+                  - listitem [ref=f5e1530]:
+                    - link "Powder Collagen Supplements" [ref=f5e1531] [cursor=pointer]:
+                      - /url: /collections/powder-collagen-supplements?exp=nav-v2
+                  - listitem [ref=f5e1532]:
+                    - link "Collagen for GLP-1" [ref=f5e1533] [cursor=pointer]:
+                      - /url: /products/sculpt-pro-glp-1-support?exp=nav-v2
+                  - listitem [ref=f5e1534]:
+                    - 'link "UK’s #1 Collagen" [ref=f5e1535] [cursor=pointer]':
+                      - /url: /products/marine-liquid-collagen-drink?exp=nav-v2
+                  - listitem [ref=f5e1536]:
+                    - link "Skincare" [ref=f5e1537] [cursor=pointer]:
+                      - /url: /collections/deep-lift-skincare?exp=nav-v2
+                  - listitem [ref=f5e1538]:
+                    - link "Haircare" [ref=f5e1539] [cursor=pointer]:
+                      - /url: /collections/shop-haircare?exp=nav-v2
+                  - listitem [ref=f5e1540]:
+                    - link "Bundles" [ref=f5e1541] [cursor=pointer]:
+                      - /url: /collections/skincare-bundles?exp=nav-v2
+                  - listitem [ref=f5e1542]:
+                    - link "Take our quiz" [ref=f5e1543] [cursor=pointer]:
+                      - /url: /pages/collagen-calculator-quiz?exp=nav-v2
+            - generic [ref=f5e1544]:
+              - heading [level=3] [ref=f5e1545]:
+                - button "Help & Support" [ref=f5e1546] [cursor=pointer]
+              - region:
+                - list:
+                  - listitem [ref=f5e1553]:
+                    - link "Contact Us" [ref=f5e1554] [cursor=pointer]:
+                      - /url: /pages/contact?exp=nav-v2
+                  - listitem [ref=f5e1555]:
+                    - link "Manage My Account" [ref=f5e1556] [cursor=pointer]:
+                      - /url: /account?exp=nav-v2
+                  - listitem [ref=f5e1557]:
+                    - link "Offers" [ref=f5e1558] [cursor=pointer]:
+                      - /url: /pages/offers?exp=nav-v2
+                  - listitem [ref=f5e1559]:
+                    - link "Give £10, Get £20" [ref=f5e1560] [cursor=pointer]:
+                      - /url: /pages/refer-a-friend?situation=homepage_footer&exp=nav-v2
+                  - listitem [ref=f5e1561]:
+                    - link "Absolute Rewards" [ref=f5e1562] [cursor=pointer]:
+                      - /url: /pages/absolute-rewards?exp=nav-v2
+                  - listitem [ref=f5e1563]:
+                    - link "FAQs" [ref=f5e1564] [cursor=pointer]:
+                      - /url: /pages/collagen-faqs?exp=nav-v2
+                  - listitem [ref=f5e1565]:
+                    - link "Delivery & Returns" [ref=f5e1566] [cursor=pointer]:
+                      - /url: /pages/delivery-and-returns?exp=nav-v2
+                  - listitem [ref=f5e1567]:
+                    - link "Terms & Conditions of Sale" [ref=f5e1568] [cursor=pointer]:
+                      - /url: /pages/consumer-terms-and-conditions-of-sale?exp=nav-v2
+                  - listitem [ref=f5e1569]:
+                    - link "Terms of Use" [ref=f5e1570] [cursor=pointer]:
+                      - /url: /pages/website-terms-of-use?exp=nav-v2
+                  - listitem [ref=f5e1571]:
+                    - link "Privacy Policy" [ref=f5e1572] [cursor=pointer]:
+                      - /url: /pages/privacy-policy?exp=nav-v2
+            - generic [ref=f5e1573]:
+              - heading [level=3] [ref=f5e1574]:
+                - button "About" [ref=f5e1575] [cursor=pointer]
+              - region:
+                - list:
+                  - listitem [ref=f5e1582]:
+                    - link "Our Story" [ref=f5e1583] [cursor=pointer]:
+                      - /url: /pages/about-absolute-collagen?exp=nav-v2
+                  - listitem [ref=f5e1584]:
+                    - link "Meet our Experts" [ref=f5e1585] [cursor=pointer]:
+                      - /url: /pages/experts?exp=nav-v2
+                  - listitem [ref=f5e1586]:
+                    - link "Ambassador & Influencer Programme" [ref=f5e1587] [cursor=pointer]:
+                      - /url: https://ambassador.upfluence.co/absolutecollagen
+                  - listitem [ref=f5e1588]:
+                    - link "Absoluter Community" [ref=f5e1589] [cursor=pointer]:
+                      - /url: /pages/join-the-exclusive-absoluter-community?exp=nav-v2
+                  - listitem [ref=f5e1590]:
+                    - link "Collagen Blogs" [ref=f5e1591] [cursor=pointer]:
+                      - /url: /blogs/features-testimonials?exp=nav-v2
+                  - listitem [ref=f5e1592]:
+                    - link "Sustainability" [ref=f5e1593] [cursor=pointer]:
+                      - /url: /pages/sustainability-and-corporate-social-responsibility?exp=nav-v2
+                  - listitem [ref=f5e1594]:
+                    - link "Awards & Accolades" [ref=f5e1595] [cursor=pointer]:
+                      - /url: /pages/awards-and-accolades?exp=nav-v2
+                  - listitem [ref=f5e1596]:
+                    - link "Charity Partnership" [ref=f5e1597] [cursor=pointer]:
+                      - /url: /pages/absolute-collagen-s-partnership-with-coppafeel?exp=nav-v2
+            - generic [ref=f5e1598]:
+              - heading [level=3] [ref=f5e1599]:
+                - button "Social" [ref=f5e1600] [cursor=pointer]
+              - region:
+                - list:
+                  - listitem [ref=f5e1607]:
+                    - link "Facebook" [ref=f5e1608] [cursor=pointer]:
+                      - /url: https://www.facebook.com/absolutecollagen
+                  - listitem [ref=f5e1609]:
+                    - link "Instagram" [ref=f5e1610] [cursor=pointer]:
+                      - /url: https://www.instagram.com/absolutecollagen/
+                  - listitem [ref=f5e1611]:
+                    - link "Youtube" [ref=f5e1612] [cursor=pointer]:
+                      - /url: https://www.youtube.com/channel/UCrF6GgqMyP2wGiCMy49MYBA
+                  - listitem [ref=f5e1613]:
+                    - link "X (Twitter)" [ref=f5e1614] [cursor=pointer]:
+                      - /url: https://twitter.com/abscollagen
+          - generic [ref=f5e1616]:
+            - generic [ref=f5e1617]:
+              - generic [ref=f5e1618]: "Shipping to:"
+              - link "United Kingdom" [ref=f5e1619] [cursor=pointer]:
+                - /url: /?exp=nav-v2
+            - paragraph [ref=f5e1623]: © 2026 Absolute Collagen, Laceby Ltd, 49 Greek Street, London, W1D 4EGRegistered in England and Wales, Registered Company No. 09659752, VAT Registration No. GB229335894
+            - list [ref=f5e1624]:
+              - listitem [ref=f5e1625]:
+                - link "Terms & Conditions of Sale" [ref=f5e1626] [cursor=pointer]:
+                  - /url: /pages/consumer-terms-and-conditions-of-sale?exp=nav-v2
+              - listitem [ref=f5e1627]:
+                - link "Terms of Use" [ref=f5e1628] [cursor=pointer]:
+                  - /url: /pages/website-terms-of-use?exp=nav-v2
+              - listitem [ref=f5e1629]:
+                - link "Privacy Policy" [ref=f5e1630] [cursor=pointer]:
+                  - /url: /pages/privacy-policy?exp=nav-v2
+              - listitem [ref=f5e1631]:
+                - link "Cookies" [ref=f5e1632] [cursor=pointer]:
+                  - /url: /pages/cookies?exp=nav-v2
+          - generic "Awards and certifications" [ref=f5e1633]:
+            - generic:
+              - img "Smart works"
+            - generic:
+              - img "Jedi matters"
+            - generic:
+              - img "Climate Partners"
+            - generic:
+              - img "Birmingham childrens hospital"
+            - generic:
+              - img "Buy woman built"
+            - generic:
+              - img "B Beauty - B Corp™ Beaury Coalition - Logo"
+            - link "B Corporation Logo":
+              - /url: https://www.bcorporation.net/en-us/find-a-b-corp/company/absolute-collagen-group/
+              - img "B Corporation Logo"
+            - generic:
+              - img "you tube logo"
+  - iframe [aria-hidden] [ref=f5e1634]

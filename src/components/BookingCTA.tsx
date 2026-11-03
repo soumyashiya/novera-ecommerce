@@ -29,7 +29,7 @@ const CHANNELS = [
 ];
 
 const inputCls =
-  "w-full bg-transparent border-b border-background/25 py-3 text-background placeholder-background/35 focus:border-sand focus:outline-none transition-colors duration-300";
+  "w-full bg-transparent border-b border-background/25 py-3 text-background placeholder-background/35 focus:border-accent focus:outline-none transition-colors duration-300";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -78,13 +78,13 @@ export default function Contact() {
   }, [sent]);
 
   return (
-    <section id="contact" className="section-pad bg-dark text-background">
+    <section id="contact" className="on-ink section-pad bg-dark text-background">
       <div className="container-lux">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left — heading + channels */}
           <div className="min-w-0 lg:col-span-5">
             <Reveal>
-              <p className="eyebrow mb-6 text-sand">Get in Touch</p>
+              <p className="eyebrow mb-6 text-accent">Get in Touch</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="font-serif font-light text-[clamp(2.4rem,5.5vw,4.4rem)] leading-[1.05] tracking-tight">
@@ -106,18 +106,18 @@ export default function Contact() {
                   <a
                     key={label}
                     href={href}
-                    className="group contact-channel flex items-center gap-4 rounded-2xl border p-4 transition-[border-color,background-color,transform] duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:-translate-y-0.5 hover:bg-background/[0.04]"
+                    className="group contact-channel flex items-center gap-4 border p-4 transition-[border-color,background-color,transform] duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:-translate-y-0.5 hover:bg-background/[0.04]"
                   >
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-background/10 text-sand">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center bg-background/10 text-accent">
                       <Icon className="h-5 w-5" />
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[0.62rem] tracking-[0.22em] uppercase text-background/45">
+                      <span className="block text-[0.75rem] tracking-[-0.005em] uppercase text-background/45">
                         {label}
                       </span>
                       <span className="block text-background mt-0.5 break-words">{value}</span>
                     </span>
-                    <IconArrow className="ml-auto h-5 w-5 text-background/40 transition-all duration-500 group-hover:text-sand group-hover:translate-x-1" />
+                    <IconArrow className="ml-auto h-5 w-5 text-background/40 transition-all duration-500 group-hover:text-accent group-hover:translate-x-1" />
                   </a>
                 ))}
               </div>
@@ -130,12 +130,12 @@ export default function Contact() {
             <Reveal delay={0.15}>
               <form
                 onSubmit={submit}
-                className="rounded-[28px] border border-background/15 bg-background/[0.03] p-7 lg:p-9"
+                className=" border border-background/15 bg-background/[0.03] p-7 lg:p-9"
               >
                 <div className="flex items-center gap-2.5 mb-8 text-sm text-background/70">
                   <span className="relative flex h-2.5 w-2.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-60" />
-                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-sage" />
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
                   </span>
                   Enquiries answered promptly by email
                 </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                   <IconArrow className="h-4 w-4" />
                 </button>
 
-                <p className="mt-5 text-[0.72rem] leading-relaxed text-background/40">
+                <p className="mt-5 text-[0.8125rem] leading-relaxed text-background/40">
                   {DISCLAIMER}
                 </p>
               </form>
@@ -220,8 +220,8 @@ export default function Contact() {
           aria-labelledby="contact-sent-title"
           className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/50 backdrop-blur-sm p-4"
         >
-          <div className="relative w-full max-w-md overflow-hidden rounded-[28px] border border-line bg-card p-8 text-center shadow-[0_40px_80px_-20px_rgba(83,96,82,0.35)]">
-            <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-olive text-background">
+          <div className="relative w-full max-w-md overflow-hidden border border-line bg-card p-8 text-center shadow-[0_40px_80px_-20px_rgba(83,96,82,0.35)]">
+            <div className="mx-auto grid h-16 w-16 place-items-center bg-copper text-background">
               <svg
                 width="28"
                 height="28"
@@ -272,7 +272,7 @@ function Field({
 }) {
   return (
     <label className="block">
-      <span className="block text-[0.62rem] tracking-[0.22em] uppercase text-background/45 mb-1">
+      <span className="block text-[0.75rem] tracking-[-0.005em] uppercase text-background/45 mb-1">
         {label}
       </span>
       {children}

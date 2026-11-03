@@ -1,0 +1,579 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]: Third-party tested by Janoshik Analytical
+        - listitem [ref=e9]: Sealed & cold-stored before dispatch
+        - listitem [ref=e11]: Full batch documentation with every order
+        - listitem [ref=e13]: For research use only
+      - list [aria-hidden] [ref=e15]:
+        - listitem [ref=e16]: Third-party tested by Janoshik Analytical
+        - listitem [ref=e18]: Sealed & cold-stored before dispatch
+        - listitem [ref=e20]: Full batch documentation with every order
+        - listitem [ref=e22]: For research use only
+    - generic [ref=e24]:
+      - button "Open menu" [ref=e26] [cursor=pointer]:
+        - generic [ref=e31]: Menu
+      - link "Peptiq" [ref=e32] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e33]:
+          - generic [ref=e34]: Peptiq
+          - generic [ref=e35]: RESEARCH
+      - generic [ref=e36]:
+        - button "Search products" [ref=e37] [cursor=pointer]
+        - link "Wishlist, 0 items" [ref=e41] [cursor=pointer]:
+          - /url: /wishlist
+        - link "Sign in" [ref=e45] [cursor=pointer]:
+          - /url: /login
+        - button "Cart, 0 items" [ref=e49] [cursor=pointer]
+  - main [ref=e54]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [aria-hidden] [ref=e61]: ✦
+        - text: ADVANCING DISCOVERY · THROUGH PEPTIQ RESEARCH
+      - heading "PEPTIDES YOU CAN ACTUALLY VERIFY." [level=1] [ref=e62]:
+        - generic [ref=e63]: PEPTIDES YOU CAN
+        - generic [ref=e64]: ACTUALLY VERIFY.
+      - paragraph [ref=e65]: RESEARCH USE ONLY — PREMIUM RESEARCH PEPTIDES FOR LABORATORY R&D. NOT FOR HUMAN OR VETERINARY CONSUMPTION.
+      - generic [ref=e66]:
+        - link "Shop all" [ref=e67] [cursor=pointer]:
+          - /url: /shop
+          - text: Shop all
+          - generic [aria-hidden] [ref=e68]: →
+        - link "Discover our process" [ref=e69] [cursor=pointer]:
+          - /url: "#process"
+      - list [ref=e70]:
+        - listitem [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e76]: 99.9%
+            - text: Lab-tested purity (Janoshik verified)
+        - listitem [ref=e77]:
+          - generic [aria-hidden] [ref=e78]: •
+          - generic [ref=e79]:
+            - generic [ref=e80]: 56 DAYS
+            - text: Room-temperature stability hold
+        - listitem [ref=e81]:
+          - generic [aria-hidden] [ref=e82]: •
+          - generic [ref=e83]:
+            - generic [ref=e84]: 26.3K+
+            - text: R&D-tested research units
+    - region "What every Peptiq order carries" [ref=e85]:
+      - list [ref=e87]:
+        - listitem "Direct contracts with certified manufacturers. No grey-market resellers in the chain." [ref=e88]:
+          - generic [ref=e92]: Verified sourcing
+        - listitem "Every batch independently assayed by Janoshik Analytical before it is listed." [ref=e93]:
+          - generic [ref=e97]: Lab-tested purity
+        - listitem "Cold-stored, tamper-sealed and labelled accurately before it leaves the shelf." [ref=e98]:
+          - generic [ref=e102]: Sealed cold packaging
+        - listitem "Real replies from a real person, usually within minutes on working days." [ref=e103]:
+          - generic [ref=e107]: A human on WhatsApp
+    - region "Featured products" [ref=e108]:
+      - paragraph [aria-hidden]: MOTS-C
+      - generic [ref=e109]:
+        - link "MOTS-C 40mg" [ref=e111] [cursor=pointer]:
+          - /url: /products/mots-c-40mg
+          - img "MOTS-C 40mg" [ref=e119]
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: New arrival
+            - heading "MOTS-C." [level=2] [ref=e123]
+            - paragraph [ref=e124]: the mitochondrial peptide.
+            - list [ref=e125]:
+              - listitem [ref=e126]: 40mg
+              - listitem [ref=e130]: 4 × 10mg pen
+              - listitem [ref=e134]: Janoshik tested
+            - generic [ref=e138]:
+              - paragraph [ref=e139]: Independently verified batch
+              - generic [ref=e143]:
+                - generic [ref=e144]: $119
+                - generic [ref=e145]: $140
+                - generic [ref=e146]: Save 15%
+              - paragraph [ref=e147]: Research Supply Programme · 3 monthly deliveries
+              - link "Shop MOTS-C" [ref=e148] [cursor=pointer]:
+                - /url: /products/mots-c-40mg
+              - paragraph [ref=e149]: Cold-chain dispatch · Certificate of analysis with every order
+          - tablist "Choose product" [ref=e150]:
+            - tab "MOTS-C 40mg" [selected] [ref=e151] [cursor=pointer]
+            - tab "Tesamorelin 20mg" [ref=e153] [cursor=pointer]
+          - paragraph [ref=e154]: For research purposes only. Not intended for human or veterinary use.
+    - generic [ref=e155]:
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: SHOP BY LINE
+          - heading "Every line on the bench." [level=2] [ref=e162]
+        - link "View all" [ref=e163] [cursor=pointer]:
+          - /url: /shop
+          - text: View all
+          - generic [aria-hidden] [ref=e164]: →
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - link [ref=e168] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - generic [aria-hidden] [ref=e170]: Shop the line
+            - heading "Metabolic" [level=3] [ref=e171]
+            - paragraph [ref=e172]: 3 products
+          - link [ref=e173] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - generic [aria-hidden] [ref=e175]: Shop the line
+            - heading "Recovery" [level=3] [ref=e176]
+            - paragraph [ref=e177]: 2 products
+          - link [ref=e178] [cursor=pointer]:
+            - /url: /shop?category=aesthetic
+            - generic [aria-hidden] [ref=e180]: Shop the line
+            - heading "Skin & Hair" [level=3] [ref=e181]
+            - paragraph [ref=e182]: 1 product
+          - link [ref=e183] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - generic [aria-hidden] [ref=e185]: Shop the line
+            - heading "Longevity" [level=3] [ref=e186]
+            - paragraph [ref=e187]: 2 products
+          - link [ref=e188] [cursor=pointer]:
+            - /url: /shop?format=blend
+            - generic [aria-hidden] [ref=e190]: Shop the line
+            - heading "Blends" [level=3] [ref=e191]
+            - paragraph [ref=e192]: 2 products
+        - generic [aria-hidden] [ref=e193]:
+          - link [ref=e194] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - generic [aria-hidden] [ref=e196]: Shop the line
+            - heading [level=3] [ref=e197]: Metabolic
+            - paragraph [ref=e198]: 3 products
+          - link [ref=e199] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - generic [aria-hidden] [ref=e201]: Shop the line
+            - heading [level=3] [ref=e202]: Recovery
+            - paragraph [ref=e203]: 2 products
+          - link [ref=e204] [cursor=pointer]:
+            - /url: /shop?category=aesthetic
+            - generic [aria-hidden] [ref=e206]: Shop the line
+            - heading [level=3] [ref=e207]: Skin & Hair
+            - paragraph [ref=e208]: 1 product
+          - link [ref=e209] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - generic [aria-hidden] [ref=e211]: Shop the line
+            - heading [level=3] [ref=e212]: Longevity
+            - paragraph [ref=e213]: 2 products
+          - link [ref=e214] [cursor=pointer]:
+            - /url: /shop?format=blend
+            - generic [aria-hidden] [ref=e216]: Shop the line
+            - heading [level=3] [ref=e217]: Blends
+            - paragraph [ref=e218]: 2 products
+      - paragraph [ref=e220]: 5 lines · hover to pause
+    - generic [ref=e222]:
+      - generic [ref=e223]:
+        - generic [ref=e224]: The Peptiq standard
+        - heading "Purity, verified. Paperwork, included." [level=2] [ref=e226]: Purity, verified.Paperwork, included.
+      - generic [ref=e227]:
+        - img "A person seated behind a GHK-Cu carton, with its pre-filled pen laid out in front on a lavender set" [ref=e229]
+        - generic [ref=e230]:
+          - paragraph [ref=e231]: 48+
+          - paragraph [ref=e232]: Advanced formulations developed
+      - generic [ref=e233]:
+        - paragraph [ref=e234]: We started Peptiq because the research peptide market needed a supplier willing to be boring about the basics — transparent sourcing, third-party lab testing, and people you can actually message. Every batch is checked before it reaches our shelves, and every product is supplied strictly for laboratory research use.
+        - link "Our process" [ref=e235] [cursor=pointer]:
+          - /url: "#process"
+          - text: Our process
+          - generic [aria-hidden] [ref=e236]: →
+      - generic [ref=e237]:
+        - img "A person seated behind a NAD+ carton, with its pre-filled pen laid out in front on a lavender set" [ref=e239]
+        - generic [ref=e240]:
+          - paragraph [ref=e241]: 26.3k+
+          - paragraph [ref=e242]: R&D-tested research units
+        - generic [ref=e243]:
+          - paragraph [ref=e244]: 99.95%
+          - paragraph [ref=e245]: Lab-tested purity
+    - generic [ref=e247]:
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - generic [ref=e250]: LOVED BY THE BENCH
+          - heading "Bestsellers" [level=2] [ref=e253]
+        - button "Shop all" [ref=e254] [cursor=pointer]
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - article [ref=e259]:
+            - generic [ref=e260]:
+              - link "BPC-157 & TB-500 40mg" [ref=e261] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500-40mg
+                - img "BPC-157 & TB-500 40mg" [ref=e262]
+              - button "Add BPC-157 & TB-500 40mg to wishlist" [ref=e263] [cursor=pointer]
+              - button "Add to cart" [ref=e266] [cursor=pointer]
+            - heading [level=3] [ref=e267]:
+              - link "BPC-157 & TB-500 40mg" [ref=e268] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500-40mg
+            - paragraph [ref=e269]: $130 USD
+          - article [ref=e270]:
+            - generic [ref=e271]:
+              - link "Retatrutide 20mg" [ref=e272] [cursor=pointer]:
+                - /url: /products/retatrutide-20mg
+                - img "Retatrutide 20mg" [ref=e273]
+              - button "Add Retatrutide 20mg to wishlist" [ref=e274] [cursor=pointer]
+              - button "Add to cart" [ref=e277] [cursor=pointer]
+            - heading [level=3] [ref=e278]:
+              - link "Retatrutide 20mg" [ref=e279] [cursor=pointer]:
+                - /url: /products/retatrutide-20mg
+            - paragraph [ref=e280]: $100 USD
+          - article [ref=e281]:
+            - generic [ref=e282]:
+              - link "Tirzepatide 40mg" [ref=e283] [cursor=pointer]:
+                - /url: /products/tirzepatide-40mg
+                - img "Tirzepatide 40mg" [ref=e284]
+              - button "Add Tirzepatide 40mg to wishlist" [ref=e285] [cursor=pointer]
+              - button "Add to cart" [ref=e288] [cursor=pointer]
+            - heading [level=3] [ref=e289]:
+              - link "Tirzepatide 40mg" [ref=e290] [cursor=pointer]:
+                - /url: /products/tirzepatide-40mg
+            - paragraph [ref=e291]: $100 USD
+          - article [ref=e292]:
+            - generic [ref=e293]:
+              - link "Glow 70mg" [ref=e294] [cursor=pointer]:
+                - /url: /products/glow-70mg
+                - img "Glow 70mg" [ref=e295]
+              - button "Add Glow 70mg to wishlist" [ref=e296] [cursor=pointer]
+              - button "Add to cart" [ref=e299] [cursor=pointer]
+            - heading [level=3] [ref=e300]:
+              - link "Glow 70mg" [ref=e301] [cursor=pointer]:
+                - /url: /products/glow-70mg
+            - paragraph [ref=e302]: $100 USD
+        - paragraph [ref=e303]: 4 of 6 lines
+      - paragraph [ref=e304]: For research purposes only. Not intended for human or veterinary use.
+    - generic [ref=e307]:
+      - generic [ref=e309]:
+        - generic [ref=e310]: How every batch ships
+        - heading "Nothing ships on trust." [level=2] [ref=e312]: Nothing shipson trust.
+        - paragraph [ref=e313]: "One standard runs across every Peptiq line: an independent assay before a batch is listed, a sealed fixed-volume pen, cold-chain dispatch, and the batch-specific certificate in the box. The paperwork is not an extra — it is the product."
+      - generic [ref=e314]:
+        - img "Researcher inspecting a sealed research pen at the laboratory bench" [ref=e317]
+        - generic [ref=e319]:
+          - link [ref=e320] [cursor=pointer]:
+            - /url: /products/mots-c-40mg
+          - generic [ref=e321]:
+            - link "MOTS-C 40mg" [ref=e322] [cursor=pointer]:
+              - /url: /products/mots-c-40mg
+            - paragraph [ref=e323]: $140
+          - button "Add to cart" [ref=e324] [cursor=pointer]
+      - generic [ref=e325]:
+        - list [ref=e326]:
+          - listitem [ref=e327]:
+            - heading [level=3] [ref=e328]:
+              - button "Assayed before listed" [expanded] [ref=e329] [cursor=pointer]:
+                - text: Assayed before listed
+                - generic [aria-hidden] [ref=e330]: −
+            - paragraph [ref=e332]: Every batch goes to Janoshik Analytical for independent purity and concentration checks before it is offered for sale.
+          - listitem [ref=e333]:
+            - heading [level=3] [ref=e334]:
+              - button "Sealed, fixed volume" [ref=e335] [cursor=pointer]:
+                - text: Sealed, fixed volume
+                - generic [aria-hidden] [ref=e336]: +
+          - listitem [ref=e337]:
+            - heading [level=3] [ref=e338]:
+              - button "Documented on dispatch" [ref=e339] [cursor=pointer]:
+                - text: Documented on dispatch
+                - generic [aria-hidden] [ref=e340]: +
+        - generic [ref=e341]:
+          - link "Shop all lines" [ref=e342] [cursor=pointer]:
+            - /url: /shop
+          - link "See the quality protocol" [ref=e343] [cursor=pointer]:
+            - /url: "#process"
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - generic [ref=e347]: Why Peptiq
+        - heading "Why Researchers Choose Peptiq." [level=2] [ref=e350]
+        - paragraph [ref=e351]: Trusted by scientists. Backed by quality. Designed for real research.
+      - generic [ref=e352]:
+        - img "Laboratory scientist holding a research pen and its carton" [ref=e356]
+        - generic [ref=e357]:
+          - generic [ref=e359]:
+            - heading "Verified sourcing" [level=3] [ref=e363]
+            - paragraph [ref=e364]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+          - generic [ref=e366]:
+            - heading "Lab-tested purity" [level=3] [ref=e370]
+            - paragraph [ref=e371]: Every batch independently assayed by Janoshik Analytical before it is listed.
+          - generic [ref=e373]:
+            - heading "Pre-filled research pens" [level=3] [ref=e377]
+            - paragraph [ref=e378]: Fixed-volume sealed format — no reconstitution or measuring at the bench.
+        - generic [ref=e379]:
+          - generic [ref=e381]:
+            - heading "Sealed cold packaging" [level=3] [ref=e385]
+            - paragraph [ref=e386]: Cold-stored, tamper-sealed and accurately labelled before it leaves the shelf.
+          - generic [ref=e388]:
+            - heading "Documentation included" [level=3] [ref=e392]
+            - paragraph [ref=e393]: The batch-specific certificate of analysis ships with every order, no request needed.
+          - generic [ref=e395]:
+            - heading "Batch traceability" [level=3] [ref=e399]
+            - paragraph [ref=e400]: Every pen carries a batch number that matches its published Janoshik report.
+      - generic [ref=e401]:
+        - link "Browse the range" [ref=e402] [cursor=pointer]:
+          - /url: /shop
+        - paragraph [ref=e403]: Janoshik-verified per batch · documentation with every order
+    - generic [ref=e405]:
+      - generic [ref=e406]:
+        - generic [ref=e409]:
+          - heading "Subscribe & save on your research supply" [level=2] [ref=e410]
+          - paragraph [ref=e411]: Because consistent research starts with a consistent supply.
+          - link "Subscribe & save 15%" [ref=e412] [cursor=pointer]:
+            - /url: /shop
+        - list [ref=e414]:
+          - listitem [ref=e415]:
+            - generic [ref=e416]: 15% off every delivery
+          - listitem [ref=e419]:
+            - generic [ref=e420]: Complimentary cold-chain
+          - listitem [ref=e423]:
+            - generic [ref=e424]: Priority batch allocation
+          - listitem [ref=e427]:
+            - generic [ref=e428]: Reports on dispatch
+      - paragraph [ref=e431]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+    - generic [ref=e432]:
+      - generic [ref=e434]:
+        - generic [ref=e435]: 2,400+ verified reviews
+        - heading "Real labs. Real batches." [level=2] [ref=e447]
+        - paragraph [ref=e448]: What our research customers say about the paperwork.
+      - generic [ref=e451]:
+        - list "Customer video reviews" [ref=e452]:
+          - listitem [ref=e453]:
+            - generic [ref=e456]:
+              - generic [ref=e457]:
+                - paragraph [ref=e458]:
+                  - generic [ref=e459]: Daniel K.
+                - paragraph [ref=e463]: Verified buyer
+              - button "Play Daniel K.'s review" [ref=e464] [cursor=pointer]
+          - listitem [ref=e467]:
+            - generic [ref=e470]:
+              - generic [ref=e471]:
+                - paragraph [ref=e472]:
+                  - generic [ref=e473]: Sophie R.
+                - paragraph [ref=e477]: Repeat customer
+              - button "Play Sophie R.'s review" [ref=e478] [cursor=pointer]
+          - listitem [ref=e481]:
+            - generic [ref=e484]:
+              - generic [ref=e485]:
+                - paragraph [ref=e486]:
+                  - generic [ref=e487]: Marcus T.
+                - paragraph [ref=e491]: Verified buyer
+              - button "Play Marcus T.'s review" [ref=e492] [cursor=pointer]
+          - listitem [ref=e495]:
+            - generic [ref=e498]:
+              - generic [ref=e499]:
+                - paragraph [ref=e500]:
+                  - generic [ref=e501]: Priya N.
+                - paragraph [ref=e505]: Research customer
+              - button "Play Priya N.'s review" [ref=e506] [cursor=pointer]
+        - list [aria-hidden] [ref=e509]:
+          - listitem [ref=e510]:
+            - generic [ref=e513]:
+              - generic [ref=e514]:
+                - paragraph [ref=e515]:
+                  - generic [ref=e516]: Daniel K.
+                - paragraph [ref=e520]: Verified buyer
+              - button [ref=e521] [cursor=pointer]
+          - listitem [ref=e524]:
+            - generic [ref=e527]:
+              - generic [ref=e528]:
+                - paragraph [ref=e529]:
+                  - generic [ref=e530]: Sophie R.
+                - paragraph [ref=e534]: Repeat customer
+              - button [ref=e535] [cursor=pointer]
+          - listitem [ref=e538]:
+            - generic [ref=e541]:
+              - generic [ref=e542]:
+                - paragraph [ref=e543]:
+                  - generic [ref=e544]: Marcus T.
+                - paragraph [ref=e548]: Verified buyer
+              - button [ref=e549] [cursor=pointer]
+          - listitem [ref=e552]:
+            - generic [ref=e555]:
+              - generic [ref=e556]:
+                - paragraph [ref=e557]:
+                  - generic [ref=e558]: Priya N.
+                - paragraph [ref=e562]: Research customer
+              - button [ref=e563] [cursor=pointer]
+    - generic [ref=e567]:
+      - generic [ref=e568]:
+        - generic [ref=e569]: Three deliberate steps
+        - heading "How each pen is prepared." [level=2] [ref=e572]
+        - paragraph [ref=e573]: Three deliberate steps between the lab bench and the sealed pen — so nothing about the product is left to chance.
+        - link "Browse verified batches" [ref=e574] [cursor=pointer]:
+          - /url: /shop
+      - list [ref=e576]:
+        - listitem [ref=e577]:
+          - generic [ref=e579]:
+            - generic [aria-hidden] [ref=e580]: "1"
+            - generic [ref=e581]:
+              - heading "Source" [level=3] [ref=e582]
+              - paragraph [ref=e583]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+        - listitem [ref=e584]:
+          - generic [ref=e586]:
+            - generic [aria-hidden] [ref=e587]: "2"
+            - generic [ref=e588]:
+              - heading "Verify" [level=3] [ref=e589]
+              - paragraph [ref=e590]: Independent purity and concentration checks on every batch before it touches an order.
+        - listitem [ref=e591]:
+          - generic [ref=e593]:
+            - generic [aria-hidden] [ref=e594]: "3"
+            - generic [ref=e595]:
+              - heading "Seal" [level=3] [ref=e596]
+              - paragraph [ref=e597]: Cold-stored and tamper-sealed, with accurate labelling on every pen before it leaves the shelf.
+    - generic [ref=e599]:
+      - heading "The quality our research community relies on" [level=2] [ref=e601]
+      - list "Customer reviews" [ref=e603]:
+        - listitem [ref=e604]:
+          - button "Daniel K.'s review" [ref=e605] [cursor=pointer]:
+            - generic [ref=e606]:
+              - generic "5 out of 5" [ref=e607]: "5.0"
+              - generic [ref=e620]: “Presentation was faultless — sealed research pen with the Janoshik COA inside the box, batch numbers matched, tamper-evident seal intact. Exactly what a research kit should be.”
+            - generic [ref=e621]:
+              - generic [ref=e622]: Daniel K.
+              - generic [ref=e623]: Verified buyer · United Kingdom
+        - listitem [ref=e624]:
+          - button "Sophie R.'s review" [ref=e625] [cursor=pointer]:
+            - generic [ref=e626]:
+              - generic "5 out of 5" [ref=e627]: "5.0"
+              - generic [ref=e640]: “Consistent presentation from batch to batch — tamper-evident seal, matching COA, and traceable batch numbers. Documentation quality is what keeps me ordering from Peptiq for the lab.”
+            - generic [ref=e641]:
+              - generic [ref=e642]: Sophie R.
+              - generic [ref=e643]: Repeat customer · Research lab
+        - listitem [ref=e644]:
+          - button "Marcus T.'s review" [ref=e645] [cursor=pointer]:
+            - generic [ref=e646]:
+              - generic "5 out of 5" [ref=e647]: "5.0"
+              - generic [ref=e660]: “Support replied within the hour and resolved my order query with zero hassle. Clear paperwork, tamper-evident packaging, and batch documentation exactly matched the COA reference.”
+            - generic [ref=e661]:
+              - generic [ref=e662]: Marcus T.
+              - generic [ref=e663]: Verified buyer · Research customer
+        - listitem [ref=e664]:
+          - button "Priya N.'s review" [ref=e665] [cursor=pointer]:
+            - generic [ref=e666]:
+              - generic "5 out of 5" [ref=e667]: "5.0"
+              - generic [ref=e680]: “Presentation and documentation are excellent. Full batch COA, clear per-compound content, and fair pricing for this level of paperwork. Already reordered the BPC-157 & TB-500 for the archive.”
+            - generic [ref=e681]:
+              - generic [ref=e682]: Priya N.
+              - generic [ref=e683]: Research customer · United Kingdom
+      - tablist "Choose review" [ref=e684]:
+        - tab "Show Daniel K.'s review" [selected] [ref=e685] [cursor=pointer]
+        - tab "Show Sophie R.'s review" [ref=e686] [cursor=pointer]
+        - tab "Show Marcus T.'s review" [ref=e687] [cursor=pointer]
+        - tab "Show Priya N.'s review" [ref=e688] [cursor=pointer]
+    - generic [ref=e691]:
+      - generic [ref=e692]:
+        - heading "Advancing laboratory research with independently verified peptides — tested, documented and supplied for controlled R&D." [level=2] [ref=e693]
+        - generic [ref=e695]:
+          - textbox "Email address" [ref=e696]:
+            - /placeholder: Enter your email
+          - button "Join" [disabled] [ref=e697]
+        - paragraph [ref=e698]:
+          - text: Prefer to talk to the research team?
+          - link "research@peptiq.org" [ref=e699] [cursor=pointer]:
+            - /url: mailto:research@peptiq.org
+        - paragraph [ref=e700]: For laboratory research use only. Not for human or veterinary consumption.
+      - img "Laboratory scientist holding a tablet" [ref=e703]
+  - contentinfo [ref=e704]:
+    - generic [ref=e705]:
+      - generic [ref=e706]:
+        - generic [ref=e707]:
+          - link "Peptiq RESEARCH" [ref=e708] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e709]:
+              - generic [ref=e710]: Peptiq
+              - generic [ref=e711]: RESEARCH
+          - paragraph [ref=e712]: advancing discovery through peptiq research
+          - generic [ref=e713]:
+            - paragraph [ref=e714]:
+              - link "research@peptiq.org" [ref=e715] [cursor=pointer]:
+                - /url: mailto:research@peptiq.org
+            - paragraph [ref=e716]: United Kingdom · Research operations
+          - generic [ref=e717]:
+            - paragraph [ref=e718]: Newsletter
+            - paragraph [ref=e719]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=e720]:
+              - textbox "Email address for newsletter" [ref=e721]:
+                - /placeholder: you@lab.com
+              - button "Subscribe" [disabled] [ref=e722]
+            - generic [ref=e723] [cursor=pointer]:
+              - checkbox "I agree to receive research updates by email." [checked] [ref=e724]
+              - text: I agree to receive research updates by email.
+          - paragraph [ref=e725]: Est. 2024
+        - generic [ref=e726]:
+          - heading "Company" [level=3] [ref=e727]
+          - list [ref=e728]:
+            - listitem [ref=e729]:
+              - link "Shop" [ref=e730] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e731]:
+              - link "About" [ref=e732] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e733]:
+              - link "Why Peptiq" [ref=e734] [cursor=pointer]:
+                - /url: /#assurances
+            - listitem [ref=e735]:
+              - link "Quality protocol" [ref=e736] [cursor=pointer]:
+                - /url: /#process
+            - listitem [ref=e737]:
+              - link "Testimonials" [ref=e738] [cursor=pointer]:
+                - /url: /#news
+        - generic [ref=e739]:
+          - heading "Research peptides" [level=3] [ref=e740]
+          - list [ref=e741]:
+            - listitem [ref=e742]:
+              - link "Retatrutide 40mg" [ref=e743] [cursor=pointer]:
+                - /url: /products/retatrutide-40mg
+            - listitem [ref=e744]:
+              - link "Tirzepatide 40mg" [ref=e745] [cursor=pointer]:
+                - /url: /products/tirzepatide-40mg
+            - listitem [ref=e746]:
+              - link "BPC-157 & TB-500 40mg" [ref=e747] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500-40mg
+            - listitem [ref=e748]:
+              - link "Glow 70mg" [ref=e749] [cursor=pointer]:
+                - /url: /products/glow-70mg
+            - listitem [ref=e750]:
+              - link "NAD+ 1,000mg" [ref=e751] [cursor=pointer]:
+                - /url: /products/nad-1000mg
+            - listitem [ref=e752]:
+              - link "Browse all" [ref=e753] [cursor=pointer]:
+                - /url: /shop
+        - generic [ref=e754]:
+          - heading "Account" [level=3] [ref=e755]
+          - list [ref=e756]:
+            - listitem [ref=e757]:
+              - link "Sign in" [ref=e758] [cursor=pointer]:
+                - /url: /login
+            - listitem [ref=e759]:
+              - link "Create account" [ref=e760] [cursor=pointer]:
+                - /url: /register
+            - listitem [ref=e761]:
+              - link "Cart" [ref=e762] [cursor=pointer]:
+                - /url: /cart
+            - listitem [ref=e763]:
+              - link "Track order" [ref=e764] [cursor=pointer]:
+                - /url: /track-order
+        - generic [ref=e765]:
+          - heading "Support" [level=3] [ref=e766]
+          - list [ref=e767]:
+            - listitem [ref=e768]:
+              - link "Contact" [ref=e769] [cursor=pointer]:
+                - /url: /#contact
+            - listitem [ref=e770]:
+              - link "Verify a batch" [ref=e771] [cursor=pointer]:
+                - /url: /#process
+            - listitem [ref=e772]:
+              - link "For laboratories" [ref=e773] [cursor=pointer]:
+                - /url: /#contact
+      - generic [ref=e774]:
+        - paragraph [ref=e775]: © 2024–2026 Peptiq. All rights reserved. For laboratory research use only.
+        - list [ref=e776]:
+          - listitem [ref=e777]:
+            - link "Press Release" [ref=e778] [cursor=pointer]:
+              - /url: /policies/press-release
+          - listitem [ref=e779]:
+            - link "Privacy Policy" [ref=e780] [cursor=pointer]:
+              - /url: /policies/privacy-policy
+          - listitem [ref=e781]:
+            - link "Refund Policy" [ref=e782] [cursor=pointer]:
+              - /url: /policies/refund-policy
+          - listitem [ref=e783]:
+            - link "Shipping Policy" [ref=e784] [cursor=pointer]:
+              - /url: /policies/shipping-policy
+          - listitem [ref=e785]:
+            - link "Terms of Service" [ref=e786] [cursor=pointer]:
+              - /url: /policies/terms-of-service

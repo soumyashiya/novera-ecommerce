@@ -44,7 +44,7 @@ export default function CartPage() {
                 >
                   <Link
                     href={`/products/${product!.slug}`}
-                    className="relative h-20 w-20 sm:h-28 sm:w-28 shrink-0 overflow-hidden rounded-2xl bg-background-secondary"
+                    className="relative h-20 w-20 sm:h-28 sm:w-28 shrink-0 overflow-hidden bg-background-secondary"
                   >
                     <Image
                       src={product!.image}
@@ -72,7 +72,7 @@ export default function CartPage() {
                     </div>
 
                     <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
-                      <div className="flex items-center rounded-full border border-line">
+                      <div className="flex items-center border border-line">
                         <button
                           aria-label="Decrease quantity"
                           onClick={() => setQty(item.slug, item.qty - 1)}
@@ -104,7 +104,7 @@ export default function CartPage() {
             </div>
 
             {/* Summary */}
-            <aside className="lg:col-span-4 lg:sticky lg:top-28 rounded-[24px] border border-line bg-card p-7 lg:p-8">
+            <aside className="lg:col-span-4 lg:sticky lg:top-28 border border-line bg-card p-7 lg:p-8">
               <h2 className="text-subhead text-2xl mb-6">Order summary</h2>
               <div className="flex justify-between text-muted mb-6">
                 <span>Subtotal</span>
@@ -112,7 +112,7 @@ export default function CartPage() {
               </div>
               <div className="flex justify-between text-lg border-t border-line pt-5 mb-8">
                 <span>Total</span>
-                <span className="font-serif text-2xl text-olive">
+                <span className="font-serif text-2xl text-copper">
                   {formatPrice(subtotal)}
                 </span>
               </div>
@@ -130,9 +130,9 @@ export default function CartPage() {
               <div
                 role="note"
                 aria-label="Research-only notice"
-                className="mt-6 rounded-2xl border border-olive/40 bg-olive/5 p-4 text-xs leading-relaxed text-dark"
+                className="mt-6 border border-copper/40 bg-copper/5 p-4 text-xs leading-relaxed text-dark"
               >
-                <p className="text-[0.6rem] tracking-[0.2em] uppercase text-olive font-semibold">
+                <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-copper font-semibold">
                   Research use only
                 </p>
                 <p className="mt-2">{DISCLAIMER}</p>

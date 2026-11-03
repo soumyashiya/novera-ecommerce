@@ -8,12 +8,21 @@ export const BRAND = {
 };
 
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
+  { label: "Shop", href: "/shop" },
   { label: "Products", href: "/#products" },
   { label: "About", href: "/#about" },
-  { label: "Why Us", href: "/#why-us" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Our Process", href: "/#process" },
+  { label: "FAQ", href: "/#faq" },
+];
+
+// Announcement marquee. Every line restates something already evidenced
+// elsewhere in this file — the Janoshik reports on PRODUCTS[].analysis, the
+// WHY_US packaging claim, and DISCLAIMER. Nothing here is a new promise.
+export const ANNOUNCEMENTS = [
+  "Third-party tested by Janoshik Analytical",
+  "Certificate of analysis with every verified batch",
+  "Temperature-stable, tamper-evident packaging",
+  "For research use only — not for human or veterinary use",
 ];
 
 // Category grouping for the /shop listing page. Keyed by product slug so the
@@ -22,10 +31,43 @@ export const PRODUCT_CATEGORIES: Record<string, string> = {
   tirzepatide: "Metabolic Research",
   retatrutide: "Metabolic Research",
   "retatrutide-40": "Metabolic Research",
-  "bpc-157-tb-500": "Recovery & Repair",
   glow: "Recovery & Repair",
   nad: "Cellular & Longevity",
+  // CJC-1295 is carton-labelled "GH release · lean mass · metabolic support";
+  // MOTS-C is a mitochondrial-derived peptide, so it sits with the cellular line.
+  "cjc-1295": "Metabolic Research",
+  "mots-c": "Cellular & Longevity",
+  // Carton-labelled "targeted body fat · improve definition · preserve lean mass".
+  tesamorelin: "Metabolic Research",
 };
+
+/** The three real categories, in display order, for the homepage tiles and the
+ *  /shop filter. `slug` is only a URL query value — it is never sent anywhere. */
+export const CATEGORIES = [
+  {
+    slug: "metabolic",
+    label: "Metabolic Research",
+    name: "Metabolic Research",
+    image: "/images/gen/cat-metabolic.webp",
+  },
+  {
+    slug: "recovery",
+    label: "Recovery & Repair",
+    name: "Recovery & Repair",
+    image: "/images/gen/cat-recovery.webp",
+  },
+  {
+    slug: "longevity",
+    label: "Cellular & Longevity",
+    name: "Cellular & Longevity",
+    image: "/images/gen/cat-longevity.webp",
+  },
+] as const;
+
+/** Count of products in a category, derived from PRODUCT_CATEGORIES. */
+export function categoryCount(name: string): number {
+  return Object.values(PRODUCT_CATEGORIES).filter((c) => c === name).length;
+}
 
 // "Products" — original descriptions for the research compounds in our range.
 export type CompoundRow = {
@@ -59,7 +101,18 @@ export type Product = {
   description: string;
   strengths: string[];
   image: string;
+  // Trimmed ALLUVI cutout used by the cream product tile on the card.
+  tileImage: string;
+  /** Second image, cross-faded in on card hover. Absent where the supplied
+   *  set has no second shot for that product. */
+  tileHoverImage?: string;
+  /** How the hover image is laid out. "contain" (default) treats it as a
+   *  cutout standing on the tile floor, like the packshot. "cover" treats it
+   *  as a full-bleed 4:5 photograph and fades the dose copy out beneath it. */
+  tileHoverFit?: "contain" | "cover";
   gallery: string[];
+  /** Merchandising tag shown on the homepage product cards. Set per product. */
+  badge?: "Bestseller" | "New" | "Limited";
   analysis?: ProductAnalysis;
   packageContents: string[];
   storageLogic: string[];
@@ -86,12 +139,15 @@ export const PRODUCTS: Product[] = [
     description:
       "A 40 mg Tirzepatide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
     strengths: ["40 mg"],
-    image: "/images/alluvi-tirzepatide.jpg",
+    image: "/images/gen/p-tirzepatide.webp",
+    tileImage: "/images/products/tiles/tirzepatide.webp",
+    tileHoverImage: "/images/products/hover/tirzepatide-hover.webp",
+    tileHoverFit: "cover",
+    badge: "Bestseller",
     gallery: [
-      "/images/alluvi-tirzepatide.jpg",
-      "/images/alluvi-tirzepatide-2.jpg",
-      "/images/alluvi-tirzepatide-open.jpg",
-      "/images/alluvi-tirzepatide-uv.jpg",
+      "/images/gen/p-tirzepatide.webp",
+      "/images/gen/p-tirzepatide-detail.webp",
+      "/images/gen/p-tirzepatide-pack.webp",
     ],
     analysis: {
       batchNumber: "TR786PAOS",
@@ -126,12 +182,15 @@ export const PRODUCTS: Product[] = [
     description:
       "A 20 mg Retatrutide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
     strengths: ["20 mg"],
-    image: "/images/alluvi-retatrutide.jpg",
+    image: "/images/gen/p-retatrutide.webp",
+    tileImage: "/images/products/tiles/retatrutide.webp",
+    tileHoverImage: "/images/products/hover/retatrutide-hover.webp",
+    tileHoverFit: "cover",
+    badge: "Bestseller",
     gallery: [
-      "/images/alluvi-retatrutide.jpg",
-      "/images/alluvi-retatrutide-pen.jpg",
-      "/images/alluvi-retatrutide-open.jpg",
-      "/images/alluvi-retatrutide-uv.jpg",
+      "/images/gen/p-retatrutide.webp",
+      "/images/gen/p-retatrutide-detail.webp",
+      "/images/gen/p-retatrutide-pack.webp",
     ],
     analysis: {
       batchNumber: "AR1721TRT",
@@ -165,12 +224,15 @@ export const PRODUCTS: Product[] = [
     description:
       "NAD+ (Nicotinamide Adenine Dinucleotide) research formulation for laboratory analysis and in vitro studies only. Provided exclusively for controlled laboratory R&D applications.",
     strengths: ["1,000 mg"],
-    image: "/images/alluvi-nad.jpg",
+    image: "/images/gen/p-nad.webp",
+    tileImage: "/images/products/tiles/nad.webp",
+    tileHoverImage: "/images/products/hover/nad-hover.webp",
+    tileHoverFit: "cover",
+    badge: "Limited",
     gallery: [
-      "/images/alluvi-nad.jpg",
-      "/images/alluvi-nad-pen.jpg",
-      "/images/alluvi-nad-open.jpg",
-      "/images/alluvi-nad-uv.jpg",
+      "/images/gen/p-nad.webp",
+      "/images/gen/p-nad-detail.webp",
+      "/images/gen/p-nad-pack.webp",
     ],
     packageContents: [
       "2 × Pre-filled NAD+ pens (500 mg each)",
@@ -189,12 +251,15 @@ export const PRODUCTS: Product[] = [
     description:
       "A 70 mg triple-peptide formulation supplied in pre-filled research devices, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
     strengths: ["70 mg"],
-    image: "/images/alluvi-glow.jpg",
+    image: "/images/gen/p-glow.webp",
+    tileImage: "/images/products/tiles/glow.webp",
+    tileHoverImage: "/images/products/hover/glow-hover.webp",
+    tileHoverFit: "cover",
+    badge: "New",
     gallery: [
-      "/images/alluvi-glow.jpg",
-      "/images/alluvi-glow-pen.jpg",
-      "/images/alluvi-glow-open.jpg",
-      "/images/alluvi-glow-uv.jpg",
+      "/images/gen/p-glow.webp",
+      "/images/gen/p-glow-detail.webp",
+      "/images/gen/p-glow-pack.webp",
     ],
     analysis: {
       batchNumber: "GL0621XSA",
@@ -220,45 +285,6 @@ export const PRODUCTS: Product[] = [
     supplyChain: SUPPLY_CHAIN,
   },
   {
-    no: "05",
-    slug: "bpc-157-tb-500",
-    name: "BPC-157 & TB-500 40 mg (R&D Only)",
-    tag: "Compound Analysis",
-    price: 169,
-    summary: "Dual research peptide blend for in vitro pathway studies.",
-    description:
-      "A 40 mg BPC-157 & TB-500 formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
-    strengths: ["40 mg"],
-    image: "/images/alluvi-bpc-tb500.jpg",
-    gallery: [
-      "/images/alluvi-bpc-tb500.jpg",
-      "/images/alluvi-bpc-tb500-pen.jpg",
-      "/images/alluvi-bpc-tb500-open.jpg",
-      "/images/alluvi-bpc-tb500-uv.jpg",
-    ],
-    analysis: {
-      batchNumber: "BP1701FSR",
-      fillVolume: "3 mL",
-      compounds: [
-        { name: "BPC-157", concentration: "7.33 mg/mL", content: "21.99 mg" },
-        { name: "TB-500", concentration: "6.53 mg/mL", content: "19.59 mg" },
-      ],
-      coaImage: "/images/coa/bpc-tb500.png",
-      evidenceImages: [
-        "/images/coa/evidence/bpc-tb500-1.jpg",
-        "/images/coa/evidence/bpc-tb500-2.jpg",
-      ],
-      reportUrl:
-        "https://verify.janoshik.com/tests/163218-ALLUVI_BPC157_TB500_40MG_KIT_EAI125ZEF8TB",
-    },
-    packageContents: [
-      "Pre-filled Research pen (20 mg BPC-157, 20 mg TB-500)",
-      "Research information sheet",
-    ],
-    storageLogic: STORAGE_LOGIC,
-    supplyChain: SUPPLY_CHAIN,
-  },
-  {
     no: "06",
     slug: "retatrutide-40",
     name: "Retatrutide 40 mg (R&D Only)",
@@ -268,12 +294,14 @@ export const PRODUCTS: Product[] = [
     description:
       "A 40 mg Retatrutide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
     strengths: ["40 mg"],
-    image: "/images/alluvi-retatrutide-40.jpg",
+    image: "/images/gen/p-retatrutide-40.webp",
+    tileImage: "/images/products/tiles/retatrutide-40.webp",
+    tileHoverImage: "/images/products/tiles/retatrutide-40-hover.webp",
+    badge: "New",
     gallery: [
-      "/images/alluvi-retatrutide-40.jpg",
-      "/images/alluvi-retatrutide-40-pen.jpg",
-      "/images/alluvi-retatrutide-40-open.jpg",
-      "/images/alluvi-retatrutide-40-uv.jpg",
+      "/images/gen/p-retatrutide-40.webp",
+      "/images/gen/p-retatrutide-40-detail.webp",
+      "/images/gen/p-retatrutide-40-pack.webp",
     ],
     analysis: {
       batchNumber: "AR1739JAT",
@@ -292,6 +320,81 @@ export const PRODUCTS: Product[] = [
     },
     packageContents: [
       "Pre-filled Research pen (40 mg Retatrutide)",
+      "Research information sheet",
+    ],
+    storageLogic: STORAGE_LOGIC,
+    supplyChain: SUPPLY_CHAIN,
+  },
+  {
+    // PRICE IS A PLACEHOLDER — set from the real price list before launch.
+    // No `analysis` block: this line has no Janoshik certificate in the
+    // supplied set, so the card correctly shows "Research use only" rather
+    // than claiming a COA. Add the block when a report exists.
+    no: "07",
+    slug: "cjc-1295",
+    name: "CJC-1295 10 mg (R&D Only)",
+    tag: "Compound Analysis",
+    price: 159,
+    summary: "GHRH-analogue research peptide, supplied without DAC.",
+    description:
+      "A 10 mg CJC-1295 formulation without DAC, supplied in a pre-filled research device and provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
+    strengths: ["10 mg"],
+    image: "/images/gen/p-cjc-1295.webp",
+    tileImage: "/images/products/tiles/cjc-1295.webp",
+    tileHoverImage: "/images/products/hover/cjc-1295-hover.webp",
+    tileHoverFit: "cover",
+    badge: "New",
+    gallery: ["/images/gen/p-cjc-1295.webp"],
+    packageContents: [
+      "Pre-filled Research pen (10 mg CJC-1295, 25 doses of 400 mcg)",
+      "Research information sheet",
+    ],
+    storageLogic: STORAGE_LOGIC,
+    supplyChain: SUPPLY_CHAIN,
+  },
+  {
+    // PRICE IS A PLACEHOLDER — see the note on CJC-1295 above.
+    no: "08",
+    slug: "mots-c",
+    name: "MOTS-C 40 mg (R&D Only)",
+    tag: "Compound Analysis",
+    price: 169,
+    summary: "Mitochondrial-derived research peptide for in vitro studies.",
+    description:
+      "A 40 mg MOTS-C formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
+    strengths: ["40 mg"],
+    image: "/images/gen/p-mots-c.webp",
+    tileImage: "/images/products/tiles/mots-c.webp",
+    tileHoverImage: "/images/products/hover/mots-c-hover.webp",
+    tileHoverFit: "cover",
+    badge: "New",
+    gallery: ["/images/gen/p-mots-c.webp"],
+    packageContents: [
+      "Pre-filled Research pen (40 mg MOTS-C, 4 doses of 10 mg)",
+      "Research information sheet",
+    ],
+    storageLogic: STORAGE_LOGIC,
+    supplyChain: SUPPLY_CHAIN,
+  },
+  {
+    // PRICE IS A PLACEHOLDER — see the note on CJC-1295 above.
+    no: "09",
+    slug: "tesamorelin",
+    name: "Tesamorelin 20 mg (R&D Only)",
+    tag: "Compound Analysis",
+    price: 179,
+    summary: "GHRH-analogue research peptide for in vitro metabolic studies.",
+    description:
+      "A 20 mg Tesamorelin formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.",
+    strengths: ["20 mg"],
+    image: "/images/gen/p-tesamorelin.webp",
+    tileImage: "/images/products/tiles/tesamorelin.webp",
+    tileHoverImage: "/images/products/hover/tesamorelin-hover.webp",
+    tileHoverFit: "cover",
+    badge: "New",
+    gallery: ["/images/gen/p-tesamorelin.webp"],
+    packageContents: [
+      "Pre-filled Research pen (20 mg Tesamorelin, 10 doses of 2 mg)",
       "Research information sheet",
     ],
     storageLogic: STORAGE_LOGIC,
@@ -317,26 +420,26 @@ export const WHY_US = [
     no: "01",
     title: "Purity, verified.",
     text: "Every batch is independently analysed by HPLC and mass spectrometry against a ≥99% purity target. A certificate of analysis ships with each order no guesswork, ever.",
-    image: "/images/whyus-purity-seo1.webp",
+    image: "/images/gen/why-purity.webp",
   },
   {
     no: "02",
     title: "Controlled consistency.",
     text: "Formulations are produced under ISO-aligned, tightly controlled processes, so concentration and quality stay uniform from the first batch to the thousandth.",
-    image: "/images/controlled-seo1.webp",
+    image: "/images/gen/why-consistency.webp",
   },
   {
     no: "03",
     title: "Secure, discreet packaging.",
-    text: "Temperature-stable, tamper-evident packaging  your order arrives intact and exactly as specified.",
-    image: "/images/secure-seo-new.webp",
+    text: "Temperature-stable, tamper-evident packaging — your order arrives intact and exactly as specified.",
+    image: "/images/gen/why-packaging.webp",
   },
 ];
 
 export const TESTIMONIALS = [
   {
     quote:
-      "I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our laboratory work depends on  I won't source from anyone else.",
+      "I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our laboratory work depends on — I won't source from anyone else.",
     name: "Dr. Hana Al-Rashid",
     role: "Verified Research Client",
     image: "/images/customer-seo1.webp",

@@ -21,9 +21,9 @@ function toNumber(v: number | string | null | undefined): number {
 // focus-visible (not focus) so the ring appears for keyboard users without
 // firing on mouse clicks.
 const FOCUS_RING =
-  "focus:border-olive focus:outline-none focus-visible:ring-2 focus-visible:ring-olive/50";
+  "focus:border-copper focus:outline-none focus-visible:ring-2 focus-visible:ring-copper/50";
 
-const inputCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
+const inputCls = `w-full bg-transparent border border-line px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
 
 type PromoState =
   | { kind: "idle" }
@@ -44,8 +44,8 @@ type UploadResult = {
 };
 
 const STATUS_DOT: Record<string, string> = {
-  paid: "bg-olive",
-  received: "bg-olive",
+  paid: "bg-copper",
+  received: "bg-copper",
   rejected: "bg-red-500",
   pending: "bg-muted",
 };
@@ -54,18 +54,18 @@ function IconCircle({
   tone,
   children,
 }: {
-  tone: "olive" | "muted" | "red";
+  tone: "copper" | "muted" | "red";
   children: React.ReactNode;
 }) {
   const toneCls =
-    tone === "olive"
-      ? "bg-olive text-background"
+    tone === "copper"
+      ? "bg-copper text-background"
       : tone === "red"
         ? "bg-red-500/15 text-red-700"
         : "bg-background text-muted";
   return (
     <span
-      className={`grid h-10 w-10 shrink-0 place-items-center rounded-full ${toneCls}`}
+      className={`grid h-10 w-10 shrink-0 place-items-center ${toneCls}`}
       aria-hidden
     >
       {children}
@@ -155,8 +155,8 @@ export default function PaymentCapturePage() {
         <div className="container-lux">
           <p className="eyebrow mb-3">Payment</p>
           <h1 className="text-section mb-8">Complete your payment</h1>
-          <div className="flex items-center gap-3 rounded-[28px] border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
-            <span className="h-4 w-4 rounded-full border-2 border-olive border-r-transparent animate-spin" />
+          <div className="flex items-center gap-3 border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
+            <span className="h-4 w-4 rounded-full border-2 border-copper border-r-transparent animate-spin" />
             Validating your payment link…
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function PaymentCapturePage() {
         <div className="container-lux max-w-xl">
           <p className="eyebrow mb-3">Payment</p>
           <h1 className="text-section mb-8">Complete your payment</h1>
-          <div className="rounded-[28px] border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
+          <div className=" border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
             <IconCircle tone="red">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                 <path d="M18 6L6 18M6 6l12 12" />
@@ -222,13 +222,13 @@ export default function PaymentCapturePage() {
             {/* Order summary */}
             <section
               aria-labelledby="capture-order"
-              className="rounded-[28px] border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
+              className=" border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
             >
               <div className="flex items-center justify-between gap-4 mb-6">
                 <h2 id="capture-order" className="text-subhead text-2xl">
                   Order summary
                 </h2>
-                <span className="inline-flex items-center gap-2 rounded-full border border-line bg-background px-4 py-1.5 text-[0.68rem] uppercase tracking-[0.18em] text-muted">
+                <span className="inline-flex items-center gap-2 border border-line bg-background px-4 py-1.5 text-[0.8125rem] uppercase tracking-[-0.005em] text-muted">
                   <span
                     className={`h-1.5 w-1.5 rounded-full ${STATUS_DOT[order.payment_status] || "bg-muted"}`}
                     aria-hidden
@@ -298,7 +298,7 @@ export default function PaymentCapturePage() {
                       type="button"
                       onClick={applyPromo}
                       disabled={promo.kind === "checking" || !promoInput.trim()}
-                      className="shrink-0 rounded-full bg-background border border-line px-6 py-3.5 text-sm text-dark hover:bg-background-secondary hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-60 disabled:hover:translate-y-0"
+                      className="shrink-0 bg-background border border-line px-6 py-3.5 text-sm text-dark hover:bg-background-secondary hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-60 disabled:hover:translate-y-0"
                     >
                       {promo.kind === "checking" ? "…" : "Apply"}
                     </button>
@@ -309,7 +309,7 @@ export default function PaymentCapturePage() {
                 </div>
               )}
               {promo.kind === "applied" && (
-                <p className="mt-6 text-xs text-olive">
+                <p className="mt-6 text-xs text-copper">
                   {promo.code} — {promo.percent}% off applied.
                 </p>
               )}
@@ -318,7 +318,7 @@ export default function PaymentCapturePage() {
             {/* Upload */}
             <section
               aria-labelledby="capture-upload"
-              className="rounded-[28px] border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
+              className=" border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
             >
               <h2 id="capture-upload" className="text-subhead text-2xl mb-2">
                 Upload proof of payment
@@ -344,15 +344,15 @@ export default function PaymentCapturePage() {
                     setUploadError(null);
                   }
                 }}
-                className={`flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed p-10 text-center transition-all duration-300 ${
+                className={`flex cursor-pointer flex-col items-center justify-center border border-dashed p-10 text-center transition-all duration-300 ${
                   dragActive
-                    ? "border-olive bg-olive/10 scale-[1.01]"
+                    ? "border-copper bg-copper/10 scale-[1.01]"
                     : file
-                      ? "border-olive/60 bg-olive/5"
-                      : "border-line bg-background-secondary hover:border-olive/50 hover:bg-olive/5"
+                      ? "border-copper/60 bg-copper/5"
+                      : "border-line bg-background-secondary hover:border-copper/50 hover:bg-copper/5"
                 }`}
               >
-                <IconCircle tone={file ? "olive" : "muted"}>
+                <IconCircle tone={file ? "copper" : "muted"}>
                   <svg
                     width="20"
                     height="20"
@@ -388,7 +388,7 @@ export default function PaymentCapturePage() {
               {uploadError && (
                 <p
                   role="alert"
-                  className="mt-4 rounded-2xl border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
+                  className="mt-4 border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
                 >
                   {uploadError}
                 </p>
@@ -397,9 +397,9 @@ export default function PaymentCapturePage() {
               {uploadResult?.status === "received" && (
                 <div
                   role="status"
-                  className="mt-4 flex items-start gap-4 rounded-2xl border border-olive/40 bg-olive/5 p-5 text-sm text-dark"
+                  className="mt-4 flex items-start gap-4 border border-copper/40 bg-copper/5 p-5 text-sm text-dark"
                 >
-                  <IconCircle tone="olive">
+                  <IconCircle tone="copper">
                     <svg
                       width="16"
                       height="16"
@@ -425,7 +425,7 @@ export default function PaymentCapturePage() {
               {uploadResult?.status === "pending" && (
                 <div
                   role="status"
-                  className="mt-4 flex items-start gap-4 rounded-2xl border border-line bg-background-secondary p-5 text-sm text-dark"
+                  className="mt-4 flex items-start gap-4 border border-line bg-background-secondary p-5 text-sm text-dark"
                 >
                   <IconCircle tone="muted">
                     <svg
@@ -455,7 +455,7 @@ export default function PaymentCapturePage() {
               {uploadResult?.status === "rejected" && (
                 <div
                   role="alert"
-                  className="mt-4 flex items-start gap-4 rounded-2xl border border-red-500/25 bg-red-500/10 p-5 text-sm text-red-700"
+                  className="mt-4 flex items-start gap-4 border border-red-500/25 bg-red-500/10 p-5 text-sm text-red-700"
                 >
                   <IconCircle tone="red">
                     <svg
@@ -508,16 +508,16 @@ export default function PaymentCapturePage() {
               </button>
             </section>
 
-            <p className="text-[0.72rem] leading-relaxed text-muted">
+            <p className="text-[0.8125rem] leading-relaxed text-muted">
               {DISCLAIMER}
             </p>
           </div>
 
           {/* Right — bank details */}
           <aside className="lg:col-span-5 lg:sticky lg:top-28">
-            <div className="rounded-[28px] border border-line bg-background-secondary p-6 lg:p-8 shadow-[0_30px_70px_-30px_rgba(83,96,82,0.3)]">
+            <div className=" border border-line bg-background-secondary p-6 lg:p-8 shadow-[0_30px_70px_-30px_rgba(83,96,82,0.3)]">
               <div className="flex items-center gap-3 mb-6">
-                <IconCircle tone="olive">
+                <IconCircle tone="copper">
                   <svg
                     width="16"
                     height="16"
@@ -544,7 +544,7 @@ export default function PaymentCapturePage() {
 
               <div className="flex justify-between items-baseline mt-6 pt-5 border-t border-line">
                 <span className="text-dark text-lg">Amount due</span>
-                <span className="font-serif text-3xl text-olive">
+                <span className="font-serif text-3xl text-copper">
                   {formatPrice(total)}
                 </span>
               </div>
@@ -580,9 +580,9 @@ function BankRow({
   };
 
   return (
-    <div className="flex items-center justify-between gap-3 rounded-2xl border border-line bg-card px-4 py-3 transition-colors duration-300 hover:border-olive/40">
+    <div className="flex items-center justify-between gap-3 border border-line bg-card px-4 py-3 transition-colors duration-300 hover:border-copper/40">
       <div className="min-w-0">
-        <p className="text-[0.65rem] uppercase tracking-[0.18em] text-muted">
+        <p className="text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
           {label}
         </p>
         <p className={`mt-0.5 text-sm text-dark truncate ${mono ? "font-mono" : ""}`}>
@@ -592,8 +592,8 @@ function BankRow({
       <button
         type="button"
         onClick={copy}
-        className={`inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-xs transition-colors ${
-          copied ? "text-olive" : "text-muted hover:text-dark hover:bg-background"
+        className={`inline-flex shrink-0 items-center gap-1.5 px-3 py-1.5 text-xs transition-colors ${
+          copied ? "text-copper" : "text-muted hover:text-dark hover:bg-background"
         }`}
       >
         {copied ? (

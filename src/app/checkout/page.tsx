@@ -19,11 +19,11 @@ type PromoResponse = { ok: boolean; valid: boolean; percent: number };
 // focus-visible (not focus) so the ring appears for keyboard users without
 // firing on mouse clicks — the border tint alone is too subtle to satisfy 2.4.7.
 const FOCUS_RING =
-  "focus:border-olive focus:outline-none focus-visible:ring-2 focus-visible:ring-olive/50";
+  "focus:border-copper focus:outline-none focus-visible:ring-2 focus-visible:ring-copper/50";
 
-const inputCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
+const inputCls = `w-full bg-transparent border border-line px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
 
-const selectCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark ${FOCUS_RING} transition-colors duration-300 appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236d6d6d%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22/></svg>')] bg-no-repeat bg-[right_1.25rem_center]`;
+const selectCls = `w-full bg-transparent border border-line px-5 py-3.5 text-dark ${FOCUS_RING} transition-colors duration-300 appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%235b6066%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22/></svg>')] bg-no-repeat bg-[right_1.25rem_center]`;
 
 // The visual design is placeholder-only, but a placeholder disappears on input
 // and is not a reliable accessible name. Keep the look; bind a real label that
@@ -254,7 +254,7 @@ export default function CheckoutPage() {
           <h1 className="text-section">Complete your order</h1>
           <Link
             href="/cart"
-            className="link-underline mt-4 inline-block text-sm text-olive"
+            className="link-underline mt-4 inline-block text-sm text-copper"
           >
             ← Back to cart
           </Link>
@@ -375,9 +375,9 @@ export default function CheckoutPage() {
             <div
               role="note"
               aria-label="Research-only acknowledgement"
-              className="rounded-2xl border border-olive/40 bg-olive/5 p-5 text-sm leading-relaxed text-dark"
+              className=" border border-copper/40 bg-copper/5 p-5 text-sm leading-relaxed text-dark"
             >
-              <p className="text-[0.65rem] tracking-[0.2em] uppercase text-olive font-semibold">
+              <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-copper font-semibold">
                 Research use only  acknowledgement
               </p>
               <p className="mt-2">{CHECKOUT_ACKNOWLEDGEMENT}</p>
@@ -387,21 +387,21 @@ export default function CheckoutPage() {
               </p>
             </div>
 
-            <p className="text-[0.72rem] leading-relaxed text-muted">
+            <p className="text-[0.8125rem] leading-relaxed text-muted">
               {DISCLAIMER}
             </p>
           </form>
 
           {/* Right — order summary */}
           <aside className="lg:col-span-5 lg:sticky lg:top-28">
-            <div className="rounded-[28px] bg-background-secondary p-6 lg:p-8">
+            <div className=" bg-background-secondary p-6 lg:p-8">
               <h2 className="text-subhead text-2xl mb-6">Order summary</h2>
 
               {/* Lines */}
               <div className="flex flex-col gap-5 pb-6">
                 {lines.map(({ item, product }) => (
                   <div key={item.slug} className="flex items-center gap-4">
-                    <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-card">
+                    <span className="relative h-14 w-14 shrink-0 overflow-hidden bg-card">
                       <Image
                         src={product!.image}
                         alt={product!.name}
@@ -409,7 +409,7 @@ export default function CheckoutPage() {
                         sizes="56px"
                         className="object-contain img-grade"
                       />
-                      <span className="absolute bottom-1 right-1 grid h-5 w-5 place-items-center rounded-full bg-dark text-[0.65rem] font-medium text-background">
+                      <span className="absolute bottom-1 right-1 grid h-5 w-5 place-items-center bg-dark text-[0.75rem] font-medium text-background">
                         {item.qty}
                       </span>
                     </span>
@@ -455,7 +455,7 @@ export default function CheckoutPage() {
                         setPromoStatus({ kind: "idle" });
                         setForm((f) => ({ ...f, discount: "" }));
                       }}
-                      className="shrink-0 rounded-full bg-card border border-line px-6 py-3.5 text-sm text-dark hover:bg-background transition-colors"
+                      className="shrink-0 bg-card border border-line px-6 py-3.5 text-sm text-dark hover:bg-background transition-colors"
                     >
                       Remove
                     </button>
@@ -467,14 +467,14 @@ export default function CheckoutPage() {
                         promoStatus.kind === "checking" ||
                         !form.discount.trim()
                       }
-                      className="shrink-0 rounded-full bg-card border border-line px-6 py-3.5 text-sm text-dark hover:bg-background transition-colors disabled:opacity-60"
+                      className="shrink-0 bg-card border border-line px-6 py-3.5 text-sm text-dark hover:bg-background transition-colors disabled:opacity-60"
                     >
                       {promoStatus.kind === "checking" ? "…" : "Apply"}
                     </button>
                   )}
                 </div>
                 {promoStatus.kind === "valid" && (
-                  <p className="mt-2 text-xs text-olive">
+                  <p className="mt-2 text-xs text-copper">
                     {promoStatus.percent}% off applied.
                   </p>
                 )}
@@ -501,7 +501,7 @@ export default function CheckoutPage() {
 
               <div className="flex justify-between items-baseline mt-5 pt-5 border-t border-line">
                 <span className="text-dark text-lg">Total</span>
-                <span className="font-serif text-3xl text-olive">
+                <span className="font-serif text-3xl text-copper">
                   {formatPrice(total)}
                 </span>
               </div>
@@ -509,7 +509,7 @@ export default function CheckoutPage() {
               {submitError && (
                 <p
                   role="alert"
-                  className="mt-4 rounded-2xl border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
+                  className="mt-4 border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
                 >
                   {submitError}
                 </p>
@@ -549,8 +549,8 @@ export default function CheckoutPage() {
           aria-labelledby="order-placed-title"
           className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/40 backdrop-blur-sm p-4"
         >
-          <div className="relative w-full max-w-md overflow-hidden rounded-[28px] border border-line bg-card p-8 text-center shadow-[0_40px_80px_-20px_rgba(83,96,82,0.35)]">
-            <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-olive text-background">
+          <div className="relative w-full max-w-md overflow-hidden border border-line bg-card p-8 text-center shadow-[0_40px_80px_-20px_rgba(83,96,82,0.35)]">
+            <div className="mx-auto grid h-16 w-16 place-items-center bg-copper text-background">
               <svg
                 width="28"
                 height="28"
@@ -580,10 +580,10 @@ export default function CheckoutPage() {
               and payment details.
             </p>
 
-            <div className="mt-6 rounded-2xl border border-line bg-background-secondary p-4 text-left">
-              <div className="flex items-center justify-between text-[0.68rem] uppercase tracking-[0.22em] text-muted">
+            <div className="mt-6 border border-line bg-background-secondary p-4 text-left">
+              <div className="flex items-center justify-between text-[0.8125rem] uppercase tracking-[-0.005em] text-muted">
                 <span>Order #</span>
-                <span className="text-dark tracking-normal font-mono text-[0.72rem]">
+                <span className="text-dark tracking-normal font-mono text-[0.8125rem]">
                   {orderId}
                 </span>
               </div>
@@ -601,7 +601,7 @@ export default function CheckoutPage() {
               Continue shopping
             </Link>
 
-            <p className="mt-5 text-[0.65rem] uppercase tracking-[0.22em] text-muted">
+            <p className="mt-5 text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
               For research purposes only  not for human or veterinary use
             </p>
           </div>

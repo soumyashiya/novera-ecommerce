@@ -16,25 +16,25 @@ function toNumber(v: number | string | null | undefined): number {
 }
 
 const FOCUS_RING =
-  "focus:border-olive focus:outline-none focus-visible:ring-2 focus-visible:ring-olive/50";
-const inputCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
+  "focus:border-copper focus:outline-none focus-visible:ring-2 focus-visible:ring-copper/50";
+const inputCls = `w-full bg-transparent border border-line px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
 
 function IconCircle({
   tone,
   children,
 }: {
-  tone: "olive" | "muted" | "red";
+  tone: "copper" | "muted" | "red";
   children: React.ReactNode;
 }) {
   const toneCls =
-    tone === "olive"
-      ? "bg-olive text-background"
+    tone === "copper"
+      ? "bg-copper text-background"
       : tone === "red"
         ? "bg-red-500/15 text-red-700"
         : "bg-background text-muted";
   return (
     <span
-      className={`grid h-10 w-10 shrink-0 place-items-center rounded-full ${toneCls}`}
+      className={`grid h-10 w-10 shrink-0 place-items-center ${toneCls}`}
       aria-hidden
     >
       {children}
@@ -55,7 +55,7 @@ function ShipmentStatus({ status }: { status: string }) {
 
   if (NEGATIVE_STATUSES.includes(normalized)) {
     return (
-      <div className="flex items-center gap-3 rounded-2xl border border-red-500/25 bg-red-500/10 px-4 py-3.5 text-sm text-red-700">
+      <div className="flex items-center gap-3 border border-red-500/25 bg-red-500/10 px-4 py-3.5 text-sm text-red-700">
         <IconCircle tone="red">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <path d="M18 6L6 18M6 6l12 12" />
@@ -80,15 +80,15 @@ function ShipmentStatus({ status }: { status: string }) {
             <Fragment key={stage.key}>
               {i > 0 && (
                 <span
-                  className={`h-px flex-1 transition-colors duration-500 ${done ? "bg-olive" : "bg-line"}`}
+                  className={`h-px flex-1 transition-colors duration-500 ${done ? "bg-copper" : "bg-line"}`}
                   aria-hidden
                 />
               )}
               <span
                 aria-current={i === currentIndex ? "step" : undefined}
-                className={`grid h-8 w-8 shrink-0 place-items-center rounded-full text-xs transition-colors duration-500 ${
+                className={`grid h-8 w-8 shrink-0 place-items-center text-xs transition-colors duration-500 ${
                   done
-                    ? "bg-olive text-background"
+                    ? "bg-copper text-background"
                     : "border border-line bg-background text-muted"
                 }`}
               >
@@ -108,7 +108,7 @@ function ShipmentStatus({ status }: { status: string }) {
         {STAGES.map((stage, i) => (
           <span
             key={stage.key}
-            className={`flex-1 text-center text-[0.62rem] uppercase tracking-[0.12em] first:text-left last:text-right ${
+            className={`flex-1 text-center text-[0.75rem] uppercase tracking-[-0.005em] first:text-left last:text-right ${
               i <= currentIndex ? "text-dark" : "text-muted"
             }`}
           >
@@ -173,7 +173,7 @@ export default function TrackOrderPage() {
         {!result && (
           <form
             onSubmit={onSubmit}
-            className="rounded-[28px] border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
+            className=" border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]"
           >
             <div>
               <label htmlFor="orderNumber" className="sr-only">
@@ -192,7 +192,7 @@ export default function TrackOrderPage() {
             {error && (
               <p
                 role="alert"
-                className="mt-4 rounded-2xl border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
+                className="mt-4 border border-red-500/25 bg-red-500/10 p-3 text-xs text-red-700"
               >
                 {error}
               </p>
@@ -216,7 +216,7 @@ export default function TrackOrderPage() {
         )}
 
         {result?.kind === "not-found" && (
-          <div className="rounded-[28px] border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
+          <div className=" border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
             <IconCircle tone="red">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                 <path d="M18 6L6 18M6 6l12 12" />
@@ -234,7 +234,7 @@ export default function TrackOrderPage() {
         )}
 
         {result?.kind === "found" && (
-          <div className="rounded-[28px] border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
+          <div className=" border border-line bg-card p-6 lg:p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
             <div className="flex flex-wrap items-start justify-between gap-4 pb-6 border-b border-line">
               <div className="min-w-0">
                 <p className="font-mono text-xs text-dark truncate">
@@ -276,9 +276,9 @@ export default function TrackOrderPage() {
             )}
 
             {result.order.tracking_number && (
-              <div className="mt-6 flex items-center justify-between gap-3 rounded-2xl border border-line bg-background px-4 py-3.5">
+              <div className="mt-6 flex items-center justify-between gap-3 border border-line bg-background px-4 py-3.5">
                 <div className="min-w-0">
-                  <p className="text-[0.65rem] uppercase tracking-[0.18em] text-muted">
+                  <p className="text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
                     Tracking number
                   </p>
                   <p className="mt-0.5 text-sm text-dark font-mono truncate">

@@ -7,6 +7,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NAV_LINKS } from "@/lib/data";
 import { clearSession, getCurrentUser, type ApiUser } from "@/lib/api";
 import { useCart } from "./cart/CartContext";
+import AnnouncementBar from "./AnnouncementBar";
+import MegaMenu from "./MegaMenu";
 
 const CHROMELESS_ROUTES = ["/signin"];
 
@@ -19,11 +21,12 @@ function CartButton({ onClick }: { onClick?: () => void }) {
       href="/cart"
       onClick={onClick}
       aria-label={`Cart, ${count} item${count === 1 ? "" : "s"}`}
-      className="relative inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-500 hover:bg-dark/5"
+      className="relative inline-flex h-11 min-w-11 items-center justify-center lg:min-w-0"
     >
+      <span className="link-underline hidden lg:inline">Bag ({count})</span>
       <svg
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="h-5 w-5 lg:hidden"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
@@ -39,7 +42,7 @@ function CartButton({ onClick }: { onClick?: () => void }) {
       {count > 0 && (
         <span
           aria-hidden="true"
-          className="absolute -top-0.5 -right-0.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-olive px-1 text-[0.65rem] font-medium text-background"
+          className="absolute -top-0.5 -right-0.5 flex h-5 min-w-[1.25rem] items-center justify-center bg-dark px-1 text-[0.75rem] font-medium text-background lg:hidden"
         >
           {count}
         </span>
@@ -89,7 +92,7 @@ function AccountMenu({ user, onLogout }: { user: ApiUser | null; onLogout: () =>
   }, [open]);
 
   const itemCls =
-    "block w-full rounded-xl px-3.5 py-2.5 text-left text-sm text-dark hover:bg-background transition-colors duration-300";
+    "block w-full px-3.5 py-2.5 text-left text-sm text-dark hover:bg-background transition-colors duration-300";
 
   return (
     <div className="relative hidden sm:block" ref={rootRef}>
@@ -99,19 +102,22 @@ function AccountMenu({ user, onLogout }: { user: ApiUser | null; onLogout: () =>
         aria-expanded={open}
         aria-label={user ? "Account menu" : "Sign in"}
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-full text-dark transition-colors duration-500 hover:bg-dark/5"
+        className="inline-flex h-11 min-w-11 items-center justify-center font-bold uppercase text-dark lg:min-w-0"
       >
-        <UserIcon />
+        <span className="link-underline hidden lg:inline">Account</span>
+        <span className="lg:hidden">
+          <UserIcon />
+        </span>
       </button>
 
       {open && (
         <div
           role="menu"
           aria-label={user ? "Account" : "Sign in"}
-          className="absolute right-0 mt-2 w-56 rounded-2xl border border-line bg-card p-2 shadow-[0_20px_60px_-25px_rgba(26,26,26,0.3)]"
+          className="absolute right-0 mt-2 w-56 border border-line bg-card p-2 normal-case font-normal tracking-normal shadow-[0_20px_60px_-25px_rgba(26,26,26,0.3)]"
         >
           {user && (
-            <p className="truncate px-3.5 py-2 text-[0.65rem] uppercase tracking-[0.18em] text-muted">
+            <p className="truncate px-3.5 py-2 text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
               {user.name}
             </p>
           )}
@@ -166,6 +172,7 @@ export default function Navigation() {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mega, setMega] = useState(false);
   const [user, setUser] = useState<ApiUser | null>(null);
   const burgerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -214,6 +221,31 @@ export default function Navigation() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
+  // Mega menu hover intent: a short delay before opening/closing, so brushing
+  // past "Shop" or briefly leaving the panel doesn't flicker it.
+  const megaTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const setMegaSoon = (next: boolean) => {
+    if (megaTimer.current) clearTimeout(megaTimer.current);
+    megaTimer.current = setTimeout(() => setMega(next), next ? 90 : 160);
+  };
+  useEffect(
+    () => () => {
+      if (megaTimer.current) clearTimeout(megaTimer.current);
+    },
+    []
+  );
+
+  // Mega menu: close on route change and on Escape.
+  useEffect(() => setMega(false), [pathname]);
+  useEffect(() => {
+    if (!mega) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMega(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [mega]);
+
   const closeMenu = () => {
     setOpen(false);
     burgerRef.current?.focus();
@@ -229,65 +261,109 @@ export default function Navigation() {
         transition={{ duration: 0.9, ease: EASE, delay: 0.1 }}
         className="fixed inset-x-0 top-0 z-50"
       >
+        <AnnouncementBar />
+        {/* Reference header: a solid yellow bar inset from the viewport edges,
+            floating over the hero. Once scrolled, the gutters fill in so page
+            content doesn't show through around the bar. */}
         <div
-          className={`transition-[background-color,backdrop-filter,border-color,padding] duration-[600ms] ${
-            scrolled
-              ? "bg-background/70 backdrop-blur-xl border-b border-line"
-              : "bg-transparent border-b border-transparent"
+          className={`px-2 pt-2 lg:px-3 lg:pt-4 transition-colors duration-500 ${
+            scrolled ? "bg-background" : "bg-transparent"
           }`}
         >
+          {/* Wrapper spans the bar and the mega menu, so moving the pointer
+              from "Shop" down into the panel doesn't close it. */}
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              if (megaTimer.current) clearTimeout(megaTimer.current);
+            }}
+            onMouseLeave={() => setMegaSoon(false)}
+          >
+          {/* Three-column grid so the wordmark is optically centred regardless
+              of how wide the link list or the icon cluster gets — the
+              reference centres its logotype. */}
           <nav
             aria-label="Primary"
-            className="container-lux flex items-center justify-between gap-8 py-5"
+            className="grid h-[60px] grid-cols-[1fr_auto_1fr] items-center gap-4 bg-accent px-3 lg:h-[76px] lg:px-8"
           >
-            {/* Logo */}
+            {/* Desktop links (left). "Shop" opens the mega menu on hover or
+                keyboard focus; the others close it. */}
+            <ul className="hidden lg:flex items-center gap-8 text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark">
+              {NAV_LINKS.map((l) => {
+                const isShop = l.href === "/shop";
+                return (
+                  <li
+                    key={l.href}
+                    onMouseEnter={() => setMegaSoon(isShop)}
+                    onFocus={() => setMega(isShop)}
+                  >
+                    <Link
+                      href={l.href}
+                      aria-current={pathname === l.href ? "page" : undefined}
+                      aria-haspopup={isShop ? "true" : undefined}
+                      aria-expanded={isShop ? mega : undefined}
+                      className={`link-underline aria-[current=page]:underline underline-offset-4 ${
+                        isShop && mega ? "underline" : ""
+                      }`}
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* Burger (left, mobile only) */}
+            <button
+              ref={burgerRef}
+              type="button"
+              aria-label="Open menu"
+              aria-expanded={open}
+              aria-controls="mobile-menu"
+              onClick={() => setOpen(true)}
+              className="lg:hidden -ml-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px] justify-self-start"
+            >
+              <span aria-hidden="true" className="block h-px w-6 bg-dark" />
+              <span aria-hidden="true" className="block h-px w-6 bg-dark" />
+            </button>
+
+            {/* Centred wordmark */}
             <Link
               href="/"
               aria-label="Novera — home"
-              className="font-sans font-semibold uppercase text-lg md:text-xl tracking-[0.26em] leading-none text-dark"
+              className="justify-self-center font-serif text-[1.75rem] md:text-[2rem] leading-none tracking-[-0.02em] text-dark"
             >
               Novera
             </Link>
 
-            {/* Desktop links */}
-            <ul className="hidden lg:flex items-center gap-10 text-sm text-muted">
-              {NAV_LINKS.map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    aria-current={pathname === l.href ? "page" : undefined}
-                    className="link-underline hover:text-dark transition-colors duration-500 aria-[current=page]:text-dark"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            {/* Shop CTA + Cart + burger */}
-            <div className="flex items-center gap-2 sm:gap-4">
-              <Link
-                href="/shop"
-                className="btn-lux !py-2.5 !px-6 !text-[0.68rem] hidden sm:inline-flex"
-              >
-                Shop
+            {/* Text links (right) — the reference uses words, not icons */}
+            <div className="flex items-center gap-1 justify-self-end text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark lg:gap-8">
+              <Link href="/track" className="link-underline hidden lg:inline">
+                Track order
               </Link>
               <AccountMenu user={user} onLogout={handleLogout} />
               <CartButton />
-              <button
-                ref={burgerRef}
-                type="button"
-                aria-label="Open menu"
-                aria-expanded={open}
-                aria-controls="mobile-menu"
-                onClick={() => setOpen(true)}
-                className="lg:hidden -mr-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px]"
-              >
-                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
-                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
-              </button>
             </div>
           </nav>
+
+          {/* Shop mega menu (desktop) */}
+          <AnimatePresence>
+            {mega && (
+              <motion.div
+                key="mega"
+                // Panel unrolls downward from the bar; content staggers in
+                // inside MegaMenu.
+                initial={{ clipPath: "inset(0 0 100% 0)" }}
+                animate={{ clipPath: "inset(0 0 0% 0)" }}
+                exit={{ clipPath: "inset(0 0 100% 0)" }}
+                transition={{ duration: 0.5, ease: EASE }}
+                className="absolute inset-x-0 top-full hidden bg-accent shadow-[0_24px_40px_-24px_rgba(0,0,0,0.35)] lg:block"
+              >
+                <MegaMenu onNavigate={() => setMega(false)} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+          </div>
         </div>
       </motion.header>
 
@@ -313,7 +389,7 @@ export default function Navigation() {
               className="h-full"
             >
               <div className="container-lux flex items-center justify-between py-5">
-                <span className="font-sans font-semibold uppercase text-lg tracking-[0.26em]">
+                <span className="font-sans font-semibold uppercase text-lg tracking-[-0.005em]">
                   Novera
                 </span>
                 <button
@@ -343,7 +419,7 @@ export default function Navigation() {
                   <Link
                     href="/shop"
                     onClick={closeMenu}
-                    className="btn-lux !py-3.5 !px-8"
+                    className="btn-lux !px-8"
                   >
                     Shop
                   </Link>

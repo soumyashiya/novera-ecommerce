@@ -15,7 +15,7 @@ export default function ProductGallery({ images, alt }: Props) {
   return (
     <div className="flex flex-col gap-4">
       {/* Main image */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px] lg:rounded-[36px]">
+      <div className="relative aspect-[4/3] w-full overflow-hidden lg:">
         <Image
           key={gallery[active]}
           src={gallery[active]}
@@ -39,9 +39,9 @@ export default function ProductGallery({ images, alt }: Props) {
                 onClick={() => setActive(i)}
                 aria-label={`View image ${i + 1}`}
                 aria-current={selected}
-                className={`relative h-16 w-16 sm:h-20 sm:w-20 overflow-hidden rounded-xl border transition-colors duration-300 ${
+                className={`relative h-16 w-16 sm:h-20 sm:w-20 overflow-hidden border transition-colors duration-300 ${
                   selected
-                    ? "border-olive ring-1 ring-olive/40"
+                    ? "border-copper ring-1 ring-copper/40"
                     : "border-line hover:border-dark/30"
                 }`}
               >

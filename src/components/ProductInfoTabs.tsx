@@ -50,7 +50,7 @@ export default function ProductInfoTabs({
           );
         })}
       </div>
-      <ul className="mt-5 space-y-2 text-[0.95rem] leading-relaxed text-muted">
+      <ul className="mt-5 space-y-2 text-[0.9375rem] leading-relaxed text-muted">
         {content[active].map((line, i) => (
           <li key={i}>{line}</li>
         ))}

@@ -9,13 +9,13 @@ import { api, ApiError, setSession, type ApiUser } from "@/lib/api";
 type AuthResponse = { success: boolean; token: string; user: ApiUser };
 
 const fieldWrap =
-  "group relative rounded-2xl border border-line bg-card transition-colors duration-300 focus-within:border-olive focus-within:bg-background";
+  "group relative border border-line bg-card transition-colors duration-300 focus-within:border-copper focus-within:bg-background";
 
 const inputCls =
   "peer w-full bg-transparent px-5 pt-6 pb-2 text-dark placeholder-transparent focus:outline-none";
 
 const labelCls =
-  "pointer-events-none absolute left-5 top-4 text-sm text-muted transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[0.62rem] peer-focus:uppercase peer-focus:tracking-[0.22em] peer-focus:text-olive peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-[0.62rem] peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[0.22em]";
+  "pointer-events-none absolute left-5 top-4 text-sm text-muted transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[0.75rem] peer-focus:uppercase peer-focus:tracking-[-0.005em] peer-focus:text-copper peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-[0.75rem] peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[-0.005em]";
 
 function EyeIcon({ open }: { open: boolean }) {
   return open ? (
@@ -128,7 +128,7 @@ export default function SignInPage() {
         {/* ── Left — editorial visual ── */}
         <aside className="relative hidden lg:block overflow-hidden">
           <Image
-            src="/images/whyus-purity-seo1.webp"
+            src="/images/gen/about.webp"
             alt=""
             fill
             priority
@@ -140,13 +140,13 @@ export default function SignInPage() {
           <div className="relative z-10 flex h-full flex-col justify-between p-12 xl:p-16 text-background">
             <Link
               href="/"
-              className="font-sans font-semibold uppercase text-lg tracking-[0.26em] leading-none"
+              className="font-sans font-semibold uppercase text-lg tracking-[-0.005em] leading-none"
             >
               Novera
             </Link>
 
             <div>
-              <span className="inline-block text-[0.62rem] tracking-[0.3em] uppercase text-background/80 border border-background/30 rounded-full px-3 py-1 mb-8">
+              <span className="inline-block text-[0.75rem] tracking-[-0.005em] uppercase text-background/80 border border-background/30 px-3 py-1 mb-8">
                 Research-grade, verified
               </span>
               <h2 className="font-serif text-4xl xl:text-5xl leading-[1.05] tracking-[-0.02em]">
@@ -158,7 +158,7 @@ export default function SignInPage() {
               </p>
             </div>
 
-            <p className="text-[0.62rem] uppercase tracking-[0.3em] text-background/60">
+            <p className="text-[0.75rem] uppercase tracking-[-0.005em] text-background/60">
               For research purposes only  not for human or veterinary use
             </p>
           </div>
@@ -178,9 +178,9 @@ export default function SignInPage() {
             {/* Mobile brand */}
             <Link
               href="/"
-              className="lg:hidden mb-12 inline-flex items-center gap-2 font-sans font-semibold uppercase text-lg tracking-[0.26em] leading-none text-dark"
+              className="lg:hidden mb-12 inline-flex items-center gap-2 font-sans font-semibold uppercase text-lg tracking-[-0.005em] leading-none text-dark"
             >
-              <span className="h-2 w-2 rounded-full bg-olive" />
+              <span className="h-2 w-2 rounded-full bg-copper" />
               Novera
             </Link>
 
@@ -189,14 +189,14 @@ export default function SignInPage() {
                   <p className="eyebrow mb-4">Account</p>
                   <h1 className="text-section leading-[1.05]">
                     {isSignup ? (
-                      <>Create your <em className="not-italic text-olive">Novera</em> account.</>
+                      <>Create your <em className="not-italic text-copper">Novera</em> account.</>
                     ) : isForgot ? (
-                      <>Reset your <em className="not-italic text-olive">password</em>.</>
+                      <>Reset your <em className="not-italic text-copper">password</em>.</>
                     ) : (
                       <>Welcome back.</>
                     )}
                   </h1>
-                  <p className="text-muted mt-4 text-[0.95rem] leading-relaxed max-w-sm">
+                  <p className="text-muted mt-4 text-[0.9375rem] leading-relaxed max-w-sm">
                     {isSignup
                       ? "Track orders, access COAs, and manage recurring shipments."
                       : isForgot
@@ -208,9 +208,9 @@ export default function SignInPage() {
                 {notice && (
                   <div
                     role="status"
-                    className="mb-6 flex items-start gap-3 rounded-2xl border border-olive/25 bg-olive/10 p-4 text-sm text-dark"
+                    className="mb-6 flex items-start gap-3 border border-copper/25 bg-copper/10 p-4 text-sm text-dark"
                   >
-                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-olive text-background">
+                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center bg-copper text-background">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                         <path d="M5 12l5 5L20 7" />
                       </svg>
@@ -222,7 +222,7 @@ export default function SignInPage() {
                 {errorMsg && (
                   <div
                     role="alert"
-                    className="mb-6 rounded-2xl border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
+                    className="mb-6 border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
                   >
                     {errorMsg}
                   </div>
@@ -359,7 +359,7 @@ export default function SignInPage() {
                     <div className="flex items-center justify-between mt-1">
                       <label className="inline-flex items-center gap-2 text-xs text-muted cursor-pointer select-none">
                         <input type="checkbox" className="peer sr-only" />
-                        <span className="grid h-4 w-4 place-items-center rounded border border-line bg-card peer-checked:bg-dark peer-checked:border-dark transition-colors">
+                        <span className="grid h-4 w-4 place-items-center border border-line bg-card peer-checked:bg-dark peer-checked:border-dark transition-colors">
                           <svg
                             width="10"
                             height="10"
@@ -389,7 +389,7 @@ export default function SignInPage() {
 
                   {isSignup && (
                     <label className="mt-1 inline-flex items-start gap-2.5 text-xs text-muted leading-relaxed cursor-pointer">
-                      <input required type="checkbox" className="mt-0.5 h-4 w-4 rounded border-line accent-dark" />
+                      <input required type="checkbox" className="mt-0.5 h-4 w-4 border-line accent-dark" />
                       <span>
                         I agree to the{" "}
                         <Link href="/policies/terms-of-service" className="link-underline text-dark">Terms</Link>
@@ -461,7 +461,7 @@ export default function SignInPage() {
                   )}
                 </p>
 
-            <p className="mt-14 text-center text-[0.62rem] uppercase tracking-[0.3em] text-muted">
+            <p className="mt-14 text-center text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
               For laboratory R&amp;D use only
             </p>
           </div>

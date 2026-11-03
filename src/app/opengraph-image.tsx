@@ -9,10 +9,11 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // Palette mirrors globals.css.
-const BACKGROUND = "#f8f4ef";
-const DARK = "#1a1a1a";
-const OLIVE = "#536052";
-const LINE = "rgba(0,0,0,0.08)";
+const BACKGROUND = "#fffdf0";
+const DARK = "#14171a";
+const COPPER = "#8a5029";
+const MUTED = "#5b6066";
+const LINE = "rgba(20,23,26,0.12)";
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -35,7 +36,7 @@ export default function OpengraphImage() {
             fontSize: 22,
             letterSpacing: 8,
             textTransform: "uppercase",
-            color: "#6d6d6d",
+            color: MUTED,
           }}
         >
           Novera Research
@@ -63,7 +64,7 @@ export default function OpengraphImage() {
               lineHeight: 1,
               letterSpacing: -2,
               textTransform: "uppercase",
-              color: OLIVE,
+              color: COPPER,
             }}
           >
             Every Batch.
@@ -78,7 +79,7 @@ export default function OpengraphImage() {
             borderTop: `1px solid ${LINE}`,
             paddingTop: 28,
             fontSize: 24,
-            color: "#6d6d6d",
+            color: MUTED,
           }}
         >
           <div style={{ display: "flex" }}>

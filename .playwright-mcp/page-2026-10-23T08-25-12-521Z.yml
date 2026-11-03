@@ -1,0 +1,458 @@
+- generic [active] [ref=f9e1]:
+  - link "Skip to content" [ref=f9e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f9e3]:
+    - paragraph [ref=f9e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f9e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f9e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f9e10]:
+      - list [ref=f9e11]:
+        - listitem [ref=f9e12]:
+          - link "Shop" [ref=f9e13] [cursor=pointer]:
+            - /url: /shop
+        - listitem [ref=f9e14]:
+          - link "Products" [ref=f9e15] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=f9e16]:
+          - link "About" [ref=f9e17] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f9e18]:
+          - link "Why Us" [ref=f9e19] [cursor=pointer]:
+            - /url: /#why-us
+        - listitem [ref=f9e20]:
+          - link "FAQ" [ref=f9e21] [cursor=pointer]:
+            - /url: /#faq
+        - listitem [ref=f9e22]:
+          - link "Contact" [ref=f9e23] [cursor=pointer]:
+            - /url: /#contact
+      - link "Novera — home" [ref=f9e24] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - generic [ref=f9e25]:
+        - link "Track order" [ref=f9e26] [cursor=pointer]:
+          - /url: /track
+        - button "Sign in" [ref=f9e28]:
+          - generic [ref=f9e29]: Account
+        - link "Cart, 0 items" [ref=f9e30] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f9e31]: Bag (0)
+  - main [ref=f9e33]:
+    - generic [ref=f9e34]:
+      - generic [ref=f9e35]:
+        - img "Sealed research vials and a pre-filled research pen on a warm neutral surface" [ref=f9e37]
+        - generic [ref=f9e39]:
+          - paragraph [ref=f9e40]:
+            - generic [aria-hidden] [ref=f9e41]: ★★★★★
+            - text: Independently verified batches
+          - heading "Purity that's proven. Not promised." [level=1] [ref=f9e42]: Purity that'sproven.Not promised.
+          - paragraph [ref=f9e43]: Every certified batch is assayed by Janoshik Analytical before it is listed. Not some. Not most. Every. Single. One.
+          - generic [ref=f9e44]:
+            - link "Shop the range" [ref=f9e45] [cursor=pointer]:
+              - /url: /shop
+            - link "Why Novera" [ref=f9e46] [cursor=pointer]:
+              - /url: /#why-us
+      - list [ref=f9e48]:
+        - listitem [ref=f9e49]: Janoshik
+        - listitem [ref=f9e50]: 5 Verified Batches
+        - listitem [ref=f9e51]: Third-Party Tested
+        - listitem [ref=f9e52]: Batch No. Published
+        - listitem [ref=f9e53]: Sealed Vials
+        - listitem [ref=f9e54]: Tamper-Evident
+        - listitem [ref=f9e55]: Research Use Only
+    - generic [ref=f9e57]:
+      - generic [ref=f9e58]:
+        - heading "Shop our independently tested research range." [level=2] [ref=f9e59]
+        - link "View all →" [ref=f9e60] [cursor=pointer]:
+          - /url: /shop
+      - generic [ref=f9e61]:
+        - article [ref=f9e63]:
+          - link "Lab-verified Metabolic Research 40 mg Tirzepatide 40 mg (R&D Only)" [ref=f9e64] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - generic [ref=f9e65]:
+              - generic [ref=f9e66]: Lab-verified
+              - generic [ref=f9e67]: Metabolic Research
+            - generic [ref=f9e68]: 40 mg
+            - img "Tirzepatide 40 mg (R&D Only)" [ref=f9e69]
+          - generic [ref=f9e70]:
+            - heading [level=3] [ref=f9e71]:
+              - link "Tirzepatide 40 mg (R&D Only)" [ref=f9e72] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - paragraph [ref=f9e73]: $189
+            - list [ref=f9e74]:
+              - listitem [ref=f9e75]: + Dual-agonist research peptide for in vitro metabolic studies.
+              - listitem [ref=f9e76]: + 99.85% verified purity
+              - listitem [ref=f9e77]: + Batch TR786PAOS
+        - article [ref=f9e79]:
+          - link "Lab-verified Metabolic Research 20 mg Retatrutide 20 mg (R&D Only)" [ref=f9e80] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - generic [ref=f9e81]:
+              - generic [ref=f9e82]: Lab-verified
+              - generic [ref=f9e83]: Metabolic Research
+            - generic [ref=f9e84]: 20 mg
+            - img "Retatrutide 20 mg (R&D Only)" [ref=f9e85]
+          - generic [ref=f9e86]:
+            - heading [level=3] [ref=f9e87]:
+              - link "Retatrutide 20 mg (R&D Only)" [ref=f9e88] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - paragraph [ref=f9e89]: $149
+            - list [ref=f9e90]:
+              - listitem [ref=f9e91]: + Triple-agonist research peptide for advanced in vitro studies.
+              - listitem [ref=f9e92]: + 99.21% verified purity
+              - listitem [ref=f9e93]: + Batch AR1721TRT
+        - article [ref=f9e95]:
+          - link "Cellular & Longevity 1,000 mg NAD+ 1,000 mg" [ref=f9e96] [cursor=pointer]:
+            - /url: /products/nad
+            - generic [ref=f9e97]: Cellular & Longevity
+            - generic [ref=f9e99]: 1,000 mg
+            - img "NAD+ 1,000 mg" [ref=f9e100]
+          - generic [ref=f9e101]:
+            - heading [level=3] [ref=f9e102]:
+              - link "NAD+ 1,000 mg" [ref=f9e103] [cursor=pointer]:
+                - /url: /products/nad
+            - paragraph [ref=f9e104]: $149
+            - list [ref=f9e105]:
+              - listitem [ref=f9e106]: + Reference compound for in vitro cellular research.
+        - article [ref=f9e108]:
+          - link "Lab-verified Recovery & Repair 70 mg Glow 70 mg (R&D Only)" [ref=f9e109] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=f9e110]:
+              - generic [ref=f9e111]: Lab-verified
+              - generic [ref=f9e112]: Recovery & Repair
+            - generic [ref=f9e113]: 70 mg
+            - img "Glow 70 mg (R&D Only)" [ref=f9e114]
+          - generic [ref=f9e115]:
+            - heading [level=3] [ref=f9e116]:
+              - link "Glow 70 mg (R&D Only)" [ref=f9e117] [cursor=pointer]:
+                - /url: /products/glow
+            - paragraph [ref=f9e118]: $129
+            - list [ref=f9e119]:
+              - listitem [ref=f9e120]: + Triple-peptide reference blend for in vitro research.
+              - listitem [ref=f9e121]: + Batch GL0621XSA
+    - generic [ref=f9e123]:
+      - heading "The numbers, published." [level=2] [ref=f9e125]
+      - generic [ref=f9e126]:
+        - generic [ref=f9e128]:
+          - term [ref=f9e129]: Verified purity.
+          - definition [ref=f9e130]:
+            - generic [ref=f9e131]: "99.2"
+            - generic [ref=f9e132]:
+              - generic [ref=f9e133]: "%"
+              - text: Lowest assayed purity across all certified batches.
+        - generic [ref=f9e135]:
+          - term [ref=f9e136]: Independently tested.
+          - definition [ref=f9e137]:
+            - generic [ref=f9e138]: "5"
+            - generic [ref=f9e139]:
+              - generic [ref=f9e140]: batches
+              - text: Each with a Janoshik certificate you can verify at source.
+        - generic [ref=f9e142]:
+          - term [ref=f9e143]: Documented compounds.
+          - definition [ref=f9e144]:
+            - generic [ref=f9e145]: "5"
+            - generic [ref=f9e146]:
+              - generic [ref=f9e147]: assayed
+              - text: Concentration and verified content published per compound.
+        - generic [ref=f9e149]:
+          - term [ref=f9e150]: Cold storage.
+          - definition [ref=f9e151]:
+            - generic [ref=f9e152]: 2–8
+            - generic [ref=f9e153]:
+              - generic [ref=f9e154]: °C
+              - text: Supplied sealed and stored refrigerated. Do not freeze.
+    - generic [ref=f9e156]:
+      - generic [ref=f9e157]:
+        - heading "More claims isn't better. Verified is." [level=2] [ref=f9e158]:
+          - generic [ref=f9e159]: More claims
+          - generic [ref=f9e160]: isn't better.
+          - generic [ref=f9e161]: Verified is.
+        - paragraph [ref=f9e162]: We publish the batch number, the fill volume and the assayed content for every certified batch — then link you to the laboratory's own report so you can check it yourself.
+        - link "See the reports" [ref=f9e164] [cursor=pointer]:
+          - /url: /shop
+      - img "Laboratory glassware and a precision pipette on a clean bench" [ref=f9e166]
+    - generic [ref=f9e169]:
+      - generic [ref=f9e170]:
+        - heading "The complete research range, verified batch by batch." [level=2] [ref=f9e172]
+        - generic [ref=f9e174]:
+          - button "Previous categories" [disabled] [ref=f9e175]
+          - button "Next categories" [ref=f9e178]
+      - list [ref=f9e182]:
+        - listitem [ref=f9e183]:
+          - link [ref=f9e185] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - img "Metabolic Research" [ref=f9e187]
+            - paragraph [ref=f9e188]: Metabolic Research
+            - paragraph [ref=f9e189]: 3 products
+        - listitem [ref=f9e190]:
+          - link [ref=f9e192] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - img "Recovery & Repair" [ref=f9e194]
+            - paragraph [ref=f9e195]: Recovery & Repair
+            - paragraph [ref=f9e196]: 2 products
+        - listitem [ref=f9e197]:
+          - link [ref=f9e199] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - img "Cellular & Longevity" [ref=f9e201]
+            - paragraph [ref=f9e202]: Cellular & Longevity
+            - paragraph [ref=f9e203]: 1 product
+        - listitem [ref=f9e204]:
+          - link [ref=f9e206] [cursor=pointer]:
+            - /url: /shop
+            - img "The full range" [ref=f9e208]
+            - paragraph [ref=f9e209]: The full range
+            - paragraph [ref=f9e210]: All products
+    - generic [ref=f9e215]:
+      - img "Inside the Novera research facility" [ref=f9e219]
+      - generic [ref=f9e220]:
+        - paragraph [ref=f9e222]: About Novera
+        - 'heading "Built around one principle: purity." [level=2] [ref=f9e224]': "Built around oneprinciple: purity."
+        - paragraph [ref=f9e226]: Novera was founded to advance research with formulations that are clean, reliable, and precisely made. We source only from verified partners and test every batch before it ever leaves us.
+        - paragraph [ref=f9e228]: From peptide synthesis to the research bench, our standard never changes — controlled processes, transparent documentation, and support that answers in minutes, not days.
+        - generic [ref=f9e230]:
+          - generic [ref=f9e231]:
+            - paragraph [ref=f9e232]: ≥99%
+            - paragraph [ref=f9e233]: Verified purity target
+          - generic [ref=f9e234]:
+            - paragraph [ref=f9e235]: 10k+
+            - paragraph [ref=f9e236]: Verified research orders
+    - generic [ref=f9e238]:
+      - img "A sealed research vial packed in an insulated carton" [ref=f9e239]
+      - generic [ref=f9e241]:
+        - heading "Sealed. Cold-stored. Documented." [level=2] [ref=f9e242]:
+          - generic [ref=f9e243]: Sealed.
+          - generic [ref=f9e244]: Cold-stored.
+          - generic [ref=f9e245]: Documented.
+        - paragraph [ref=f9e246]: Temperature-stable, tamper-evident packaging, refrigerated at 2–8°C — so what reaches your bench is exactly what the certificate describes.
+        - link "Explore the range" [ref=f9e248] [cursor=pointer]:
+          - /url: /shop
+    - generic [ref=f9e251]:
+      - img "A precise row of sealed research vials under daylight" [ref=f9e255]
+      - generic [ref=f9e256]:
+        - paragraph [ref=f9e258]: Three deliberate steps
+        - heading "How each batch is prepared" [level=2] [ref=f9e260]
+        - list [ref=f9e261]:
+          - listitem [ref=f9e263]:
+            - generic [ref=f9e264]: "01"
+            - generic [ref=f9e265]:
+              - heading "Source" [level=3] [ref=f9e266]
+              - paragraph [ref=f9e267]: Formulations are produced under tightly controlled, ISO-aligned processes so concentration stays uniform batch to batch.
+          - listitem [ref=f9e269]:
+            - generic [ref=f9e270]: "02"
+            - generic [ref=f9e271]:
+              - heading "Verify" [level=3] [ref=f9e272]
+              - paragraph [ref=f9e273]: Batches are submitted to Janoshik Analytical for independent purity and concentration analysis before they are listed.
+          - listitem [ref=f9e275]:
+            - generic [ref=f9e276]: "03"
+            - generic [ref=f9e277]:
+              - heading "Seal" [level=3] [ref=f9e278]
+              - paragraph [ref=f9e279]: Each unit is sealed in temperature-stable, tamper-evident packaging and stored refrigerated until dispatch.
+    - generic [ref=f9e281]:
+      - generic [ref=f9e282]:
+        - paragraph [ref=f9e284]: Why Novera
+        - heading "Trusted where precision matters most." [level=2] [ref=f9e286]: Trusted whereprecision matters most.
+      - generic [ref=f9e287]:
+        - generic [ref=f9e288]:
+          - img "Purity, verified." [ref=f9e292]
+          - generic [ref=f9e293]:
+            - generic [ref=f9e294]: "01"
+            - heading "Purity, verified." [level=3] [ref=f9e297]
+            - paragraph [ref=f9e299]: Every batch is independently analysed by HPLC and mass spectrometry against a ≥99% purity target. A certificate of analysis ships with each order no guesswork, ever.
+        - generic [ref=f9e300]:
+          - img "Controlled consistency." [ref=f9e304]
+          - generic [ref=f9e305]:
+            - generic [ref=f9e306]: "02"
+            - heading "Controlled consistency." [level=3] [ref=f9e309]
+            - paragraph [ref=f9e311]: Formulations are produced under ISO-aligned, tightly controlled processes, so concentration and quality stay uniform from the first batch to the thousandth.
+        - generic [ref=f9e312]:
+          - img "Secure, discreet packaging." [ref=f9e316]
+          - generic [ref=f9e317]:
+            - generic [ref=f9e318]: "03"
+            - heading "Secure, discreet packaging." [level=3] [ref=f9e321]
+            - paragraph [ref=f9e323]: Temperature-stable, tamper-evident packaging — your order arrives intact and exactly as specified.
+    - generic [ref=f9e325]:
+      - generic [ref=f9e326]:
+        - paragraph [ref=f9e328]: Reviews
+        - heading "Verified research clients." [level=2] [ref=f9e330]
+        - paragraph [ref=f9e332]: Purity reporting, packaging and paperwork — in their words.
+      - list [ref=f9e333]:
+        - listitem [ref=f9e334]:
+          - figure [ref=f9e336]:
+            - img "Dr. Hana Al-Rashid" [ref=f9e338]
+            - generic [ref=f9e339]:
+              - paragraph [ref=f9e340]: Dr. Hana Al-Rashid
+              - paragraph [ref=f9e341]: Verified Research Client
+            - blockquote [ref=f9e342]: “I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our laboratory work depends on — I won't source from anyone else.”
+            - generic "5 out of 5" [ref=f9e344]
+        - listitem [ref=f9e355]:
+          - figure [ref=f9e357]:
+            - img "Marcus Feldmann" [ref=f9e359]
+            - generic [ref=f9e360]:
+              - paragraph [ref=f9e361]: Marcus Feldmann
+              - paragraph [ref=f9e362]: Verified Research Buyer
+            - blockquote [ref=f9e363]: “Enquiries are answered promptly and the parcel arrived sealed, cold, and exactly as documented. Packaging and paperwork were spotless — professional supply from start to finish.”
+            - generic "5 out of 5" [ref=f9e365]
+        - listitem [ref=f9e376]:
+          - figure [ref=f9e378]:
+            - img "Priya Nair" [ref=f9e380]
+            - generic [ref=f9e381]:
+              - paragraph [ref=f9e382]: Priya Nair
+              - paragraph [ref=f9e383]: Returning Research Client
+            - blockquote [ref=f9e384]: “The purity reporting is transparent and the certificate of analysis is spotless. I now recommend Novera to every colleague who asks me where I source research materials.”
+            - generic "5 out of 5" [ref=f9e386]
+        - listitem [ref=f9e397]:
+          - figure [ref=f9e399]:
+            - img "Sofia Marchetti" [ref=f9e401]
+            - generic [ref=f9e402]:
+              - paragraph [ref=f9e403]: Sofia Marchetti
+              - paragraph [ref=f9e404]: Verified Research Client
+            - blockquote [ref=f9e405]: “Documentation is thorough, presentation is clean, and reordering is effortless. For lab-facing work where paperwork matters, this is the standard I compare other suppliers to.”
+            - generic "5 out of 5" [ref=f9e407]
+      - link "Shop the range" [ref=f9e420] [cursor=pointer]:
+        - /url: /shop
+    - generic [ref=f9e423]:
+      - generic [ref=f9e424]:
+        - paragraph [ref=f9e426]: Questions
+        - heading "Before you order" [level=2] [ref=f9e428]
+        - paragraph [ref=f9e430]:
+          - text: Anything not covered here —
+          - link "hello@novera.studio" [ref=f9e431] [cursor=pointer]:
+            - /url: mailto:hello@novera.studio
+          - text: .
+      - generic [ref=f9e432]:
+        - generic [ref=f9e433]:
+          - generic [ref=f9e434]:
+            - term [ref=f9e435]:
+              - button "What does “research use only” mean?" [expanded] [ref=f9e436]
+            - definition [ref=f9e440]: Everything in the range is supplied strictly for laboratory and analytical research carried out by qualified professionals. It is not intended for human or veterinary use, and not intended to diagnose, treat, cure or prevent any disease.
+          - term [ref=f9e442]:
+            - button "Who tests the batches?" [ref=f9e443]
+          - term [ref=f9e448]:
+            - button "How should the products be stored?" [ref=f9e449]
+          - term [ref=f9e454]:
+            - button "How do I pay for an order?" [ref=f9e455]
+          - term [ref=f9e460]:
+            - button "Can I track an order?" [ref=f9e461]
+          - term [ref=f9e466]:
+            - button "What are the shipping and refund terms?" [ref=f9e467]
+        - generic [ref=f9e471]:
+          - link "Track an order" [ref=f9e472] [cursor=pointer]:
+            - /url: /track
+          - link "Shipping policy" [ref=f9e473] [cursor=pointer]:
+            - /url: /policies/shipping-policy
+    - generic [ref=f9e476]:
+      - generic [ref=f9e477]:
+        - paragraph [ref=f9e479]: Get in Touch
+        - heading "Let's talk orders& answers." [level=2] [ref=f9e481]: Let's talkorders& answers.
+        - paragraph [ref=f9e483]: Email us with your requirements and we'll get back to you promptly quantities, strengths, and timelines welcome.
+        - link "Email hello@novera.studio" [ref=f9e486] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+          - generic [ref=f9e491]:
+            - generic [ref=f9e492]: Email
+            - generic [ref=f9e493]: hello@novera.studio
+      - generic [ref=f9e498]:
+        - generic [ref=f9e499]: Enquiries answered promptly by email
+        - generic [ref=f9e503]:
+          - generic [ref=f9e504]:
+            - generic [ref=f9e505]: Full name
+            - textbox "Full name" [ref=f9e506]:
+              - /placeholder: Your name
+          - generic [ref=f9e507]:
+            - generic [ref=f9e508]: Email
+            - textbox "Email" [ref=f9e509]:
+              - /placeholder: you@email.com
+        - generic [ref=f9e511]:
+          - generic [ref=f9e512]: Product interest
+          - combobox "Product interest" [ref=f9e513] [cursor=pointer]:
+            - option "General enquiry" [selected]
+            - option "Tirzepatide 40 mg (R&D Only)"
+            - option "Retatrutide 20 mg (R&D Only)"
+            - option "NAD+ 1,000 mg"
+            - option "Glow 70 mg (R&D Only)"
+            - option "BPC-157 & TB-500 40 mg (R&D Only)"
+            - option "Retatrutide 40 mg (R&D Only)"
+        - generic [ref=f9e515]:
+          - generic [ref=f9e516]: Message
+          - textbox "Message" [ref=f9e517]:
+            - /placeholder: Tell us what you need quantities, strengths, timelines…
+        - button "Send Message" [ref=f9e518]
+        - paragraph [ref=f9e521]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - contentinfo [ref=f9e522]:
+    - generic [ref=f9e523]:
+      - generic [ref=f9e524]:
+        - generic [ref=f9e525]:
+          - paragraph [ref=f9e527]: Novera
+          - paragraph [ref=f9e529]: Research-grade peptides for laboratory analysis — clean, reliable, and precisely made.
+          - generic [ref=f9e531]:
+            - paragraph [ref=f9e532]: Newsletter
+            - generic [ref=f9e533]:
+              - generic [ref=f9e534]: Your email address
+              - textbox "Your email address" [ref=f9e535]
+              - button "Subscribe" [ref=f9e536]
+            - paragraph [ref=f9e537]
+        - generic [ref=f9e539]:
+          - paragraph [ref=f9e540]: Explore
+          - list [ref=f9e541]:
+            - listitem [ref=f9e542]:
+              - link "Shop" [ref=f9e543] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f9e544]:
+              - link "Products" [ref=f9e545] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f9e546]:
+              - link "About" [ref=f9e547] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f9e548]:
+              - link "Why Us" [ref=f9e549] [cursor=pointer]:
+                - /url: /#why-us
+            - listitem [ref=f9e550]:
+              - link "FAQ" [ref=f9e551] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f9e552]:
+              - link "Contact" [ref=f9e553] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f9e555]:
+          - paragraph [ref=f9e556]: Our Range
+          - list [ref=f9e557]:
+            - listitem [ref=f9e558]:
+              - link "Tirzepatide" [ref=f9e559] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=f9e560]:
+              - link "Retatrutide" [ref=f9e561] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - listitem [ref=f9e562]:
+              - link "NAD+" [ref=f9e563] [cursor=pointer]:
+                - /url: /products/nad
+            - listitem [ref=f9e564]:
+              - link "Glow" [ref=f9e565] [cursor=pointer]:
+                - /url: /products/glow
+        - generic [ref=f9e567]:
+          - paragraph [ref=f9e568]: Legal
+          - list [ref=f9e569]:
+            - listitem [ref=f9e570]:
+              - link "Privacy Policy" [ref=f9e571] [cursor=pointer]:
+                - /url: /policies/privacy-policy
+            - listitem [ref=f9e572]:
+              - link "Terms of Service" [ref=f9e573] [cursor=pointer]:
+                - /url: /policies/terms-of-service
+            - listitem [ref=f9e574]:
+              - link "Shipping Policy" [ref=f9e575] [cursor=pointer]:
+                - /url: /policies/shipping-policy
+            - listitem [ref=f9e576]:
+              - link "Refund Policy" [ref=f9e577] [cursor=pointer]:
+                - /url: /policies/refund-policy
+            - listitem [ref=f9e578]:
+              - link "Press" [ref=f9e579] [cursor=pointer]:
+                - /url: /policies/press
+      - generic [ref=f9e580]:
+        - generic [ref=f9e581]:
+          - paragraph [ref=f9e582]: Contact
+          - paragraph [ref=f9e583]:
+            - link "hello@novera.studio" [ref=f9e584] [cursor=pointer]:
+              - /url: mailto:hello@novera.studio
+        - paragraph [ref=f9e586]: © 2026 Novera. All rights reserved.
+      - generic [ref=f9e587]:
+        - paragraph [ref=f9e588]: Research use only
+        - paragraph [ref=f9e589]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - button "Open Next.js Dev Tools" [ref=f9e595] [cursor=pointer]

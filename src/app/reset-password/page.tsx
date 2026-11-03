@@ -9,13 +9,13 @@ import { api, ApiError } from "@/lib/api";
 type ResetResponse = { success: boolean; message: string };
 
 const fieldWrap =
-  "group relative rounded-2xl border border-line bg-card transition-colors duration-300 focus-within:border-olive focus-within:bg-background";
+  "group relative border border-line bg-card transition-colors duration-300 focus-within:border-copper focus-within:bg-background";
 
 const inputCls =
   "peer w-full bg-transparent px-5 pt-6 pb-2 text-dark placeholder-transparent focus:outline-none";
 
 const labelCls =
-  "pointer-events-none absolute left-5 top-4 text-sm text-muted transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[0.62rem] peer-focus:uppercase peer-focus:tracking-[0.22em] peer-focus:text-olive peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-[0.62rem] peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[0.22em]";
+  "pointer-events-none absolute left-5 top-4 text-sm text-muted transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[0.75rem] peer-focus:uppercase peer-focus:tracking-[-0.005em] peer-focus:text-copper peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-[0.75rem] peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[-0.005em]";
 
 function EyeIcon({ open }: { open: boolean }) {
   return open ? (
@@ -96,7 +96,7 @@ function ResetPasswordInner() {
       <div className="grid lg:grid-cols-[1.05fr_1fr] min-h-screen">
         <aside className="relative hidden lg:block overflow-hidden">
           <Image
-            src="/images/whyus-purity-seo1.webp"
+            src="/images/gen/about.webp"
             alt=""
             fill
             priority
@@ -108,13 +108,13 @@ function ResetPasswordInner() {
           <div className="relative z-10 flex h-full flex-col justify-between p-12 xl:p-16 text-background">
             <Link
               href="/"
-              className="font-sans font-semibold uppercase text-lg tracking-[0.26em] leading-none"
+              className="font-sans font-semibold uppercase text-lg tracking-[-0.005em] leading-none"
             >
               Novera
             </Link>
 
             <div>
-              <span className="inline-block text-[0.62rem] tracking-[0.3em] uppercase text-background/80 border border-background/30 rounded-full px-3 py-1 mb-8">
+              <span className="inline-block text-[0.75rem] tracking-[-0.005em] uppercase text-background/80 border border-background/30 px-3 py-1 mb-8">
                 Secure account recovery
               </span>
               <h2 className="font-serif text-4xl xl:text-5xl leading-[1.05] tracking-[-0.02em]">
@@ -126,7 +126,7 @@ function ResetPasswordInner() {
               </p>
             </div>
 
-            <p className="text-[0.62rem] uppercase tracking-[0.3em] text-background/60">
+            <p className="text-[0.75rem] uppercase tracking-[-0.005em] text-background/60">
               For laboratory R&amp;D use only
             </p>
           </div>
@@ -143,9 +143,9 @@ function ResetPasswordInner() {
           <div className="w-full max-w-md">
             <Link
               href="/"
-              className="lg:hidden mb-12 inline-flex items-center gap-2 font-sans font-semibold uppercase text-lg tracking-[0.26em] leading-none text-dark"
+              className="lg:hidden mb-12 inline-flex items-center gap-2 font-sans font-semibold uppercase text-lg tracking-[-0.005em] leading-none text-dark"
             >
-              <span className="h-2 w-2 rounded-full bg-olive" />
+              <span className="h-2 w-2 rounded-full bg-copper" />
               Novera
             </Link>
 
@@ -153,9 +153,9 @@ function ResetPasswordInner() {
               <p className="eyebrow mb-4">Account</p>
               <h1 className="text-section leading-[1.05]">
                 Set a new{" "}
-                <em className="not-italic text-olive">password</em>.
+                <em className="not-italic text-copper">password</em>.
               </h1>
-              <p className="text-muted mt-4 text-[0.95rem] leading-relaxed max-w-sm">
+              <p className="text-muted mt-4 text-[0.9375rem] leading-relaxed max-w-sm">
                 Enter and confirm a new password below. Minimum 6 characters.
               </p>
             </div>
@@ -163,9 +163,9 @@ function ResetPasswordInner() {
             {notice && (
               <div
                 role="status"
-                className="mb-6 flex items-start gap-3 rounded-2xl border border-olive/25 bg-olive/10 p-4 text-sm text-dark"
+                className="mb-6 flex items-start gap-3 border border-copper/25 bg-copper/10 p-4 text-sm text-dark"
               >
-                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-olive text-background">
+                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center bg-copper text-background">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                     <path d="M5 12l5 5L20 7" />
                   </svg>
@@ -177,7 +177,7 @@ function ResetPasswordInner() {
             {errorMsg && (
               <div
                 role="alert"
-                className="mb-6 rounded-2xl border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
+                className="mb-6 border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
               >
                 {errorMsg}
               </div>
@@ -266,7 +266,7 @@ function ResetPasswordInner() {
               </Link>
             </p>
 
-            <p className="mt-14 text-center text-[0.62rem] uppercase tracking-[0.3em] text-muted">
+            <p className="mt-14 text-center text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
               For laboratory R&amp;D use only
             </p>
           </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
-import { PRODUCTS, PRODUCT_CATEGORIES, formatPrice } from "@/lib/data";
+import ShopFilters from "@/components/ShopFilters";
+import { PRODUCTS } from "@/lib/data";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 const TITLE = "Shop";
@@ -49,108 +49,51 @@ export default function ShopPage() {
   };
 
   return (
-    <main className="pt-28 lg:pt-32 pb-24">
+    <main className="pb-24 pt-28 lg:pt-32">
       <JsonLd schema={schema} />
 
-      {/* Header */}
       <section className="container-lux">
-        <div className="grid lg:grid-cols-12 gap-8 items-end">
-          <div className="lg:col-span-8">
-            <Reveal>
-              <p className="eyebrow mb-6">Shop</p>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <h1 className="text-section">
-                The full range,
-                <br />
-                one place.
-              </h1>
-            </Reveal>
-          </div>
-          <div className="lg:col-span-4">
-            <Reveal delay={0.1}>
-              <p className="lede">
-                Every formulation independently verified by Janoshik
-                Analytical, sealed for stability, and shipped cold-chain. For
-                laboratory research use only.
-              </p>
-            </Reveal>
-          </div>
-        </div>
+        <Reveal>
+          <p className="eyebrow mb-5">The range</p>
+        </Reveal>
+        <Reveal delay={0.05}>
+          <h1 className="text-section">All products</h1>
+        </Reveal>
+        <Reveal delay={0.1}>
+          {/* Counted from PRODUCTS so the copy can't drift out of date as
+              lines are added — it read "Six" while nine were listed. */}
+          <p className="lede mt-5">
+            {PRODUCTS.length} research lines, each supplied in a sealed
+            fixed-volume format. Certified batches are independently assayed by
+            Janoshik Analytical and published with their batch number and
+            verified content. For laboratory research use only.
+          </p>
+        </Reveal>
       </section>
 
-      {/* Grid */}
-      <section className="container-lux mt-14 lg:mt-20">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {PRODUCTS.map((p, i) => (
-            <Reveal key={p.slug} delay={(i % 3) * 0.06} y={30}>
-              <article className="group h-full rounded-[24px] border border-line bg-card transition-shadow duration-500 hover:shadow-[0_20px_50px_-25px_rgba(26,26,26,0.25)] overflow-hidden">
-                <Link
-                  href={`/products/${p.slug}`}
-                  className="relative block aspect-[3/2] bg-background-secondary p-5"
-                >
-                  <Image
-                    src={p.image}
-                    alt={p.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-contain img-grade transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
-                  />
-                  {p.analysis && (
-                    <span className="absolute top-4 left-4 rounded-full bg-background/90 backdrop-blur px-3 py-1.5 text-[0.62rem] tracking-[0.16em] uppercase text-olive font-medium border border-line">
-                      Lab-Verified
-                    </span>
-                  )}
-                </Link>
-
-                <div className="p-5">
-                  <p className="text-[0.62rem] tracking-[0.2em] uppercase text-accent">
-                    {PRODUCT_CATEGORIES[p.slug]}
-                  </p>
-                  <Link
-                    href={`/products/${p.slug}`}
-                    className="mt-1.5 block text-subhead text-xl leading-tight hover:text-olive transition-colors duration-500"
-                  >
-                    {p.name}
-                  </Link>
-
-                  <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
-                    <span className="font-serif text-2xl text-olive">
-                      {formatPrice(p.price)}
-                    </span>
-                    <Link
-                      href={`/products/${p.slug}`}
-                      className="btn-lux !py-2.5 !px-5 !text-[0.68rem] shrink-0"
-                    >
-                      View
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+      <section className="container-lux mt-10 lg:mt-14">
+        <ShopFilters products={PRODUCTS} />
       </section>
 
       {/* Research-only notice */}
-      <section className="container-lux mt-24 lg:mt-32">
-        <div className="rounded-2xl border border-olive/40 bg-olive/5 p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+      <section className="container-lux mt-20 lg:mt-28">
+        <div className="flex flex-col items-start gap-4 bg-dark p-6 text-background md:flex-row md:items-center md:gap-8 lg:p-8">
           <Image
-            src="/images/whyus-purity-seo1.webp"
+            src="/images/gen/why-purity.webp"
             alt=""
             aria-hidden="true"
-            width={56}
-            height={56}
-            className="rounded-full object-cover h-14 w-14 shrink-0"
+            width={72}
+            height={72}
+            className="h-16 w-16 shrink-0 object-cover"
           />
-          <p className="text-sm leading-relaxed text-dark">
-            <span className="font-semibold text-olive uppercase tracking-wide text-xs">
+          <p className="text-sm leading-relaxed text-background/80">
+            <span className="text-[0.8125rem] font-semibold uppercase tracking-[-0.005em] text-accent">
               Research use only.{" "}
             </span>
-            Every product on this page is supplied strictly for laboratory
-            and analytical research conducted by qualified professionals —
-            not for human or veterinary use. Certificates of analysis are
-            available on each product page.
+            Every product on this page is supplied strictly for laboratory and
+            analytical research conducted by qualified professionals — not for
+            human or veterinary use. Certificates of analysis are available on
+            each product page.
           </p>
         </div>
       </section>

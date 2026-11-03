@@ -1,0 +1,12 @@
+[    1662ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[    1662ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[    2319ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[    2319ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[  174749ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[  174749ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[  175445ms] [LOG] [GORGIAS-CHAT] Loading chat 01GYCC47JTZAKXKH6GZYFB2RP1... @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[  175445ms] [WARNING] Gorgias Chat is not shown on this page because of the visibility settings. @ https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:16
+[  179381ms] TypeError: Cannot read properties of null (reading 'classList')
+    at n (https://assets.absolutecollagen.com/_astro/index.astro_astro_type_script_index_0_lang.BB_Z4JiY.js?dpl=0:1:74)
+    at https://assets.absolutecollagen.com/_astro/index.astro_astro_type_script_index_0_lang.BB_Z4JiY.js?dpl=0:1:152
+    at i (https://assets.absolutecollagen.com/_astro/page.DDIy0Rly.js?dpl=0:21:784)

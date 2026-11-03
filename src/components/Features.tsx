@@ -8,7 +8,7 @@ export default function WhyUs() {
   return (
     <section id="why-us" className="section-pad bg-background-secondary">
       <div className="container-lux">
-        <div className="max-w-3xl mb-20 lg:mb-28">
+        <div className="max-w-3xl mb-12 lg:mb-16">
           <Reveal>
             <p className="eyebrow mb-5">Why Novera</p>
           </Reveal>
@@ -21,7 +21,7 @@ export default function WhyUs() {
           </Reveal>
         </div>
 
-        <div className="flex flex-col gap-24 lg:gap-32">
+        <div className="flex flex-col gap-16 lg:gap-24">
           {WHY_US.map((f, i) => {
             const reversed = i % 2 === 1;
             return (
@@ -39,7 +39,7 @@ export default function WhyUs() {
                     src={f.image}
                     alt={f.title}
                     sizes="(max-width: 1024px) 100vw, 60vw"
-                    className="aspect-[16/10] w-full rounded-[28px] lg:rounded-[32px]"
+                    className="aspect-[16/10] w-full lg:"
                     imgClassName="scale-90"
                   />
                 </div>
@@ -51,7 +51,7 @@ export default function WhyUs() {
                   }`}
                 >
                   <Reveal>
-                    <span className="font-serif text-6xl lg:text-7xl text-accent/50 leading-none block mb-6">
+                    <span className="font-serif text-6xl lg:text-7xl text-dark/15 leading-none block mb-6">
                       {f.no}
                     </span>
                   </Reveal>

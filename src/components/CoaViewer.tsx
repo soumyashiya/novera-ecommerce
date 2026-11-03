@@ -1,7 +1,7 @@
 "use client";
 
 // "View Janoshik Analytical Report" trigger + modal, modelled on alluvi.bz but
-// styled in Novera's own palette (cream card, olive accents) rather than a dark
+// styled in Novera's own palette (cream card, copper accents) rather than a dark
 // theme. The modal summarises this batch's third-party analysis and links out
 // to the official Janoshik verification page. Content is driven entirely by the
 // product's `analysis`, so every product page shows its own figures.
@@ -37,7 +37,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 rounded-full border border-line bg-background-secondary px-5 py-2.5 text-sm text-dark transition-colors hover:border-dark"
+        className="inline-flex items-center gap-2 border border-line bg-background-secondary px-5 py-2.5 text-sm text-dark transition-colors hover:border-dark"
       >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
@@ -61,7 +61,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
           onClick={() => setOpen(false)}
         >
           <div
-            className="relative my-8 w-full max-w-md rounded-2xl border border-line bg-card p-6 shadow-2xl sm:p-8"
+            className="relative my-8 w-full max-w-md border border-line bg-card p-6 shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close */}
@@ -69,7 +69,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close report"
-              className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full border border-line text-muted transition-colors hover:border-dark hover:text-dark"
+              className="absolute right-4 top-4 grid h-9 w-9 place-items-center border border-line text-muted transition-colors hover:border-dark hover:text-dark"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
@@ -82,7 +82,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
             </button>
 
             {/* Flask icon */}
-            <div className="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-olive/10 text-olive">
+            <div className="mx-auto grid h-12 w-12 place-items-center bg-copper/10 text-copper">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M9 2v6.34a2 2 0 0 1-.34 1.11L4.2 16.1A2 2 0 0 0 5.87 19h12.26a2 2 0 0 0 1.67-2.9l-4.46-6.65A2 2 0 0 1 15 8.34V2M7 2h10M7.5 13h9"
@@ -104,16 +104,16 @@ export default function CoaViewer({ analysis, productName }: Props) {
 
             {/* Meta cards */}
             <dl className="mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
-              <div className="rounded-xl border border-line bg-background-secondary px-3 py-3 text-center">
-                <dt className="text-[0.58rem] tracking-[0.16em] uppercase text-muted">
+              <div className=" border border-line bg-background-secondary px-3 py-3 text-center">
+                <dt className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                   Batch Number
                 </dt>
                 <dd className="mt-1 text-sm font-semibold text-dark">
                   {analysis.batchNumber}
                 </dd>
               </div>
-              <div className="rounded-xl border border-line bg-background-secondary px-3 py-3 text-center">
-                <dt className="text-[0.58rem] tracking-[0.16em] uppercase text-muted">
+              <div className=" border border-line bg-background-secondary px-3 py-3 text-center">
+                <dt className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                   Fill Volume
                 </dt>
                 <dd className="mt-1 text-sm font-semibold text-dark">
@@ -121,11 +121,11 @@ export default function CoaViewer({ analysis, productName }: Props) {
                 </dd>
               </div>
               {analysis.purity && (
-                <div className="col-span-2 rounded-xl border border-line bg-background-secondary px-3 py-3 text-center sm:col-span-1">
-                  <dt className="text-[0.58rem] tracking-[0.16em] uppercase text-muted">
+                <div className="col-span-2 border border-line bg-background-secondary px-3 py-3 text-center sm:col-span-1">
+                  <dt className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                     Purity
                   </dt>
-                  <dd className="mt-1 text-sm font-semibold text-olive">
+                  <dd className="mt-1 text-sm font-semibold text-copper">
                     {analysis.purity}
                   </dd>
                 </div>
@@ -133,17 +133,17 @@ export default function CoaViewer({ analysis, productName }: Props) {
             </dl>
 
             {/* Compound table */}
-            <div className="mt-4 overflow-hidden rounded-xl border border-line">
+            <div className="mt-4 overflow-hidden border border-line">
               <table className="w-full text-left text-xs">
                 <thead className="bg-background-secondary">
                   <tr>
-                    <th className="px-3 py-2 text-[0.56rem] font-normal tracking-[0.16em] uppercase text-muted">
+                    <th className="px-3 py-2 text-[0.75rem] font-normal tracking-[-0.005em] uppercase text-muted">
                       Compound
                     </th>
-                    <th className="px-3 py-2 text-[0.56rem] font-normal tracking-[0.16em] uppercase text-muted">
+                    <th className="px-3 py-2 text-[0.75rem] font-normal tracking-[-0.005em] uppercase text-muted">
                       Concentration
                     </th>
-                    <th className="px-3 py-2 text-[0.56rem] font-normal tracking-[0.16em] uppercase text-muted">
+                    <th className="px-3 py-2 text-[0.75rem] font-normal tracking-[-0.005em] uppercase text-muted">
                       Verified Content
                     </th>
                   </tr>
@@ -166,7 +166,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
               </table>
             </div>
 
-            <p className="mt-4 text-[0.7rem] leading-relaxed text-muted">
+            <p className="mt-4 text-[0.8125rem] leading-relaxed text-muted">
               Concentration is measured per mL; verified content reflects the
               total assayed mass across the stated fill volume.
             </p>
@@ -176,7 +176,7 @@ export default function CoaViewer({ analysis, productName }: Props) {
               href={analysis.reportUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 flex items-center justify-center gap-2 rounded-full bg-dark px-5 py-3.5 text-sm font-medium text-background transition-colors hover:bg-olive"
+              className="mt-6 flex items-center justify-center gap-2 bg-dark px-5 py-3.5 text-sm font-medium text-background transition-colors hover:bg-copper"
             >
               View Full Janoshik Report
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">

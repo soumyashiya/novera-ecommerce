@@ -1,71 +1,185 @@
-// Server component. It renders the client <Reveal>/<RevealImage> wrappers but
-// has no client-side logic itself, so its markup ships as HTML rather than as
-// JavaScript for the browser to execute.
+// "The Novera standard" — two registers, after the reference's stats + clinical
+// block:
+//
+//   1. a stats row: a small sentence-case heading, then four columns of a bold
+//      label, a giant serif numeral, and a unit + caption beside it
+//   2. a split: the italic-uppercase statement, body and outlined CTA centred
+//      on the left; on the right a tall photograph with a three-step timeline
+//      (✦ markers on a hairline) set over its lightened left side, and a
+//      footnote underneath
+//
+// Server component: <Reveal>/<RevealImage> are client wrappers, but this file
+// holds no state. Every figure and claim restates the existing About copy and
+// the Janoshik analysis in src/lib/data.ts — nothing here is a new promise.
+import Image from "next/image";
+import Link from "next/link";
 import Reveal from "./Reveal";
-import RevealImage from "./RevealImage";
+
+const STATS = [
+  {
+    label: "Purity, verified.",
+    figure: "99",
+    unit: "%+",
+    caption: "verified purity on certified batches*.",
+  },
+  {
+    label: "Tested, every time.",
+    figure: "100",
+    unit: "%",
+    caption: "of batches third-party tested before listing.",
+  },
+  {
+    label: "Trusted by labs.",
+    figure: "10,000",
+    unit: "+",
+    caption: "orders shipped to research clients.",
+  },
+  {
+    label: "Kept cold.",
+    figure: "2–8",
+    unit: "°C",
+    caption: "sealed, refrigerated storage until dispatch.",
+  },
+];
+
+const TIMELINE = [
+  {
+    step: "Batch received",
+    points: ["Sealed and logged", "Batch number assigned"],
+  },
+  {
+    step: "Batch assayed",
+    points: [
+      "Sent to Janoshik Analytical",
+      "Purity and concentration measured independently",
+    ],
+  },
+  {
+    step: "Listed & shipped",
+    points: [
+      "Certificate of analysis published",
+      "Dispatched sealed and cold",
+    ],
+  },
+];
+
+function Sparkle() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden className="h-3.5 w-3.5 shrink-0 text-dark">
+      <path
+        d="M8 0c.5 4.3 2.7 6.5 8 8-5.3 1.5-7.5 3.7-8 8-.5-4.3-2.7-6.5-8-8 5.3-1.5 7.5-3.7 8-8z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
 
 export default function About() {
   return (
     <section id="about" className="section-pad">
       <div className="container-lux">
-        <div className="grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
-          {/* Oversized image — visually overpowers the text */}
-          <div className="lg:col-span-7 order-1">
-            <RevealImage
-              src="/images/about-seo.webp"
-              alt="Inside the Novera research facility"
-              sizes="(max-width: 1024px) 100vw, 58vw"
-              className="aspect-[4/5] w-full rounded-[28px] lg:rounded-[32px]"
-            />
-          </div>
+        {/* ── 1. Stats row ─────────────────────────────────────────────── */}
+        <Reveal>
+          <h2 className="font-serif text-[1.25rem] tracking-[-0.01em] text-dark">
+            The numbers don&apos;t lie.
+          </h2>
+        </Reveal>
+        <dl className="mt-6 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {STATS.map((s, i) => (
+            <Reveal key={s.label} delay={i * 0.05}>
+              <dt className="text-[0.75rem] font-semibold text-dark">
+                {s.label}
+              </dt>
+              <dd className="mt-1 flex items-start gap-2.5">
+                <span className="font-serif text-[clamp(3.25rem,5vw,4.5rem)] leading-[0.9] tracking-[-0.02em] text-dark">
+                  {s.figure}
+                </span>
+                <span className="max-w-[130px] pt-1">
+                  <span className="block font-serif text-[1.125rem] leading-none text-dark">
+                    {s.unit}
+                  </span>
+                  <span className="mt-1.5 block text-[0.6875rem] leading-snug text-dark">
+                    {s.caption}
+                  </span>
+                </span>
+              </dd>
+            </Reveal>
+          ))}
+        </dl>
 
-          {/* Story — narrow measure, large margins */}
-          <div className="lg:col-span-5 order-2">
-            <Reveal>
-              <p className="eyebrow mb-7">About Novera</p>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <h2 className="text-section mb-10">
-                Built around one
-                <br />
-                principle: purity.
-              </h2>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <p className="text-muted text-[1.15rem] leading-[1.85] mb-7 max-w-[480px]">
-                Novera was founded to advance research with formulations that are
-                clean, reliable, and precisely made. We source only from verified
-                partners and test every batch before it ever leaves us.
-              </p>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <p className="text-muted text-[1.0625rem] leading-[1.85] mb-12 max-w-[480px]">
-                From peptide synthesis to the research bench, our standard never
-                changes controlled processes, transparent documentation, and
-                support that answers in minutes, not days.
-              </p>
-            </Reveal>
+        {/* ── 2. Statement + timeline panel ────────────────────────────── */}
+        <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
+          <Reveal className="mx-auto max-w-[440px] text-center">
+            <p className="text-hero !text-[clamp(2.25rem,3.4vw,3.25rem)] text-dark">
+              The Novera
+              <br />
+              standard of
+              <br />
+              research purity.
+            </p>
+            <p className="mt-5 text-[0.875rem] leading-relaxed text-dark">
+              We started Novera because the research peptide market needed a
+              supplier willing to be boring about the basics — transparent
+              sourcing, third-party lab testing, and people you can actually
+              message. Every batch is checked before it reaches our shelves.
+            </p>
+            <Link
+              href="/#process"
+              className="mt-7 inline-flex h-11 items-center justify-center border !border-dark px-6 text-[0.8125rem] font-bold uppercase tracking-[-0.02em] text-dark transition-colors duration-300 hover:bg-dark hover:text-white"
+            >
+              Our story
+            </Link>
+          </Reveal>
 
-            <Reveal delay={0.2}>
-              <div className="grid grid-cols-2 gap-10 max-w-md border-t border-line pt-10">
-                <Stat figure="≥99%" label="Verified purity target" />
-                <Stat figure="10k+" label="Verified research orders" />
-              </div>
-            </Reveal>
-          </div>
+          <Reveal delay={0.08} y={28}>
+            <div className="relative aspect-[4/5] overflow-hidden bg-background-secondary lg:max-h-[640px] lg:w-full">
+              <Image
+                src="/images/gen/about.webp"
+                alt="A calm, daylight Novera laboratory bench lined with glassware"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-[70%_center]"
+              />
+              {/* Lightens the left of the photo so the timeline reads. */}
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-r from-[#fffdf0]/95 via-[#fffdf0]/75 to-transparent"
+              />
+
+              <ol className="absolute inset-y-0 left-0 flex w-[62%] flex-col justify-center gap-0 px-7 py-10 sm:px-9">
+                {TIMELINE.map((t, i) => (
+                  <li key={t.step} className="relative pb-10 last:pb-0">
+                    {/* Hairline joining this marker to the next */}
+                    {i < TIMELINE.length - 1 && (
+                      <span
+                        aria-hidden
+                        className="absolute left-[6.5px] top-6 bottom-2 w-px bg-dark/60"
+                      />
+                    )}
+                    <p className="flex items-center gap-3 text-[0.875rem] font-bold uppercase tracking-[-0.01em] text-dark">
+                      <Sparkle />
+                      {t.step}
+                    </p>
+                    <ul className="mt-2.5 space-y-1.5 pl-[26px]">
+                      {t.points.map((p) => (
+                        <li
+                          key={p}
+                          className="text-[0.9375rem] leading-snug text-dark"
+                        >
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <p className="mt-3 text-[0.6875rem] text-muted">
+              *As reported by Janoshik Analytical for each certified batch.
+            </p>
+          </Reveal>
         </div>
       </div>
     </section>
-  );
-}
-
-function Stat({ figure, label }: { figure: string; label: string }) {
-  return (
-    <div>
-      <p className="font-serif font-light text-5xl lg:text-6xl leading-none text-olive">
-        {figure}
-      </p>
-      <p className="text-sm text-muted mt-3">{label}</p>
-    </div>
   );
 }

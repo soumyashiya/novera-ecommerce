@@ -20,3 +20,10 @@
 [  212061ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
 [  214507ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer4-seo.webp&w=64&q=75:0
 [  219465ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  220480ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer-seo1.webp&w=64&q=75:0
+[  226510ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer2-seo.webp&w=64&q=75:0
+[  226899ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  232510ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer3-seo.webp&w=64&q=75:0
+[  234296ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  238472ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/image?url=%2Fimages%2Fcustomer4-seo.webp&w=64&q=75:0
+[  241715ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=PGTWx7Z0LCKgJehMpKRKK' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422

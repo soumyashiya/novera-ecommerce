@@ -1,0 +1,703 @@
+[     367ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     470ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     788ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     801ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  185779ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  185795ms] [LOG] [Fast Refresh] done in 117ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  346272ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  346297ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654184ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654512ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13754:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13701:32)
+    at processMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14059:30)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654544ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13754:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13701:32)
+    at processMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14059:30)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654545ms] [LOG] [Fast Refresh] done in 470ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654648ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654812ms] [LOG] [Fast Refresh] done in 267ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  654949ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  655016ms] [LOG] [Fast Refresh] done in 174ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  655139ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  655208ms] [LOG] [Fast Refresh] done in 184ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  659631ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  659892ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  659994ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  660007ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  669650ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  669667ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  673019ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  673071ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  673762ms] [LOG] [Fast Refresh] done in 176ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  673902ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  674362ms] [LOG] [Fast Refresh] done in 560ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  674770ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  674883ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  675983ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  676217ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  876163ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  876290ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  883030ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  883656ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[  883789ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  883842ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[  883845ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[  883850ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/?_rsc=q3mOO9BClNZHexY7:0
+[  883892ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/?_rsc=q3mOO9BClNZHexY7:0
+[  883984ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  884168ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[  884318ms] Error: ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx
+
+
+    at <unknown> (Error: ./src/components/Navigation.tsx:316:23)
+    at Object.getCompilationErrors (file://C:\Alluvi\my projects\git-update\new-update-websites\ecommerce-alluvi\novera\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Alluvi\my projects\git-update\new-update-websites\ecommerce-alluvi\novera\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Alluvi\my projects\git-update\new-update-websites\ecommerce-alluvi\novera\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Alluvi\my projects\git-update\new-update-websites\ecommerce-alluvi\novera\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Alluvi\my projects\git-update\new-update-websites\ecommerce-alluvi\novera\node_modules\next\dist\server\base-server.js:1753:26)
+[  884319ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[  884350ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884351ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884351ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884402ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884455ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884466ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884536ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884606ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884669ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884730ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884793ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884854ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884919ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  884979ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885041ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885104ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885165ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885227ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885293ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885352ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885413ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885476ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885538ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885602ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885667ms] [ERROR] ./src/components/Navigation.tsx:316:23
+Expected '</', got 'jsx text'
+  314 |           </nav>
+  315 |         </div>
+> 316 |       </motion.header>
+      |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |
+      | ^
+> 318 |       {/* Mobile fullscreen overlay */}
+      | ^^^^^^
+  319 |       <AnimatePresence>
+  320 |         {open && (
+  321 |           <motion.div
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/Navigation.tsx
+    ./src/app/layout.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[  885877ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[  886666ms] [LOG] [Fast Refresh] done in 565ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[  886812ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[  886984ms] [LOG] [Fast Refresh] done in 283ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[  887017ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  887201ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  887411ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  887583ms] ReferenceError: mega is not defined
+    at http://localhost:3000/_next/static/chunks/src_1k-akkr._.js:1358:83
+    at Array.map (<anonymous>)
+    at Navigation (http://localhost:3000/_next/static/chunks/src_1k-akkr._.js:1349:186)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6665:639)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+[  888965ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889019ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889048ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889053ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889165ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889547ms] [LOG] [Fast Refresh] done in 494ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  889795ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  890242ms] [LOG] [Fast Refresh] done in 561ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  890411ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  890477ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  891910ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  892000ms] [LOG] [Fast Refresh] done in 246ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  892105ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  892175ms] [LOG] [Fast Refresh] done in 175ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  894539ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  895260ms] [LOG] [Fast Refresh] done in 1177ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  895396ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  895864ms] [LOG] [Fast Refresh] done in 579ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  895984ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  896410ms] [LOG] [Fast Refresh] done in 529ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  896929ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  896954ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  954055ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  954399ms] [LOG] [Fast Refresh] done in 182ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  956696ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  956957ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  961545ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  961799ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  968752ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  969019ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  988986ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  989237ms] [LOG] [Fast Refresh] done in 208ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477

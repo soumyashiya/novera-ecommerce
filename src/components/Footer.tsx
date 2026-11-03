@@ -1,9 +1,14 @@
 "use client";
 
+// Yellow footer, modelled on the reference: an italic uppercase statement with
+// a small outlined CTA, a full-bleed row of tall product tiles that bleeds off
+// both edges, then a compact centred block — newsletter, four link columns,
+// and the research-use disclaimer.
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Reveal from "./Reveal";
-import { NAV_LINKS, CONTACT, DISCLAIMER } from "@/lib/data";
+import { NAV_LINKS, CONTACT, DISCLAIMER, PRODUCTS } from "@/lib/data";
 import { api, ApiError } from "@/lib/api";
 
 const RANGE_LINKS = [
@@ -19,68 +24,111 @@ const LEGAL_LINKS = [
   { label: "Refund Policy", href: "/policies/refund-policy" },
   { label: "Press", href: "/policies/press" },
 ];
+const HELP_LINKS = [
+  { label: "Track Order", href: "/track" },
+  { label: "My Orders", href: "/account/orders" },
+  { label: "FAQ", href: "/#faq" },
+];
 const CHROMELESS_ROUTES = ["/signin"];
+
+const shortName = (name: string) =>
+  name
+    .replace(/\s*\(.*?\)\s*$/, "")
+    .replace(/\s+[\d,]+\s*mg$/i, "")
+    .trim();
+
+// Five tiles; the row is wider than the screen so both ends bleed off.
+const TILES = PRODUCTS.slice(0, 5).map((p) => ({
+  href: `/products/${p.slug}`,
+  label: shortName(p.name),
+  image: p.gallery[1] ?? p.image,
+}));
 
 export default function Footer() {
   const pathname = usePathname();
   if (CHROMELESS_ROUTES.some((r) => pathname?.startsWith(r))) return null;
 
   return (
-    <footer className="bg-background-secondary border-t border-line">
-      <div className="container-lux py-20 lg:py-28">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8">
-          {/* Brand */}
-          <div className="min-w-0 lg:col-span-4">
-            <Reveal>
-              <p className="font-sans font-semibold uppercase text-3xl lg:text-4xl leading-none tracking-[0.22em] text-dark">
-                Novera
-              </p>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <p className="text-muted mt-6 max-w-sm leading-relaxed">
-                Research-grade peptides for laboratory analysis  clean, reliable,
-                and precisely made.
-              </p>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <NewsletterForm />
-            </Reveal>
+    <footer className="overflow-hidden bg-accent text-dark">
+      {/* Statement */}
+      <div className="container-lux pb-10 pt-14 text-center lg:pt-16">
+        <p className="text-hero mx-auto max-w-[900px] !text-[clamp(2rem,3.4vw,3.25rem)]">
+          One batch. One report.
+          <br />
+          That&apos;s all it takes.
+        </p>
+        <Link
+          href="/shop"
+          className="mt-5 inline-flex h-8 items-center border border-dark px-4 text-[0.6875rem] font-bold uppercase tracking-[-0.01em] transition-colors duration-300 hover:bg-dark hover:text-accent"
+        >
+          See the range
+        </Link>
+      </div>
+
+      {/* Full-bleed tile row */}
+      <ul className="flex justify-center gap-1.5">
+        {TILES.map((t) => (
+          <li key={t.href} className="w-[46vw] shrink-0 sm:w-[32vw] lg:w-[24.5vw]">
+            <Link
+              href={t.href}
+              className="group relative block aspect-[4/5] overflow-hidden bg-dark/10"
+            >
+              <Image
+                src={t.image}
+                alt={t.label}
+                fill
+                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 25vw"
+                className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent"
+              />
+              <span className="absolute inset-x-0 bottom-8 text-center text-[1.125rem] font-semibold text-accent [text-shadow:0_1px_8px_rgba(0,0,0,0.45)]">
+                {t.label}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Newsletter + links. Side padding matches the header exactly: the
+          bar's outer gutter (px-2 / lg:px-3) plus its inner padding
+          (px-3 / lg:px-8) = 20px / 44px, so footer content lines up with the
+          nav links above. */}
+      <div className="px-5 py-14 lg:px-11 lg:py-16">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-4">
+            <NewsletterForm />
           </div>
 
-          {/* Link columns */}
-          <div className="lg:col-span-2 lg:col-start-6">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:col-span-7 lg:col-start-6">
             <FooterCol
               title="Explore"
               links={NAV_LINKS.map((l) => ({ label: l.label, href: l.href }))}
             />
-          </div>
-          <div className="lg:col-span-2 lg:col-start-8">
             <FooterCol title="Our Range" links={RANGE_LINKS} />
-          </div>
-          <div className="lg:col-span-3 lg:col-start-10">
+            <FooterCol title="Help" links={HELP_LINKS} />
             <FooterCol title="Legal" links={LEGAL_LINKS} />
           </div>
         </div>
 
-        {/* Contact + bottom row */}
-        <div className="mt-20 pt-10 border-t border-line grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <p className="eyebrow mb-3">Contact</p>
-            <p className="text-muted leading-relaxed">
-              <a href={`mailto:${CONTACT.email}`} className="link-underline">
-                {CONTACT.email}
-              </a>
-            </p>
-          </div>
-          <div className="md:text-right text-sm text-muted">
-            <p>© {new Date().getFullYear()} Novera. All rights reserved.</p>
-          </div>
+        <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t !border-dark/20 pt-6 text-[0.75rem]">
+          <a href={`mailto:${CONTACT.email}`} className="link-underline">
+            {CONTACT.email}
+          </a>
+          <p>© {new Date().getFullYear()} Novera. All rights reserved.</p>
         </div>
 
-        {/* Compliance note */}
-        <p className="mt-10 text-[0.72rem] leading-relaxed text-muted/80 max-w-3xl">
-          {DISCLAIMER}
-        </p>
+        {/* Research-use disclaimer — a legal requirement, kept prominent. */}
+        <div className="mt-6 bg-dark px-5 py-4 text-background">
+          <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.04em] text-accent">
+            Research use only
+          </p>
+          <p className="mt-1.5 text-[0.75rem] leading-relaxed text-background/75">
+            {DISCLAIMER}
+          </p>
+        </div>
       </div>
     </footer>
   );
@@ -129,11 +177,14 @@ function NewsletterForm() {
   const isLoading = status.kind === "loading";
 
   return (
-    <div className="mt-9 max-w-sm">
-      <p className="eyebrow mb-3">Newsletter</p>
+    <div className="max-w-sm">
+      <p className="font-serif text-[1.25rem] leading-snug">
+        Subscribe for new batch releases, lab reports and first look at new
+        lines.
+      </p>
       <form
         onSubmit={onSubmit}
-        className="relative flex items-center rounded-full border border-line bg-card focus-within:border-olive transition-colors"
+        className="mt-4 flex items-center border !border-dark"
       >
         <label htmlFor="newsletter-email" className="sr-only">
           Your email address
@@ -145,23 +196,23 @@ function NewsletterForm() {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email address"
-          className="min-w-0 flex-1 bg-transparent px-5 py-3 text-sm text-dark placeholder-muted/70 focus:outline-none"
+          placeholder="Enter your email"
+          className="min-w-0 flex-1 bg-transparent px-4 py-2.5 text-sm text-dark placeholder-dark/55 focus:outline-none"
           autoComplete="email"
           disabled={isLoading}
         />
         <button
           type="submit"
           disabled={isLoading}
-          className="shrink-0 rounded-full bg-dark px-5 py-2.5 my-1 mr-1 text-[0.72rem] uppercase tracking-[0.16em] font-medium text-background hover:bg-olive transition-colors duration-500 disabled:opacity-70"
+          className="shrink-0 px-4 py-2.5 text-[0.75rem] font-bold uppercase tracking-[-0.01em] text-dark transition-colors duration-300 hover:bg-dark hover:text-accent disabled:opacity-70"
         >
-          {isLoading ? "…" : "Subscribe"}
+          {isLoading ? "…" : "Sign up"}
         </button>
       </form>
       <p
         aria-live="polite"
-        className={`mt-3 text-xs min-h-4 ${
-          status.kind === "error" ? "text-red-600" : "text-olive"
+        className={`mt-2 min-h-4 text-xs ${
+          status.kind === "error" ? "text-red-700" : "text-dark"
         }`}
       >
         {status.kind === "success" || status.kind === "error" ? status.msg : ""}
@@ -179,16 +230,19 @@ function FooterCol({
 }) {
   return (
     <div>
-      <p className="eyebrow mb-6">{title}</p>
-      <ul className="flex flex-col gap-4">
+      <p className="mb-4 text-[0.6875rem] font-bold uppercase tracking-[0.04em]">
+        {title}
+      </p>
+      <ul className="flex flex-col gap-2">
         {links.map((l) => (
           <li key={l.label}>
-            <a
+            {/* next/link, not a bare <a> — these are internal routes. */}
+            <Link
               href={l.href}
-              className="link-underline text-muted hover:text-dark transition-colors duration-500"
+              className="link-underline font-serif text-[0.9375rem] text-dark"
             >
               {l.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

@@ -144,13 +144,13 @@ export default async function ProductPage({
 
           {/* Right — details */}
           <div className="lg:py-4">
-            <p className="text-[0.62rem] tracking-[0.2em] uppercase text-muted">
+            <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
               {product.tag.toUpperCase()}
             </p>
 
             <h1 className="text-section mt-4">{product.name}</h1>
 
-            <p className="font-serif font-light text-4xl text-olive mt-4">
+            <p className="font-serif font-light text-4xl text-copper mt-4">
               {formatPrice(product.price)}
             </p>
 
@@ -159,8 +159,8 @@ export default async function ProductPage({
             </p>
 
             {/* Prominent research-only notice */}
-            <div className="mt-6 rounded-xl border-2 border-olive/40 bg-olive/5 px-4 py-3 text-sm text-dark max-w-lg">
-              <span className="font-semibold text-olive">
+            <div className="mt-6 border-2 border-copper/40 bg-copper/5 px-4 py-3 text-sm text-dark max-w-lg">
+              <span className="font-semibold text-copper">
                 FOR RESEARCH PURPOSES ONLY.
               </span>{" "}
               Not intended for human or veterinary use. Supplied strictly for
@@ -180,7 +180,7 @@ export default async function ProductPage({
 
             {/* Analytical panel */}
             {product.analysis && (
-              <div className="mt-8 max-w-lg rounded-2xl border border-line bg-background-secondary p-5">
+              <div className="mt-8 max-w-lg border border-line bg-background-secondary p-5">
                 <p className="text-center text-sm font-medium text-dark">
                   Janoshik Third-Party Lab Analysis
                 </p>
@@ -190,7 +190,7 @@ export default async function ProductPage({
 
                 <div className="mt-5 grid grid-cols-3 gap-3 text-center">
                   <div>
-                    <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                    <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                       Batch Number
                     </p>
                     <p className="text-sm text-dark mt-1">
@@ -198,7 +198,7 @@ export default async function ProductPage({
                     </p>
                   </div>
                   <div>
-                    <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                    <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                       Fill Volume
                     </p>
                     <p className="text-sm text-dark mt-1">
@@ -207,7 +207,7 @@ export default async function ProductPage({
                   </div>
                   {product.analysis.purity && (
                     <div>
-                      <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                      <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
                         Purity
                       </p>
                       <p className="text-sm text-dark mt-1">
@@ -217,17 +217,17 @@ export default async function ProductPage({
                   )}
                 </div>
 
-                <div className="mt-5 overflow-hidden rounded-lg border border-line">
+                <div className="mt-5 overflow-hidden border border-line">
                   <table className="w-full text-left text-xs">
                     <thead className="bg-white/60">
                       <tr>
-                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                        <th className="px-3 py-2 text-[0.75rem] tracking-[-0.005em] uppercase text-muted font-normal">
                           Compound
                         </th>
-                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                        <th className="px-3 py-2 text-[0.75rem] tracking-[-0.005em] uppercase text-muted font-normal">
                           Concentration
                         </th>
-                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                        <th className="px-3 py-2 text-[0.75rem] tracking-[-0.005em] uppercase text-muted font-normal">
                           Verified Content
                         </th>
                       </tr>
@@ -250,7 +250,7 @@ export default async function ProductPage({
                   </table>
                 </div>
 
-                <p className="mt-4 text-[0.7rem] leading-relaxed text-muted">
+                <p className="mt-4 text-[0.8125rem] leading-relaxed text-muted">
                   Concentration is measured per mL; verified content reflects
                   the total assayed mass across the stated fill volume.
                 </p>
@@ -268,7 +268,7 @@ export default async function ProductPage({
 
             <AddToCart slug={product.slug} />
 
-            <p className="mt-8 text-[0.72rem] leading-relaxed text-muted/80 max-w-lg border-t border-line pt-6">
+            <p className="mt-8 text-[0.8125rem] leading-relaxed text-muted/80 max-w-lg border-t border-line pt-6">
               {DISCLAIMER}
             </p>
           </div>
@@ -289,7 +289,7 @@ export default async function ProductPage({
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
             {related.map((p) => (
               <Link key={p.slug} href={`/products/${p.slug}`} className="group">
-                <div className="relative aspect-square w-full overflow-hidden rounded-[22px] lg:rounded-[28px]">
+                <div className="relative aspect-square w-full overflow-hidden lg:">
                   <Image
                     src={p.image}
                     alt={p.name}

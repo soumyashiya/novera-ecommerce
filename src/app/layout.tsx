@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navigation from "@/components/Navigation";
+import WelcomeModal from "@/components/WelcomeModal";
 import ScrollProgress from "@/components/ScrollProgress";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
@@ -15,16 +16,19 @@ import {
   WEBSITE_SCHEMA,
 } from "@/lib/site";
 
-const serif = Cormorant_Garamond({
+// Condensed, high-contrast display serif — the closest open match to the
+// reference's italic uppercase headline face.
+const serif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: "400",
+  style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
 });
 
 const sans = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-sans",
   display: "swap",
 });
@@ -83,6 +87,7 @@ export default function RootLayout({
             <Navigation />
             <div id="main-content">{children}</div>
             <Footer />
+            <WelcomeModal />
           </SmoothScroll>
         </CartProvider>
       </body>

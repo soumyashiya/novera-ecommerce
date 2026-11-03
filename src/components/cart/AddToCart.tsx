@@ -18,7 +18,7 @@ export default function AddToCart({ slug }: { slug: string }) {
     <div className="mt-10">
       <div className="flex flex-wrap items-center gap-4">
         {/* Quantity stepper */}
-        <div className="flex items-center rounded-full border border-line">
+        <div className="flex items-center border border-line">
           <button
             type="button"
             aria-label="Decrease quantity"

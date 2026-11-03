@@ -1,0 +1,323 @@
+- generic [active] [ref=f48e1]:
+  - link "Skip to content" [ref=f48e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f48e3]:
+    - paragraph [ref=f48e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f48e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f48e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f48e11]:
+      - list [ref=f48e12]:
+        - listitem [ref=f48e13]:
+          - link "Shop" [ref=f48e14] [cursor=pointer]:
+            - /url: /shop
+        - listitem [ref=f48e15]:
+          - link "Products" [ref=f48e16] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=f48e17]:
+          - link "About" [ref=f48e18] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f48e19]:
+          - link "Our Process" [ref=f48e20] [cursor=pointer]:
+            - /url: /#process
+        - listitem [ref=f48e21]:
+          - link "FAQ" [ref=f48e22] [cursor=pointer]:
+            - /url: /#faq
+      - link "Novera — home" [ref=f48e23] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - generic [ref=f48e24]:
+        - link "Track order" [ref=f48e25] [cursor=pointer]:
+          - /url: /track
+        - button "Sign in" [ref=f48e27]:
+          - generic [ref=f48e28]: Account
+        - link "Cart, 0 items" [ref=f48e29] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f48e30]: Bag (0)
+  - main [ref=f48e32]:
+    - generic [ref=f48e33]:
+      - paragraph [ref=f48e35]: The range
+      - heading "All products" [level=1] [ref=f48e37]
+      - paragraph [ref=f48e39]: 8 research lines, each supplied in a sealed fixed-volume format. Certified batches are independently assayed by Janoshik Analytical and published with their batch number and verified content. For laboratory research use only.
+    - generic [ref=f48e40]:
+      - generic [ref=f48e41]:
+        - group "Filter by category" [ref=f48e42]:
+          - button "All" [pressed] [ref=f48e43]
+          - button "Metabolic Research" [ref=f48e44]
+          - button "Recovery & Repair" [ref=f48e45]
+          - button "Cellular & Longevity" [ref=f48e46]
+        - generic [ref=f48e47]:
+          - generic [ref=f48e48]: Sort
+          - combobox "Sort" [ref=f48e49]:
+            - option "Featured" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+      - paragraph [ref=f48e50]: 8 products
+      - generic [ref=f48e51]:
+        - article [ref=f48e52]:
+          - generic [ref=f48e53]:
+            - link "Bestseller Independently assayed 40 mg Tirzepatide + 99.85% purity Tirzepatide" [ref=f48e54] [cursor=pointer]:
+              - /url: /products/tirzepatide
+              - generic [ref=f48e55]: Bestseller
+              - generic [ref=f48e56]:
+                - generic [ref=f48e57]: Independently assayed
+                - paragraph [ref=f48e58]: 40 mg Tirzepatide+ 99.85% purity
+              - img "Tirzepatide" [ref=f48e60]
+            - button "Save Tirzepatide to wishlist" [ref=f48e63]
+          - generic [ref=f48e66]:
+            - generic [ref=f48e67]:
+              - heading [level=3] [ref=f48e68]:
+                - link "Tirzepatide" [ref=f48e69] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - paragraph [ref=f48e70]: $189
+            - paragraph [ref=f48e71]: Metabolic Research · 40 mg pen
+            - generic [ref=f48e72]: 40 mg
+            - paragraph [ref=f48e74]: Batch TR786PAOS · COA
+        - article [ref=f48e77]:
+          - generic [ref=f48e78]:
+            - link "Bestseller Independently assayed 20 mg Retatrutide + 99.21% purity Retatrutide" [ref=f48e79] [cursor=pointer]:
+              - /url: /products/retatrutide
+              - generic [ref=f48e80]: Bestseller
+              - generic [ref=f48e81]:
+                - generic [ref=f48e82]: Independently assayed
+                - paragraph [ref=f48e83]: 20 mg Retatrutide+ 99.21% purity
+              - img "Retatrutide" [ref=f48e85]
+            - button "Save Retatrutide to wishlist" [ref=f48e88]
+          - generic [ref=f48e91]:
+            - generic [ref=f48e92]:
+              - heading [level=3] [ref=f48e93]:
+                - link "Retatrutide" [ref=f48e94] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - paragraph [ref=f48e95]: $149
+            - paragraph [ref=f48e96]: Metabolic Research · 20 mg pen
+            - generic [ref=f48e97]: 20 mg
+            - paragraph [ref=f48e99]: Batch AR1721TRT · COA
+        - article [ref=f48e102]:
+          - generic [ref=f48e103]:
+            - link "Limited Research use only 1,000 mg NAD+ + Sealed & cold-stored NAD+" [ref=f48e104] [cursor=pointer]:
+              - /url: /products/nad
+              - generic [ref=f48e105]: Limited
+              - generic [ref=f48e106]:
+                - generic [ref=f48e107]: Research use only
+                - paragraph [ref=f48e108]: 1,000 mg NAD++ Sealed & cold-stored
+              - img "NAD+" [ref=f48e110]
+            - button "Save NAD+ to wishlist" [ref=f48e113]
+          - generic [ref=f48e116]:
+            - generic [ref=f48e117]:
+              - heading [level=3] [ref=f48e118]:
+                - link "NAD+" [ref=f48e119] [cursor=pointer]:
+                  - /url: /products/nad
+              - paragraph [ref=f48e120]: $149
+            - paragraph [ref=f48e121]: Cellular & Longevity · 1,000 mg pen
+            - generic [ref=f48e122]: 1,000 mg
+        - article [ref=f48e124]:
+          - generic [ref=f48e125]:
+            - link "New Independently assayed 70 mg Glow + Batch COA Glow" [ref=f48e126] [cursor=pointer]:
+              - /url: /products/glow
+              - generic [ref=f48e127]: New
+              - generic [ref=f48e128]:
+                - generic [ref=f48e129]: Independently assayed
+                - paragraph [ref=f48e130]: 70 mg Glow+ Batch COA
+              - img "Glow" [ref=f48e132]
+            - button "Save Glow to wishlist" [ref=f48e135]
+          - generic [ref=f48e138]:
+            - generic [ref=f48e139]:
+              - heading [level=3] [ref=f48e140]:
+                - link "Glow" [ref=f48e141] [cursor=pointer]:
+                  - /url: /products/glow
+              - paragraph [ref=f48e142]: $129
+            - paragraph [ref=f48e143]: Recovery & Repair · 70 mg pen
+            - generic [ref=f48e144]: 70 mg
+            - paragraph [ref=f48e146]: Batch GL0621XSA · COA
+        - article [ref=f48e149]:
+          - generic [ref=f48e150]:
+            - link "New Independently assayed 40 mg Retatrutide + 99.269% purity Retatrutide" [ref=f48e151] [cursor=pointer]:
+              - /url: /products/retatrutide-40
+              - generic [ref=f48e152]: New
+              - generic [ref=f48e153]:
+                - generic [ref=f48e154]: Independently assayed
+                - paragraph [ref=f48e155]: 40 mg Retatrutide+ 99.269% purity
+              - img "Retatrutide" [ref=f48e157]
+            - button "Save Retatrutide to wishlist" [ref=f48e160]
+          - generic [ref=f48e163]:
+            - generic [ref=f48e164]:
+              - heading [level=3] [ref=f48e165]:
+                - link "Retatrutide" [ref=f48e166] [cursor=pointer]:
+                  - /url: /products/retatrutide-40
+              - paragraph [ref=f48e167]: $249
+            - paragraph [ref=f48e168]: Metabolic Research · 40 mg pen
+            - generic [ref=f48e169]: 40 mg
+            - paragraph [ref=f48e171]: Batch AR1739JAT · COA
+        - article [ref=f48e174]:
+          - generic [ref=f48e175]:
+            - link "New Research use only 10 mg CJC-1295 + Sealed & cold-stored CJC-1295" [ref=f48e176] [cursor=pointer]:
+              - /url: /products/cjc-1295
+              - generic [ref=f48e177]: New
+              - generic [ref=f48e178]:
+                - generic [ref=f48e179]: Research use only
+                - paragraph [ref=f48e180]: 10 mg CJC-1295+ Sealed & cold-stored
+              - img "CJC-1295" [ref=f48e182]
+            - button "Save CJC-1295 to wishlist" [ref=f48e185]
+          - generic [ref=f48e188]:
+            - generic [ref=f48e189]:
+              - heading [level=3] [ref=f48e190]:
+                - link "CJC-1295" [ref=f48e191] [cursor=pointer]:
+                  - /url: /products/cjc-1295
+              - paragraph [ref=f48e192]: $159
+            - paragraph [ref=f48e193]: Metabolic Research · 10 mg pen
+            - generic [ref=f48e194]: 10 mg
+        - article [ref=f48e196]:
+          - generic [ref=f48e197]:
+            - link "New Research use only 40 mg MOTS-C + Sealed & cold-stored MOTS-C" [ref=f48e198] [cursor=pointer]:
+              - /url: /products/mots-c
+              - generic [ref=f48e199]: New
+              - generic [ref=f48e200]:
+                - generic [ref=f48e201]: Research use only
+                - paragraph [ref=f48e202]: 40 mg MOTS-C+ Sealed & cold-stored
+              - img "MOTS-C" [ref=f48e204]
+            - button "Save MOTS-C to wishlist" [ref=f48e207]
+          - generic [ref=f48e210]:
+            - generic [ref=f48e211]:
+              - heading [level=3] [ref=f48e212]:
+                - link "MOTS-C" [ref=f48e213] [cursor=pointer]:
+                  - /url: /products/mots-c
+              - paragraph [ref=f48e214]: $169
+            - paragraph [ref=f48e215]: Cellular & Longevity · 40 mg pen
+            - generic [ref=f48e216]: 40 mg
+        - article [ref=f48e218]:
+          - generic [ref=f48e219]:
+            - link "New Research use only 20 mg Tesamorelin + Sealed & cold-stored Tesamorelin" [ref=f48e220] [cursor=pointer]:
+              - /url: /products/tesamorelin
+              - generic [ref=f48e221]: New
+              - generic [ref=f48e222]:
+                - generic [ref=f48e223]: Research use only
+                - paragraph [ref=f48e224]: 20 mg Tesamorelin+ Sealed & cold-stored
+              - img "Tesamorelin" [ref=f48e226]
+            - button "Save Tesamorelin to wishlist" [ref=f48e229]
+          - generic [ref=f48e232]:
+            - generic [ref=f48e233]:
+              - heading [level=3] [ref=f48e234]:
+                - link "Tesamorelin" [ref=f48e235] [cursor=pointer]:
+                  - /url: /products/tesamorelin
+              - paragraph [ref=f48e236]: $179
+            - paragraph [ref=f48e237]: Metabolic Research · 20 mg pen
+            - generic [ref=f48e238]: 20 mg
+    - paragraph [ref=f48e243]:
+      - generic [ref=f48e244]: Research use only.
+      - text: Every product on this page is supplied strictly for laboratory and analytical research conducted by qualified professionals — not for human or veterinary use. Certificates of analysis are available on each product page.
+  - contentinfo [ref=f48e245]:
+    - generic [ref=f48e246]:
+      - paragraph [ref=f48e247]: One batch. One report.That's all it takes.
+      - link "See the range" [ref=f48e248] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f48e249]:
+      - listitem [ref=f48e250]:
+        - link "Tirzepatide Tirzepatide" [ref=f48e251] [cursor=pointer]:
+          - /url: /products/tirzepatide
+          - img "Tirzepatide" [ref=f48e252]
+          - generic [ref=f48e254]: Tirzepatide
+      - listitem [ref=f48e255]:
+        - link "Retatrutide Retatrutide" [ref=f48e256] [cursor=pointer]:
+          - /url: /products/retatrutide
+          - img "Retatrutide" [ref=f48e257]
+          - generic [ref=f48e259]: Retatrutide
+      - listitem [ref=f48e260]:
+        - link "NAD+ NAD+" [ref=f48e261] [cursor=pointer]:
+          - /url: /products/nad
+          - img "NAD+" [ref=f48e262]
+          - generic [ref=f48e264]: NAD+
+      - listitem [ref=f48e265]:
+        - link "Glow Glow" [ref=f48e266] [cursor=pointer]:
+          - /url: /products/glow
+          - img "Glow" [ref=f48e267]
+          - generic [ref=f48e269]: Glow
+      - listitem [ref=f48e270]:
+        - link "Retatrutide Retatrutide" [ref=f48e271] [cursor=pointer]:
+          - /url: /products/retatrutide-40
+          - img "Retatrutide" [ref=f48e272]
+          - generic [ref=f48e274]: Retatrutide
+    - generic [ref=f48e275]:
+      - generic [ref=f48e276]:
+        - generic [ref=f48e278]:
+          - paragraph [ref=f48e279]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f48e280]:
+            - generic [ref=f48e281]: Your email address
+            - textbox "Your email address" [ref=f48e282]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f48e283]
+          - paragraph [ref=f48e284]
+        - generic [ref=f48e285]:
+          - generic [ref=f48e286]:
+            - paragraph [ref=f48e287]: Explore
+            - list [ref=f48e288]:
+              - listitem [ref=f48e289]:
+                - link "Shop" [ref=f48e290] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f48e291]:
+                - link "Products" [ref=f48e292] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f48e293]:
+                - link "About" [ref=f48e294] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f48e295]:
+                - link "Our Process" [ref=f48e296] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f48e297]:
+                - link "FAQ" [ref=f48e298] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f48e299]:
+            - paragraph [ref=f48e300]: Our Range
+            - list [ref=f48e301]:
+              - listitem [ref=f48e302]:
+                - link "Tirzepatide" [ref=f48e303] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f48e304]:
+                - link "Retatrutide" [ref=f48e305] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f48e306]:
+                - link "NAD+" [ref=f48e307] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f48e308]:
+                - link "Glow" [ref=f48e309] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f48e310]:
+            - paragraph [ref=f48e311]: Help
+            - list [ref=f48e312]:
+              - listitem [ref=f48e313]:
+                - link "Track Order" [ref=f48e314] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f48e315]:
+                - link "My Orders" [ref=f48e316] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f48e317]:
+                - link "FAQ" [ref=f48e318] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f48e319]:
+            - paragraph [ref=f48e320]: Legal
+            - list [ref=f48e321]:
+              - listitem [ref=f48e322]:
+                - link "Privacy Policy" [ref=f48e323] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f48e324]:
+                - link "Terms of Service" [ref=f48e325] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f48e326]:
+                - link "Shipping Policy" [ref=f48e327] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f48e328]:
+                - link "Refund Policy" [ref=f48e329] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f48e330]:
+                - link "Press" [ref=f48e331] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f48e332]:
+        - link "hello@novera.studio" [ref=f48e333] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f48e334]: © 2026 Novera. All rights reserved.
+      - generic [ref=f48e335]:
+        - paragraph [ref=f48e336]: Research use only
+        - paragraph [ref=f48e337]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - button "Open Next.js Dev Tools" [ref=f48e343] [cursor=pointer]
+  - alert [ref=f48e347]

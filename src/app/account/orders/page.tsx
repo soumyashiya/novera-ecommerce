@@ -18,10 +18,10 @@ function toNumber(v: number | string | null | undefined): number {
 }
 
 const STATUS_DOT: Record<string, string> = {
-  paid: "bg-olive",
-  received: "bg-olive",
-  delivered: "bg-olive",
-  shipped: "bg-olive",
+  paid: "bg-copper",
+  received: "bg-copper",
+  delivered: "bg-copper",
+  shipped: "bg-copper",
   rejected: "bg-red-500",
   cancelled: "bg-red-500",
   pending: "bg-muted",
@@ -29,7 +29,7 @@ const STATUS_DOT: Record<string, string> = {
 
 function StatusPill({ label }: { label: string }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-line bg-background px-3.5 py-1.5 text-[0.65rem] uppercase tracking-[0.16em] text-muted">
+    <span className="inline-flex items-center gap-2 border border-line bg-background px-3.5 py-1.5 text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
       <span
         className={`h-1.5 w-1.5 rounded-full ${STATUS_DOT[label?.toLowerCase()] || "bg-muted"}`}
         aria-hidden
@@ -51,7 +51,7 @@ function OrderCard({ order }: { order: UserOrder }) {
       });
 
   return (
-    <div className="rounded-[28px] border border-line bg-card p-6 lg:p-7 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
+    <div className=" border border-line bg-card p-6 lg:p-7 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0">
           <p className="font-mono text-xs text-dark truncate">
@@ -70,9 +70,9 @@ function OrderCard({ order }: { order: UserOrder }) {
       </div>
 
       {order.tracking_number && (
-        <div className="mt-5 flex items-center justify-between gap-3 rounded-2xl border border-line bg-background px-4 py-3">
+        <div className="mt-5 flex items-center justify-between gap-3 border border-line bg-background px-4 py-3">
           <div className="min-w-0">
-            <p className="text-[0.65rem] uppercase tracking-[0.18em] text-muted">
+            <p className="text-[0.75rem] uppercase tracking-[-0.005em] text-muted">
               Tracking number
             </p>
             <p className="mt-0.5 text-sm text-dark font-mono truncate">
@@ -117,8 +117,8 @@ export default function MyOrdersPage() {
         <div className="container-lux">
           <p className="eyebrow mb-3">Account</p>
           <h1 className="text-section mb-8">My Orders</h1>
-          <div className="flex items-center gap-3 rounded-[28px] border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
-            <span className="h-4 w-4 rounded-full border-2 border-olive border-r-transparent animate-spin" />
+          <div className="flex items-center gap-3 border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
+            <span className="h-4 w-4 rounded-full border-2 border-copper border-r-transparent animate-spin" />
             Loading your account…
           </div>
         </div>
@@ -141,21 +141,21 @@ export default function MyOrdersPage() {
         {loadError && (
           <p
             role="alert"
-            className="rounded-2xl border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
+            className=" border border-red-500/25 bg-red-500/10 p-4 text-sm text-red-700"
           >
             {loadError}
           </p>
         )}
 
         {!loadError && orders === null && (
-          <div className="flex items-center gap-3 rounded-[28px] border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
-            <span className="h-4 w-4 rounded-full border-2 border-olive border-r-transparent animate-spin" />
+          <div className="flex items-center gap-3 border border-line bg-card px-6 py-5 text-muted text-sm w-fit">
+            <span className="h-4 w-4 rounded-full border-2 border-copper border-r-transparent animate-spin" />
             Fetching your orders…
           </div>
         )}
 
         {orders && orders.length === 0 && (
-          <div className="rounded-[28px] border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
+          <div className=" border border-line bg-background-secondary p-8 shadow-[0_20px_60px_-32px_rgba(26,26,26,0.25)]">
             <p className="font-serif text-2xl text-dark">No orders yet</p>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               When you place an order, it&apos;ll show up here with live

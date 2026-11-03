@@ -1,0 +1,1052 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: Third-party tested by Janoshik Analytical
+    - generic [ref=e9]: Sealed & cold-stored before dispatch
+    - generic [ref=e12]: New — Retatrutide 40 mg now verified
+    - generic [ref=e15]: For research use only
+    - generic [ref=e18]: Third-party tested by Janoshik Analytical
+    - generic [ref=e21]: Sealed & cold-stored before dispatch
+    - generic [ref=e24]: New — Retatrutide 40 mg now verified
+    - generic [ref=e27]: For research use only
+  - banner [ref=e30]:
+    - generic [ref=e31]:
+      - button "Open menu" [ref=e32] [cursor=pointer]:
+        - generic [ref=e37]: Menu
+      - link "Peptiva Labs home" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e39]:
+          - generic [ref=e40]: PEPTIVA
+          - generic [ref=e41]: LABS
+      - generic [ref=e42]:
+        - button "Search" [ref=e43] [cursor=pointer]
+        - link "Account" [ref=e47] [cursor=pointer]:
+          - /url: /account
+        - link "Wishlist" [ref=e51] [cursor=pointer]:
+          - /url: /wishlist
+        - button "Open bag" [ref=e54] [cursor=pointer]
+  - main [ref=e58]:
+    - region "Peptiva product reel" [ref=e59]
+    - generic [ref=e66]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Verified sourcing
+        - paragraph [ref=e73]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Lab-tested purity
+        - paragraph [ref=e81]: Every batch independently assayed by Janoshik Analytical before it is listed.
+      - generic [ref=e96]:
+        - paragraph [ref=e97]: Sealed cold packaging
+        - paragraph [ref=e98]: Cold-stored, tamper-sealed and labelled accurately before it leaves the shelf.
+      - generic [ref=e102]:
+        - paragraph [ref=e103]: A human on WhatsApp
+        - paragraph [ref=e104]: Real replies from a real person, usually within minutes on working days.
+    - generic [ref=e105]:
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - paragraph [ref=e110]: Shop by line
+          - heading "Every line on the bench" [level=2] [ref=e111]
+        - link "View all" [ref=e112] [cursor=pointer]:
+          - /url: /shop
+          - text: View all
+          - generic [aria-hidden] [ref=e113]: →
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - link [ref=e118] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - generic [ref=e121]: Metabolic
+          - link [ref=e126] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - generic [ref=e129]: Recovery
+          - link [ref=e134] [cursor=pointer]:
+            - /url: /shop?category=aesthetic
+            - generic [ref=e137]: Skin & Glow
+          - link [ref=e142] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - generic [ref=e145]: Longevity
+          - link [ref=e150] [cursor=pointer]:
+            - /url: /shop?format=blend
+            - generic [ref=e153]: Blends
+          - link "Metabolic Metabolic" [ref=e158] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - img "Metabolic" [ref=e159]
+            - generic [ref=e161]: Metabolic
+          - link "Recovery Recovery" [ref=e166] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - img "Recovery" [ref=e167]
+            - generic [ref=e169]: Recovery
+          - link "Skin & Glow Skin & Glow" [ref=e174] [cursor=pointer]:
+            - /url: /shop?category=aesthetic
+            - img "Skin & Glow" [ref=e175]
+            - generic [ref=e177]: Skin & Glow
+          - link "Longevity Longevity" [ref=e182] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - img "Longevity" [ref=e183]
+            - generic [ref=e185]: Longevity
+          - link "Blends Blends" [ref=e190] [cursor=pointer]:
+            - /url: /shop?format=blend
+            - img "Blends" [ref=e191]
+            - generic [ref=e193]: Blends
+          - link [ref=e198] [cursor=pointer]:
+            - /url: /shop?category=metabolic
+            - generic [ref=e201]: Metabolic
+          - link [ref=e206] [cursor=pointer]:
+            - /url: /shop?category=recovery
+            - generic [ref=e209]: Recovery
+          - link [ref=e214] [cursor=pointer]:
+            - /url: /shop?category=aesthetic
+            - generic [ref=e217]: Skin & Glow
+          - link [ref=e222] [cursor=pointer]:
+            - /url: /shop?category=longevity
+            - generic [ref=e225]: Longevity
+          - link [ref=e230] [cursor=pointer]:
+            - /url: /shop?format=blend
+            - generic [ref=e233]: Blends
+        - generic [ref=e237]:
+          - generic [ref=e238]: 5 lines · hover to pause
+          - generic [ref=e239]:
+            - button "Previous" [ref=e240] [cursor=pointer]
+            - button "Next" [ref=e243] [cursor=pointer]
+    - generic [ref=e246]:
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - paragraph [ref=e251]: Loved by the bench
+          - heading "Bestsellers" [level=2] [ref=e252]
+        - link "Shop all" [ref=e253] [cursor=pointer]:
+          - /url: /shop?sort=bestsellers
+          - text: Shop all
+          - generic [aria-hidden] [ref=e254]: →
+      - generic [ref=e256]:
+        - generic [ref=e257]:
+          - article [ref=e259]:
+            - generic [ref=e260]:
+              - link [ref=e261] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+              - generic: Bestseller
+              - button [ref=e263] [cursor=pointer]
+              - button [ref=e266] [cursor=pointer]: Quick add
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - link [ref=e269] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                  - text: BPC-157 + TB-500
+                - generic [ref=e270]: £120
+              - paragraph [ref=e271]: Recovery blend · 40 mg dual pen
+              - generic [ref=e272]: 40 mg (20 / 20)
+              - generic [ref=e286]:
+                - text: Save
+                - strong [ref=e289]: £18
+                - text: with Bench
+          - article [ref=e291]:
+            - generic [ref=e292]:
+              - link [ref=e293] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+              - generic: Bestseller
+              - button [ref=e295] [cursor=pointer]
+              - button [ref=e298] [cursor=pointer]: Quick add
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - link [ref=e301] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                  - text: Retatrutide
+                - generic [ref=e302]: £90
+              - paragraph [ref=e303]: Triple agonist · 20 mg pen
+              - generic [ref=e304]: 20 mg
+              - generic [ref=e318]:
+                - text: Save
+                - strong [ref=e321]: £13.50
+                - text: with Bench
+          - article [ref=e323]:
+            - generic [ref=e324]:
+              - link [ref=e325] [cursor=pointer]:
+                - /url: /product/tirzepatide
+              - generic: Bestseller
+              - button [ref=e327] [cursor=pointer]
+              - button [ref=e330] [cursor=pointer]: Quick add
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - link [ref=e333] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                  - text: Tirzepatide
+                - generic [ref=e334]: £90
+              - paragraph [ref=e335]: Dual agonist · 40 mg pen
+              - generic [ref=e336]: 40 mg
+              - generic [ref=e350]:
+                - text: Save
+                - strong [ref=e353]: £13.50
+                - text: with Bench
+          - article [ref=e355]:
+            - generic [ref=e356]:
+              - link [ref=e357] [cursor=pointer]:
+                - /url: /product/glow
+              - generic: New
+              - button [ref=e359] [cursor=pointer]
+              - button [ref=e362] [cursor=pointer]: Quick add
+            - generic [ref=e363]:
+              - generic [ref=e364]:
+                - link [ref=e365] [cursor=pointer]:
+                  - /url: /product/glow
+                  - text: Glow
+                - generic [ref=e366]: £90
+              - paragraph [ref=e367]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e368]: 70 mg
+              - generic [ref=e382]:
+                - text: Save
+                - strong [ref=e385]: £13.50
+                - text: with Bench
+          - article [ref=e387]:
+            - generic [ref=e388]:
+              - link [ref=e389] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+              - generic: New
+              - button [ref=e391] [cursor=pointer]
+              - button [ref=e394] [cursor=pointer]: Quick add
+            - generic [ref=e395]:
+              - generic [ref=e396]:
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                  - text: Retatrutide
+                - generic [ref=e398]: £140
+              - paragraph [ref=e399]: Triple agonist · 40 mg pen
+              - generic [ref=e400]: 40 mg
+              - generic [ref=e414]:
+                - text: Save
+                - strong [ref=e417]: £21
+                - text: with Bench
+          - article [ref=e419]:
+            - generic [ref=e420]:
+              - link [ref=e421] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+              - generic: Limited
+              - button [ref=e423] [cursor=pointer]
+              - button [ref=e426] [cursor=pointer]: Quick add
+            - generic [ref=e427]:
+              - generic [ref=e428]:
+                - link [ref=e429] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                  - text: NAD+
+                - generic [ref=e430]: £140
+              - paragraph [ref=e431]: Longevity · 2 × 500 mg pens
+              - generic [ref=e432]: 1,000 mg
+              - generic [ref=e446]:
+                - text: Save
+                - strong [ref=e449]: £21
+                - text: with Bench
+          - article [ref=e451]:
+            - generic [ref=e452]:
+              - link "BPC-157 + TB-500" [ref=e453] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+                - img "BPC-157 + TB-500" [ref=e454]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e455] [cursor=pointer]
+              - button "Quick add" [ref=e458] [cursor=pointer]
+            - generic [ref=e459]:
+              - generic [ref=e460]:
+                - link "BPC-157 + TB-500" [ref=e461] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                - generic [ref=e462]: £120
+              - paragraph [ref=e463]: Recovery blend · 40 mg dual pen
+              - generic [ref=e464]:
+                - generic [ref=e465]: 40 mg (20 / 20)
+                - generic "4.9 out of 5 stars" [ref=e467]
+              - generic [ref=e478]:
+                - text: Save
+                - strong [ref=e481]: £18
+                - text: with Bench
+          - article [ref=e483]:
+            - generic [ref=e484]:
+              - link "Retatrutide" [ref=e485] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+                - img "Retatrutide" [ref=e486]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e487] [cursor=pointer]
+              - button "Quick add" [ref=e490] [cursor=pointer]
+            - generic [ref=e491]:
+              - generic [ref=e492]:
+                - link "Retatrutide" [ref=e493] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                - generic [ref=e494]: £90
+              - paragraph [ref=e495]: Triple agonist · 20 mg pen
+              - generic [ref=e496]:
+                - generic [ref=e497]: 20 mg
+                - generic "4.9 out of 5 stars" [ref=e499]
+              - generic [ref=e510]:
+                - text: Save
+                - strong [ref=e513]: £13.50
+                - text: with Bench
+          - article [ref=e515]:
+            - generic [ref=e516]:
+              - link "Tirzepatide" [ref=e517] [cursor=pointer]:
+                - /url: /product/tirzepatide
+                - img "Tirzepatide" [ref=e518]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e519] [cursor=pointer]
+              - button "Quick add" [ref=e522] [cursor=pointer]
+            - generic [ref=e523]:
+              - generic [ref=e524]:
+                - link "Tirzepatide" [ref=e525] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                - generic [ref=e526]: £90
+              - paragraph [ref=e527]: Dual agonist · 40 mg pen
+              - generic [ref=e528]:
+                - generic [ref=e529]: 40 mg
+                - generic "4.8 out of 5 stars" [ref=e531]
+              - generic [ref=e542]:
+                - text: Save
+                - strong [ref=e545]: £13.50
+                - text: with Bench
+          - article [ref=e547]:
+            - generic [ref=e548]:
+              - link "Glow" [ref=e549] [cursor=pointer]:
+                - /url: /product/glow
+                - img "Glow" [ref=e550]
+              - generic: New
+              - button "Add to wishlist" [ref=e551] [cursor=pointer]
+              - button "Quick add" [ref=e554] [cursor=pointer]
+            - generic [ref=e555]:
+              - generic [ref=e556]:
+                - link "Glow" [ref=e557] [cursor=pointer]:
+                  - /url: /product/glow
+                - generic [ref=e558]: £90
+              - paragraph [ref=e559]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e560]:
+                - generic [ref=e561]: 70 mg
+                - generic "4.8 out of 5 stars" [ref=e563]
+              - generic [ref=e574]:
+                - text: Save
+                - strong [ref=e577]: £13.50
+                - text: with Bench
+          - article [ref=e579]:
+            - generic [ref=e580]:
+              - link "Retatrutide" [ref=e581] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+                - img "Retatrutide" [ref=e582]
+              - generic: New
+              - button "Add to wishlist" [ref=e583] [cursor=pointer]
+              - button "Quick add" [ref=e586] [cursor=pointer]
+            - generic [ref=e587]:
+              - generic [ref=e588]:
+                - link "Retatrutide" [ref=e589] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                - generic [ref=e590]: £140
+              - paragraph [ref=e591]: Triple agonist · 40 mg pen
+              - generic [ref=e592]:
+                - generic [ref=e593]: 40 mg
+                - generic "4.9 out of 5 stars" [ref=e595]
+              - generic [ref=e606]:
+                - text: Save
+                - strong [ref=e609]: £21
+                - text: with Bench
+          - article [ref=e611]:
+            - generic [ref=e612]:
+              - link "NAD+" [ref=e613] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+                - img "NAD+" [ref=e614]
+              - generic: Limited
+              - button "Add to wishlist" [ref=e615] [cursor=pointer]
+              - button "Quick add" [ref=e618] [cursor=pointer]
+            - generic [ref=e619]:
+              - generic [ref=e620]:
+                - link "NAD+" [ref=e621] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                - generic [ref=e622]: £140
+              - paragraph [ref=e623]: Longevity · 2 × 500 mg pens
+              - generic [ref=e624]:
+                - generic [ref=e625]: 1,000 mg
+                - generic "4.7 out of 5 stars" [ref=e627]
+              - generic [ref=e638]:
+                - text: Save
+                - strong [ref=e641]: £21
+                - text: with Bench
+          - article [ref=e643]:
+            - generic [ref=e644]:
+              - link [ref=e645] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+              - generic: Bestseller
+              - button [ref=e647] [cursor=pointer]
+              - button [ref=e650] [cursor=pointer]: Quick add
+            - generic [ref=e651]:
+              - generic [ref=e652]:
+                - link [ref=e653] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                  - text: BPC-157 + TB-500
+                - generic [ref=e654]: £120
+              - paragraph [ref=e655]: Recovery blend · 40 mg dual pen
+              - generic [ref=e656]: 40 mg (20 / 20)
+              - generic [ref=e670]:
+                - text: Save
+                - strong [ref=e673]: £18
+                - text: with Bench
+          - article [ref=e675]:
+            - generic [ref=e676]:
+              - link [ref=e677] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+              - generic: Bestseller
+              - button [ref=e679] [cursor=pointer]
+              - button [ref=e682] [cursor=pointer]: Quick add
+            - generic [ref=e683]:
+              - generic [ref=e684]:
+                - link [ref=e685] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                  - text: Retatrutide
+                - generic [ref=e686]: £90
+              - paragraph [ref=e687]: Triple agonist · 20 mg pen
+              - generic [ref=e688]: 20 mg
+              - generic [ref=e702]:
+                - text: Save
+                - strong [ref=e705]: £13.50
+                - text: with Bench
+          - article [ref=e707]:
+            - generic [ref=e708]:
+              - link [ref=e709] [cursor=pointer]:
+                - /url: /product/tirzepatide
+              - generic: Bestseller
+              - button [ref=e711] [cursor=pointer]
+              - button [ref=e714] [cursor=pointer]: Quick add
+            - generic [ref=e715]:
+              - generic [ref=e716]:
+                - link [ref=e717] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                  - text: Tirzepatide
+                - generic [ref=e718]: £90
+              - paragraph [ref=e719]: Dual agonist · 40 mg pen
+              - generic [ref=e720]: 40 mg
+              - generic [ref=e734]:
+                - text: Save
+                - strong [ref=e737]: £13.50
+                - text: with Bench
+          - article [ref=e739]:
+            - generic [ref=e740]:
+              - link [ref=e741] [cursor=pointer]:
+                - /url: /product/glow
+              - generic: New
+              - button [ref=e743] [cursor=pointer]
+              - button [ref=e746] [cursor=pointer]: Quick add
+            - generic [ref=e747]:
+              - generic [ref=e748]:
+                - link [ref=e749] [cursor=pointer]:
+                  - /url: /product/glow
+                  - text: Glow
+                - generic [ref=e750]: £90
+              - paragraph [ref=e751]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e752]: 70 mg
+              - generic [ref=e766]:
+                - text: Save
+                - strong [ref=e769]: £13.50
+                - text: with Bench
+          - article [ref=e771]:
+            - generic [ref=e772]:
+              - link [ref=e773] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+              - generic: New
+              - button [ref=e775] [cursor=pointer]
+              - button [ref=e778] [cursor=pointer]: Quick add
+            - generic [ref=e779]:
+              - generic [ref=e780]:
+                - link [ref=e781] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                  - text: Retatrutide
+                - generic [ref=e782]: £140
+              - paragraph [ref=e783]: Triple agonist · 40 mg pen
+              - generic [ref=e784]: 40 mg
+              - generic [ref=e798]:
+                - text: Save
+                - strong [ref=e801]: £21
+                - text: with Bench
+          - article [ref=e803]:
+            - generic [ref=e804]:
+              - link [ref=e805] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+              - generic: Limited
+              - button [ref=e807] [cursor=pointer]
+              - button [ref=e810] [cursor=pointer]: Quick add
+            - generic [ref=e811]:
+              - generic [ref=e812]:
+                - link [ref=e813] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                  - text: NAD+
+                - generic [ref=e814]: £140
+              - paragraph [ref=e815]: Longevity · 2 × 500 mg pens
+              - generic [ref=e816]: 1,000 mg
+              - generic [ref=e830]:
+                - text: Save
+                - strong [ref=e833]: £21
+                - text: with Bench
+        - generic [ref=e834]:
+          - generic [ref=e835]: 6 lines · hover to pause
+          - generic [ref=e836]:
+            - button "Previous" [ref=e837] [cursor=pointer]
+            - button "Next" [ref=e840] [cursor=pointer]
+    - generic [ref=e844]:
+      - generic [ref=e845]:
+        - paragraph [ref=e846]: Recurring supply
+        - heading [level=2] [ref=e849]:
+          - text: Subscribe to the
+          - emphasis [ref=e850]: Bench Programme.
+        - paragraph [ref=e851]: Your bench supply, delivered with each verified batch. Choose any line, receive it monthly for three deliveries, and save 15% on every one — with complimentary cold-chain shipping on everything else in your bag.
+        - generic [ref=e852]:
+          - generic [ref=e853]: Retatrutide 20 mg
+          - generic [ref=e854]: £90
+          - generic [ref=e855]: £76.50 / delivery
+          - generic [ref=e856]: Save £13.50
+        - generic [ref=e857]:
+          - link "Join the programme" [ref=e858] [cursor=pointer]:
+            - /url: /bench
+          - link "Choose a line" [ref=e861] [cursor=pointer]:
+            - /url: /shop
+      - generic [ref=e862]:
+        - generic [ref=e864]:
+          - text: "01"
+          - heading "15% off every delivery" [level=3] [ref=e865]
+          - paragraph [ref=e866]: Enrol any line for three monthly deliveries and save on each one.
+        - generic [ref=e868]:
+          - text: "02"
+          - heading "Complimentary cold-chain" [level=3] [ref=e869]
+          - paragraph [ref=e870]: Insulated shipping on every order that contains a Bench supply, no minimum spend.
+        - generic [ref=e872]:
+          - text: "03"
+          - heading "Priority batch allocation" [level=3] [ref=e873]
+          - paragraph [ref=e874]: Members are allocated from each verified batch 48 hours before it is listed.
+        - generic [ref=e876]:
+          - text: "04"
+          - heading "Reports on dispatch" [level=3] [ref=e877]
+          - paragraph [ref=e878]: The batch-specific certificate of analysis is emailed the moment your order ships.
+    - generic [ref=e880]:
+      - generic [ref=e881]:
+        - paragraph [ref=e882]: The Peptiva standard
+        - heading [level=2] [ref=e883]:
+          - text: Purity, verified.
+          - emphasis [ref=e884]: Paperwork, included.
+        - paragraph [ref=e885]: We started Peptiva Labs because the research peptide market needed a supplier willing to be boring about the basics — transparent sourcing, third-party lab testing, and people you can actually message. Every batch is checked before it reaches our shelves. Every product is supplied strictly for laboratory research use.
+        - generic [ref=e886]:
+          - generic [ref=e887]:
+            - paragraph [ref=e888]: 99.4%
+            - paragraph [ref=e889]: Verified peptide purity
+          - generic [ref=e890]:
+            - paragraph [ref=e891]: 5,000+
+            - paragraph [ref=e892]: Pens verified & sealed
+          - generic [ref=e893]:
+            - paragraph [ref=e894]: 4,000+
+            - paragraph [ref=e895]: Researchers served
+        - link "Our story" [ref=e896] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e899]:
+        - img "Sealed Peptiva pens placed into cold storage" [ref=e901]
+        - generic [ref=e902]:
+          - paragraph [ref=e903]: Janoshik verified
+          - paragraph [ref=e904]: Every batch assayed before it is listed.
+    - generic [ref=e905]:
+      - generic [ref=e912]:
+        - paragraph [ref=e913]: Just landed
+        - heading "New arrivals" [level=2] [ref=e914]
+        - paragraph [ref=e915]: The latest additions to the range — new batches, new concentrations, every one verified.
+      - generic [ref=e917]:
+        - generic [ref=e918]:
+          - article [ref=e920]:
+            - generic [ref=e921]:
+              - link [ref=e922] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+              - generic: New
+              - button [ref=e924] [cursor=pointer]
+              - button [ref=e927] [cursor=pointer]: Quick add
+            - generic [ref=e928]:
+              - generic [ref=e929]:
+                - link [ref=e930] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                  - text: Retatrutide
+                - generic [ref=e931]: £140
+              - paragraph [ref=e932]: Triple agonist · 40 mg pen
+              - generic [ref=e933]: 40 mg
+              - generic [ref=e947]:
+                - text: Save
+                - strong [ref=e950]: £21
+                - text: with Bench
+          - article [ref=e952]:
+            - generic [ref=e953]:
+              - link [ref=e954] [cursor=pointer]:
+                - /url: /product/glow
+              - generic: New
+              - button [ref=e956] [cursor=pointer]
+              - button [ref=e959] [cursor=pointer]: Quick add
+            - generic [ref=e960]:
+              - generic [ref=e961]:
+                - link [ref=e962] [cursor=pointer]:
+                  - /url: /product/glow
+                  - text: Glow
+                - generic [ref=e963]: £90
+              - paragraph [ref=e964]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e965]: 70 mg
+              - generic [ref=e979]:
+                - text: Save
+                - strong [ref=e982]: £13.50
+                - text: with Bench
+          - article [ref=e984]:
+            - generic [ref=e985]:
+              - link [ref=e986] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+              - generic: Limited
+              - button [ref=e988] [cursor=pointer]
+              - button [ref=e991] [cursor=pointer]: Quick add
+            - generic [ref=e992]:
+              - generic [ref=e993]:
+                - link [ref=e994] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                  - text: NAD+
+                - generic [ref=e995]: £140
+              - paragraph [ref=e996]: Longevity · 2 × 500 mg pens
+              - generic [ref=e997]: 1,000 mg
+              - generic [ref=e1011]:
+                - text: Save
+                - strong [ref=e1014]: £21
+                - text: with Bench
+          - article [ref=e1016]:
+            - generic [ref=e1017]:
+              - link [ref=e1018] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+              - generic: Bestseller
+              - button [ref=e1020] [cursor=pointer]
+              - button [ref=e1023] [cursor=pointer]: Quick add
+            - generic [ref=e1024]:
+              - generic [ref=e1025]:
+                - link [ref=e1026] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                  - text: Retatrutide
+                - generic [ref=e1027]: £90
+              - paragraph [ref=e1028]: Triple agonist · 20 mg pen
+              - generic [ref=e1029]: 20 mg
+              - generic [ref=e1043]:
+                - text: Save
+                - strong [ref=e1046]: £13.50
+                - text: with Bench
+          - article [ref=e1048]:
+            - generic [ref=e1049]:
+              - link [ref=e1050] [cursor=pointer]:
+                - /url: /product/tirzepatide
+              - generic: Bestseller
+              - button [ref=e1052] [cursor=pointer]
+              - button [ref=e1055] [cursor=pointer]: Quick add
+            - generic [ref=e1056]:
+              - generic [ref=e1057]:
+                - link [ref=e1058] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                  - text: Tirzepatide
+                - generic [ref=e1059]: £90
+              - paragraph [ref=e1060]: Dual agonist · 40 mg pen
+              - generic [ref=e1061]: 40 mg
+              - generic [ref=e1075]:
+                - text: Save
+                - strong [ref=e1078]: £13.50
+                - text: with Bench
+          - article [ref=e1080]:
+            - generic [ref=e1081]:
+              - link [ref=e1082] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+              - generic: Bestseller
+              - button [ref=e1084] [cursor=pointer]
+              - button [ref=e1087] [cursor=pointer]: Quick add
+            - generic [ref=e1088]:
+              - generic [ref=e1089]:
+                - link [ref=e1090] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                  - text: BPC-157 + TB-500
+                - generic [ref=e1091]: £120
+              - paragraph [ref=e1092]: Recovery blend · 40 mg dual pen
+              - generic [ref=e1093]: 40 mg (20 / 20)
+              - generic [ref=e1107]:
+                - text: Save
+                - strong [ref=e1110]: £18
+                - text: with Bench
+          - article [ref=e1112]:
+            - generic [ref=e1113]:
+              - link "Retatrutide" [ref=e1114] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+                - img "Retatrutide" [ref=e1115]
+              - generic: New
+              - button "Add to wishlist" [ref=e1116] [cursor=pointer]
+              - button "Quick add" [ref=e1119] [cursor=pointer]
+            - generic [ref=e1120]:
+              - generic [ref=e1121]:
+                - link "Retatrutide" [ref=e1122] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                - generic [ref=e1123]: £140
+              - paragraph [ref=e1124]: Triple agonist · 40 mg pen
+              - generic [ref=e1125]:
+                - generic [ref=e1126]: 40 mg
+                - generic "4.9 out of 5 stars" [ref=e1128]
+              - generic [ref=e1139]:
+                - text: Save
+                - strong [ref=e1142]: £21
+                - text: with Bench
+          - article [ref=e1144]:
+            - generic [ref=e1145]:
+              - link "Glow" [ref=e1146] [cursor=pointer]:
+                - /url: /product/glow
+                - img "Glow" [ref=e1147]
+              - generic: New
+              - button "Add to wishlist" [ref=e1148] [cursor=pointer]
+              - button "Quick add" [ref=e1151] [cursor=pointer]
+            - generic [ref=e1152]:
+              - generic [ref=e1153]:
+                - link "Glow" [ref=e1154] [cursor=pointer]:
+                  - /url: /product/glow
+                - generic [ref=e1155]: £90
+              - paragraph [ref=e1156]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e1157]:
+                - generic [ref=e1158]: 70 mg
+                - generic "4.8 out of 5 stars" [ref=e1160]
+              - generic [ref=e1171]:
+                - text: Save
+                - strong [ref=e1174]: £13.50
+                - text: with Bench
+          - article [ref=e1176]:
+            - generic [ref=e1177]:
+              - link "NAD+" [ref=e1178] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+                - img "NAD+" [ref=e1179]
+              - generic: Limited
+              - button "Add to wishlist" [ref=e1180] [cursor=pointer]
+              - button "Quick add" [ref=e1183] [cursor=pointer]
+            - generic [ref=e1184]:
+              - generic [ref=e1185]:
+                - link "NAD+" [ref=e1186] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                - generic [ref=e1187]: £140
+              - paragraph [ref=e1188]: Longevity · 2 × 500 mg pens
+              - generic [ref=e1189]:
+                - generic [ref=e1190]: 1,000 mg
+                - generic "4.7 out of 5 stars" [ref=e1192]
+              - generic [ref=e1203]:
+                - text: Save
+                - strong [ref=e1206]: £21
+                - text: with Bench
+          - article [ref=e1208]:
+            - generic [ref=e1209]:
+              - link "Retatrutide" [ref=e1210] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+                - img "Retatrutide" [ref=e1211]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e1212] [cursor=pointer]
+              - button "Quick add" [ref=e1215] [cursor=pointer]
+            - generic [ref=e1216]:
+              - generic [ref=e1217]:
+                - link "Retatrutide" [ref=e1218] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                - generic [ref=e1219]: £90
+              - paragraph [ref=e1220]: Triple agonist · 20 mg pen
+              - generic [ref=e1221]:
+                - generic [ref=e1222]: 20 mg
+                - generic "4.9 out of 5 stars" [ref=e1224]
+              - generic [ref=e1235]:
+                - text: Save
+                - strong [ref=e1238]: £13.50
+                - text: with Bench
+          - article [ref=e1240]:
+            - generic [ref=e1241]:
+              - link "Tirzepatide" [ref=e1242] [cursor=pointer]:
+                - /url: /product/tirzepatide
+                - img "Tirzepatide" [ref=e1243]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e1244] [cursor=pointer]
+              - button "Quick add" [ref=e1247] [cursor=pointer]
+            - generic [ref=e1248]:
+              - generic [ref=e1249]:
+                - link "Tirzepatide" [ref=e1250] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                - generic [ref=e1251]: £90
+              - paragraph [ref=e1252]: Dual agonist · 40 mg pen
+              - generic [ref=e1253]:
+                - generic [ref=e1254]: 40 mg
+                - generic "4.8 out of 5 stars" [ref=e1256]
+              - generic [ref=e1267]:
+                - text: Save
+                - strong [ref=e1270]: £13.50
+                - text: with Bench
+          - article [ref=e1272]:
+            - generic [ref=e1273]:
+              - link "BPC-157 + TB-500" [ref=e1274] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+                - img "BPC-157 + TB-500" [ref=e1275]
+              - generic: Bestseller
+              - button "Add to wishlist" [ref=e1276] [cursor=pointer]
+              - button "Quick add" [ref=e1279] [cursor=pointer]
+            - generic [ref=e1280]:
+              - generic [ref=e1281]:
+                - link "BPC-157 + TB-500" [ref=e1282] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                - generic [ref=e1283]: £120
+              - paragraph [ref=e1284]: Recovery blend · 40 mg dual pen
+              - generic [ref=e1285]:
+                - generic [ref=e1286]: 40 mg (20 / 20)
+                - generic "4.9 out of 5 stars" [ref=e1288]
+              - generic [ref=e1299]:
+                - text: Save
+                - strong [ref=e1302]: £18
+                - text: with Bench
+          - article [ref=e1304]:
+            - generic [ref=e1305]:
+              - link [ref=e1306] [cursor=pointer]:
+                - /url: /product/retatrutide-40mg
+              - generic: New
+              - button [ref=e1308] [cursor=pointer]
+              - button [ref=e1311] [cursor=pointer]: Quick add
+            - generic [ref=e1312]:
+              - generic [ref=e1313]:
+                - link [ref=e1314] [cursor=pointer]:
+                  - /url: /product/retatrutide-40mg
+                  - text: Retatrutide
+                - generic [ref=e1315]: £140
+              - paragraph [ref=e1316]: Triple agonist · 40 mg pen
+              - generic [ref=e1317]: 40 mg
+              - generic [ref=e1331]:
+                - text: Save
+                - strong [ref=e1334]: £21
+                - text: with Bench
+          - article [ref=e1336]:
+            - generic [ref=e1337]:
+              - link [ref=e1338] [cursor=pointer]:
+                - /url: /product/glow
+              - generic: New
+              - button [ref=e1340] [cursor=pointer]
+              - button [ref=e1343] [cursor=pointer]: Quick add
+            - generic [ref=e1344]:
+              - generic [ref=e1345]:
+                - link [ref=e1346] [cursor=pointer]:
+                  - /url: /product/glow
+                  - text: Glow
+                - generic [ref=e1347]: £90
+              - paragraph [ref=e1348]: GHK-Cu · BPC-157 · TB-500 blend
+              - generic [ref=e1349]: 70 mg
+              - generic [ref=e1363]:
+                - text: Save
+                - strong [ref=e1366]: £13.50
+                - text: with Bench
+          - article [ref=e1368]:
+            - generic [ref=e1369]:
+              - link [ref=e1370] [cursor=pointer]:
+                - /url: /product/nad-plus-1000mg
+              - generic: Limited
+              - button [ref=e1372] [cursor=pointer]
+              - button [ref=e1375] [cursor=pointer]: Quick add
+            - generic [ref=e1376]:
+              - generic [ref=e1377]:
+                - link [ref=e1378] [cursor=pointer]:
+                  - /url: /product/nad-plus-1000mg
+                  - text: NAD+
+                - generic [ref=e1379]: £140
+              - paragraph [ref=e1380]: Longevity · 2 × 500 mg pens
+              - generic [ref=e1381]: 1,000 mg
+              - generic [ref=e1395]:
+                - text: Save
+                - strong [ref=e1398]: £21
+                - text: with Bench
+          - article [ref=e1400]:
+            - generic [ref=e1401]:
+              - link [ref=e1402] [cursor=pointer]:
+                - /url: /product/retatrutide-20mg
+              - generic: Bestseller
+              - button [ref=e1404] [cursor=pointer]
+              - button [ref=e1407] [cursor=pointer]: Quick add
+            - generic [ref=e1408]:
+              - generic [ref=e1409]:
+                - link [ref=e1410] [cursor=pointer]:
+                  - /url: /product/retatrutide-20mg
+                  - text: Retatrutide
+                - generic [ref=e1411]: £90
+              - paragraph [ref=e1412]: Triple agonist · 20 mg pen
+              - generic [ref=e1413]: 20 mg
+              - generic [ref=e1427]:
+                - text: Save
+                - strong [ref=e1430]: £13.50
+                - text: with Bench
+          - article [ref=e1432]:
+            - generic [ref=e1433]:
+              - link [ref=e1434] [cursor=pointer]:
+                - /url: /product/tirzepatide
+              - generic: Bestseller
+              - button [ref=e1436] [cursor=pointer]
+              - button [ref=e1439] [cursor=pointer]: Quick add
+            - generic [ref=e1440]:
+              - generic [ref=e1441]:
+                - link [ref=e1442] [cursor=pointer]:
+                  - /url: /product/tirzepatide
+                  - text: Tirzepatide
+                - generic [ref=e1443]: £90
+              - paragraph [ref=e1444]: Dual agonist · 40 mg pen
+              - generic [ref=e1445]: 40 mg
+              - generic [ref=e1459]:
+                - text: Save
+                - strong [ref=e1462]: £13.50
+                - text: with Bench
+          - article [ref=e1464]:
+            - generic [ref=e1465]:
+              - link [ref=e1466] [cursor=pointer]:
+                - /url: /product/bpc-157-tb-500
+              - generic: Bestseller
+              - button [ref=e1468] [cursor=pointer]
+              - button [ref=e1471] [cursor=pointer]: Quick add
+            - generic [ref=e1472]:
+              - generic [ref=e1473]:
+                - link [ref=e1474] [cursor=pointer]:
+                  - /url: /product/bpc-157-tb-500
+                  - text: BPC-157 + TB-500
+                - generic [ref=e1475]: £120
+              - paragraph [ref=e1476]: Recovery blend · 40 mg dual pen
+              - generic [ref=e1477]: 40 mg (20 / 20)
+              - generic [ref=e1491]:
+                - text: Save
+                - strong [ref=e1494]: £18
+                - text: with Bench
+        - generic [ref=e1495]:
+          - generic [ref=e1496]: 6 lines · hover to pause
+          - generic [ref=e1497]:
+            - button "Previous" [ref=e1498] [cursor=pointer]
+            - button "Next" [ref=e1501] [cursor=pointer]
+    - generic [ref=e1504]:
+      - img "Analytical chemist reviewing a chromatography result" [ref=e1505]
+      - generic [ref=e1507]:
+        - generic [ref=e1508]:
+          - paragraph [ref=e1509]: Three deliberate steps
+          - heading "How each pen is prepared" [level=2] [ref=e1510]
+          - paragraph [ref=e1511]: Three deliberate steps between the lab bench and the sealed pen — so nothing about the product is left to chance.
+        - generic [ref=e1512]:
+          - generic [ref=e1514]:
+            - text: "01"
+            - paragraph [ref=e1515]: Step 01
+            - heading "Source" [level=3] [ref=e1516]
+            - paragraph [ref=e1517]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+          - generic [ref=e1519]:
+            - text: "02"
+            - paragraph [ref=e1520]: Step 02
+            - heading "Verify" [level=3] [ref=e1521]
+            - paragraph [ref=e1522]: Independent purity and concentration checks on every batch before it touches a customer order.
+          - generic [ref=e1524]:
+            - text: "03"
+            - paragraph [ref=e1525]: Step 03
+            - heading "Seal" [level=3] [ref=e1526]
+            - paragraph [ref=e1527]: Cold-stored and tamper-sealed, with accurate labelling on every pen before it leaves the shelf.
+    - region [ref=e1528]:
+      - generic [ref=e1530]:
+        - generic [ref=e1535]:
+          - paragraph [ref=e1536]: Six verified lines
+          - heading [level=2] [ref=e1537]:
+            - text: Ready to order?
+            - emphasis [ref=e1538]: Browse the catalogue.
+          - link "Start your order" [ref=e1540] [cursor=pointer]:
+            - /url: /shop
+        - img "Glass vials on a laboratory bench" [ref=e1544]
+        - img "Gloved hands preparing a solution" [ref=e1546]
+        - img "Researcher pipetting samples" [ref=e1548]
+        - img "Chemist working at a lab station" [ref=e1550]
+        - img "Beaker on a lab bench" [ref=e1552]
+        - img "Laboratory microscope" [ref=e1554]
+    - region [ref=e1555]:
+      - generic [ref=e1556]:
+        - paragraph [ref=e1557]: Reviews
+        - heading [level=2] [ref=e1558]:
+          - text: Stories from
+          - emphasis [ref=e1559]: our customers.
+        - paragraph [ref=e1560]: Researchers on what arrived, how it was packed, and how fast someone replied. Hover a card to play.
+      - generic [ref=e1561]:
+        - button "Play review from Rohan Natarajan" [ref=e1563] [cursor=pointer]:
+          - generic [ref=e1566]:
+            - generic [ref=e1567]: Rohan Natarajan
+            - generic [ref=e1568]: Co-founder, Ember Research
+        - button "Play review from Ethan Carter" [ref=e1573] [cursor=pointer]:
+          - generic [ref=e1576]:
+            - generic [ref=e1577]: Ethan Carter
+            - generic [ref=e1578]: Lab Procurement Specialist
+        - button "Play review from Michelle Reed" [ref=e1583] [cursor=pointer]:
+          - generic [ref=e1586]:
+            - generic [ref=e1587]: Michelle Reed
+            - generic [ref=e1588]: Research Assistant
+        - button "Play review from Marco Ruiz" [ref=e1593] [cursor=pointer]:
+          - generic [ref=e1596]:
+            - generic [ref=e1597]: Marco Ruiz
+            - generic [ref=e1598]: Procurement Lead, Vela Biotech
+  - contentinfo [ref=e1602]:
+    - generic [ref=e1604]:
+      - generic [ref=e1605]:
+        - paragraph [ref=e1606]: The Peptiva edit
+        - heading [level=2] [ref=e1607]:
+          - text: Batch drops, storage tips
+          - emphasis [ref=e1608]: and sourcing notes.
+      - generic [ref=e1609]:
+        - generic [ref=e1610]:
+          - textbox "Your email address" [ref=e1614]
+          - button "Subscribe" [ref=e1615] [cursor=pointer]
+        - paragraph [ref=e1618]: 10% off your first order when you join. No spam.
+    - generic [ref=e1619]:
+      - generic [ref=e1620]:
+        - link "Peptiva Labs home" [ref=e1621] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e1622]: P
+          - generic [ref=e1625]:
+            - generic [ref=e1626]: PEPTIVA
+            - generic [ref=e1627]: LABS
+        - paragraph [ref=e1628]: Reference-grade research peptides. Verified sourcing, third-party purity testing, and a real person on WhatsApp when you need one.
+        - paragraph [ref=e1629]:
+          - link "care@peptivalabs.uk" [ref=e1630] [cursor=pointer]:
+            - /url: mailto:care@peptivalabs.uk
+          - link "press@peptivalabs.uk" [ref=e1631] [cursor=pointer]:
+            - /url: mailto:press@peptivalabs.uk
+      - generic [ref=e1632]:
+        - paragraph [ref=e1633]: Shop
+        - list [ref=e1634]:
+          - listitem [ref=e1635]:
+            - link "Metabolic" [ref=e1636] [cursor=pointer]:
+              - /url: /shop?category=metabolic
+          - listitem [ref=e1637]:
+            - link "Recovery" [ref=e1638] [cursor=pointer]:
+              - /url: /shop?category=recovery
+          - listitem [ref=e1639]:
+            - link "Skin & Glow" [ref=e1640] [cursor=pointer]:
+              - /url: /shop?category=aesthetic
+          - listitem [ref=e1641]:
+            - link "Longevity" [ref=e1642] [cursor=pointer]:
+              - /url: /shop?category=longevity
+          - listitem [ref=e1643]:
+            - link "New in" [ref=e1644] [cursor=pointer]:
+              - /url: /shop?sort=new
+          - listitem [ref=e1645]:
+            - link "All products" [ref=e1646] [cursor=pointer]:
+              - /url: /shop
+      - generic [ref=e1647]:
+        - paragraph [ref=e1648]: Laboratory
+        - list [ref=e1649]:
+          - listitem [ref=e1650]:
+            - link "Bench Programme" [ref=e1651] [cursor=pointer]:
+              - /url: /bench
+          - listitem [ref=e1652]:
+            - link "Our story" [ref=e1653] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1654]:
+            - link "Lab reports" [ref=e1655] [cursor=pointer]:
+              - /url: /lab-reports
+          - listitem [ref=e1656]:
+            - link "Contact" [ref=e1657] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e1658]:
+            - link "Account" [ref=e1659] [cursor=pointer]:
+              - /url: /account
+      - generic [ref=e1660]:
+        - paragraph [ref=e1661]: Client care
+        - list [ref=e1662]:
+          - listitem [ref=e1663]:
+            - link "Delivery" [ref=e1664] [cursor=pointer]:
+              - /url: /delivery
+          - listitem [ref=e1665]:
+            - link "Returns" [ref=e1666] [cursor=pointer]:
+              - /url: /returns
+          - listitem [ref=e1667]:
+            - link "Track order" [ref=e1668] [cursor=pointer]:
+              - /url: /track-order
+          - listitem [ref=e1669]:
+            - link "FAQ" [ref=e1670] [cursor=pointer]:
+              - /url: /faq
+    - generic [ref=e1672]:
+      - paragraph [ref=e1673]: © 2026 Peptiva Labs. All rights reserved. For research use only — not for human or veterinary use.
+      - generic [ref=e1674]:
+        - link "Privacy" [ref=e1675] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=e1676] [cursor=pointer]:
+          - /url: /terms
+        - link "Refunds" [ref=e1677] [cursor=pointer]:
+          - /url: /returns

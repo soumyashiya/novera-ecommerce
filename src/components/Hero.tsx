@@ -1,276 +1,135 @@
 "use client";
 
-import { useRef } from "react";
 import Image from "next/image";
-import {
-  motion,
-  useReducedMotion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
+import { PRODUCTS } from "@/lib/data";
 
 const EASE = [0.22, 0.61, 0.36, 1] as const;
-const EASE_IMG = [0.165, 0.84, 0.44, 1] as const;
+const HERO_IMG = "/images/gen/hero1.webp";
 
-const HERO_IMG = "/images/hero-new-seo.webp";
-
+// Reference hero: one continuous pale-grey ground; the photo sits on the left
+// and dissolves into it, the copy block is right-aligned against the gutter.
+// A yellow band of logo-style marks follows immediately underneath.
 export default function Hero() {
   const reduce = useReducedMotion();
-  const sectionRef = useRef<HTMLElement>(null);
-
-  // Subtle scroll-linked parallax pan inside the portrait frame. framer-motion's
-  // useScroll replaces GSAP ScrollTrigger: the offsets below are the equivalent
-  // of start:"top bottom" / end:"bottom top" with scrub, so the motion is
-  // unchanged — but it drops gsap + ScrollTrigger from the bundle entirely.
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-  const driftY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
+  const verified = PRODUCTS.filter((p) => p.analysis).length;
 
   const rise = (delay: number) => ({
-    initial: reduce ? false : { opacity: 0, y: 30 },
+    initial: reduce ? false : { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 1.1, ease: EASE, delay },
+    transition: { duration: 0.8, ease: EASE, delay },
   });
 
-  return (
-    <section
-      id="top"
-      ref={sectionRef}
-      className="relative min-h-[100svh] overflow-hidden"
-    >
-      {/* ---- Right-side box effect, set behind the portrait ---- */}
-      <div
-        aria-hidden
-        className="hidden lg:block absolute inset-0 pointer-events-none"
-      >
-        <motion.div
-          initial={reduce ? false : { opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.3, ease: EASE, delay: 0.5 }}
-          className="absolute right-[16%] top-[15%] w-[28%] h-[66%] bg-background-secondary"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.3, ease: EASE, delay: 0.6 }}
-          className="absolute right-[16%] top-[8%] w-[32%] h-[80%] border border-line"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.3, ease: EASE, delay: 0.7 }}
-          className="absolute right-[11%] top-[22%] w-[24%] h-[52%] border border-line"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.3, ease: EASE, delay: 0.8 }}
-          className="absolute right-[1%] top-[14%] w-[20%] h-[62%] border border-line"
-        />
-      </div>
+  // Set in alternating faces so the strip reads like a row of press marks.
+  const marks = [
+    { label: "Janoshik", cls: "font-serif text-[1.65rem] uppercase tracking-[-0.02em]" },
+    { label: `${verified} Verified Batches`, cls: "font-sans text-[1.15rem] font-extrabold uppercase tracking-[-0.03em]" },
+    { label: "Third-Party Tested", cls: "font-serif italic text-[1.5rem]" },
+    { label: "Batch No. Published", cls: "font-sans text-[1.05rem] font-black uppercase tracking-[-0.04em]" },
+    { label: "Sealed Vials", cls: "font-serif text-[1.55rem] uppercase tracking-[0.12em]" },
+    { label: "Tamper-Evident", cls: "font-sans text-[1.15rem] font-bold italic uppercase tracking-[-0.02em]" },
+    { label: "Research Use Only", cls: "font-serif text-[1.35rem] tracking-[-0.01em]" },
+  ];
 
-      {/* ---- Full-height portrait (desktop) ---- */}
-      <motion.div
-        initial={reduce ? false : { clipPath: "inset(0% 0% 0% 100%)" }}
-        animate={reduce ? undefined : { clipPath: "inset(0% 0% 0% 0%)" }}
-        transition={{ duration: 1.6, ease: EASE_IMG, delay: 0.25 }}
-        className="hidden lg:block absolute top-[10%] bottom-0 right-[9%] w-[33%] xl:w-[31%] overflow-hidden"
-      >
-        <motion.div
-          className="absolute -top-[8%] -bottom-[8%] left-0 right-0"
-          style={{ y: reduce ? 0 : driftY, willChange: "transform" }}
-        >
-          {/* The hero is rendered twice — this desktop copy and the mobile one
-              further down. `priority` preloads regardless of whether the copy is
-              displayed, so marking both would download a full-size image that
-              one breakpoint never shows (measured: a wasted 147KB on desktop).
-              This copy keeps priority for a fast desktop LCP; the mobile copy is
-              lazy, and a display:none lazy image is never fetched at all. */}
+  return (
+    <section id="top">
+      {/* Starts at the very top of the page: the fixed header (dark strip +
+          inset yellow bar) floats over it, as on the reference. */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-[#e8e3dc] via-[#eeebe7] to-[#f1f0ef] pt-[102px] lg:pt-0">
+        {/* One image (single preload): stacked above the copy on mobile,
+            pinned left and fading into the ground on desktop. */}
+        <div className="hero-photo relative aspect-[4/3] w-full lg:absolute lg:inset-y-0 lg:left-0 lg:aspect-auto lg:w-[60%]">
           <Image
             src={HERO_IMG}
-            alt="Novera research-grade peptide reference material"
+            alt="A woman holding a sealed ALLUVI CJC-1295 research carton against a pale grey backdrop"
             fill
             priority
-            sizes="42vw"
-            className="object-cover object-top img-grade scale-75"
+            sizes="(max-width: 1024px) 100vw, 60vw"
+            className="object-cover object-[35%_center] lg:object-[30%_center]"
           />
-        </motion.div>
-      </motion.div>
-
-      {/* ---- Decorative geometry (desktop) ---- */}
-      <div
-        aria-hidden
-        className="hidden lg:block absolute inset-0 pointer-events-none"
-      >
-        {/* Left-side geometry */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.15 }}
-          className="absolute left-[3%] top-[24%] w-[12%] h-[30%] bg-background-secondary"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.3 }}
-          className="absolute left-[6%] top-[16%] w-[18%] h-[44%] border border-line"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.4 }}
-          className="absolute left-[1%] top-[36%] w-[10%] h-[22%] border border-line"
-        />
-
-        {/* Center geometry */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.1 }}
-          className="absolute left-[30%] top-[13%] w-[20%] h-[32%] bg-background-secondary"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.25 }}
-          className="absolute left-[22%] top-[20%] w-[34%] h-[46%] border border-line"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.35 }}
-          className="absolute left-[40%] top-[9%] w-[15%] h-[30%] border border-line"
-        />
-
-        {/* Bottom geometry */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.5 }}
-          className="absolute left-[10%] top-[64%] w-[30%] h-[26%] border border-line"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.58 }}
-          className="absolute left-[4%] top-[72%] w-[12%] h-[20%] bg-background-secondary"
-        />
-        <motion.div
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: EASE, delay: 0.62 }}
-          className="absolute left-[36%] top-[70%] w-[20%] h-[24%] border border-line"
-        />
-
-        {/* Giant faint index number */}
-        <motion.span
-          initial={reduce ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.3, ease: EASE, delay: 0.4 }}
-          className="absolute left-[40%] top-[6%] font-sans font-bold text-[8vw] leading-none tracking-tighter text-dark/10 select-none"
-        >
-          01
-        </motion.span>
-      </div>
-
-      {/* ---- Small circle-dot marker ---- */}
-      <motion.span
-        initial={reduce ? false : { opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: EASE, delay: 1.1 }}
-        className="hidden lg:flex absolute left-[53%] top-[62%] h-12 w-12 items-center justify-center rounded-full border border-dark/40"
-      >
-        <span className="h-1.5 w-1.5 rounded-full bg-dark" />
-      </motion.span>
-
-      {/* ---- Vertical year ---- */}
-      <motion.span
-        initial={reduce ? false : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: EASE, delay: 0.9 }}
-        className="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 text-[0.7rem] tracking-[0.5em] text-background/70 mix-blend-difference [writing-mode:vertical-rl]"
-      >
-        2026
-      </motion.span>
-
-      {/* ---- Main content ---- */}
-      <div className="container-lux relative z-10 min-h-[100svh] flex flex-col justify-center pt-28 pb-24 lg:pb-28">
-        <motion.p
-          {...rise(0.2)}
-          className="text-[0.7rem] tracking-[0.32em] uppercase text-muted mb-10 lg:mb-16"
-        >
-          Novera Research
-        </motion.p>
-
-        <h1 className="font-sans font-bold uppercase tracking-[-0.01em] leading-[0.92] text-[clamp(2.6rem,9vw,6rem)] max-w-full lg:max-w-[55%]">
-          <motion.span {...rise(0.3)} className="block text-dark/30">
-            Precision in
-          </motion.span>
-          <motion.span {...rise(0.4)} className="block text-dark">
-            Every
-          </motion.span>
-          <motion.span {...rise(0.5)} className="block text-dark">
-            Batch.
-          </motion.span>
-        </h1>
-
-        <motion.div {...rise(0.66)} className="mt-10">
-          <a
-            href="#products"
-            className="group inline-flex items-center gap-3 bg-dark px-9 py-4 text-background text-xs tracking-[0.18em] uppercase transition-colors duration-500 hover:bg-olive"
-          >
-            View Products
-            <span className="transition-transform duration-500 group-hover:translate-x-1">
-              →
-            </span>
-          </a>
-        </motion.div>
-
-        {/* ---- Mobile portrait (in-flow) ---- */}
-        <motion.div
-          initial={reduce ? false : { clipPath: "inset(0% 0% 100% 0%)" }}
-          animate={reduce ? undefined : { clipPath: "inset(0% 0% 0% 0%)" }}
-          transition={{ duration: 1.4, ease: EASE_IMG, delay: 0.4 }}
-          className="lg:hidden mt-12 relative aspect-[3/4] w-full overflow-hidden"
-        >
-          {/* Lazy, not priority: on desktop this copy is display:none and is
-              therefore never fetched. On mobile it sits at the top of the page,
-              so it still starts loading during first layout. */}
-          <Image
-            src={HERO_IMG}
-            alt="Novera research-grade peptide reference material"
-            fill
-            sizes="100vw"
-            className="object-cover object-top img-grade scale-75"
-          />
-          <span className="absolute top-4 left-4 font-sans font-bold text-5xl leading-none text-background/90 mix-blend-difference">
-            01
-          </span>
-        </motion.div>
-      </div>
-
-      {/* ---- Corner micro-labels ---- */}
-      <motion.div
-        initial={reduce ? false : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: EASE, delay: 1 }}
-        className="hidden lg:block container-lux absolute inset-x-0 bottom-7 z-10"
-      >
-        <div className="flex items-end justify-between gap-6 text-[0.66rem] tracking-[0.24em] uppercase text-muted">
-          <span>Batch Nº 01</span>
-          <span className="hidden md:block max-w-[240px] leading-relaxed text-center normal-case tracking-normal text-[0.8rem]">
-            Where rigorous testing meets reliable supply.
-          </span>
-          <a
-            href="#products"
-            className="link-underline text-muted lg:text-background/90 mix-blend-difference hover:text-dark transition-colors duration-500"
-          >
-            Products
-          </a>
         </div>
-      </motion.div>
+
+        <div className="relative z-10 flex items-end justify-end px-4 py-12 lg:h-[clamp(690px,38.5vw,810px)] lg:px-[52px] lg:pt-[126px] lg:pb-12">
+          <div className="w-full text-left lg:max-w-[640px] lg:text-right">
+            <motion.p
+              {...rise(0.05)}
+              className="mb-3 flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[-0.02em] text-dark lg:justify-end"
+            >
+              <span aria-hidden className="text-[0.7rem] tracking-[0.15em] text-[#F5C400]">
+                ★★★★★
+              </span>
+              Independently verified batches
+            </motion.p>
+
+            <motion.h1 {...rise(0.12)} className="text-hero text-dark">
+              Purity that&apos;s
+              <br />
+              proven.
+              <br />
+              Not promised.
+            </motion.h1>
+
+            <motion.p
+              {...rise(0.2)}
+              className="mt-4 font-serif text-[1.2rem] leading-[1.15] tracking-[-0.015em] text-dark lg:ml-auto"
+            >
+              Every certified batch is assayed by Janoshik Analytical before it
+              is listed.
+              <br className="hidden lg:block" /> Not some. Not most. Every.
+              Single. One.
+            </motion.p>
+
+            <motion.div
+              {...rise(0.28)}
+              className="mt-7 flex flex-wrap gap-4 lg:justify-end"
+            >
+              {/* Reference pair: 44px tall, square, 14px bold uppercase with
+                  tight tracking; solid ink + 1px ink outline. */}
+              <Link
+                href="/shop"
+                className="inline-flex h-11 items-center justify-center border border-dark bg-dark px-6 text-[0.875rem] font-bold uppercase leading-none tracking-[-0.03em] text-white transition-colors duration-300 hover:bg-transparent hover:text-dark"
+              >
+                Shop the range
+              </Link>
+              <Link
+                href="/#process"
+                className="inline-flex h-11 items-center justify-center border border-dark bg-transparent px-6 text-[0.875rem] font-bold uppercase leading-none tracking-[-0.03em] text-dark transition-colors duration-300 hover:bg-dark hover:text-white"
+              >
+                How it works
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Yellow band in the position of the reference's press-logo row. We
+          have no press coverage, so each "logo" is a verifiable fact. */}
+      {/* Scrolls continuously: the list is rendered twice and the track
+          slides by half its width, so the loop is seamless. Pauses on hover. */}
+      <div className="group overflow-hidden bg-accent text-dark">
+        <div className="marquee-track flex h-16 w-max items-center group-hover:[animation-play-state:paused]">
+          {[0, 1].map((copy) => (
+            <ul
+              key={copy}
+              aria-hidden={copy === 1 || undefined}
+              className="flex shrink-0 items-center gap-20 whitespace-nowrap pr-20"
+            >
+              {/* Each half holds the set twice so it is always wider than
+                  the viewport — otherwise a gap shows before the loop. */}
+              {[...marks, ...marks].map((m, i) => (
+                <li
+                  key={`${m.label}-${i}`}
+                  aria-hidden={i >= marks.length || undefined}
+                  className={`shrink-0 leading-none ${m.cls}`}
+                >
+                  {m.label}
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
