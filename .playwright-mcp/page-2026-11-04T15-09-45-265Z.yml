@@ -1,0 +1,249 @@
+- generic [active] [ref=f32e1]:
+  - link "Skip to content" [ref=f32e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f32e3]:
+    - paragraph [ref=f32e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f32e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f32e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f32e11]:
+      - generic [ref=f32e12]:
+        - list [ref=f32e13]:
+          - listitem [ref=f32e14]:
+            - link "Shop" [ref=f32e15] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f32e16]:
+            - link "Products" [ref=f32e17] [cursor=pointer]:
+              - /url: /#products
+          - listitem [ref=f32e18]:
+            - link "About" [ref=f32e19] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=f32e20]:
+            - link "Our Process" [ref=f32e21] [cursor=pointer]:
+              - /url: /#process
+          - listitem [ref=f32e22]:
+            - link "FAQ" [ref=f32e23] [cursor=pointer]:
+              - /url: /#faq
+        - link "Novera — home" [ref=f32e24] [cursor=pointer]:
+          - /url: /
+          - text: Novera
+        - generic [ref=f32e25]:
+          - link "Track order" [ref=f32e26] [cursor=pointer]:
+            - /url: /track
+          - button "Sign in" [ref=f32e28]:
+            - generic [ref=f32e29]: Account
+          - link "Cart, 0 items" [ref=f32e30] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f32e31]: Bag (0)
+  - main [ref=f32e33]:
+    - heading "Cellular & Longevity — Novera" [level=1] [ref=f32e34]
+    - generic [ref=f32e35]:
+      - generic [ref=f32e39]:
+        - paragraph [ref=f32e40]: Cellular & Longevity · 2 products
+        - heading "Cellular research, traceable to the batch." [level=2] [ref=f32e41]
+      - generic [ref=f32e42]:
+        - group "Filter by category" [ref=f32e43]:
+          - button "All" [ref=f32e44]
+          - button "Metabolic" [ref=f32e45]
+          - button "Cellular & Longevity" [pressed] [ref=f32e46]
+          - button "Recovery & Repair" [ref=f32e47]
+          - button "Skin & Hair" [ref=f32e48]
+        - generic [ref=f32e49]:
+          - generic [ref=f32e50]: Sort
+          - combobox "Sort" [ref=f32e51]:
+            - option "Featured" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+      - paragraph [ref=f32e52]: 2 products
+      - generic [ref=f32e53]:
+        - article [ref=f32e54]:
+          - generic [ref=f32e55]:
+            - link "Limited Research use only 1,000 mg NAD+ + Sealed & cold-stored NAD+" [ref=f32e56] [cursor=pointer]:
+              - /url: /products/nad
+              - generic [ref=f32e57]: Limited
+              - generic [ref=f32e58]:
+                - generic [ref=f32e59]: Research use only
+                - paragraph [ref=f32e60]: 1,000 mg NAD++ Sealed & cold-stored
+              - img "NAD+" [ref=f32e62]
+            - button "Save NAD+ to wishlist" [ref=f32e65]
+          - generic [ref=f32e68]:
+            - generic [ref=f32e69]:
+              - heading [level=3] [ref=f32e70]:
+                - link "NAD+" [ref=f32e71] [cursor=pointer]:
+                  - /url: /products/nad
+              - paragraph [ref=f32e72]: $149
+            - paragraph [ref=f32e73]: Cellular & Longevity · 1,000 mg pen
+            - generic [ref=f32e74]: 1,000 mg
+        - article [ref=f32e76]:
+          - generic [ref=f32e77]:
+            - link "New Research use only 40 mg MOTS-C + Sealed & cold-stored MOTS-C" [ref=f32e78] [cursor=pointer]:
+              - /url: /products/mots-c
+              - generic [ref=f32e79]: New
+              - generic [ref=f32e80]:
+                - generic [ref=f32e81]: Research use only
+                - paragraph [ref=f32e82]: 40 mg MOTS-C+ Sealed & cold-stored
+              - img "MOTS-C" [ref=f32e84]
+            - button "Save MOTS-C to wishlist" [ref=f32e87]
+          - generic [ref=f32e90]:
+            - generic [ref=f32e91]:
+              - heading [level=3] [ref=f32e92]:
+                - link "MOTS-C" [ref=f32e93] [cursor=pointer]:
+                  - /url: /products/mots-c
+              - paragraph [ref=f32e94]: $169
+            - paragraph [ref=f32e95]: Cellular & Longevity · 40 mg pen
+            - generic [ref=f32e96]: 40 mg
+    - paragraph [ref=f32e101]:
+      - generic [ref=f32e102]: Research use only.
+      - text: Every product on this page is supplied strictly for laboratory and analytical research conducted by qualified professionals — not for human or veterinary use. Certificates of analysis are available on each product page.
+  - contentinfo [ref=f32e103]:
+    - generic [ref=f32e104]:
+      - paragraph [ref=f32e105]: Real batches.On camera.
+      - link "See the range" [ref=f32e106] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f32e107]:
+      - listitem [ref=f32e108]:
+        - generic [ref=f32e109]:
+          - generic "Video review 1" [ref=f32e110]
+          - button "Play Video review 1" [ref=f32e112] [cursor=pointer]
+          - generic [ref=f32e113]: 0:20
+      - listitem [ref=f32e114]:
+        - generic [ref=f32e115]:
+          - generic "Video review 2" [ref=f32e116]
+          - button "Play Video review 2" [ref=f32e118] [cursor=pointer]
+          - generic [ref=f32e119]: 0:30
+      - listitem [ref=f32e120]:
+        - generic [ref=f32e121]:
+          - generic "Video review 3" [ref=f32e122]
+          - button "Play Video review 3" [ref=f32e124] [cursor=pointer]
+          - generic [ref=f32e125]: 0:20
+      - listitem [ref=f32e126]:
+        - generic [ref=f32e127]:
+          - generic "Video review 4" [ref=f32e128]
+          - button "Play Video review 4" [ref=f32e130] [cursor=pointer]
+          - generic [ref=f32e131]: 0:30
+      - listitem [ref=f32e132]:
+        - generic [ref=f32e133]:
+          - generic "Video review 1" [ref=f32e134]
+          - generic [ref=f32e135]: 0:20
+          - generic [ref=f32e136]:
+            - button "Play Video review 1" [ref=f32e137]
+            - button "Unmute Video review 1" [ref=f32e140]
+      - listitem [ref=f32e144]:
+        - generic [ref=f32e145]:
+          - generic "Video review 2" [ref=f32e146]
+          - button "Play Video review 2" [ref=f32e148] [cursor=pointer]
+          - generic [ref=f32e149]: 0:30
+      - listitem [ref=f32e150]:
+        - generic [ref=f32e151]:
+          - generic "Video review 3" [ref=f32e152]
+          - button "Play Video review 3" [ref=f32e154] [cursor=pointer]
+          - generic [ref=f32e155]: 0:20
+      - listitem [ref=f32e156]:
+        - generic [ref=f32e157]:
+          - generic "Video review 4" [ref=f32e158]
+          - button "Play Video review 4" [ref=f32e160] [cursor=pointer]
+          - generic [ref=f32e161]: 0:30
+      - listitem [ref=f32e162]:
+        - generic [ref=f32e163]:
+          - generic "Video review 1" [ref=f32e164]
+          - button "Play Video review 1" [ref=f32e166] [cursor=pointer]
+          - generic [ref=f32e167]: 0:20
+      - listitem [ref=f32e168]:
+        - generic [ref=f32e169]:
+          - generic "Video review 2" [ref=f32e170]
+          - button "Play Video review 2" [ref=f32e172] [cursor=pointer]
+          - generic [ref=f32e173]: 0:30
+      - listitem [ref=f32e174]:
+        - generic [ref=f32e175]:
+          - generic "Video review 3" [ref=f32e176]
+          - button "Play Video review 3" [ref=f32e178] [cursor=pointer]
+          - generic [ref=f32e179]: 0:20
+      - listitem [ref=f32e180]:
+        - generic [ref=f32e181]:
+          - generic "Video review 4" [ref=f32e182]
+          - button "Play Video review 4" [ref=f32e184] [cursor=pointer]
+          - generic [ref=f32e185]: 0:30
+    - generic [ref=f32e186]:
+      - generic [ref=f32e187]:
+        - generic [ref=f32e189]:
+          - paragraph [ref=f32e190]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f32e191]:
+            - generic [ref=f32e192]: Your email address
+            - textbox "Your email address" [ref=f32e193]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f32e194]
+          - paragraph [ref=f32e195]
+        - generic [ref=f32e196]:
+          - generic [ref=f32e197]:
+            - paragraph [ref=f32e198]: Explore
+            - list [ref=f32e199]:
+              - listitem [ref=f32e200]:
+                - link "Shop" [ref=f32e201] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f32e202]:
+                - link "Products" [ref=f32e203] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f32e204]:
+                - link "About" [ref=f32e205] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f32e206]:
+                - link "Our Process" [ref=f32e207] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f32e208]:
+                - link "FAQ" [ref=f32e209] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f32e210]:
+            - paragraph [ref=f32e211]: Our Range
+            - list [ref=f32e212]:
+              - listitem [ref=f32e213]:
+                - link "Tirzepatide" [ref=f32e214] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f32e215]:
+                - link "Retatrutide" [ref=f32e216] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f32e217]:
+                - link "NAD+" [ref=f32e218] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f32e219]:
+                - link "Glow" [ref=f32e220] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f32e221]:
+            - paragraph [ref=f32e222]: Help
+            - list [ref=f32e223]:
+              - listitem [ref=f32e224]:
+                - link "Track Order" [ref=f32e225] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f32e226]:
+                - link "My Orders" [ref=f32e227] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f32e228]:
+                - link "FAQ" [ref=f32e229] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f32e230]:
+            - paragraph [ref=f32e231]: Legal
+            - list [ref=f32e232]:
+              - listitem [ref=f32e233]:
+                - link "Privacy Policy" [ref=f32e234] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f32e235]:
+                - link "Terms of Service" [ref=f32e236] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f32e237]:
+                - link "Shipping Policy" [ref=f32e238] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f32e239]:
+                - link "Refund Policy" [ref=f32e240] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f32e241]:
+                - link "Press" [ref=f32e242] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f32e243]:
+        - link "hello@novera.studio" [ref=f32e244] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f32e245]: © 2026 Novera. All rights reserved.
+      - generic [ref=f32e246]:
+        - paragraph [ref=f32e247]: Research use only
+        - paragraph [ref=f32e248]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - alert [ref=f32e249]

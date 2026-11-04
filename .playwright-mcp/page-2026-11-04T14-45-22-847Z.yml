@@ -1,0 +1,232 @@
+- generic [active] [ref=f25e1]:
+  - link "Skip to content" [ref=f25e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f25e3]:
+    - paragraph [ref=f25e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f25e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f25e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f25e11]:
+      - generic [ref=f25e12]:
+        - list [ref=f25e13]:
+          - listitem [ref=f25e14]:
+            - link "Shop" [ref=f25e15] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f25e16]:
+            - link "Products" [ref=f25e17] [cursor=pointer]:
+              - /url: /#products
+          - listitem [ref=f25e18]:
+            - link "About" [ref=f25e19] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=f25e20]:
+            - link "Our Process" [ref=f25e21] [cursor=pointer]:
+              - /url: /#process
+          - listitem [ref=f25e22]:
+            - link "FAQ" [ref=f25e23] [cursor=pointer]:
+              - /url: /#faq
+        - link "Novera — home" [ref=f25e24] [cursor=pointer]:
+          - /url: /
+          - text: Novera
+        - generic [ref=f25e25]:
+          - link "Track order" [ref=f25e26] [cursor=pointer]:
+            - /url: /track
+          - button "Sign in" [ref=f25e28]:
+            - generic [ref=f25e29]: Account
+          - link "Cart, 0 items" [ref=f25e30] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f25e31]: Bag (0)
+  - main [ref=f25e33]:
+    - generic [ref=f25e34]:
+      - generic [ref=f25e35]:
+        - paragraph [ref=f25e37]: The range
+        - heading "All products" [level=1] [ref=f25e39]
+      - paragraph [ref=f25e41]: 8 research lines, each supplied in a sealed fixed-volume format. Certified batches are independently assayed by Janoshik Analytical and published with their batch number and verified content. For laboratory research use only.
+    - generic [ref=f25e42]:
+      - generic [ref=f25e43]:
+        - group "Filter by category" [ref=f25e44]:
+          - button "All" [ref=f25e45]
+          - button "Metabolic" [ref=f25e46]
+          - button "Cellular & Longevity" [ref=f25e47]
+          - button "Recovery & Repair" [ref=f25e48]
+          - button "Skin & Hair" [pressed] [ref=f25e49]
+        - generic [ref=f25e50]:
+          - generic [ref=f25e51]: Sort
+          - combobox "Sort" [ref=f25e52]:
+            - option "Featured" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+      - paragraph [ref=f25e53]: 1 product
+      - article [ref=f25e55]:
+        - generic [ref=f25e56]:
+          - link "New Independently assayed 70 mg Glow + Batch COA Glow" [ref=f25e57] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=f25e58]: New
+            - generic [ref=f25e59]:
+              - generic [ref=f25e60]: Independently assayed
+              - paragraph [ref=f25e61]: 70 mg Glow+ Batch COA
+            - img "Glow" [ref=f25e63]
+          - button "Save Glow to wishlist" [ref=f25e66]
+        - generic [ref=f25e69]:
+          - generic [ref=f25e70]:
+            - heading [level=3] [ref=f25e71]:
+              - link "Glow" [ref=f25e72] [cursor=pointer]:
+                - /url: /products/glow
+            - paragraph [ref=f25e73]: $129
+          - paragraph [ref=f25e74]: Recovery & Repair · 70 mg pen
+          - generic [ref=f25e75]: 70 mg
+          - paragraph [ref=f25e77]: Batch GL0621XSA · COA
+    - paragraph [ref=f25e83]:
+      - generic [ref=f25e84]: Research use only.
+      - text: Every product on this page is supplied strictly for laboratory and analytical research conducted by qualified professionals — not for human or veterinary use. Certificates of analysis are available on each product page.
+  - contentinfo [ref=f25e85]:
+    - generic [ref=f25e86]:
+      - paragraph [ref=f25e87]: Real batches.On camera.
+      - link "See the range" [ref=f25e88] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f25e89]:
+      - listitem [ref=f25e90]:
+        - generic [ref=f25e91]:
+          - generic "Video review 1" [ref=f25e92]
+          - button "Play Video review 1" [ref=f25e94] [cursor=pointer]
+          - generic [ref=f25e95]: 0:20
+      - listitem [ref=f25e96]:
+        - generic [ref=f25e97]:
+          - generic "Video review 2" [ref=f25e98]
+          - button "Play Video review 2" [ref=f25e100] [cursor=pointer]
+          - generic [ref=f25e101]: 0:30
+      - listitem [ref=f25e102]:
+        - generic [ref=f25e103]:
+          - generic "Video review 3" [ref=f25e104]
+          - button "Play Video review 3" [ref=f25e106] [cursor=pointer]
+          - generic [ref=f25e107]: 0:20
+      - listitem [ref=f25e108]:
+        - generic [ref=f25e109]:
+          - generic "Video review 4" [ref=f25e110]
+          - button "Play Video review 4" [ref=f25e112] [cursor=pointer]
+          - generic [ref=f25e113]: 0:30
+      - listitem [ref=f25e114]:
+        - generic [ref=f25e115]:
+          - generic "Video review 1" [ref=f25e116]
+          - generic [ref=f25e117]: 0:20
+          - generic [ref=f25e118]:
+            - button "Play Video review 1" [ref=f25e119]
+            - button "Unmute Video review 1" [ref=f25e122]
+      - listitem [ref=f25e126]:
+        - generic [ref=f25e127]:
+          - generic "Video review 2" [ref=f25e128]
+          - button "Play Video review 2" [ref=f25e130] [cursor=pointer]
+          - generic [ref=f25e131]: 0:30
+      - listitem [ref=f25e132]:
+        - generic [ref=f25e133]:
+          - generic "Video review 3" [ref=f25e134]
+          - button "Play Video review 3" [ref=f25e136] [cursor=pointer]
+          - generic [ref=f25e137]: 0:20
+      - listitem [ref=f25e138]:
+        - generic [ref=f25e139]:
+          - generic "Video review 4" [ref=f25e140]
+          - button "Play Video review 4" [ref=f25e142] [cursor=pointer]
+          - generic [ref=f25e143]: 0:30
+      - listitem [ref=f25e144]:
+        - generic [ref=f25e145]:
+          - generic "Video review 1" [ref=f25e146]
+          - button "Play Video review 1" [ref=f25e148] [cursor=pointer]
+          - generic [ref=f25e149]: 0:20
+      - listitem [ref=f25e150]:
+        - generic [ref=f25e151]:
+          - generic "Video review 2" [ref=f25e152]
+          - button "Play Video review 2" [ref=f25e154] [cursor=pointer]
+          - generic [ref=f25e155]: 0:30
+      - listitem [ref=f25e156]:
+        - generic [ref=f25e157]:
+          - generic "Video review 3" [ref=f25e158]
+          - button "Play Video review 3" [ref=f25e160] [cursor=pointer]
+          - generic [ref=f25e161]: 0:20
+      - listitem [ref=f25e162]:
+        - generic [ref=f25e163]:
+          - generic "Video review 4" [ref=f25e164]
+          - button "Play Video review 4" [ref=f25e166] [cursor=pointer]
+          - generic [ref=f25e167]: 0:30
+    - generic [ref=f25e168]:
+      - generic [ref=f25e169]:
+        - generic [ref=f25e171]:
+          - paragraph [ref=f25e172]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f25e173]:
+            - generic [ref=f25e174]: Your email address
+            - textbox "Your email address" [ref=f25e175]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f25e176]
+          - paragraph [ref=f25e177]
+        - generic [ref=f25e178]:
+          - generic [ref=f25e179]:
+            - paragraph [ref=f25e180]: Explore
+            - list [ref=f25e181]:
+              - listitem [ref=f25e182]:
+                - link "Shop" [ref=f25e183] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f25e184]:
+                - link "Products" [ref=f25e185] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f25e186]:
+                - link "About" [ref=f25e187] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f25e188]:
+                - link "Our Process" [ref=f25e189] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f25e190]:
+                - link "FAQ" [ref=f25e191] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f25e192]:
+            - paragraph [ref=f25e193]: Our Range
+            - list [ref=f25e194]:
+              - listitem [ref=f25e195]:
+                - link "Tirzepatide" [ref=f25e196] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f25e197]:
+                - link "Retatrutide" [ref=f25e198] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f25e199]:
+                - link "NAD+" [ref=f25e200] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f25e201]:
+                - link "Glow" [ref=f25e202] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f25e203]:
+            - paragraph [ref=f25e204]: Help
+            - list [ref=f25e205]:
+              - listitem [ref=f25e206]:
+                - link "Track Order" [ref=f25e207] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f25e208]:
+                - link "My Orders" [ref=f25e209] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f25e210]:
+                - link "FAQ" [ref=f25e211] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f25e212]:
+            - paragraph [ref=f25e213]: Legal
+            - list [ref=f25e214]:
+              - listitem [ref=f25e215]:
+                - link "Privacy Policy" [ref=f25e216] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f25e217]:
+                - link "Terms of Service" [ref=f25e218] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f25e219]:
+                - link "Shipping Policy" [ref=f25e220] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f25e221]:
+                - link "Refund Policy" [ref=f25e222] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f25e223]:
+                - link "Press" [ref=f25e224] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f25e225]:
+        - link "hello@novera.studio" [ref=f25e226] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f25e227]: © 2026 Novera. All rights reserved.
+      - generic [ref=f25e228]:
+        - paragraph [ref=f25e229]: Research use only
+        - paragraph [ref=f25e230]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - alert [ref=f25e231]

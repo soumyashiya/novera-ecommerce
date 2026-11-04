@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 import { CONTACT } from "@/lib/data";
@@ -58,7 +59,7 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section-pad bg-background-secondary">
+    <section id="faq" className="section-band section-pad bg-background-secondary">
       <div className="container-lux">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
@@ -79,6 +80,17 @@ export default function Faq() {
                 </a>
                 .
               </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <div className="relative mt-10 aspect-[1122/1402] w-full overflow-hidden bg-background">
+                <Image
+                  src="/images/faq-11.webp"
+                  alt="A woman holding a sealed ALLUVI CJC-1295 10 mg carton, with the pen on the table in front of her"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
             </Reveal>
           </div>
 

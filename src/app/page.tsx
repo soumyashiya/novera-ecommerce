@@ -25,15 +25,14 @@ export default function Home() {
         variant="split"
         lines={["More claims", "isn't better.", "Verified is."]}
         cta={{ label: "Shop the verified range", href: "/shop" }}
-        image="/images/gen/subscribe-bg.png"
-        imageAlt="Sealed research pens and amber vials in an open case on a warm surface"
-        flipImage
+        image="/images/claims.png"
+        imageAlt="An open case holding three sealed ALLUVI pens — CJC-1295, NAD+ and Retatrutide"
         specs={[
           { label: "Independently assayed.", value: "99%+ purity" },
           { label: "Batch-numbered.", value: "Every pen traceable" },
           { label: "Sealed & cold-stored.", value: "2–8 °C" },
         ]}
-        specNote="Every batch, documented."
+        specNote="Every Novera batch, documented."
       />
 
       <About />

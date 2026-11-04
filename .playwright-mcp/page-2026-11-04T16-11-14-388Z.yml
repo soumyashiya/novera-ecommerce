@@ -1,0 +1,375 @@
+- generic [active] [ref=f53e1]:
+  - link "Skip to content" [ref=f53e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f53e3]:
+    - paragraph [ref=f53e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f53e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f53e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f53e11]:
+      - generic [ref=f53e12]:
+        - list [ref=f53e13]:
+          - listitem [ref=f53e14]:
+            - link "Home" [ref=f53e15] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f53e16]:
+            - link "Explore" [ref=f53e17] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f53e18]:
+            - link "About" [ref=f53e19] [cursor=pointer]:
+              - /url: /about
+        - link "Novera — home" [ref=f53e20] [cursor=pointer]:
+          - /url: /
+          - text: Novera
+        - generic [ref=f53e21]:
+          - link "Track order" [ref=f53e22] [cursor=pointer]:
+            - /url: /track
+          - button "Sign in" [ref=f53e24]:
+            - generic [ref=f53e25]: Account
+          - link "Cart, 0 items" [ref=f53e26] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f53e27]: Bag (0)
+  - main [ref=f53e29]:
+    - generic [ref=f53e31]:
+      - generic [ref=f53e32]:
+        - paragraph [ref=f53e33]: Lab reports
+        - heading "Every batch, on the record." [level=1] [ref=f53e34]
+      - paragraph [ref=f53e36]: 4published Janoshik Analytical certificates. Each one is reproduced below with the batch number it was issued against, and links out to Janoshik's own verification page so you can check it against the lab rather than against us.
+    - generic [ref=f53e37]:
+      - generic [ref=f53e38]:
+        - article [ref=f53e40]:
+          - generic [ref=f53e41]:
+            - heading [level=2] [ref=f53e42]:
+              - link "Tirzepatide 40 mg (R&D Only)" [ref=f53e43] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - generic [ref=f53e44]:
+              - generic [ref=f53e45]:
+                - term [ref=f53e46]: Batch
+                - definition [ref=f53e47]: TR786PAOS
+              - generic [ref=f53e48]:
+                - term [ref=f53e49]: Assayed purity
+                - definition [ref=f53e50]: 99.85%
+              - generic [ref=f53e51]:
+                - term [ref=f53e52]: Fill volume
+                - definition [ref=f53e53]: 3 mL
+            - table [ref=f53e54]:
+              - caption [ref=f53e55]: Measured contents for batch TR786PAOS
+              - rowgroup [ref=f53e56]:
+                - row [ref=f53e57]:
+                  - columnheader "Compound" [ref=f53e58]
+                  - columnheader "Concentration" [ref=f53e59]
+                  - columnheader "Content" [ref=f53e60]
+              - rowgroup [ref=f53e61]:
+                - row [ref=f53e62]:
+                  - rowheader "Tirzepatide" [ref=f53e63]
+                  - cell "13.35 mg/mL" [ref=f53e64]
+                  - cell "40.05 mg" [ref=f53e65]
+            - generic [ref=f53e66]:
+              - link "Verify at Janoshik" [ref=f53e67] [cursor=pointer]:
+                - /url: https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN
+              - link "View product →" [ref=f53e68] [cursor=pointer]:
+                - /url: /products/tirzepatide
+          - generic [ref=f53e69]:
+            - link "Open the full certificate of analysis for batch TR786PAOS" [ref=f53e70] [cursor=pointer]:
+              - /url: /images/coa/tirzepatide.png
+              - img "Janoshik Analytical certificate of analysis for Tirzepatide 40 mg (R&D Only), batch TR786PAOS" [ref=f53e71]
+            - list [ref=f53e72]:
+              - listitem [ref=f53e73]:
+                - link "Open sample photograph 1 from Janoshik testing of batch TR786PAOS" [ref=f53e74] [cursor=pointer]:
+                  - /url: /images/coa/evidence/tirzepatide-1.jpg
+              - listitem [ref=f53e75]:
+                - link "Open sample photograph 2 from Janoshik testing of batch TR786PAOS" [ref=f53e76] [cursor=pointer]:
+                  - /url: /images/coa/evidence/tirzepatide-2.jpg
+              - listitem [ref=f53e77]:
+                - link "Open sample photograph 3 from Janoshik testing of batch TR786PAOS" [ref=f53e78] [cursor=pointer]:
+                  - /url: /images/coa/evidence/tirzepatide-3.jpg
+            - paragraph [ref=f53e79]: Sample photographs taken by Janoshik during testing.
+        - article [ref=f53e81]:
+          - generic [ref=f53e82]:
+            - heading [level=2] [ref=f53e83]:
+              - link "Retatrutide 20 mg (R&D Only)" [ref=f53e84] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - generic [ref=f53e85]:
+              - generic [ref=f53e86]:
+                - term [ref=f53e87]: Batch
+                - definition [ref=f53e88]: AR1721TRT
+              - generic [ref=f53e89]:
+                - term [ref=f53e90]: Assayed purity
+                - definition [ref=f53e91]: 99.21%
+              - generic [ref=f53e92]:
+                - term [ref=f53e93]: Fill volume
+                - definition [ref=f53e94]: 2.4 mL
+            - table [ref=f53e95]:
+              - caption [ref=f53e96]: Measured contents for batch AR1721TRT
+              - rowgroup [ref=f53e97]:
+                - row [ref=f53e98]:
+                  - columnheader "Compound" [ref=f53e99]
+                  - columnheader "Concentration" [ref=f53e100]
+                  - columnheader "Content" [ref=f53e101]
+              - rowgroup [ref=f53e102]:
+                - row [ref=f53e103]:
+                  - rowheader "Retatrutide" [ref=f53e104]
+                  - cell "9.57 mg/mL" [ref=f53e105]
+                  - cell "22.96 mg" [ref=f53e106]
+            - generic [ref=f53e107]:
+              - link "Verify at Janoshik" [ref=f53e108] [cursor=pointer]:
+                - /url: https://verify.janoshik.com/tests/163215-ALLUVI_RETATRUTIDE_20MG_KIT_GBHEFN58JXXZ
+              - link "View product →" [ref=f53e109] [cursor=pointer]:
+                - /url: /products/retatrutide
+          - generic [ref=f53e110]:
+            - link "Open the full certificate of analysis for batch AR1721TRT" [ref=f53e111] [cursor=pointer]:
+              - /url: /images/coa/retatrutide-20.png
+              - img "Janoshik Analytical certificate of analysis for Retatrutide 20 mg (R&D Only), batch AR1721TRT" [ref=f53e112]
+            - list [ref=f53e113]:
+              - listitem [ref=f53e114]:
+                - link "Open sample photograph 1 from Janoshik testing of batch AR1721TRT" [ref=f53e115] [cursor=pointer]:
+                  - /url: /images/coa/evidence/retatrutide-20-1.jpg
+              - listitem [ref=f53e116]:
+                - link "Open sample photograph 2 from Janoshik testing of batch AR1721TRT" [ref=f53e117] [cursor=pointer]:
+                  - /url: /images/coa/evidence/retatrutide-20-2.jpg
+            - paragraph [ref=f53e118]: Sample photographs taken by Janoshik during testing.
+        - article [ref=f53e120]:
+          - generic [ref=f53e121]:
+            - heading [level=2] [ref=f53e122]:
+              - link "Glow 70 mg (R&D Only)" [ref=f53e123] [cursor=pointer]:
+                - /url: /products/glow
+            - generic [ref=f53e124]:
+              - generic [ref=f53e125]:
+                - term [ref=f53e126]: Batch
+                - definition [ref=f53e127]: GL0621XSA
+              - generic [ref=f53e128]:
+                - term [ref=f53e129]: Fill volume
+                - definition [ref=f53e130]: 3.4 mL
+            - table [ref=f53e131]:
+              - caption [ref=f53e132]: Measured contents for batch GL0621XSA
+              - rowgroup [ref=f53e133]:
+                - row [ref=f53e134]:
+                  - columnheader "Compound" [ref=f53e135]
+                  - columnheader "Concentration" [ref=f53e136]
+                  - columnheader "Content" [ref=f53e137]
+              - rowgroup [ref=f53e138]:
+                - row [ref=f53e139]:
+                  - rowheader "GHK-Cu" [ref=f53e140]
+                  - cell "7.59 mg/mL" [ref=f53e141]
+                  - cell "25.8 mg" [ref=f53e142]
+                - row [ref=f53e143]:
+                  - rowheader "BPC-157" [ref=f53e144]
+                  - cell "2.39 mg/mL" [ref=f53e145]
+                  - cell "8.13 mg" [ref=f53e146]
+                - row [ref=f53e147]:
+                  - rowheader "TB-500" [ref=f53e148]
+                  - cell "1.99 mg/mL" [ref=f53e149]
+                  - cell "6.76 mg" [ref=f53e150]
+            - generic [ref=f53e151]:
+              - link "Verify at Janoshik" [ref=f53e152] [cursor=pointer]:
+                - /url: https://verify.janoshik.com/tests/163217-ALLUVI_GLOW_70MG_KIT_DCL3AJSE4JQP
+              - link "View product →" [ref=f53e153] [cursor=pointer]:
+                - /url: /products/glow
+          - generic [ref=f53e154]:
+            - link "Open the full certificate of analysis for batch GL0621XSA" [ref=f53e155] [cursor=pointer]:
+              - /url: /images/coa/glow.png
+              - img "Janoshik Analytical certificate of analysis for Glow 70 mg (R&D Only), batch GL0621XSA" [ref=f53e156]
+            - list [ref=f53e157]:
+              - listitem [ref=f53e158]:
+                - link "Open sample photograph 1 from Janoshik testing of batch GL0621XSA" [ref=f53e159] [cursor=pointer]:
+                  - /url: /images/coa/evidence/glow-1.jpg
+              - listitem [ref=f53e160]:
+                - link "Open sample photograph 2 from Janoshik testing of batch GL0621XSA" [ref=f53e161] [cursor=pointer]:
+                  - /url: /images/coa/evidence/glow-2.jpg
+            - paragraph [ref=f53e162]: Sample photographs taken by Janoshik during testing.
+        - article [ref=f53e164]:
+          - generic [ref=f53e165]:
+            - heading [level=2] [ref=f53e166]:
+              - link "Retatrutide 40 mg (R&D Only)" [ref=f53e167] [cursor=pointer]:
+                - /url: /products/retatrutide-40
+            - generic [ref=f53e168]:
+              - generic [ref=f53e169]:
+                - term [ref=f53e170]: Batch
+                - definition [ref=f53e171]: AR1739JAT
+              - generic [ref=f53e172]:
+                - term [ref=f53e173]: Assayed purity
+                - definition [ref=f53e174]: 99.269%
+              - generic [ref=f53e175]:
+                - term [ref=f53e176]: Fill volume
+                - definition [ref=f53e177]: 2.4 mL
+            - table [ref=f53e178]:
+              - caption [ref=f53e179]: Measured contents for batch AR1739JAT
+              - rowgroup [ref=f53e180]:
+                - row [ref=f53e181]:
+                  - columnheader "Compound" [ref=f53e182]
+                  - columnheader "Concentration" [ref=f53e183]
+                  - columnheader "Content" [ref=f53e184]
+              - rowgroup [ref=f53e185]:
+                - row [ref=f53e186]:
+                  - rowheader "Retatrutide" [ref=f53e187]
+                  - cell "18.22 mg/mL" [ref=f53e188]
+                  - cell "43.72 mg" [ref=f53e189]
+            - generic [ref=f53e190]:
+              - link "Verify at Janoshik" [ref=f53e191] [cursor=pointer]:
+                - /url: https://verify.janoshik.com/tests/163216-ALLUVI_RETATRUTIDE_40MG_KIT_TU3SQLQB9ZDQ
+              - link "View product →" [ref=f53e192] [cursor=pointer]:
+                - /url: /products/retatrutide-40
+          - generic [ref=f53e193]:
+            - link "Open the full certificate of analysis for batch AR1739JAT" [ref=f53e194] [cursor=pointer]:
+              - /url: /images/coa/retatrutide-40.png
+              - img "Janoshik Analytical certificate of analysis for Retatrutide 40 mg (R&D Only), batch AR1739JAT" [ref=f53e195]
+            - list [ref=f53e196]:
+              - listitem [ref=f53e197]:
+                - link "Open sample photograph 1 from Janoshik testing of batch AR1739JAT" [ref=f53e198] [cursor=pointer]:
+                  - /url: /images/coa/evidence/retatrutide-40-1.jpg
+              - listitem [ref=f53e199]:
+                - link "Open sample photograph 2 from Janoshik testing of batch AR1739JAT" [ref=f53e200] [cursor=pointer]:
+                  - /url: /images/coa/evidence/retatrutide-40-2.jpg
+            - paragraph [ref=f53e201]: Sample photographs taken by Janoshik during testing.
+      - paragraph [ref=f53e202]: Figures above are reproduced from the Janoshik Analytical report for each batch. For research use only — not for human or veterinary use.
+  - contentinfo [ref=f53e203]:
+    - generic [ref=f53e204]:
+      - paragraph [ref=f53e205]: Real reviews.On camera.
+      - link "See the range" [ref=f53e206] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f53e207]:
+      - listitem [ref=f53e208]:
+        - generic [ref=f53e209]:
+          - generic "Video review 1" [ref=f53e210]
+          - button "Play Video review 1" [ref=f53e212] [cursor=pointer]
+          - generic [ref=f53e213]: 0:20
+      - listitem [ref=f53e214]:
+        - generic [ref=f53e215]:
+          - generic "Video review 2" [ref=f53e216]
+          - button "Play Video review 2" [ref=f53e218] [cursor=pointer]
+          - generic [ref=f53e219]: 0:30
+      - listitem [ref=f53e220]:
+        - generic [ref=f53e221]:
+          - generic "Video review 3" [ref=f53e222]
+          - button "Play Video review 3" [ref=f53e224] [cursor=pointer]
+          - generic [ref=f53e225]: 0:20
+      - listitem [ref=f53e226]:
+        - generic [ref=f53e227]:
+          - generic "Video review 4" [ref=f53e228]
+          - button "Play Video review 4" [ref=f53e230] [cursor=pointer]
+          - generic [ref=f53e231]: 0:30
+      - listitem [ref=f53e232]:
+        - generic [ref=f53e233]:
+          - generic "Video review 1" [ref=f53e234]
+          - generic [ref=f53e235]: 0:20
+          - generic [ref=f53e236]:
+            - button "Play Video review 1" [ref=f53e237]
+            - button "Unmute Video review 1" [ref=f53e240]
+      - listitem [ref=f53e244]:
+        - generic [ref=f53e245]:
+          - generic "Video review 2" [ref=f53e246]
+          - button "Play Video review 2" [ref=f53e248] [cursor=pointer]
+          - generic [ref=f53e249]: 0:30
+      - listitem [ref=f53e250]:
+        - generic [ref=f53e251]:
+          - generic "Video review 3" [ref=f53e252]
+          - button "Play Video review 3" [ref=f53e254] [cursor=pointer]
+          - generic [ref=f53e255]: 0:20
+      - listitem [ref=f53e256]:
+        - generic [ref=f53e257]:
+          - generic "Video review 4" [ref=f53e258]
+          - button "Play Video review 4" [ref=f53e260] [cursor=pointer]
+          - generic [ref=f53e261]: 0:30
+      - listitem [ref=f53e262]:
+        - generic [ref=f53e263]:
+          - generic "Video review 1" [ref=f53e264]
+          - button "Play Video review 1" [ref=f53e266] [cursor=pointer]
+          - generic [ref=f53e267]: 0:20
+      - listitem [ref=f53e268]:
+        - generic [ref=f53e269]:
+          - generic "Video review 2" [ref=f53e270]
+          - button "Play Video review 2" [ref=f53e272] [cursor=pointer]
+          - generic [ref=f53e273]: 0:30
+      - listitem [ref=f53e274]:
+        - generic [ref=f53e275]:
+          - generic "Video review 3" [ref=f53e276]
+          - button "Play Video review 3" [ref=f53e278] [cursor=pointer]
+          - generic [ref=f53e279]: 0:20
+      - listitem [ref=f53e280]:
+        - generic [ref=f53e281]:
+          - generic "Video review 4" [ref=f53e282]
+          - button "Play Video review 4" [ref=f53e284] [cursor=pointer]
+          - generic [ref=f53e285]: 0:30
+    - generic [ref=f53e286]:
+      - generic [ref=f53e287]:
+        - generic [ref=f53e289]:
+          - paragraph [ref=f53e290]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f53e291]:
+            - generic [ref=f53e292]: Your email address
+            - textbox "Your email address" [ref=f53e293]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f53e294]
+          - paragraph [ref=f53e295]
+        - generic [ref=f53e296]:
+          - generic [ref=f53e297]:
+            - paragraph [ref=f53e298]: Explore
+            - list [ref=f53e299]:
+              - listitem [ref=f53e300]:
+                - link "Shop" [ref=f53e301] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f53e302]:
+                - link "Products" [ref=f53e303] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f53e304]:
+                - link "About" [ref=f53e305] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f53e306]:
+                - link "Our Process" [ref=f53e307] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f53e308]:
+                - link "FAQ" [ref=f53e309] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f53e310]:
+            - paragraph [ref=f53e311]: Our Range
+            - list [ref=f53e312]:
+              - listitem [ref=f53e313]:
+                - link "Tirzepatide" [ref=f53e314] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f53e315]:
+                - link "Retatrutide" [ref=f53e316] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f53e317]:
+                - link "NAD+" [ref=f53e318] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f53e319]:
+                - link "Glow" [ref=f53e320] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f53e321]:
+            - paragraph [ref=f53e322]: Help
+            - list [ref=f53e323]:
+              - listitem [ref=f53e324]:
+                - link "Track Order" [ref=f53e325] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f53e326]:
+                - link "My Orders" [ref=f53e327] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f53e328]:
+                - link "FAQ" [ref=f53e329] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f53e330]:
+            - paragraph [ref=f53e331]: Legal
+            - list [ref=f53e332]:
+              - listitem [ref=f53e333]:
+                - link "Privacy Policy" [ref=f53e334] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f53e335]:
+                - link "Terms of Service" [ref=f53e336] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f53e337]:
+                - link "Shipping Policy" [ref=f53e338] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f53e339]:
+                - link "Refund Policy" [ref=f53e340] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f53e341]:
+                - link "Press" [ref=f53e342] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f53e343]:
+        - link "hello@novera.studio" [ref=f53e344] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f53e345]: © 2026 Novera. All rights reserved.
+      - generic [ref=f53e346]:
+        - paragraph [ref=f53e347]: Research use only
+        - paragraph [ref=f53e348]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.

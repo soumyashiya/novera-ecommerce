@@ -117,12 +117,12 @@ export default function Subscribe() {
       <div className="container-lux w-full pb-10 pt-40 lg:pb-12">
         <motion.h2
           {...rise(0)}
-          className="max-w-[820px] font-serif text-[clamp(2.25rem,3.6vw,3.25rem)] leading-[1] tracking-[-0.02em]"
+          className="max-w-[820px] font-serif text-[clamp(2.25rem,3.96vw,3.25rem)] leading-[1] tracking-[-0.02em]"
         >
           Never run short on the bench
         </motion.h2>
         <motion.p {...rise(0.08)} className="mt-4 text-[0.9375rem] text-white/85">
-          Your chosen line, delivered monthly from each verified batch.
+          Your chosen Novera line, delivered monthly from each verified batch.
         </motion.p>
         <motion.div {...rise(0.16)}>
           <Link

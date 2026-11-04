@@ -5,11 +5,11 @@
 // both edges, then a compact centred block — newsletter, four link columns,
 // and the research-use disclaimer.
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NAV_LINKS, CONTACT, DISCLAIMER, PRODUCTS } from "@/lib/data";
+import { FOOTER_LINKS, CONTACT, DISCLAIMER } from "@/lib/data";
 import { api, ApiError } from "@/lib/api";
+import VideoReel from "./VideoReel";
 
 const RANGE_LINKS = [
   { label: "Tirzepatide", href: "/products/tirzepatide" },
@@ -31,17 +31,19 @@ const HELP_LINKS = [
 ];
 const CHROMELESS_ROUTES = ["/signin"];
 
-const shortName = (name: string) =>
-  name
-    .replace(/\s*\(.*?\)\s*$/, "")
-    .replace(/\s+[\d,]+\s*mg$/i, "")
-    .trim();
 
-// Five tiles; the row is wider than the screen so both ends bleed off.
-const TILES = PRODUCTS.slice(0, 5).map((p) => ({
-  href: `/products/${p.slug}`,
-  label: shortName(p.name),
-  image: p.gallery[1] ?? p.image,
+// Video reviews, compressed copies of the originals in public/images/videos.
+// Mixed lengths (20s / 30s), alternated so neighbours differ.
+const VIDEOS = [
+  { n: 1, duration: "0:20" },
+  { n: 2, duration: "0:30" },
+  { n: 3, duration: "0:20" },
+  { n: 4, duration: "0:30" },
+].map((v) => ({
+  ...v,
+  src: `/images/videos/web/review-${v.n}.mp4`,
+  poster: `/images/videos/web/review-${v.n}.jpg`,
+  label: `Video review ${v.n}`,
 }));
 
 export default function Footer() {
@@ -52,10 +54,10 @@ export default function Footer() {
     <footer className="overflow-hidden bg-accent text-dark">
       {/* Statement */}
       <div className="container-lux pb-10 pt-14 text-center lg:pt-16">
-        <p className="text-hero mx-auto max-w-[900px] !text-[clamp(2rem,3.4vw,3.25rem)]">
-          One batch. One report.
+        <p className="text-hero mx-auto max-w-[900px] !text-[clamp(2rem,3.74vw,3.25rem)]">
+          Real reviews.
           <br />
-          That&apos;s all it takes.
+          On camera.
         </p>
         <Link
           href="/shop"
@@ -65,32 +67,8 @@ export default function Footer() {
         </Link>
       </div>
 
-      {/* Full-bleed tile row */}
-      <ul className="flex justify-center gap-1.5">
-        {TILES.map((t) => (
-          <li key={t.href} className="w-[46vw] shrink-0 sm:w-[32vw] lg:w-[24.5vw]">
-            <Link
-              href={t.href}
-              className="group relative block aspect-[4/5] overflow-hidden bg-dark/10"
-            >
-              <Image
-                src={t.image}
-                alt={t.label}
-                fill
-                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 25vw"
-                className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
-              />
-              <div
-                aria-hidden
-                className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent"
-              />
-              <span className="absolute inset-x-0 bottom-8 text-center text-[1.125rem] font-semibold text-accent [text-shadow:0_1px_8px_rgba(0,0,0,0.45)]">
-                {t.label}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {/* Video review reel — plays one clip at a time, centred. */}
+      <VideoReel clips={VIDEOS} />
 
       {/* Newsletter + links. Side padding matches the header exactly: the
           bar's outer gutter (px-2 / lg:px-3) plus its inner padding
@@ -105,7 +83,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:col-span-7 lg:col-start-6">
             <FooterCol
               title="Explore"
-              links={NAV_LINKS.map((l) => ({ label: l.label, href: l.href }))}
+              links={FOOTER_LINKS.map((l) => ({ label: l.label, href: l.href }))}
             />
             <FooterCol title="Our Range" links={RANGE_LINKS} />
             <FooterCol title="Help" links={HELP_LINKS} />

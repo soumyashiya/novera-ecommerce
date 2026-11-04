@@ -1,0 +1,49 @@
+1018. [GET] http://localhost:4100/?r=2 => [200] OK
+1019. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fhero-products.webp&w=1080&q=75 => [304] Not Modified
+1020. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_app_globals_0wc0wfs.css => [304] Not Modified
+1021. [GET] http://localhost:4100/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1_7sg7t._.js => [200] OK
+1022. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_compiled_next-devtools_index_0cjr7og.js => [200] OK
+1023. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_compiled_react-dom_0q1uw64._.js => [200] OK
+1024. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_compiled_react-server-dom-turbopack_0o7xfyw._.js => [200] OK
+1025. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_compiled_1pjo5zv._.js => [200] OK
+1026. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_client_1tp6nh_._.js => [200] OK
+1027. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_1h5745v._.js => [200] OK
+1028. [GET] http://localhost:4100/_next/static/chunks/0h6k_%40swc_helpers_cjs_1iwqstt._.js => [200] OK
+1029. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_1anvha4._.js => [200] OK
+1030. [GET] http://localhost:4100/_next/static/chunks/turbopack-ecommerce-alluvi_lumivex-new_1qec5k6._.js => [200] OK
+1031. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_08jamrv._.js => [200] OK
+1032. [GET] http://localhost:4100/_next/static/chunks/0h6k_gsap_1ci_hu6._.js => [200] OK
+1033. [GET] http://localhost:4100/_next/static/chunks/0h6k_framer-motion_dist_es_1caabsr._.js => [200] OK
+1034. [GET] http://localhost:4100/_next/static/chunks/0h6k_1_5dkcl._.js => [200] OK
+1035. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_1l1ku_g._.js => [200] OK
+1036. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_app_layout_tsx_1flw4vc._.js => [200] OK
+1037. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_166sze2._.js => [200] OK
+1038. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_0wqgs51._.js => [200] OK
+1039. [GET] http://localhost:4100/_next/static/chunks/ecommerce-alluvi_lumivex-new_app_page_tsx_1vtcnci._.js => [200] OK
+1040. [GET] http://localhost:4100/_next/static/chunks/0h6k_next_dist_client_components_builtin_global-error_1vtcnci.js => [200] OK
+1041. [GET] https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap => [200] 
+1042. [GET] https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap => [200] 
+1043. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Finhouse-image1-seo.webp&w=640&q=75 => [304] Not Modified
+1044. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Finhouse-image2-seo.webp&w=640&q=75 => [304] Not Modified
+1045. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Finhouse-img3-seo.webp&w=640&q=75 => [304] Not Modified
+1046. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Finhouse-img4-seo.webp&w=640&q=75 => [304] Not Modified
+1047. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fabout-seo.webp&w=640&q=75 => [304] Not Modified
+1048. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Ftirzepatide.jpg&w=384&q=75 => [304] Not Modified
+1049. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Fretatrutide-20.jpg&w=384&q=75 => [304] Not Modified
+1050. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Fretatrutide-40.jpg&w=384&q=75 => [304] Not Modified
+1051. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Fglow.jpg&w=384&q=75 => [304] Not Modified
+1052. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Fbpc.jpg&w=384&q=75 => [304] Not Modified
+1053. [GET] http://localhost:4100/_next/image?url=%2Fproducts%2Fnad.jpg&w=384&q=75 => [304] Not Modified
+1054. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fretatwenty%2Fretafront.jpeg&w=828&q=75 => [304] Not Modified
+1055. [GET] https://cdn.fontshare.com/wf/BLNB4FAQFNK56DWWNF7PMGTCOTZHOEII/ST3WKSSDMBK2MIQQO3MAVYWLF4FTOLFV/6IN5WOLRCYP4G4MOCOHOMXNON6Q7MDAR.woff2 => [200] 
+1056. [GET] https://cdn.fontshare.com/wf/OYB4CXKJQXKTNSLJMTDQOIVUL2V5EL7S/WYO2P7DQVV5RNXGMCUO2HL4RJP4VFUAS/6XPIMU23OJVRY676OG5YVJMWEHWICATX.woff2 => [200] 
+1057. [GET] https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2 => [200] 
+1058. [GET] https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2 => [200] 
+1059. [GET] https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2 => [200] 
+1060. [GET] http://localhost:4100/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js => [200] OK
+1061. [GET] http://localhost:4100/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_17oo6va._.js => [200] OK
+1062. [GET] http://localhost:4100/__nextjs_font/geist-latin.woff2 => [200] OK
+1063. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fcollage3.jpg&w=640&q=75
+1064. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fwhyus3new-seo.webp&w=640&q=75
+1065. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fcollage4.jpg&w=640&q=75
+1066. [GET] http://localhost:4100/_next/image?url=%2Fimages%2Fhero.jpg&w=640&q=75

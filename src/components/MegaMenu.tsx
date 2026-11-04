@@ -71,12 +71,17 @@ const linkCls =
 export default function MegaMenu({ onNavigate }: { onNavigate: () => void }) {
   const reduce = useReducedMotion();
 
+  // Uses the same inset container as the nav bar above it, so the panel's
+  // first column starts under "Shop" rather than on its own gutter.
   return (
     <motion.div
       variants={container}
       initial={reduce ? false : "hidden"}
       animate="show"
-      className="grid grid-cols-12 gap-8 px-8 pb-10 pt-6"
+      // container-lux-inset for the same reason as the bar above it: the panel
+      // spans the inset bar, so its columns only land on the page gutter if
+      // they shed that inset too. A plain px-* put them 4px inside the nav.
+      className="container-lux-inset grid grid-cols-12 gap-8 pb-10 pt-6"
     >
       {/* Primary */}
       <motion.ul variants={item} className="col-span-3 flex flex-col gap-3">

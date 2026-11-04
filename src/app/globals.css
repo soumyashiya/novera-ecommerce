@@ -21,9 +21,30 @@
 
   /* Editorial easing */
   --ease-lux: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* One horizontal gutter for the whole page. Every top-level block — the
+     header bar included — starts this far in from the viewport edge, so
+     nav items and section headings sit on the same vertical line. */
+  --gutter: clamp(20px, 2.2vw, 36px);
+  /* How far the floating yellow header bar is inset from the viewport.
+     .container-lux-inset subtracts it so the bar's contents still land on
+     the shared gutter line. */
+  --header-inset: 8px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-inset: 12px;
+  }
 }
 
 @theme inline {
+  /* Tailwind's spacing scale is rem by default, which would make every
+     margin and gap grow along with the root bump below. Pinned to px so the
+     root size moves type only — 4px matches the old 0.25rem exactly, so no
+     existing spacing shifts. */
+  --spacing: 4px;
+
   --color-background: var(--bone);
   --color-background-secondary: var(--cream);
   --color-card: var(--paper);
@@ -39,12 +60,16 @@
 
   /* Type scale measured off the reference at a 1440px viewport. Each clamp is
      tuned so its upper bound lands on the exact px value observed there:
-       hero 64 · statement 36 · section 24 · subhead 16 · figure 96          */
-  --text-hero: clamp(2.75rem, 4.2vw, 5rem); /* → 80px @1900 */
-  --text-statement: clamp(1.75rem, 2.5vw, 2.25rem); /* → 36px @1440 */
-  --text-section: clamp(1.25rem, 1.67vw, 1.5rem); /* → 24px @1440 */
-  --text-subhead: 1rem; /* 16px */
-  --text-figure: clamp(3.5rem, 6.67vw, 6rem); /* → 96px @1440 */
+       hero 64 · statement 36 · section 24 · subhead 16 · figure 96
+     Scaled up 10% from those measurements. The rem bounds ride the root
+     bump in BASE below; the vw terms are raised here by hand, since vw does
+     not care about root size and would otherwise hold the display sizes
+     back while the body text grew. */
+  --text-hero: clamp(2.75rem, 5.04vw, 5rem);
+  --text-statement: clamp(1.75rem, 3vw, 2.25rem);
+  --text-section: clamp(1.25rem, 2vw, 1.5rem);
+  --text-subhead: 1rem;
+  --text-figure: clamp(3.5rem, 8vw, 6rem);
 
   /* The reference's tracking is tight-to-negative everywhere, including on
      small uppercase labels — it never uses wide letter-spacing. */
@@ -62,15 +87,32 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: auto; /* Lenis handles smooth scroll */
+  /* 19.2px. One lever for the whole type scale: every rem size on the page,
+     including the arbitrary ones in components, comes up 20%. Spacing does
+     not follow, because --spacing is pinned to px above. */
+  font-size: 120%;
 }
 
 body {
   background: var(--bone);
   color: var(--ink);
-  font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.5; /* measured: 16px / 24px */
+  /* The hero's face everywhere: Instrument Serif for headings and running
+     text. UI chrome (uppercase labels, bold buttons, form fields) drops back
+     to sans in the base layer below, as it does in the hero. */
+  font-family: var(--font-serif);
+  font-size: 1rem; /* was a hard 16px, which opted body out of the scale */
+  line-height: 1.5;
   overflow-x: hidden;
+}
+
+/* Base layer on purpose: any font-serif / font-sans utility (utilities
+   layer) and the unlayered .text-hero / .text-statement still win; plain
+   selectors so this beats preflight's `button { font: inherit }`. */
+@layer base {
+  .uppercase, .font-semibold, .font-bold, .font-extrabold, .font-black, .btn-lux,
+  button, input, select, textarea, label {
+    font-family: var(--font-sans);
+  }
 }
 
 /* When Lenis is active */
@@ -131,11 +173,11 @@ html.lenis body {
 /* Card and product titles are SANS on the reference, not serif.
    Measured: 16px / 20.8px (1.3) / -0.24px (-0.015em), weight 500. */
 .text-subhead {
-  font-family: var(--font-sans);
-  font-size: var(--text-subhead);
-  line-height: 1.3;
+  font-family: var(--font-serif);
+  font-size: calc(var(--text-subhead) * 1.2);
+  line-height: 1.2;
   letter-spacing: var(--ls-tight);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Giant serif numeral used by the stats row. Measured: 96px / 96px (1.0). */
@@ -170,13 +212,22 @@ html.lenis body {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━ LAYOUT ━━━━━━━━━━━━━━━━━━━━━━━ */
-/* Measured: max-width 1472px with a 16px inline gutter, so content runs very
-   close to the viewport edge rather than sitting in a narrow column. */
+/* Measured: max-width 1472px, with the shared --gutter inline, so content
+   runs close to the viewport edge rather than sitting in a narrow column. */
 .container-lux {
   width: 100%;
   max-width: 1472px;
   margin-inline: auto;
-  padding-inline: 16px;
+  padding-inline: var(--gutter);
+}
+
+/* Content inside the header's inset yellow bar. The gutter sheds the bar
+   inset so the links land on the shared gutter line, i + (g - i) == g. No
+   width cap: on wide screens the links stay near the bar's own edges rather
+   than drifting toward the centre. */
+.container-lux-inset {
+  width: 100%;
+  padding-inline: calc(var(--gutter) - var(--header-inset));
 }
 
 /* Grid/flex columns must be able to shrink below their content's intrinsic
@@ -189,11 +240,41 @@ html.lenis body {
 /* The reference spaces every top-level block by a flat 96px, dropping to 48px
    between a heading block and the content it introduces. It uses margin, not
    symmetric padding, so blocks don't double up their gaps. */
+/* One step is the gap between any two blocks, since the rules below collapse
+   the facing padding so the two never stack. Raised from 36/4.8vw/68 — once
+   the band troughs were collapsed to a single step the whole page sat on 68px
+   and read tight, so the step itself carries the air now. */
 .section-pad {
-  padding-block: clamp(48px, 6.7vw, 96px);
+  padding-block: clamp(48px, 6.4vw, 96px);
 }
 .section-pad-lg {
-  padding-block: clamp(64px, 9vw, 128px);
+  padding-block: clamp(64px, 8.4vw, 128px);
+}
+
+/* ...and because it is padding on both edges, two blocks in a row were
+   stacking their steps into a 192px trough. Drop the second one's top
+   padding so consecutive blocks are separated by one interval, as above.
+   Tinted bands opt out with .section-band: their padding is the inset of a
+   visible background edge, not a gap between blocks. */
+:is(.section-pad, .section-pad-lg):not(.section-band)
+  + :is(.section-pad, .section-pad-lg):not(.section-band) {
+  padding-top: 0;
+}
+
+/* The same trough reappears either side of a tinted band. A band's padding is
+   its own inset and cannot collapse, but its neighbour's padding is still just
+   a gap — so the plain block above or below must not add a second step on top
+   of it. Without these two rules a band sits in a 136px trough while the
+   untinted run holds a single 68px step, and the page reads as if the bands
+   were spaced on a different rhythm from everything else. */
+:is(.section-pad, .section-pad-lg).section-band
+  + :is(.section-pad, .section-pad-lg):not(.section-band) {
+  padding-top: 0;
+}
+:is(.section-pad, .section-pad-lg):not(.section-band):has(
+    + :is(.section-pad, .section-pad-lg).section-band
+  ) {
+  padding-bottom: 0;
 }
 
 /* Grid gutters, measured: column-gap 24px, row-gap 80px. */
@@ -238,6 +319,23 @@ html.lenis body {
   display: inline-block;
 }
 
+/* Touch targets. These inline links sit at 20–22px tall, under the 24px
+   minimum in WCAG 2.5.8. On a coarse pointer an invisible ::after grows the
+   hit area to 32px without touching layout — padding would have reflowed
+   every header and footer row. 32 rather than 44: the footer stacks links on
+   a measured 37px pitch, so 32 clears its neighbours exactly while 44 would
+   overlap by 7px and the wrong link would take taps near the boundary. */
+@media (pointer: coarse) {
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 50%;
+    height: 32px;
+    transform: translateY(-50%);
+  }
+}
+
 /* Primary button. Square, ink fill, bone text, 13px uppercase — the exact
    geometry measured off the reference (border-radius: 0, padding: 0 24px). */
 /* Hero fact strip: two identical lists side by side slide left by one
@@ -256,6 +354,40 @@ html.lenis body {
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;
+  }
+}
+
+/* About's timeline backing. Rather than a scrim across the whole photo, the
+   wash is a halo sized to the text block itself: it bleeds a little past the
+   type on every side, fades out to the right, and feathers top and bottom so
+   it has no visible edge. The rest of the picture stays untouched.
+   Painted as ::before so the <li>s, which are positioned, sit above it. */
+@media (min-width: 1024px) {
+  .story-panel::before {
+    content: "";
+    position: absolute;
+    inset: -2rem -3.5rem -2rem -2.5rem;
+    background: linear-gradient(
+      to right,
+      rgba(255, 253, 240, 0.92) 0%,
+      rgba(255, 253, 240, 0.86) 52%,
+      rgba(255, 253, 240, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+    pointer-events: none;
   }
 }
 

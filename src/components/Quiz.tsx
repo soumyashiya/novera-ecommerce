@@ -98,10 +98,10 @@ export default function Quiz() {
 
           {/* Finder */}
           <div className="mx-auto w-full max-w-[700px] text-center">
-            <h2 className="font-serif text-[clamp(2rem,2.9vw,2.75rem)] leading-[1.05] tracking-[-0.02em] text-dark">
-              Find the Line That Fits Your Research
+            <h2 className="font-serif text-[clamp(2rem,3.19vw,2.75rem)] leading-[1.05] tracking-[-0.02em] text-dark">
+              Find the Novera Line That Fits Your Research
             </h2>
-            <p className="font-serif text-[clamp(2rem,2.9vw,2.75rem)] italic leading-[1.05] tracking-[-0.02em] text-dark">
+            <p className="font-serif text-[clamp(2rem,3.19vw,2.75rem)] italic leading-[1.05] tracking-[-0.02em] text-dark">
               {step === 1
                 ? "Tell us what you’d like to study:"
                 : step === 2

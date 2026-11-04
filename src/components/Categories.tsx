@@ -12,22 +12,14 @@ import { CATEGORIES, categoryCount } from "@/lib/data";
 // hover), each labelled in large white serif. Below: a count + hint on the
 // left and a pair of outlined square arrows that nudge the rail one tile.
 //
-// The last tile is the full catalogue rather than a category, so every tile
-// still points at a real destination.
-const TILES = [
-  ...CATEGORIES.map((c) => ({
-    href: `/shop?category=${c.slug}`,
-    label: c.label,
-    image: c.image,
-    meta: `${categoryCount(c.name)} ${categoryCount(c.name) === 1 ? "product" : "products"}`,
-  })),
-  {
-    href: "/shop",
-    label: "The full range",
-    image: "/images/gen/why-consistency.webp",
-    meta: "All products",
-  },
-];
+// One tile per line, nothing else — the whole catalogue is already reachable
+// from the "View all" link in the header above.
+const TILES = CATEGORIES.map((c) => ({
+  href: `/shop?category=${c.slug}`,
+  label: c.label,
+  image: c.image,
+  meta: `${categoryCount(c.name)} ${categoryCount(c.name) === 1 ? "product" : "products"}`,
+}));
 
 // The set is repeated so the loop is seamless at any viewport width.
 const COPIES = 4;
@@ -47,8 +39,8 @@ export default function Categories() {
             <p className="text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-copper">
               Shop by line
             </p>
-            <h2 className="mt-4 max-w-[900px] font-serif text-[clamp(2.25rem,4.2vw,4.25rem)] leading-[1] tracking-[-0.01em] text-dark">
-              The complete research range, verified batch by batch.
+            <h2 className="mt-4 max-w-[900px] font-serif text-[clamp(2.25rem,4.62vw,4.25rem)] leading-[1] tracking-[-0.01em] text-dark">
+              The complete Novera range, verified batch by batch.
             </h2>
           </Reveal>
           <Link
@@ -81,12 +73,19 @@ export default function Categories() {
                     tabIndex={clone ? -1 : undefined}
                     className="group relative block aspect-[4/5] overflow-hidden bg-background-secondary"
                   >
+                    {/* Every cat-*.png is 1374×1145 (landscape) shot with the
+                        subject right of frame and copy space on the left. In a
+                        4/5 tile the cover crop keeps only the middle ~67% of
+                        the width, so the default centre position pushes each
+                        subject to ~85% — hard against the right edge. Anchoring
+                        right drops the empty left margin instead and lands them
+                        near the middle of the tile. */}
                     <Image
                       src={tile.image}
                       alt={clone ? "" : tile.label}
                       fill
-                      sizes="(max-width: 640px) 64vw, (max-width: 1024px) 38vw, 360px"
-                      className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
+                      sizes="(max-width: 640px) 142vw, (max-width: 1024px) 85vw, 800px"
+                      className="object-cover object-right transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
                     />
                     {/* Bottom scrim so the white label reads on light photos. */}
                     <div
@@ -97,7 +96,7 @@ export default function Categories() {
                       <p className="text-[0.6875rem] font-medium uppercase tracking-[0.2em] text-white/80">
                         {tile.meta}
                       </p>
-                      <p className="mt-1 font-serif text-[clamp(1.75rem,2.2vw,2.25rem)] leading-none tracking-[-0.01em]">
+                      <p className="mt-1 font-serif text-[clamp(1.75rem,2.42vw,2.25rem)] leading-none tracking-[-0.01em]">
                         {tile.label}
                       </p>
                     </div>

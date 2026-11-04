@@ -91,7 +91,7 @@ export default function About() {
                 {s.label}
               </dt>
               <dd className="mt-1 flex items-start gap-2.5">
-                <span className="font-serif text-[clamp(3.25rem,5vw,4.5rem)] leading-[0.9] tracking-[-0.02em] text-dark">
+                <span className="font-serif text-[clamp(3.25rem,5.5vw,4.5rem)] leading-[0.9] tracking-[-0.02em] text-dark">
                   {s.figure}
                 </span>
                 <span className="max-w-[130px] pt-1">
@@ -108,23 +108,31 @@ export default function About() {
         </dl>
 
         {/* ── 2. Statement + timeline panel ────────────────────────────── */}
-        <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
-          <Reveal className="mx-auto max-w-[440px] text-center">
-            <p className="text-hero !text-[clamp(2.25rem,3.4vw,3.25rem)] text-dark">
+        {/* Photo column is the narrower of the two: it is a 4:5 portrait, so
+            its width sets its height, and an even split made it overshoot. */}
+        <div className="mt-12 grid items-center gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
+          {/* Measure widened with the type: the three lines are hard-broken,
+              so at the larger size 440px would wrap "purity." on its own. */}
+          <Reveal className="mx-auto max-w-[560px] text-center">
+            <p className="text-hero !text-[clamp(2.5rem,4.51vw,4rem)] text-dark">
               The Novera
               <br />
               standard of
               <br />
               research purity.
             </p>
-            <p className="mt-5 text-[0.875rem] leading-relaxed text-dark">
+            {/* Body keeps the old measure — the wider column is for the
+                display lines, not for 80-character prose. */}
+            <p className="mx-auto mt-5 max-w-[460px] text-[0.875rem] leading-relaxed text-dark">
               We started Novera because the research peptide market needed a
               supplier willing to be boring about the basics — transparent
               sourcing, third-party lab testing, and people you can actually
               message. Every batch is checked before it reaches our shelves.
             </p>
+            {/* Opens the full story at /about — this block is its summary,
+                and the page repeats its framing so the two read as one. */}
             <Link
-              href="/#process"
+              href="/about"
               className="mt-7 inline-flex h-11 items-center justify-center border !border-dark px-6 text-[0.8125rem] font-bold uppercase tracking-[-0.02em] text-dark transition-colors duration-300 hover:bg-dark hover:text-white"
             >
               Our story
@@ -132,21 +140,27 @@ export default function About() {
           </Reveal>
 
           <Reveal delay={0.08} y={28}>
-            <div className="relative aspect-[4/5] overflow-hidden bg-background-secondary lg:max-h-[640px] lg:w-full">
-              <Image
-                src="/images/gen/about.webp"
-                alt="A calm, daylight Novera laboratory bench lined with glassware"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-[70%_center]"
-              />
-              {/* Lightens the left of the photo so the timeline reads. */}
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-gradient-to-r from-[#fffdf0]/95 via-[#fffdf0]/75 to-transparent"
-              />
+            {/* The timeline only overlays the photo once there is room for
+                it; below lg it sits underneath, where it was wrapping to
+                roughly a third taller than the frame and running over the
+                cartons. */}
+            <div className="relative">
+              {/* Measured against the photo: hair starts 1.9% down, the NAD+
+                  carton ends at 92%. The cap and object-position trim only
+                  that dead margin — any shorter clips the product. */}
+              <div className="relative aspect-[4/5] overflow-hidden bg-background-secondary lg:max-h-[740px] lg:w-full">
+                <Image
+                  src="/images/our-story.png"
+                  alt="A woman at a sunlit counter with sealed ALLUVI NAD+ and MOTS-C cartons"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover object-[center_19%]"
+                />
+              </div>
 
-              <ol className="absolute inset-y-0 left-0 flex w-[62%] flex-col justify-center gap-0 px-7 py-10 sm:px-9">
+              {/* Hugs its own content at lg rather than filling the frame, so
+                  .story-panel's wash sits behind the type and nothing else. */}
+              <ol className="story-panel mt-8 flex flex-col gap-0 lg:absolute lg:left-0 lg:top-1/2 lg:mt-0 lg:w-[60%] lg:-translate-y-1/2 lg:px-9">
                 {TIMELINE.map((t, i) => (
                   <li key={t.step} className="relative pb-10 last:pb-0">
                     {/* Hairline joining this marker to the next */}

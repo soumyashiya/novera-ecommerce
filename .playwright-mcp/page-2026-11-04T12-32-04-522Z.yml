@@ -1,0 +1,306 @@
+- generic [active] [ref=f16e1]:
+  - link "Skip to content" [ref=f16e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f16e3]:
+    - paragraph [ref=f16e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f16e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f16e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f16e11]:
+      - generic [ref=f16e12]:
+        - list [ref=f16e13]:
+          - listitem [ref=f16e14]:
+            - link "Shop" [ref=f16e15] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=f16e16]:
+            - link "Products" [ref=f16e17] [cursor=pointer]:
+              - /url: /#products
+          - listitem [ref=f16e18]:
+            - link "About" [ref=f16e19] [cursor=pointer]:
+              - /url: /#about
+          - listitem [ref=f16e20]:
+            - link "Our Process" [ref=f16e21] [cursor=pointer]:
+              - /url: /#process
+          - listitem [ref=f16e22]:
+            - link "FAQ" [ref=f16e23] [cursor=pointer]:
+              - /url: /#faq
+        - link "Novera — home" [ref=f16e24] [cursor=pointer]:
+          - /url: /
+          - text: Novera
+        - generic [ref=f16e25]:
+          - link "Track order" [ref=f16e26] [cursor=pointer]:
+            - /url: /track
+          - button "Sign in" [ref=f16e28]:
+            - generic [ref=f16e29]: Account
+          - link "Cart, 0 items" [ref=f16e30] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f16e31]: Bag (0)
+  - main [ref=f16e33]:
+    - generic [ref=f16e35]:
+      - generic [ref=f16e36]:
+        - paragraph [ref=f16e37]: Our story
+        - heading "Nothing ships unproven." [level=1] [ref=f16e38]
+      - paragraph [ref=f16e40]: Novera supplies research peptides to laboratories. Every pen we list has been through an independent lab first, and the report it came back with sits on the product page before anyone can order it.
+    - img "A sunlit laboratory bench lined with clean glassware beside a full-height window" [ref=f16e44]
+    - generic [ref=f16e46]:
+      - generic [ref=f16e47]:
+        - paragraph [ref=f16e48]: Why we started
+        - heading "We built the supplier we kept looking for." [level=2] [ref=f16e49]
+        - generic [ref=f16e50]:
+          - paragraph [ref=f16e51]: Anyone who has ordered research compounds knows the pattern. A certificate that names no laboratory. A concentration that does not survive contact with a mass spectrometer. An inbox that goes quiet the moment you ask which batch you were actually sent. None of it is exotic — it is simply what happens when nobody independent ever checks.
+          - paragraph [ref=f16e52]: Novera exists to take that guesswork off the front of an experiment. We contract directly with the manufacturers who fill our pens, send every batch out for an independent assay before it is listed, keep the range refrigerated from fill to courier, and answer when you ask what is on the shelf. It is unremarkable work. It is also the whole job.
+      - img "A woman at a sunlit counter with sealed ALLUVI NAD+ and MOTS-C cartons" [ref=f16e56]
+    - generic [ref=f16e57]:
+      - heading "The numbers don't lie." [level=2] [ref=f16e59]
+      - generic [ref=f16e60]:
+        - generic [ref=f16e61]:
+          - term [ref=f16e62]: Verified purity on certified batches*
+          - definition [ref=f16e63]:
+            - paragraph [ref=f16e64]:
+              - generic [ref=f16e65]: "99"
+              - generic [ref=f16e66]: "%+"
+            - paragraph [ref=f16e68]: Verified purity on certified batches*
+        - generic [ref=f16e69]:
+          - term [ref=f16e70]: Of batches third-party tested before listing
+          - definition [ref=f16e71]:
+            - paragraph [ref=f16e72]:
+              - generic [ref=f16e73]: "100"
+              - generic [ref=f16e74]: "%"
+            - paragraph [ref=f16e76]: Of batches third-party tested before listing
+        - generic [ref=f16e77]:
+          - term [ref=f16e78]: Orders shipped to research clients
+          - definition [ref=f16e79]:
+            - paragraph [ref=f16e80]:
+              - generic [ref=f16e81]: 10,000
+              - generic [ref=f16e82]: +
+            - paragraph [ref=f16e84]: Orders shipped to research clients
+        - generic [ref=f16e85]:
+          - term [ref=f16e86]: Sealed, refrigerated storage until dispatch
+          - definition [ref=f16e87]:
+            - paragraph [ref=f16e88]:
+              - generic [ref=f16e89]: 2–8
+              - generic [ref=f16e90]: °C
+            - paragraph [ref=f16e92]: Sealed, refrigerated storage until dispatch
+      - paragraph [ref=f16e93]: "*As reported by Janoshik Analytical for each certified batch."
+    - generic [ref=f16e95]:
+      - generic [ref=f16e96]:
+        - paragraph [ref=f16e97]: What we hold to
+        - heading "The Novera standard." [level=2] [ref=f16e98]
+      - generic [ref=f16e99]:
+        - generic [ref=f16e101]:
+          - term [ref=f16e102]: Contracted at source
+          - definition [ref=f16e103]: We buy from the manufacturers who fill the pens, under tightly controlled, ISO-aligned production. Nothing reaches our shelves through an intermediary we cannot name.
+        - generic [ref=f16e105]:
+          - term [ref=f16e106]: Assayed by someone else
+          - definition [ref=f16e107]: Purity and concentration are measured by Janoshik Analytical, not by us. Their report is published whole — batch number, method and figures — never compressed into a claim.
+        - generic [ref=f16e109]:
+          - term [ref=f16e110]: Cold from fill to courier
+          - definition [ref=f16e111]: Pens stay at 2–8 °C in temperature-stable, tamper-evident packaging, and every label is checked against the assay before the box is sealed.
+        - generic [ref=f16e113]:
+          - term [ref=f16e114]: Short on purpose
+          - definition [ref=f16e115]: 8 lines rather than a catalogue. We would sooner restock one compound properly than list forty we cannot keep verified.
+    - generic [ref=f16e118]:
+      - paragraph [ref=f16e119]: Dull by design.
+      - paragraph [ref=f16e120]: The least interesting variable in your experiment should be the compound.
+    - generic [ref=f16e121]:
+      - generic [ref=f16e122]:
+        - paragraph [ref=f16e123]: How a batch reaches you
+        - heading "A verified batch, end to end." [level=2] [ref=f16e124]
+      - list [ref=f16e125]:
+        - listitem [ref=f16e126]:
+          - paragraph [ref=f16e129]: "01"
+          - paragraph [ref=f16e130]: Contracted and logged
+          - paragraph [ref=f16e131]: The batch arrives sealed from the manufacturer and is booked in against a batch number that follows it from here on.
+        - listitem [ref=f16e132]:
+          - paragraph [ref=f16e135]: "02"
+          - paragraph [ref=f16e136]: Sent out for assay
+          - paragraph [ref=f16e137]: Janoshik Analytical measure purity and concentration independently. We do not run the test and cannot adjust the result.
+        - listitem [ref=f16e138]:
+          - paragraph [ref=f16e141]: "03"
+          - paragraph [ref=f16e142]: Report published
+          - paragraph [ref=f16e143]: The certificate goes live on the product page, batch number and all, before a single pen from that batch is sold.
+        - listitem [ref=f16e144]:
+          - paragraph [ref=f16e147]: "04"
+          - paragraph [ref=f16e148]: Sealed and sent cold
+          - paragraph [ref=f16e149]: Held at 2–8 °C in tamper-evident packaging until the courier scans it off the shelf.
+    - generic [ref=f16e152]:
+      - generic [ref=f16e153]:
+        - paragraph [ref=f16e154]: Repeat supply
+        - heading "Why researchers reorder Novera." [level=2] [ref=f16e155]
+        - generic [ref=f16e156]:
+          - generic [ref=f16e158]:
+            - term [ref=f16e159]: The certificate matches the vial
+            - definition [ref=f16e160]: Every reorder carries its own batch number and its own Janoshik report. Nothing is inherited from the batch before it.
+          - generic [ref=f16e162]:
+            - term [ref=f16e163]: The range does not drift
+            - definition [ref=f16e164]: Formulations are produced under ISO-aligned, tightly controlled processes, so concentration holds from the first batch to the thousandth.
+          - generic [ref=f16e166]:
+            - term [ref=f16e167]: Someone answers
+            - definition [ref=f16e168]: Questions about stock, batches or paperwork reach a person who can tell you what is on the shelf today.
+      - figure "Dr. Hana Al-Rashid Verified Research Client" [ref=f16e170]:
+        - blockquote [ref=f16e171]:
+          - paragraph [ref=f16e172]: I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our laboratory work depends on — I won't source from anyone else.
+        - generic [ref=f16e174]:
+          - generic [ref=f16e175]: Dr. Hana Al-Rashid
+          - generic [ref=f16e176]: Verified Research Client
+    - generic [ref=f16e178]:
+      - img "A row of clear, sealed research vials casting long shadows across a pale bench" [ref=f16e179]
+      - generic [ref=f16e181]:
+        - heading "Read the report. Then decide." [level=2] [ref=f16e182]:
+          - generic [ref=f16e183]: Read the report.
+          - generic [ref=f16e184]: Then decide.
+        - paragraph [ref=f16e185]: Every line in the range carries its batch number, its assay and the name of the lab that ran it. None of it asks to be taken on trust.
+        - link "Shop the range" [ref=f16e187] [cursor=pointer]:
+          - /url: /shop
+  - contentinfo [ref=f16e188]:
+    - generic [ref=f16e189]:
+      - paragraph [ref=f16e190]: Real batches.On camera.
+      - link "See the range" [ref=f16e191] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f16e192]:
+      - listitem [ref=f16e193]:
+        - generic [ref=f16e194]:
+          - generic "Video review 1" [ref=f16e195]
+          - button "Play Video review 1" [ref=f16e197] [cursor=pointer]
+          - generic [ref=f16e198]: 0:20
+      - listitem [ref=f16e199]:
+        - generic [ref=f16e200]:
+          - generic "Video review 2" [ref=f16e201]
+          - button "Play Video review 2" [ref=f16e203] [cursor=pointer]
+          - generic [ref=f16e204]: 0:30
+      - listitem [ref=f16e205]:
+        - generic [ref=f16e206]:
+          - generic "Video review 3" [ref=f16e207]
+          - button "Play Video review 3" [ref=f16e209] [cursor=pointer]
+          - generic [ref=f16e210]: 0:20
+      - listitem [ref=f16e211]:
+        - generic [ref=f16e212]:
+          - generic "Video review 4" [ref=f16e213]
+          - button "Play Video review 4" [ref=f16e215] [cursor=pointer]
+          - generic [ref=f16e216]: 0:30
+      - listitem [ref=f16e217]:
+        - generic [ref=f16e218]:
+          - generic "Video review 1" [ref=f16e219]
+          - generic [ref=f16e220]: 0:20
+          - generic [ref=f16e221]:
+            - button "Play Video review 1" [ref=f16e222]
+            - button "Unmute Video review 1" [ref=f16e225]
+      - listitem [ref=f16e229]:
+        - generic [ref=f16e230]:
+          - generic "Video review 2" [ref=f16e231]
+          - button "Play Video review 2" [ref=f16e233] [cursor=pointer]
+          - generic [ref=f16e234]: 0:30
+      - listitem [ref=f16e235]:
+        - generic [ref=f16e236]:
+          - generic "Video review 3" [ref=f16e237]
+          - button "Play Video review 3" [ref=f16e239] [cursor=pointer]
+          - generic [ref=f16e240]: 0:20
+      - listitem [ref=f16e241]:
+        - generic [ref=f16e242]:
+          - generic "Video review 4" [ref=f16e243]
+          - button "Play Video review 4" [ref=f16e245] [cursor=pointer]
+          - generic [ref=f16e246]: 0:30
+      - listitem [ref=f16e247]:
+        - generic [ref=f16e248]:
+          - generic "Video review 1" [ref=f16e249]
+          - button "Play Video review 1" [ref=f16e251] [cursor=pointer]
+          - generic [ref=f16e252]: 0:20
+      - listitem [ref=f16e253]:
+        - generic [ref=f16e254]:
+          - generic "Video review 2" [ref=f16e255]
+          - button "Play Video review 2" [ref=f16e257] [cursor=pointer]
+          - generic [ref=f16e258]: 0:30
+      - listitem [ref=f16e259]:
+        - generic [ref=f16e260]:
+          - generic "Video review 3" [ref=f16e261]
+          - button "Play Video review 3" [ref=f16e263] [cursor=pointer]
+          - generic [ref=f16e264]: 0:20
+      - listitem [ref=f16e265]:
+        - generic [ref=f16e266]:
+          - generic "Video review 4" [ref=f16e267]
+          - button "Play Video review 4" [ref=f16e269] [cursor=pointer]
+          - generic [ref=f16e270]: 0:30
+    - generic [ref=f16e271]:
+      - generic [ref=f16e272]:
+        - generic [ref=f16e274]:
+          - paragraph [ref=f16e275]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f16e276]:
+            - generic [ref=f16e277]: Your email address
+            - textbox "Your email address" [ref=f16e278]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f16e279]
+          - paragraph [ref=f16e280]
+        - generic [ref=f16e281]:
+          - generic [ref=f16e282]:
+            - paragraph [ref=f16e283]: Explore
+            - list [ref=f16e284]:
+              - listitem [ref=f16e285]:
+                - link "Shop" [ref=f16e286] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f16e287]:
+                - link "Products" [ref=f16e288] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f16e289]:
+                - link "About" [ref=f16e290] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f16e291]:
+                - link "Our Process" [ref=f16e292] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f16e293]:
+                - link "FAQ" [ref=f16e294] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f16e295]:
+            - paragraph [ref=f16e296]: Our Range
+            - list [ref=f16e297]:
+              - listitem [ref=f16e298]:
+                - link "Tirzepatide" [ref=f16e299] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f16e300]:
+                - link "Retatrutide" [ref=f16e301] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f16e302]:
+                - link "NAD+" [ref=f16e303] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f16e304]:
+                - link "Glow" [ref=f16e305] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f16e306]:
+            - paragraph [ref=f16e307]: Help
+            - list [ref=f16e308]:
+              - listitem [ref=f16e309]:
+                - link "Track Order" [ref=f16e310] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f16e311]:
+                - link "My Orders" [ref=f16e312] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f16e313]:
+                - link "FAQ" [ref=f16e314] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f16e315]:
+            - paragraph [ref=f16e316]: Legal
+            - list [ref=f16e317]:
+              - listitem [ref=f16e318]:
+                - link "Privacy Policy" [ref=f16e319] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f16e320]:
+                - link "Terms of Service" [ref=f16e321] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f16e322]:
+                - link "Shipping Policy" [ref=f16e323] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f16e324]:
+                - link "Refund Policy" [ref=f16e325] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f16e326]:
+                - link "Press" [ref=f16e327] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f16e328]:
+        - link "hello@novera.studio" [ref=f16e329] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f16e330]: © 2026 Novera. All rights reserved.
+      - generic [ref=f16e331]:
+        - paragraph [ref=f16e332]: Research use only
+        - paragraph [ref=f16e333]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - alert [ref=f16e334]

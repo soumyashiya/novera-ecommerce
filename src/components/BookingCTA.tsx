@@ -78,7 +78,7 @@ export default function Contact() {
   }, [sent]);
 
   return (
-    <section id="contact" className="on-ink section-pad bg-dark text-background">
+    <section id="contact" className="on-ink section-band section-pad bg-dark text-background">
       <div className="container-lux">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left — heading + channels */}
@@ -87,7 +87,7 @@ export default function Contact() {
               <p className="eyebrow mb-6 text-accent">Get in Touch</p>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="font-serif font-light text-[clamp(2.4rem,5.5vw,4.4rem)] leading-[1.05] tracking-tight">
+              <h2 className="font-serif font-light text-[clamp(2.4rem,6.05vw,4.4rem)] leading-[1.05] tracking-tight">
                 Let&apos;s talk
                 <br />
                 <span className="italic">orders</span> &amp; answers.

@@ -264,14 +264,22 @@ export default function Navigation() {
         <AnnouncementBar />
         {/* Reference header: a solid yellow bar inset from the viewport edges,
             floating over the hero. Once scrolled, the gutters fill in so page
-            content doesn't show through around the bar. */}
+            content doesn't show through around the bar.
+
+            The inset is --header-inset (8px, 12px from lg) rather than a fixed
+            48px, because the bar's own edge has to sit inside the page gutter
+            for the nav to line up with section headings — at 48px the bar
+            already starts past the gutter line and no inner padding can pull
+            the links back to it. */}
         <div
-          className={`px-2 pt-2 lg:px-3 lg:pt-4 transition-colors duration-500 ${
+          className={`px-[var(--header-inset)] pt-2 lg:pt-3 transition-colors duration-500 ${
             scrolled ? "bg-background" : "bg-transparent"
           }`}
         >
           {/* Wrapper spans the bar and the mega menu, so moving the pointer
               from "Shop" down into the panel doesn't close it. */}
+          {/* Bar is inset from the viewport by --header-inset, floating over
+              the hero rather than running edge to edge. */}
           <div
             className="relative"
             onMouseEnter={() => {
@@ -282,67 +290,69 @@ export default function Navigation() {
           {/* Three-column grid so the wordmark is optically centred regardless
               of how wide the link list or the icon cluster gets — the
               reference centres its logotype. */}
-          <nav
-            aria-label="Primary"
-            className="grid h-[60px] grid-cols-[1fr_auto_1fr] items-center gap-4 bg-accent px-3 lg:h-[76px] lg:px-8"
-          >
-            {/* Desktop links (left). "Shop" opens the mega menu on hover or
-                keyboard focus; the others close it. */}
-            <ul className="hidden lg:flex items-center gap-8 text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark">
-              {NAV_LINKS.map((l) => {
-                const isShop = l.href === "/shop";
-                return (
-                  <li
-                    key={l.href}
-                    onMouseEnter={() => setMegaSoon(isShop)}
-                    onFocus={() => setMega(isShop)}
-                  >
-                    <Link
-                      href={l.href}
-                      aria-current={pathname === l.href ? "page" : undefined}
-                      aria-haspopup={isShop ? "true" : undefined}
-                      aria-expanded={isShop ? mega : undefined}
-                      className={`link-underline aria-[current=page]:underline underline-offset-4 ${
-                        isShop && mega ? "underline" : ""
-                      }`}
+          <nav aria-label="Primary" className="bg-accent">
+            {/* container-lux-inset, not a plain px-*: it subtracts the bar's
+                own inset from the shared gutter, so the links sit the same
+                distance from the bar's edge at every width. */}
+            <div className="container-lux-inset grid h-[52px] grid-cols-[1fr_auto_1fr] items-center gap-4 lg:h-[60px]">
+              {/* Desktop links (left). "Shop" opens the mega menu on hover or
+                  keyboard focus; the others close it. */}
+              <ul className="hidden lg:flex items-center gap-8 text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark">
+                {NAV_LINKS.map((l) => {
+                  const isShop = l.href === "/shop";
+                  return (
+                    <li
+                      key={l.href}
+                      onMouseEnter={() => setMegaSoon(isShop)}
+                      onFocus={() => setMega(isShop)}
                     >
-                      {l.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+                      <Link
+                        href={l.href}
+                        aria-current={pathname === l.href ? "page" : undefined}
+                        aria-haspopup={isShop ? "true" : undefined}
+                        aria-expanded={isShop ? mega : undefined}
+                        className={`link-underline aria-[current=page]:underline underline-offset-4 ${
+                          isShop && mega ? "underline" : ""
+                        }`}
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
 
-            {/* Burger (left, mobile only) */}
-            <button
-              ref={burgerRef}
-              type="button"
-              aria-label="Open menu"
-              aria-expanded={open}
-              aria-controls="mobile-menu"
-              onClick={() => setOpen(true)}
-              className="lg:hidden -ml-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px] justify-self-start"
-            >
-              <span aria-hidden="true" className="block h-px w-6 bg-dark" />
-              <span aria-hidden="true" className="block h-px w-6 bg-dark" />
-            </button>
+              {/* Burger (left, mobile only) */}
+              <button
+                ref={burgerRef}
+                type="button"
+                aria-label="Open menu"
+                aria-expanded={open}
+                aria-controls="mobile-menu"
+                onClick={() => setOpen(true)}
+                className="lg:hidden -ml-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px] justify-self-start"
+              >
+                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
+                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
+              </button>
 
-            {/* Centred wordmark */}
-            <Link
-              href="/"
-              aria-label="Novera — home"
-              className="justify-self-center font-serif text-[1.75rem] md:text-[2rem] leading-none tracking-[-0.02em] text-dark"
-            >
-              Novera
-            </Link>
-
-            {/* Text links (right) — the reference uses words, not icons */}
-            <div className="flex items-center gap-1 justify-self-end text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark lg:gap-8">
-              <Link href="/track" className="link-underline hidden lg:inline">
-                Track order
+              {/* Centred wordmark */}
+              <Link
+                href="/"
+                aria-label="Novera — home"
+                className="justify-self-center font-serif text-[1.5rem] md:text-[1.75rem] leading-none tracking-[-0.02em] text-dark"
+              >
+                Novera
               </Link>
-              <AccountMenu user={user} onLogout={handleLogout} />
-              <CartButton />
+
+              {/* Text links (right) — the reference uses words, not icons */}
+              <div className="flex items-center gap-1 justify-self-end text-[0.875rem] font-bold uppercase tracking-[-0.02em] text-dark lg:gap-8">
+                <Link href="/track" className="link-underline hidden lg:inline">
+                  Track order
+                </Link>
+                <AccountMenu user={user} onLogout={handleLogout} />
+                <CartButton />
+              </div>
             </div>
           </nav>
 

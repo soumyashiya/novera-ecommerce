@@ -6,7 +6,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import WishlistHeart from "./WishlistHeart";
-import { PRODUCT_CATEGORIES, formatPrice, type Product } from "@/lib/data";
+import { primaryCategory, formatPrice, type Product } from "@/lib/data";
 
 // "Tirzepatide 40 mg (R&D Only)" → "Tirzepatide"; the strength moves to the
 // meta line and the pill.
@@ -66,7 +66,7 @@ export default function ProductCard({
             </span>
             {/* Second line only promises what this product actually carries:
                 an assayed figure, else a certificate, else neither. */}
-            <p className="mt-2.5 text-[clamp(0.9375rem,1.3vw,1.375rem)] font-bold leading-[1.18] tracking-[-0.02em] text-dark">
+            <p className="mt-2.5 text-[clamp(0.9375rem,1.43vw,1.375rem)] font-bold leading-[1.18] tracking-[-0.02em] text-dark">
               {product.strengths[0]} {name}
               <br />
               {analysis?.purity
@@ -88,7 +88,7 @@ export default function ProductCard({
               fill
               priority={priority}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              className={`object-contain object-bottom transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04] ${
+              className={`object-contain object-bottom [filter:drop-shadow(0_6px_8px_rgba(46,29,14,0.22))_drop-shadow(0_26px_30px_rgba(46,29,14,0.32))] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04] ${
                 product.tileHoverImage
                   ? "group-hover:opacity-0 group-focus-within:opacity-0"
                   : ""
@@ -141,7 +141,7 @@ export default function ProductCard({
         </div>
 
         <p className="mt-2 text-[0.6875rem] uppercase tracking-[0.16em] text-muted">
-          {PRODUCT_CATEGORIES[product.slug]} · {product.strengths.join(" · ")} pen
+          {primaryCategory(product.slug)} · {product.strengths.join(" · ")} pen
         </p>
 
         <div className="mt-3 flex flex-wrap gap-2">

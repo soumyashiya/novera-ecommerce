@@ -169,7 +169,7 @@ export default function ReviewsCarousel() {
 
   return (
     <section id="reviews" className="section-pad overflow-hidden">
-      <div className="container-lux mb-14 text-center lg:mb-24">
+      <div className="container-lux mb-14 text-center">
         <h2 className="text-hero text-dark">Verified by researchers.</h2>
         <p className="mt-6 text-[1rem] text-dark">
           Real labs. Real batches. Every report published.

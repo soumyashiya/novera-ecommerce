@@ -1,0 +1,363 @@
+- generic [active] [ref=f47e1]:
+  - link "Skip to content" [ref=f47e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f47e3]:
+    - paragraph [ref=f47e6]:
+      - text: Third-party tested by Janoshik Analytical
+      - generic [ref=f47e7]:
+        - text: "|"
+        - link "Shop the range" [ref=f47e8] [cursor=pointer]:
+          - /url: /shop
+    - navigation "Primary" [ref=f47e11]:
+      - generic [ref=f47e12]:
+        - button "Open menu" [ref=f47e13]
+        - link "Novera — home" [ref=f47e16] [cursor=pointer]:
+          - /url: /
+          - text: Novera
+        - generic [ref=f47e17]:
+          - link "Track order" [ref=f47e18] [cursor=pointer]:
+            - /url: /track
+          - button "Sign in" [ref=f47e20]:
+            - generic [ref=f47e21]: Account
+          - link "Cart, 0 items" [ref=f47e26] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f47e27]: Bag (0)
+  - main [ref=f47e33]:
+    - generic [ref=f47e34]:
+      - navigation "Breadcrumb" [ref=f47e35]:
+        - list [ref=f47e36]:
+          - listitem [ref=f47e37]:
+            - link "Home" [ref=f47e38] [cursor=pointer]:
+              - /url: /
+          - listitem [aria-hidden] [ref=f47e39]: /
+          - listitem [ref=f47e40]:
+            - link "Products" [ref=f47e41] [cursor=pointer]:
+              - /url: /#products
+          - listitem [aria-hidden] [ref=f47e42]: /
+          - listitem [ref=f47e43]: Glow 70 mg (R&D Only)
+      - generic [ref=f47e44]:
+        - generic [ref=f47e46]:
+          - img "Glow 70 mg (R&D Only)" [ref=f47e48]
+          - generic [ref=f47e49]:
+            - button "View image 1" [ref=f47e50]
+            - button "View image 2" [ref=f47e51]
+            - button "View image 3" [ref=f47e52]
+            - button "View image 4" [ref=f47e53]
+        - generic [ref=f47e54]:
+          - paragraph [ref=f47e55]: COMPOUND ANALYSIS
+          - heading "Glow 70 mg (R&D Only)" [level=1] [ref=f47e56]
+          - paragraph [ref=f47e57]: $129
+          - paragraph [ref=f47e58]: A 70 mg triple-peptide formulation supplied in pre-filled research devices, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.
+          - generic [ref=f47e59]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Supplied strictly for laboratory and analytical research conducted by qualified professionals.
+          - generic [ref=f47e60]:
+            - button "View Janoshik Analytical Report" [ref=f47e61]
+            - dialog "Glow 70 mg (R&D Only) — Janoshik Analytical Report" [ref=f47e65]:
+              - generic [ref=f47e66]:
+                - button "Close report" [ref=f47e67]
+                - heading "Janoshik Third-Party Lab Analysis" [level=2] [ref=f47e73]
+                - paragraph [ref=f47e74]: Independently tested and verified by Janoshik Analytical.
+                - generic [ref=f47e75]:
+                  - generic [ref=f47e76]:
+                    - term [ref=f47e77]: Batch Number
+                    - definition [ref=f47e78]: GL0621XSA
+                  - generic [ref=f47e79]:
+                    - term [ref=f47e80]: Fill Volume
+                    - definition [ref=f47e81]: 3.4 mL
+                - table [ref=f47e83]:
+                  - rowgroup [ref=f47e84]:
+                    - row [ref=f47e85]:
+                      - columnheader "Compound" [ref=f47e86]
+                      - columnheader "Concentration" [ref=f47e87]
+                      - columnheader "Verified Content" [ref=f47e88]
+                  - rowgroup [ref=f47e89]:
+                    - row [ref=f47e90]:
+                      - cell "GHK-Cu" [ref=f47e91]
+                      - cell "7.59 mg/mL" [ref=f47e92]
+                      - cell "25.8 mg" [ref=f47e93]
+                    - row [ref=f47e94]:
+                      - cell "BPC-157" [ref=f47e95]
+                      - cell "2.39 mg/mL" [ref=f47e96]
+                      - cell "8.13 mg" [ref=f47e97]
+                    - row [ref=f47e98]:
+                      - cell "TB-500" [ref=f47e99]
+                      - cell "1.99 mg/mL" [ref=f47e100]
+                      - cell "6.76 mg" [ref=f47e101]
+                - paragraph [ref=f47e102]: Concentration is measured per mL; verified content reflects the total assayed mass across the stated fill volume.
+                - link "View Full Janoshik Report" [ref=f47e103] [cursor=pointer]:
+                  - /url: https://verify.janoshik.com/tests/163217-ALLUVI_GLOW_70MG_KIT_DCL3AJSE4JQP
+          - generic [ref=f47e106]:
+            - paragraph [ref=f47e107]: Janoshik Third-Party Lab Analysis
+            - paragraph [ref=f47e108]: Independently tested and verified by Janoshik Analytical.
+            - generic [ref=f47e109]:
+              - generic [ref=f47e110]:
+                - paragraph [ref=f47e111]: Batch Number
+                - paragraph [ref=f47e112]: GL0621XSA
+              - generic [ref=f47e113]:
+                - paragraph [ref=f47e114]: Fill Volume
+                - paragraph [ref=f47e115]: 3.4 mL
+            - table [ref=f47e117]:
+              - rowgroup [ref=f47e118]:
+                - row [ref=f47e119]:
+                  - columnheader "Compound" [ref=f47e120]
+                  - columnheader "Concentration" [ref=f47e121]
+                  - columnheader "Verified Content" [ref=f47e122]
+              - rowgroup [ref=f47e123]:
+                - row [ref=f47e124]:
+                  - cell "GHK-Cu" [ref=f47e125]
+                  - cell "7.59 mg/mL" [ref=f47e126]
+                  - cell "25.8 mg" [ref=f47e127]
+                - row [ref=f47e128]:
+                  - cell "BPC-157" [ref=f47e129]
+                  - cell "2.39 mg/mL" [ref=f47e130]
+                  - cell "8.13 mg" [ref=f47e131]
+                - row [ref=f47e132]:
+                  - cell "TB-500" [ref=f47e133]
+                  - cell "1.99 mg/mL" [ref=f47e134]
+                  - cell "6.76 mg" [ref=f47e135]
+            - paragraph [ref=f47e136]: Concentration is measured per mL; verified content reflects the total assayed mass across the stated fill volume.
+          - generic [ref=f47e138]:
+            - tablist [ref=f47e139]:
+              - tab "Package Contents" [selected] [ref=f47e140]
+              - tab "Storage Logic" [ref=f47e141]
+              - tab "Supply Chain" [ref=f47e142]
+            - list [ref=f47e143]:
+              - listitem [ref=f47e144]: "2 × Pre-filled Research pens (each pen: 5 mg BPC-157, 5 mg TB-500, 25 mg GHK-Cu)"
+              - listitem [ref=f47e145]: "Total contents: 10 mg BPC-157, 10 mg TB-500, 50 mg GHK-Cu"
+          - generic [ref=f47e147]:
+            - generic [ref=f47e148]:
+              - button "Decrease quantity" [ref=f47e149]: −
+              - generic [ref=f47e150]: "1"
+              - button "Increase quantity" [ref=f47e151]: +
+            - button "Add to Cart" [ref=f47e152]
+          - paragraph [ref=f47e153]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+      - generic [ref=f47e154]:
+        - generic [ref=f47e155]:
+          - heading "You may also like" [level=2] [ref=f47e156]
+          - link "Shop all →" [ref=f47e157] [cursor=pointer]:
+            - /url: /shop
+        - generic [ref=f47e158]:
+          - article [ref=f47e159]:
+            - generic [ref=f47e160]:
+              - link "Bestseller Independently assayed 40 mg Tirzepatide + 99.85% purity Tirzepatide" [ref=f47e161] [cursor=pointer]:
+                - /url: /products/tirzepatide
+                - generic [ref=f47e162]: Bestseller
+                - generic [ref=f47e163]:
+                  - generic [ref=f47e164]: Independently assayed
+                  - paragraph [ref=f47e165]: 40 mg Tirzepatide+ 99.85% purity
+                - img "Tirzepatide" [ref=f47e167]
+              - button "Save Tirzepatide to wishlist" [ref=f47e170]
+            - generic [ref=f47e173]:
+              - generic [ref=f47e174]:
+                - heading [level=3] [ref=f47e175]:
+                  - link "Tirzepatide" [ref=f47e176] [cursor=pointer]:
+                    - /url: /products/tirzepatide
+                - paragraph [ref=f47e177]: $189
+              - paragraph [ref=f47e178]: Metabolic Research · 40 mg pen
+              - generic [ref=f47e179]: 40 mg
+              - paragraph [ref=f47e181]: Batch TR786PAOS · COA
+          - article [ref=f47e184]:
+            - generic [ref=f47e185]:
+              - link "Bestseller Independently assayed 20 mg Retatrutide + 99.21% purity Retatrutide" [ref=f47e186] [cursor=pointer]:
+                - /url: /products/retatrutide
+                - generic [ref=f47e187]: Bestseller
+                - generic [ref=f47e188]:
+                  - generic [ref=f47e189]: Independently assayed
+                  - paragraph [ref=f47e190]: 20 mg Retatrutide+ 99.21% purity
+                - img "Retatrutide" [ref=f47e192]
+              - button "Save Retatrutide to wishlist" [ref=f47e195]
+            - generic [ref=f47e198]:
+              - generic [ref=f47e199]:
+                - heading [level=3] [ref=f47e200]:
+                  - link "Retatrutide" [ref=f47e201] [cursor=pointer]:
+                    - /url: /products/retatrutide
+                - paragraph [ref=f47e202]: $149
+              - paragraph [ref=f47e203]: Metabolic Research · 20 mg pen
+              - generic [ref=f47e204]: 20 mg
+              - paragraph [ref=f47e206]: Batch AR1721TRT · COA
+          - article [ref=f47e209]:
+            - generic [ref=f47e210]:
+              - link "Limited Research use only 1,000 mg NAD+ + Sealed & cold-stored NAD+" [ref=f47e211] [cursor=pointer]:
+                - /url: /products/nad
+                - generic [ref=f47e212]: Limited
+                - generic [ref=f47e213]:
+                  - generic [ref=f47e214]: Research use only
+                  - paragraph [ref=f47e215]: 1,000 mg NAD++ Sealed & cold-stored
+                - img "NAD+" [ref=f47e217]
+              - button "Save NAD+ to wishlist" [ref=f47e220]
+            - generic [ref=f47e223]:
+              - generic [ref=f47e224]:
+                - heading [level=3] [ref=f47e225]:
+                  - link "NAD+" [ref=f47e226] [cursor=pointer]:
+                    - /url: /products/nad
+                - paragraph [ref=f47e227]: $149
+              - paragraph [ref=f47e228]: Cellular & Longevity · 1,000 mg pen
+              - generic [ref=f47e229]: 1,000 mg
+          - article [ref=f47e231]:
+            - generic [ref=f47e232]:
+              - link "New Independently assayed 40 mg Retatrutide + 99.269% purity Retatrutide" [ref=f47e233] [cursor=pointer]:
+                - /url: /products/retatrutide-40
+                - generic [ref=f47e234]: New
+                - generic [ref=f47e235]:
+                  - generic [ref=f47e236]: Independently assayed
+                  - paragraph [ref=f47e237]: 40 mg Retatrutide+ 99.269% purity
+                - img "Retatrutide" [ref=f47e239]
+              - button "Save Retatrutide to wishlist" [ref=f47e242]
+            - generic [ref=f47e245]:
+              - generic [ref=f47e246]:
+                - heading [level=3] [ref=f47e247]:
+                  - link "Retatrutide" [ref=f47e248] [cursor=pointer]:
+                    - /url: /products/retatrutide-40
+                - paragraph [ref=f47e249]: $249
+              - paragraph [ref=f47e250]: Metabolic Research · 40 mg pen
+              - generic [ref=f47e251]: 40 mg
+              - paragraph [ref=f47e253]: Batch AR1739JAT · COA
+  - contentinfo [ref=f47e256]:
+    - generic [ref=f47e257]:
+      - paragraph [ref=f47e258]: Real reviews.On camera.
+      - link "See the range" [ref=f47e259] [cursor=pointer]:
+        - /url: /shop
+    - list [ref=f47e260]:
+      - listitem [ref=f47e261]:
+        - generic [ref=f47e262]:
+          - generic "Video review 1" [ref=f47e263]
+          - button "Play Video review 1" [ref=f47e265] [cursor=pointer]
+          - generic [ref=f47e266]: 0:20
+      - listitem [ref=f47e267]:
+        - generic [ref=f47e268]:
+          - generic "Video review 2" [ref=f47e269]
+          - button "Play Video review 2" [ref=f47e271] [cursor=pointer]
+          - generic [ref=f47e272]: 0:30
+      - listitem [ref=f47e273]:
+        - generic [ref=f47e274]:
+          - generic "Video review 3" [ref=f47e275]
+          - button "Play Video review 3" [ref=f47e277] [cursor=pointer]
+          - generic [ref=f47e278]: 0:20
+      - listitem [ref=f47e279]:
+        - generic [ref=f47e280]:
+          - generic "Video review 4" [ref=f47e281]
+          - button "Play Video review 4" [ref=f47e283] [cursor=pointer]
+          - generic [ref=f47e284]: 0:30
+      - listitem [ref=f47e285]:
+        - generic [ref=f47e286]:
+          - generic "Video review 1" [ref=f47e287]
+          - generic [ref=f47e288]: 0:20
+          - generic [ref=f47e289]:
+            - button "Play Video review 1" [ref=f47e290]
+            - button "Unmute Video review 1" [ref=f47e293]
+      - listitem [ref=f47e297]:
+        - generic [ref=f47e298]:
+          - generic "Video review 2" [ref=f47e299]
+          - button "Play Video review 2" [ref=f47e301] [cursor=pointer]
+          - generic [ref=f47e302]: 0:30
+      - listitem [ref=f47e303]:
+        - generic [ref=f47e304]:
+          - generic "Video review 3" [ref=f47e305]
+          - button "Play Video review 3" [ref=f47e307] [cursor=pointer]
+          - generic [ref=f47e308]: 0:20
+      - listitem [ref=f47e309]:
+        - generic [ref=f47e310]:
+          - generic "Video review 4" [ref=f47e311]
+          - button "Play Video review 4" [ref=f47e313] [cursor=pointer]
+          - generic [ref=f47e314]: 0:30
+      - listitem [ref=f47e315]:
+        - generic [ref=f47e316]:
+          - generic "Video review 1" [ref=f47e317]
+          - button "Play Video review 1" [ref=f47e319] [cursor=pointer]
+          - generic [ref=f47e320]: 0:20
+      - listitem [ref=f47e321]:
+        - generic [ref=f47e322]:
+          - generic "Video review 2" [ref=f47e323]
+          - button "Play Video review 2" [ref=f47e325] [cursor=pointer]
+          - generic [ref=f47e326]: 0:30
+      - listitem [ref=f47e327]:
+        - generic [ref=f47e328]:
+          - generic "Video review 3" [ref=f47e329]
+          - button "Play Video review 3" [ref=f47e331] [cursor=pointer]
+          - generic [ref=f47e332]: 0:20
+      - listitem [ref=f47e333]:
+        - generic [ref=f47e334]:
+          - generic "Video review 4" [ref=f47e335]
+          - button "Play Video review 4" [ref=f47e337] [cursor=pointer]
+          - generic [ref=f47e338]: 0:30
+    - generic [ref=f47e339]:
+      - generic [ref=f47e340]:
+        - generic [ref=f47e342]:
+          - paragraph [ref=f47e343]: Subscribe for new batch releases, lab reports and first look at new lines.
+          - generic [ref=f47e344]:
+            - generic [ref=f47e345]: Your email address
+            - textbox "Your email address" [ref=f47e346]:
+              - /placeholder: Enter your email
+            - button "Sign up" [ref=f47e347]
+          - paragraph [ref=f47e348]
+        - generic [ref=f47e349]:
+          - generic [ref=f47e350]:
+            - paragraph [ref=f47e351]: Explore
+            - list [ref=f47e352]:
+              - listitem [ref=f47e353]:
+                - link "Shop" [ref=f47e354] [cursor=pointer]:
+                  - /url: /shop
+              - listitem [ref=f47e355]:
+                - link "Products" [ref=f47e356] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f47e357]:
+                - link "About" [ref=f47e358] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f47e359]:
+                - link "Our Process" [ref=f47e360] [cursor=pointer]:
+                  - /url: /#process
+              - listitem [ref=f47e361]:
+                - link "FAQ" [ref=f47e362] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f47e363]:
+            - paragraph [ref=f47e364]: Our Range
+            - list [ref=f47e365]:
+              - listitem [ref=f47e366]:
+                - link "Tirzepatide" [ref=f47e367] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f47e368]:
+                - link "Retatrutide" [ref=f47e369] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f47e370]:
+                - link "NAD+" [ref=f47e371] [cursor=pointer]:
+                  - /url: /products/nad
+              - listitem [ref=f47e372]:
+                - link "Glow" [ref=f47e373] [cursor=pointer]:
+                  - /url: /products/glow
+          - generic [ref=f47e374]:
+            - paragraph [ref=f47e375]: Help
+            - list [ref=f47e376]:
+              - listitem [ref=f47e377]:
+                - link "Track Order" [ref=f47e378] [cursor=pointer]:
+                  - /url: /track
+              - listitem [ref=f47e379]:
+                - link "My Orders" [ref=f47e380] [cursor=pointer]:
+                  - /url: /account/orders
+              - listitem [ref=f47e381]:
+                - link "FAQ" [ref=f47e382] [cursor=pointer]:
+                  - /url: /#faq
+          - generic [ref=f47e383]:
+            - paragraph [ref=f47e384]: Legal
+            - list [ref=f47e385]:
+              - listitem [ref=f47e386]:
+                - link "Privacy Policy" [ref=f47e387] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f47e388]:
+                - link "Terms of Service" [ref=f47e389] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f47e390]:
+                - link "Shipping Policy" [ref=f47e391] [cursor=pointer]:
+                  - /url: /policies/shipping-policy
+              - listitem [ref=f47e392]:
+                - link "Refund Policy" [ref=f47e393] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f47e394]:
+                - link "Press" [ref=f47e395] [cursor=pointer]:
+                  - /url: /policies/press
+      - generic [ref=f47e396]:
+        - link "hello@novera.studio" [ref=f47e397] [cursor=pointer]:
+          - /url: mailto:hello@novera.studio
+        - paragraph [ref=f47e398]: © 2026 Novera. All rights reserved.
+      - generic [ref=f47e399]:
+        - paragraph [ref=f47e400]: Research use only
+        - paragraph [ref=f47e401]: FOR RESEARCH PURPOSES ONLY. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.
+  - alert [ref=f47e402]

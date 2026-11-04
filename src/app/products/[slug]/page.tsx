@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -10,6 +9,7 @@ import {
   DISCLAIMER,
 } from "@/lib/data";
 import AddToCart from "@/components/cart/AddToCart";
+import ProductCard from "@/components/ProductCard";
 import ProductGallery from "@/components/ProductGallery";
 import ProductInfoTabs from "@/components/ProductInfoTabs";
 import CoaViewer from "@/components/CoaViewer";
@@ -43,7 +43,7 @@ export async function generateMetadata({
       url,
       siteName: SITE_NAME,
       images: [
-        { url: product.image, width: 1200, height: 1200, alt: product.name },
+        { url: product.image, width: 1200, height: 1500, alt: product.name },
       ],
     },
     twitter: {
@@ -136,14 +136,19 @@ export default async function ProductPage({
         </nav>
 
         {/* Detail */}
+        {/* min-w-0 on both columns: grid items default to min-width:auto, so
+            the longest unbreakable run of copy in the details column widened
+            the track past the container and pushed 56px of horizontal scroll
+            onto the page at 360px. globals.css already carries this reset but
+            only for [class*="col-span"], which these columns do not use. */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left — image gallery (sticky on desktop while right column scrolls) */}
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
             <ProductGallery images={product.gallery} alt={product.name} />
           </div>
 
           {/* Right — details */}
-          <div className="lg:py-4">
+          <div className="min-w-0 lg:py-4">
             <p className="text-[0.75rem] tracking-[-0.005em] uppercase text-muted">
               {product.tag.toUpperCase()}
             </p>
@@ -274,38 +279,22 @@ export default async function ProductPage({
           </div>
         </div>
 
-        {/* Related products */}
+        {/* Related products — the same card as the homepage and shop, so the
+            badge, dose copy, hover photo and batch chip carry over. */}
         <section className="mt-24 lg:mt-32">
-          <div className="flex items-end justify-between mb-10">
-            <h2 className="text-subhead">Related products</h2>
+          <div className="mb-10 flex items-end justify-between gap-6">
+            <h2 className="text-section text-dark">You may also like</h2>
             <Link
-              href="/#products"
-              className="link-underline text-sm text-muted hover:text-dark transition-colors"
+              href="/shop"
+              className="link-underline text-[0.75rem] font-semibold uppercase tracking-[0.04em] text-dark"
             >
-              View all →
+              Shop all →
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
-            {related.map((p) => (
-              <Link key={p.slug} href={`/products/${p.slug}`} className="group">
-                <div className="relative aspect-square w-full overflow-hidden lg:">
-                  <Image
-                    src={p.image}
-                    alt={p.name}
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 33vw"
-                    className="object-contain img-grade transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.04]"
-                  />
-                </div>
-                <div className="mt-4 flex items-baseline justify-between gap-3">
-                  <h3 className="text-subhead text-xl lg:text-2xl">{p.name}</h3>
-                  <span className="text-muted text-sm shrink-0">
-                    {formatPrice(p.price)}
-                  </span>
-                </div>
-                <p className="text-sm text-muted mt-1">{p.tag}</p>
-              </Link>
+          <div className="grid grid-cols-2 gap-x-5 gap-y-12 lg:grid-cols-4 lg:gap-x-6">
+            {related.slice(0, 4).map((p) => (
+              <ProductCard key={p.slug} product={p} />
             ))}
           </div>
         </section>

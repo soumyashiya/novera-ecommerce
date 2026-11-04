@@ -6,7 +6,7 @@ import { WHY_US } from "@/lib/data";
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="section-pad bg-background-secondary">
+    <section id="why-us" className="section-band section-pad bg-background-secondary">
       <div className="container-lux">
         <div className="max-w-3xl mb-12 lg:mb-16">
           <Reveal>

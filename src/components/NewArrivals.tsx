@@ -1,10 +1,21 @@
-// New arrivals — every product tagged `badge: "New"` in data.ts, shown as
-// large split cards: photo on one side, details on a cream panel on the
-// other. Add or remove products from this section by changing their badge.
+// New arrivals — the two products being promoted, shown as large split
+// cards: photo on one side, details on a cream panel on the other. Edit
+// FEATURED below to change which two, or their shots.
+//
+// This is a curated pair rather than every `badge: "New"` product: five
+// carry that badge, and the badge still drives the "New" pill in the shop
+// grid, so filtering on it here would put all five in this section.
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { PRODUCTS, PRODUCT_CATEGORIES, formatPrice } from "@/lib/data";
+import { PRODUCTS, primaryCategory, formatPrice } from "@/lib/data";
+
+/** Slug plus the shot used here — a wider crop than the catalogue cut-out,
+ *  so these stay independent of the product's own `image`. */
+const FEATURED = [
+  { slug: "tesamorelin", image: "/images/tessa-new-arrivals.webp" },
+  { slug: "cjc-1295", image: "/images/cjc-new-arrival.webp" },
+];
 
 const shortName = (name: string) =>
   name
@@ -13,7 +24,10 @@ const shortName = (name: string) =>
     .trim();
 
 export default function NewArrivals() {
-  const items = PRODUCTS.filter((p) => p.badge === "New");
+  const items = FEATURED.flatMap((f) => {
+    const product = PRODUCTS.find((p) => p.slug === f.slug);
+    return product ? [{ ...product, image: f.image }] : [];
+  });
   if (!items.length) return null;
 
   return (
@@ -23,9 +37,9 @@ export default function NewArrivals() {
           <Reveal>
             <p className="flex items-center gap-3 text-[0.6875rem] font-semibold uppercase tracking-[0.24em] text-copper">
               <span aria-hidden className="h-px w-8 bg-copper" />
-              Just landed
+              Just landed at Novera
             </p>
-            <h2 className="mt-4 font-serif text-[clamp(2.5rem,4.6vw,4.5rem)] leading-[0.95] tracking-[-0.02em] text-dark">
+            <h2 className="mt-4 font-serif text-[clamp(2.5rem,5.06vw,4.5rem)] leading-[0.95] tracking-[-0.02em] text-dark">
               New <em>arrivals</em>
             </h2>
           </Reveal>
@@ -62,9 +76,9 @@ export default function NewArrivals() {
 
                   <div className="flex flex-col p-7 lg:p-9">
                     <p className="text-[0.6875rem] uppercase tracking-[0.18em] text-muted">
-                      {PRODUCT_CATEGORIES[p.slug]}
+                      {primaryCategory(p.slug)}
                     </p>
-                    <h3 className="mt-3 font-serif text-[clamp(2rem,2.6vw,2.75rem)] leading-none tracking-[-0.015em] text-dark">
+                    <h3 className="mt-3 font-serif text-[clamp(2rem,2.86vw,2.75rem)] leading-none tracking-[-0.015em] text-dark">
                       {name}
                     </h3>
                     <p className="mt-4 text-[0.9375rem] leading-relaxed text-muted">

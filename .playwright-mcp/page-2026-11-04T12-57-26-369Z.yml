@@ -1,0 +1,624 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - link [ref=f1e3] [cursor=pointer]:
+      - /url: /apac-us/build-a-bundle-shop-5ct-d3
+      - paragraph [ref=f1e6]:
+        - strong [ref=f1e7]: "BLACK FRIDAY DEAL: 1 MONTH FREE WITH QUARTERLY PLAN*"
+    - banner [ref=f1e8]:
+      - generic [ref=f1e9]:
+        - link "Home" [ref=f1e10] [cursor=pointer]:
+          - /url: https://drinkag1.com/
+        - navigation [ref=f1e12]:
+          - list [ref=f1e13]:
+            - listitem [ref=f1e14]:
+              - link "Ingredients" [ref=f1e16] [cursor=pointer]:
+                - /url: /apac-us/about-ag1/ingredients/ctr
+            - listitem [ref=f1e18]:
+              - button "About AG1" [ref=f1e19]
+            - listitem [ref=f1e21]:
+              - button "Benefits" [ref=f1e22]
+        - generic [ref=f1e24]:
+          - link "SHOP AG1®" [ref=f1e26] [cursor=pointer]:
+            - /url: "#offers"
+          - button "Cart" [ref=f1e28] [cursor=pointer]
+          - link [ref=f1e33] [cursor=pointer]:
+            - /url: /apac-us/members
+  - main [ref=f1e37]:
+    - generic [ref=f1e39]:
+      - generic [ref=f1e40]:
+        - generic [ref=f1e42]:
+          - generic [ref=f1e43]: "Black Friday Deal: Buy 2 Months, Get 1 Month Free*"
+          - generic [ref=f1e44]: The best deal yet. $53 USD/month for daily energy, immune system and digestive support.¹ ² ³ ⁴
+          - link [ref=f1e46] [cursor=pointer]:
+            - /url: /apac-us/build-a-bundle-shop-5ct-d3
+            - paragraph [ref=f1e48]: Shop Now
+        - generic [ref=f1e55]:
+          - generic [ref=f1e56]: Better Mornings, No Matter Hugh You Are.
+          - generic [ref=f1e57]: Since 2021, AG1 has been the morning ritual that keeps Hugh Jackman at the top of his game.
+          - generic [ref=f1e58]:
+            - link [ref=f1e59] [cursor=pointer]:
+              - /url: /apac-us/build-a-bundle-shop-5ct-d3
+              - paragraph [ref=f1e61]: Get Started
+            - link [ref=f1e65] [cursor=pointer]:
+              - /url: /apac-us/hugh-jackman
+              - paragraph [ref=f1e67]: Learn More
+        - generic [ref=f1e73]:
+          - generic [ref=f1e74]: Valued at $76 USD^
+          - generic [ref=f1e75]: Get Your Free Welcome Kit
+          - generic [ref=f1e76]: Start your AG1 journey with a year's supply of Vitamin D3K2, 5 Travel Packs, a premium canister, scoop & shaker.
+          - link [ref=f1e78] [cursor=pointer]:
+            - /url: https://drinkag1.com/apac-us/build-a-bundle-shop-5ct-d3
+            - paragraph [ref=f1e80]: Get Started
+        - generic [ref=f1e87]:
+          - generic [ref=f1e88]: Your daily nutrient boost
+          - generic [ref=f1e89]: AG1 is more-in-one nutrition – thanks to our science-backed formula packed with vitamins, minerals, probiotics and more.
+          - generic [ref=f1e90]:
+            - link [ref=f1e91] [cursor=pointer]:
+              - /url: https://drinkag1.com/apac-us/build-a-bundle-shop-5ct-d3
+              - paragraph [ref=f1e93]: Shop Now
+            - link [ref=f1e97] [cursor=pointer]:
+              - /url: /apac-us/what-is-ag1
+              - paragraph [ref=f1e99]: Learn More
+      - generic [ref=f1e103]:
+        - button "Previous Slide" [ref=f1e104] [cursor=pointer]
+        - button "Next Slide" [ref=f1e108] [cursor=pointer]
+    - generic [ref=f1e118]:
+      - generic [ref=f1e119]:
+        - generic [ref=f1e120]:
+          - heading "Multiple benefits in every scoop" [level=2] [ref=f1e121]
+          - paragraph [ref=f1e123]: Even with the best diet, some nutrients can be hard to get. That’s why AG1 delivers a variety of nutrients in forms that help your body thrive.
+        - button [ref=f1e124] [cursor=pointer]:
+          - paragraph [ref=f1e126]: Full Ingredient List
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128]:
+          - generic [ref=f1e131]:
+            - heading "Digestive support" [level=3] [ref=f1e132]
+            - paragraph [ref=f1e134]:
+              - text: Calcium and biotin support digestion, ensuring that you feel your best and essential nutrients actually get to where they're needed.
+              - superscript [ref=f1e135]: "1"
+          - group [aria-hidden] [ref=f1e136]
+          - button "Digestive support" [ref=f1e137] [cursor=pointer]
+        - generic [ref=f1e142]:
+          - generic [ref=f1e145]:
+            - heading "Immune defence" [level=3] [ref=f1e146]
+            - paragraph [ref=f1e148]:
+              - text: Vitamin C and minerals from citrus fruits, acerola and other high-quality sources support your immune system.
+              - superscript [ref=f1e149]: "2"
+          - group [aria-hidden] [ref=f1e150]
+          - button "Immune defence" [ref=f1e151] [cursor=pointer]
+        - generic [ref=f1e156]:
+          - generic [ref=f1e159]:
+            - heading "Energy & mental performance" [level=3] [ref=f1e160]
+            - paragraph [ref=f1e162]:
+              - text: A B-vitamin complex in AG1 supports your metabolism, mental performance and cognitive function.
+              - superscript [ref=f1e163]: 3, 4
+          - group [aria-hidden] [ref=f1e164]
+          - button "Energy & mental performance" [ref=f1e165] [cursor=pointer]
+        - generic [ref=f1e170]:
+          - generic [ref=f1e173]:
+            - heading "Healthy mood & nervous system" [level=3] [ref=f1e174]
+            - paragraph [ref=f1e176]:
+              - text: Essential micronutrients help you feel calm and relaxed by balancing your body's response to various types of stress.
+              - superscript [ref=f1e177]: 3, 5
+          - group [aria-hidden] [ref=f1e178]
+          - button "Healthy mood & nervous system" [ref=f1e179] [cursor=pointer]
+    - generic [ref=f1e186]:
+      - heading "The world’s top performers drink AG1" [level=2] [ref=f1e190]
+      - navigation "hero-quotes-tab" [ref=f1e191]:
+        - list [ref=f1e192]:
+          - listitem [ref=f1e193]:
+            - button "Mick Fanning" [ref=f1e194]
+          - listitem [ref=f1e196]:
+            - button "Dr. Andrew Huberman" [ref=f1e197]
+          - listitem [ref=f1e199]:
+            - button "Allyson Felix" [ref=f1e200]
+      - generic [ref=f1e203]:
+        - generic [ref=f1e206]:
+          - blockquote [ref=f1e209]: Life’s busy, but AG1 makes it easy. As a surfer and dad, I need something quick, effective, and great-tasting. It gives me healthy energy levels, so I feel ready for whatever comes my way—whether it's an early surf session or a full day with the family. It’s a perfect way to kick off the day with something healthy that’s simple and effortless.
+          - paragraph [ref=f1e212]: — Mick Fanning, Three-Time World Surfing Champion, AG1 Partner
+        - generic [ref=f1e217]:
+          - blockquote [ref=f1e220]: “I’ve been using AG1 since 2012 because it’s the simplest, most straightforward way for me to get my bases of important vitamins, minerals, and probiotics.”**
+          - paragraph [ref=f1e223]: — Andrew Huberman, Neuroscientist, Host of the Huberman Lab Podcast, AG1 Partner
+        - generic [ref=f1e228]:
+          - blockquote [ref=f1e231]: "\"I love the simplicity of adding AG1 to my daily routine. It's so easy to start my day adding my AG1 to a smoothie and allows me to drink it on the go. I've noticed a big shift in how I feel with a boost in energy and in my recovery. It's also reassuring to know that my nutritional bases are covered.\"**"
+          - paragraph [ref=f1e234]: — Allyson Felix, Entrepreneur, SEVEN-TIME OLYMPIC GOLD MEDALIST, AG1 Partner
+    - generic [ref=f1e238]:
+      - heading "Get started with your AG1 Welcome Kit^" [level=2] [ref=f1e240]
+      - generic [ref=f1e244]:
+        - generic [ref=f1e245]:
+          - generic [ref=f1e246]: Buy 2 months, get the 3rd free — Save $79 USD
+          - generic [ref=f1e248]: Quarterly Subscription
+          - generic [ref=f1e249]:
+            - generic [ref=f1e250]:
+              - generic [ref=f1e251]: AG1 Pouch
+              - generic [ref=f1e253]:
+                - paragraph [ref=f1e254]: 90 day supply, ships every 90 days
+                - paragraph [ref=f1e255]: ~$1.76 USD / SERVING
+                - paragraph [ref=f1e256]: "First 90 Days: $158 USD for 3 pouches, one-time offer"
+                - paragraph [ref=f1e257]: "Then Every 90 Days: $209 USD for 3 pouches, until you cancel"
+              - generic [ref=f1e258]:
+                - generic [ref=f1e259]: $53 USD/mo USD
+                - generic [ref=f1e260]:
+                  - text: $69/mo
+                  - superscript [ref=f1e261]: †
+            - generic [ref=f1e262]: "FIRST TIME PURCHASE INCLUDES:"
+            - generic [ref=f1e263]:
+              - generic [ref=f1e264]: Welcome Kit
+              - generic [ref=f1e265]: AG1 Shaker, Scoop, and Canister
+              - generic [ref=f1e266]:
+                - generic [ref=f1e267]: Free
+                - generic [ref=f1e268]: $28 USD
+            - generic [ref=f1e269]:
+              - generic [ref=f1e270]: AG1 Travel Packs
+              - generic [ref=f1e271]: 5 individual servings
+              - generic [ref=f1e272]:
+                - generic [ref=f1e273]: Free
+                - generic [ref=f1e274]: $19 USD
+            - generic [ref=f1e275]:
+              - generic [ref=f1e276]: AG1 Vitamin D3+K2 Bottle
+              - generic [ref=f1e277]:
+                - generic [ref=f1e278]: Free
+                - generic [ref=f1e279]: $29 USD
+            - generic [ref=f1e280]:
+              - superscript [ref=f1e281]: †
+              - text: Value of one-time purchase
+          - button [ref=f1e283] [cursor=pointer]:
+            - paragraph [ref=f1e285]: Get started — $158 USD
+          - generic [ref=f1e286]:
+            - generic [ref=f1e287]: 90-day money back guarantee
+            - generic [ref=f1e292]: Update or cancel anytime
+        - generic [ref=f1e297]:
+          - generic [ref=f1e298]: Most Popular
+          - generic [ref=f1e300]: Monthly Subscription
+          - generic [ref=f1e301]:
+            - generic [ref=f1e302]:
+              - generic [ref=f1e303]: AG1 Pouch
+              - generic [ref=f1e305]:
+                - paragraph [ref=f1e306]: 30-day supply, ships every 30 days.
+                - paragraph [ref=f1e307]: ~$2.63 USD / SERVING
+              - generic [ref=f1e308]:
+                - generic [ref=f1e309]: $79 USD/mo USD
+                - generic [ref=f1e310]:
+                  - text: $99
+                  - superscript [ref=f1e311]: †
+            - generic [ref=f1e312]: "FIRST TIME PURCHASE INCLUDES:"
+            - generic [ref=f1e313]:
+              - generic [ref=f1e314]: Welcome Kit
+              - generic [ref=f1e315]: AG1 Shaker, Scoop, and Canister
+              - generic [ref=f1e316]:
+                - generic [ref=f1e317]: Free
+                - generic [ref=f1e318]: $28 USD
+            - generic [ref=f1e319]:
+              - generic [ref=f1e320]: AG1 Travel Packs
+              - generic [ref=f1e321]: 5 individual servings
+              - generic [ref=f1e322]:
+                - generic [ref=f1e323]: Free
+                - generic [ref=f1e324]: $19 USD
+            - generic [ref=f1e325]:
+              - generic [ref=f1e326]: AG1 Vitamin D3+K2 Bottle
+              - generic [ref=f1e327]:
+                - generic [ref=f1e328]: Free
+                - generic [ref=f1e329]: $29 USD
+            - generic [ref=f1e330]:
+              - superscript [ref=f1e331]: †
+              - text: Value of one-time purchase
+          - button [ref=f1e333] [cursor=pointer]:
+            - paragraph [ref=f1e335]: Get started — $79 USD
+          - generic [ref=f1e336]:
+            - generic [ref=f1e337]: 90-day money back guarantee
+            - generic [ref=f1e342]: Update or cancel anytime
+    - generic [ref=f1e356]:
+      - heading "We set the bar for quality — and keep raising it" [level=2] [ref=f1e357]
+      - paragraph [ref=f1e358]: AG1 is held to the highest quality standards. From our research, to sourcing, to manufacturing and testing, we go above and beyond industry standards to bring you a safe and effective product.
+      - separator [ref=f1e359]
+      - generic [ref=f1e360]:
+        - heading [level=3] [ref=f1e366]:
+          - button [ref=f1e367] [cursor=pointer]:
+            - paragraph [ref=f1e370]:
+              - strong [ref=f1e371]: Driven by science. Backed by research.
+        - heading [level=3] [ref=f1e378]:
+          - button [ref=f1e379] [cursor=pointer]:
+            - paragraph [ref=f1e382]:
+              - strong [ref=f1e383]: Third-party certifications
+        - heading [level=3] [ref=f1e390]:
+          - button [ref=f1e391] [cursor=pointer]:
+            - paragraph [ref=f1e394]: A higher standard for sourcing
+        - heading [level=3] [ref=f1e401]:
+          - button [ref=f1e402] [cursor=pointer]:
+            - generic [ref=f1e404]:
+              - paragraph [ref=f1e405]: Manufacturing at its best
+              - paragraph
+    - generic [ref=f1e411]:
+      - generic [ref=f1e414]:
+        - paragraph [ref=f1e417]: Morning people
+        - paragraph [ref=f1e420]: The secret to being a morning person? Finding out what works for you. Go behind the scenes with these Amazing Humans to see how starting the day with a routine you feel good about makes all the difference.**
+      - generic [ref=f1e422]:
+        - generic [ref=f1e424]:
+          - generic [ref=f1e426]:
+            - button "Preview" [ref=f1e427] [cursor=pointer]
+            - paragraph [ref=f1e440]: Dan Churchill
+          - generic [ref=f1e442]:
+            - button "Preview" [ref=f1e443] [cursor=pointer]
+            - paragraph [ref=f1e456]: Alison Roman
+          - generic [ref=f1e458]:
+            - button "Preview" [ref=f1e459] [cursor=pointer]
+            - paragraph [ref=f1e472]: Bobbi Brown
+          - generic [ref=f1e474]:
+            - button "Preview" [ref=f1e475] [cursor=pointer]
+            - paragraph [ref=f1e488]: Timothy O'Donnell
+        - generic [ref=f1e489]:
+          - button "Previous" [disabled] [ref=f1e490]:
+            - img "Previous" [ref=f1e491]
+          - button "Next" [ref=f1e493] [cursor=pointer]:
+            - img "Next" [ref=f1e494]
+    - generic [ref=f1e503]:
+      - heading "Real people, real results" [level=2] [ref=f1e504]
+      - paragraph [ref=f1e507]:
+        - strong [ref=f1e508]:
+          - text: To hear what our customers in the US have been saying about us*, click
+          - link "HERE" [ref=f1e509] [cursor=pointer]:
+            - /url: https://drinkag1.com/apac-us/about-ag1/reviews/ctr
+          - text: .
+      - paragraph [ref=f1e511]:
+        - link "link to disclaimer" [ref=f1e512] [cursor=pointer]:
+          - /url: "#fdaDisclaimer"
+          - text: "*"
+        - text: For more information on our upgraded formula available in your region, click
+        - link "HERE" [ref=f1e513] [cursor=pointer]:
+          - /url: http://drinkag1.com/apac-us/next-generation
+        - text: .
+    - generic [ref=f1e515]:
+      - heading "You've got questions? We've got the answers." [level=2] [ref=f1e517]
+      - generic [ref=f1e520]:
+        - generic [ref=f1e521]:
+          - heading [level=3] [ref=f1e522]:
+            - button "What is AG1?" [expanded] [ref=f1e523] [cursor=pointer]
+          - group "What is AG1?" [ref=f1e527]:
+            - paragraph [ref=f1e530]: AG1 is a Daily Health Drink designed to support whole body health. It combines a multivitamin, probiotics, and blend of superfoods to deliver comprehensive nutrition in one simple daily habit. With over 75 high-quality ingredients, AG1 is carefully sourced for purity and potency, helping to fill nutrient gaps while supporting energy, digestion, immune function, and a balanced mood.
+        - heading [level=3] [ref=f1e532]:
+          - button "How and when do I drink my AG1?" [ref=f1e533] [cursor=pointer]
+        - heading [level=3] [ref=f1e538]:
+          - button "Do I need to drink AG1 every day?" [ref=f1e539] [cursor=pointer]
+        - heading [level=3] [ref=f1e544]:
+          - button "Can I take more than one scoop a day?" [ref=f1e545] [cursor=pointer]
+        - heading [level=3] [ref=f1e550]:
+          - button "What products does AG1 replace?" [ref=f1e551] [cursor=pointer]
+        - heading [level=3] [ref=f1e556]:
+          - button "How do I know if AG1 is right for me?" [ref=f1e557] [cursor=pointer]
+        - heading [level=3] [ref=f1e562]:
+          - button "What makes AG1 different from other nutritional products?" [ref=f1e563] [cursor=pointer]
+        - heading [level=3] [ref=f1e568]:
+          - button "What are the ingredients in AG1?" [ref=f1e569] [cursor=pointer]
+        - heading [level=3] [ref=f1e574]:
+          - button "What kind of benefits can I expect from taking AG1?" [ref=f1e575] [cursor=pointer]
+        - heading [level=3] [ref=f1e580]:
+          - button "Is AG1 organic?" [ref=f1e581] [cursor=pointer]
+        - heading [level=3] [ref=f1e586]:
+          - button "Do I get anything for recommending AG1?" [ref=f1e587] [cursor=pointer]
+    - generic [ref=f1e592]:
+      - region [ref=f1e593]:
+        - paragraph [ref=f1e595]:
+          - strong [ref=f1e596]: "Serving Size:"
+          - text: 1 Pack/1 Level AG1 Scoop (~1 ½ tbsp)(13g)
+        - paragraph [ref=f1e598]:
+          - strong [ref=f1e599]: "Servings Per Container:"
+          - text: "30"
+      - region [ref=f1e600]:
+        - heading [level=2] [ref=f1e601]: Nutrition Facts
+        - table [ref=f1e602]:
+          - rowgroup [ref=f1e603]:
+            - row [aria-hidden] [ref=f1e604]:
+              - cell [ref=f1e605]
+            - row [ref=f1e606]:
+              - rowheader [ref=f1e607]: Energy
+              - cell [ref=f1e608]: 172 kJ/41 kcal
+              - cell [ref=f1e609]: 2%
+            - row [ref=f1e610]:
+              - rowheader [ref=f1e611]: Protein
+              - cell [ref=f1e612]: 2g
+              - cell [ref=f1e613]: 4%
+            - row [ref=f1e614]:
+              - rowheader [ref=f1e615]: "- gluten"
+              - cell [ref=f1e616]: Not Detected
+              - cell [ref=f1e617]
+            - row [ref=f1e618]:
+              - rowheader [ref=f1e619]: Fat, total
+              - cell [ref=f1e620]: 1g
+              - cell [ref=f1e621]: 1%
+            - row [ref=f1e622]:
+              - rowheader [ref=f1e623]: "-saturated"
+              - cell [ref=f1e624]: 0.4g
+              - cell [ref=f1e625]: 2%
+            - row [ref=f1e626]:
+              - rowheader [ref=f1e627]: Carbohydrate
+              - cell [ref=f1e628]: 5g
+              - cell [ref=f1e629]: 2%
+            - row [ref=f1e630]:
+              - rowheader [ref=f1e631]: "-sugars"
+              - cell [ref=f1e632]: < 1g
+              - cell [ref=f1e633]: 1%
+            - row [ref=f1e634]:
+              - rowheader [ref=f1e635]: Dietary Fibre
+              - cell [ref=f1e636]: 2g
+              - cell [ref=f1e637]: 7%
+            - row [ref=f1e638]:
+              - rowheader [ref=f1e639]: Sodium
+              - cell [ref=f1e640]: 35mg
+              - cell [ref=f1e641]: 2%
+            - row [ref=f1e642]:
+              - rowheader [ref=f1e643]: Potassium
+              - cell [ref=f1e644]: 220mg
+              - cell [ref=f1e645]: 6%¥
+            - row [ref=f1e646]:
+              - rowheader [ref=f1e647]: Vitamin A
+              - cell [ref=f1e648]: 200mcg RE
+              - cell [ref=f1e649]: 22%
+            - row [ref=f1e650]:
+              - rowheader [ref=f1e651]: Thiamin
+              - cell [ref=f1e652]: 3mg
+              - cell [ref=f1e653]: 250%
+            - row [ref=f1e654]:
+              - rowheader [ref=f1e655]: Riboflavin
+              - cell [ref=f1e656]: 2mg
+              - cell [ref=f1e657]: 154%
+            - row [ref=f1e658]:
+              - rowheader [ref=f1e659]: Niacin
+              - cell [ref=f1e660]: 16mg
+              - cell [ref=f1e661]: 100%
+            - row [ref=f1e662]:
+              - rowheader [ref=f1e663]: Folate
+              - cell [ref=f1e664]: 500mcg DFE
+              - cell [ref=f1e665]: 125%
+            - row [ref=f1e666]:
+              - rowheader [ref=f1e667]: Vitamin B6
+              - cell [ref=f1e668]: 5mg
+              - cell [ref=f1e669]: 385%
+            - row [ref=f1e670]:
+              - rowheader [ref=f1e671]: Vitamin B12
+              - cell [ref=f1e672]: 400mcg
+              - cell [ref=f1e673]: 16667%
+            - row [ref=f1e674]:
+              - rowheader [ref=f1e675]: Biotin
+              - cell [ref=f1e676]: 330mcg
+              - cell [ref=f1e677]: 1100%¥
+            - row [ref=f1e678]:
+              - rowheader [ref=f1e679]: Pantothenic acid
+              - cell [ref=f1e680]: 4mg
+              - cell [ref=f1e681]: 67%¥
+            - row [ref=f1e682]:
+              - rowheader [ref=f1e683]: Vitamin C
+              - cell [ref=f1e684]: 500mg
+              - cell [ref=f1e685]: 1111%
+            - row [ref=f1e686]:
+              - rowheader [ref=f1e687]: Vitamin E
+              - cell [ref=f1e688]: 20mg
+              - cell [ref=f1e689]: 200%¥
+            - row [ref=f1e690]:
+              - rowheader [ref=f1e691]: Vitamin K
+              - cell [ref=f1e692]: 90mcg
+              - cell [ref=f1e693]: 129%¥
+            - row [ref=f1e694]:
+              - rowheader [ref=f1e695]: Choline
+              - cell [ref=f1e696]: 25mg
+              - cell [ref=f1e697]: 5%¥
+            - row [ref=f1e698]:
+              - rowheader [ref=f1e699]: Calcium
+              - cell [ref=f1e700]: 120mg
+              - cell [ref=f1e701]: 12%
+            - row [ref=f1e702]:
+              - rowheader [ref=f1e703]: Chromium
+              - cell [ref=f1e704]: 25mcg
+              - cell [ref=f1e705]: 71%¥
+            - row [ref=f1e706]:
+              - rowheader [ref=f1e707]: Copper
+              - cell [ref=f1e708]: 0.3mg
+              - cell [ref=f1e709]: 18%¥
+            - row [ref=f1e710]:
+              - rowheader [ref=f1e711]: Magnesium
+              - cell [ref=f1e712]: 16mg
+              - cell [ref=f1e713]: 4%
+            - row [ref=f1e714]:
+              - rowheader [ref=f1e715]: Manganese
+              - cell [ref=f1e716]: 0.5mg
+              - cell [ref=f1e717]: 9%¥
+            - row [ref=f1e718]:
+              - rowheader [ref=f1e719]: Molybdenum
+              - cell [ref=f1e720]: 45mcg
+              - cell [ref=f1e721]: 100%
+            - row [ref=f1e722]:
+              - rowheader [ref=f1e723]: Phosphorus
+              - cell [ref=f1e724]: 130mg
+              - cell [ref=f1e725]: 13%
+            - row [ref=f1e726]:
+              - rowheader [ref=f1e727]: Selenium
+              - cell [ref=f1e728]: 22mcg
+              - cell [ref=f1e729]: 31%
+            - row [ref=f1e730]:
+              - rowheader [ref=f1e731]: Zinc
+              - cell [ref=f1e732]: "15"
+              - cell [ref=f1e733]: 107%
+            - row [ref=f1e734]:
+              - rowheader [ref=f1e735]: Myo-Inositol
+              - cell [ref=f1e736]: 100mg
+              - cell [ref=f1e737]
+            - row [ref=f1e738]:
+              - rowheader [ref=f1e739]: Boron
+              - cell [ref=f1e740]: 500mcg
+              - cell [ref=f1e741]
+            - row [ref=f1e742]:
+              - rowheader [ref=f1e743]: Coenzyme Q10 (as ubiquinone)
+              - cell [ref=f1e744]: 60mg
+              - cell [ref=f1e745]
+            - row [ref=f1e746]:
+              - rowheader [ref=f1e747]: Alpha-lipoic acid (ALA)
+              - cell [ref=f1e748]: 100mg
+              - cell [ref=f1e749]
+      - region [ref=f1e750]:
+        - heading [level=2] [ref=f1e751]: Additional Nutritional Details
+        - table [ref=f1e752]:
+          - rowgroup [ref=f1e753]:
+            - row [ref=f1e754]:
+              - rowheader [ref=f1e755]: Dairy-Free Probiotic Blend
+              - generic [ref=f1e756]:
+                - cell [ref=f1e757]: 10 Billion CFU
+                - cell [ref=f1e758]: †
+            - emphasis [ref=f1e759]: Lactobacillus rhamnosus
+            - emphasis [ref=f1e760]: Lactobacillus acidophilus
+            - emphasis [ref=f1e761]: Bifidobacterium lactis
+            - emphasis [ref=f1e762]: Lactobacillus casei
+            - emphasis [ref=f1e763]: Lactobacillus plantarum
+          - rowgroup [ref=f1e764]:
+            - row [ref=f1e765]:
+              - rowheader [ref=f1e766]: Ingredients
+            - emphasis [ref=f1e767]: Sophora japonica
+            - emphasis [ref=f1e768]: ycium barbarum
+            - emphasis [ref=f1e769]: Lactobacillus rhamnosus
+            - emphasis [ref=f1e770]: Lactobacillus acidophilus
+            - emphasis [ref=f1e771]: Bifidobacterium lactis
+            - emphasis [ref=f1e772]: Lactobacillus casei
+            - emphasis [ref=f1e773]: Lactobacillus plantarum
+          - rowgroup [ref=f1e774]:
+            - row [ref=f1e775]:
+              - rowheader [ref=f1e776]: Minerals
+          - rowgroup [ref=f1e777]:
+            - row [ref=f1e778]:
+              - rowheader [ref=f1e779]: Vitamins
+          - rowgroup [ref=f1e780]
+          - rowgroup [ref=f1e782]:
+            - row [ref=f1e783]:
+              - cell [ref=f1e784]:
+                - paragraph [ref=f1e786]: "*Percentage daily intakes are based on an average adult diet of 8700 kJ. ¥ Adequate Intake (AI) ‎ All Values are considered averages unless otherwise indicated."
+        - region [ref=f1e787]:
+          - generic [ref=f1e788]:
+            - generic [ref=f1e789]: "Contains:"
+            - paragraph [ref=f1e792]: Soy
+  - contentinfo [ref=f1e794]:
+    - generic [ref=f1e795]:
+      - generic [ref=f1e796]:
+        - generic [ref=f1e798]:
+          - generic [ref=f1e799]:
+            - heading "SHOP" [level=3] [ref=f1e800]
+            - group "SHOP":
+              - list
+          - generic [ref=f1e801]:
+            - heading "LEARN MORE" [level=3] [ref=f1e802]
+            - group "LEARN MORE" [ref=f1e803]:
+              - list [ref=f1e804]:
+                - listitem [ref=f1e805]:
+                  - link "Reviews" [ref=f1e806] [cursor=pointer]:
+                    - /url: /apac-us/about-ag1/reviews/ctr
+                - listitem [ref=f1e807]:
+                  - link "Ingredients & Benefits" [ref=f1e808] [cursor=pointer]:
+                    - /url: /apac-us/about-ag1/ingredients/ctr
+                - listitem [ref=f1e809]:
+                  - link "FAQs" [ref=f1e810] [cursor=pointer]:
+                    - /url: /apac-us/about-ag1/faq
+          - generic [ref=f1e811]:
+            - heading "ABOUT" [level=3] [ref=f1e812]
+            - group "ABOUT" [ref=f1e813]:
+              - list [ref=f1e814]:
+                - listitem [ref=f1e815]:
+                  - link "About Us" [ref=f1e816] [cursor=pointer]:
+                    - /url: /apac-us/about-us
+                - listitem [ref=f1e817]:
+                  - link "Partners" [ref=f1e818] [cursor=pointer]:
+                    - /url: /apac-us/partners
+                - listitem [ref=f1e819]:
+                  - link "2024 Impact Report" [ref=f1e820] [cursor=pointer]:
+                    - /url: /apac-us/impact-report
+                - listitem [ref=f1e821]:
+                  - link "Accessibility Statement" [ref=f1e822] [cursor=pointer]:
+                    - /url: /apac-us/accessibility
+          - generic [ref=f1e823]:
+            - heading "CONTACT" [level=3] [ref=f1e824]
+            - group "CONTACT" [ref=f1e825]:
+              - list [ref=f1e826]:
+                - listitem [ref=f1e827]:
+                  - link "Help" [ref=f1e828] [cursor=pointer]:
+                    - /url: /apac-us/contact-us/customer-service
+                - listitem [ref=f1e829]:
+                  - link "Careers" [ref=f1e830] [cursor=pointer]:
+                    - /url: /apac-us/careers
+        - generic [ref=f1e832]:
+          - generic [ref=f1e833]:
+            - heading "Connect" [level=2] [ref=f1e834]
+            - paragraph [ref=f1e835]: Join Our Newsletter
+          - generic [ref=f1e839]:
+            - textbox "Email" [ref=f1e840]:
+              - /placeholder: Your Email
+            - button "Sign Up" [ref=f1e841]
+          - list [ref=f1e844]:
+            - listitem [ref=f1e845]:
+              - link "instagram (opens in new tab)" [ref=f1e846] [cursor=pointer]:
+                - /url: https://www.instagram.com/drinkag1
+            - listitem [ref=f1e849]:
+              - link "facebook (opens in new tab)" [ref=f1e850] [cursor=pointer]:
+                - /url: https://www.facebook.com/drinkAG1
+            - listitem [ref=f1e853]:
+              - link "twitter (opens in new tab)" [ref=f1e854] [cursor=pointer]:
+                - /url: https://twitter.com/drink_AG1
+            - listitem [ref=f1e857]:
+              - link "tiktok (opens in new tab)" [ref=f1e858] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@drinkag1
+            - listitem [ref=f1e861]:
+              - link "youtube (opens in new tab)" [ref=f1e862] [cursor=pointer]:
+                - /url: https://www.youtube.com/@drinkAG1
+      - separator [ref=f1e865]
+      - generic [ref=f1e866]:
+        - generic [ref=f1e867]:
+          - link "AG1 Homepage" [ref=f1e870] [cursor=pointer]:
+            - /url: /apac-us
+          - button "Asia Pacific $ United States (USD)" [ref=f1e876] [cursor=pointer]:
+            - generic [ref=f1e894]: Asia Pacific
+            - generic [aria-hidden] [ref=f1e895]: "|"
+            - generic [ref=f1e896]: $ United States (USD)
+          - generic [ref=f1e897]:
+            - paragraph [ref=f1e900]: Do not exceed the indicated daily intake. Keep out of reach of children. Please inform and consult your doctor before consuming this product. Not suitable for children and adolescents under 18 years, pregnant or breastfeeding women. Persons taking anticoagulant medication should seek medical advice before consuming vitamin K-containing supplements.
+            - generic [ref=f1e903]:
+              - paragraph [ref=f1e904]: ^ Offer valid for new subscribers only.
+              - paragraph [ref=f1e905]: "*Offer valid for new quarterly plan subscribers only. Get 3 months for the price of 2 on your first quarterly subscription payment; subsequent renewals billed at the standard quarterly subscription price."
+              - paragraph [ref=f1e906]:
+                - text: "** Based on formula prior to upgrades. For more information on our upgraded formula available in your region, click"
+                - link "HERE" [ref=f1e907] [cursor=pointer]:
+                  - /url: https://drinkag1.com/apac-us/next-generation
+                - text: .
+              - paragraph [ref=f1e908]:
+                - strong [ref=f1e909]: Digestion
+                - text: 1. As part of a healthy diet containing a variety of foods, AG1 is a source of:Calcium contributes to the normal function of digestive enzymes.Biotin contributes to the maintenance of normal mucous membranes (e.g., intestinal mucosa).
+              - paragraph [ref=f1e910]:
+                - strong [ref=f1e911]: Immune System
+                - text: 2. As part of a healthy diet containing a variety of foods, AG1 is a source of:Copper, folate, selenium, zinc, and vitamins A, B12, B6, and C contribute to the normal function of the immune system.
+              - paragraph [ref=f1e912]:
+                - strong [ref=f1e913]: Mental Performance; Cognitive Function; Nervous System; Psychological Function
+                - text: 3. As part of a healthy diet containing a variety of foods, AG1 is a source of:Vitamins C, B6, B12, riboflavin, niacin, pantothenic acid and folic acid contribute to the reduction of tiredness and fatigue.Pantothenic acid contributes to normal mental performance.Zinc contributes to normal cognitive function.Vitamins C, B6, B12, thiamine, riboflavin, niacin, biotin, copper and potassium contribute to normal functioning of the nervous system.Thiamine, niacin, vitamin B6, vitamin B12, biotin, folate, and vitamin C contribute to normal psychological function.
+              - paragraph [ref=f1e914]:
+                - strong [ref=f1e915]: Metabolism
+                - text: 4. As part of a healthy diet containing a variety of foods, AG1 is a source of:Vitamins C, B6 and B12, as well as thiamine, riboflavin, niacin, biotin, pantothenic acid, calcium, phosphorus, copper, and manganese contribute to normal energy-yielding metabolism.Biotin, zinc, and chromium contribute to normal macronutrient metabolism.Vitamin A and riboflavin contribute to normal metabolism of iron.Zinc contributes to normal acid-base metabolism.Molybdenum contributes to normal sulphur amino acid metabolism.
+              - paragraph [ref=f1e916]:
+                - strong [ref=f1e917]: Healthy Cells
+                - text: 5. As part of a healthy diet containing a variety of foods, AG1 is a source of:Vitamins E and C, as well as riboflavin, zinc, copper, manganese and selenium, contribute to the protection of cells from oxidative stress.Phosphorus contributes to normal function of cell membranes.
+              - paragraph [ref=f1e918]:
+                - strong [ref=f1e919]: Hormonal Health
+                - text: 6. As part of a healthy diet containing a variety of foods, AG1 is a source of:Vitamin B6 contributes to the regulation of hormonal activity.Pantothenic acid contributes to normal synthesis and metabolism of steroid hormones, vitamin D and some neurotransmitters.Zinc contributes to the maintenance of normal testosterone levels in the blood.Selenium contributes to the normal utilisation of iodine in the production of thyroid hormones.Zinc contributes to normal fertility and reproduction.Selenium contributes to normal spermatogenesis.
+              - paragraph [ref=f1e920]:
+                - strong [ref=f1e921]: Heart Health
+                - text: 7. As part of a healthy diet containing a variety of foods, AG1 is a source of:Thiamine contributes to the normal function of the heart.Vitamin C contributes to normal blood vessels structure and function.Vitamin B6 contributes to normal red blood cell formation.Vitamin B2 contributes to the maintenance of normal red blood cells.
+            - generic [ref=f1e922]:
+              - paragraph [ref=f1e923]: "Your Privacy Choices:"
+              - button "Your privacy is our priority. Learn more" [ref=f1e924] [cursor=pointer]
+        - generic [ref=f1e932]:
+          - list [ref=f1e935]:
+            - listitem [ref=f1e936]:
+              - link "Privacy" [ref=f1e937] [cursor=pointer]:
+                - /url: /apac-us/privacy
+            - listitem [ref=f1e938]:
+              - link "Do Not Sell My Personal Info" [ref=f1e939] [cursor=pointer]:
+                - /url: https://forms.gle/Q1caAjetaaH6RhdL7
+            - listitem [ref=f1e940]:
+              - link "Terms & Conditions" [ref=f1e941] [cursor=pointer]:
+                - /url: /apac-us/about-us/terms-and-conditions
+            - listitem [ref=f1e942]:
+              - button "Accessibility" [ref=f1e943] [cursor=pointer]
+          - generic [ref=f1e949]: © 2026 Athletic Greens
+  - alert [ref=f1e951]
+  - region "Live chat"

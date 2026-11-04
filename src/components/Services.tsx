@@ -120,7 +120,7 @@ export default function Products() {
         {/* Not wrapped in <Reveal>: it sits just under the hero fold and
             should be visible on load, as on the reference. */}
         <h2 className="mb-8 text-section lg:!text-[1.75rem]">
-          Shop our independently tested research range.
+          Shop the Novera range, independently tested.
         </h2>
 
         {/* Hold autoplay while anyone is actually using the rail. Pointer and

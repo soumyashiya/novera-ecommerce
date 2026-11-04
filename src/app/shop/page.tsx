@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Reveal from "@/components/Reveal";
 import JsonLd from "@/components/JsonLd";
 import ShopFilters from "@/components/ShopFilters";
-import { PRODUCTS } from "@/lib/data";
+import { CATEGORIES, PRODUCTS } from "@/lib/data";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 const TITLE = "Shop";
@@ -28,7 +27,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ShopPage() {
+// The category tiles and the mega-menu both link here as /shop?category=<slug>.
+// Reading that on the server means the filtered grid is in the first response
+// rather than appearing after hydration — at the cost of rendering this route
+// per request, which is cheap because the catalogue is a local module.
+export default async function ShopPage(props: PageProps<"/shop">) {
+  const { category } = await props.searchParams;
+  // Only honour a slug we actually have a line for, so a stale or hand-typed
+  // ?category= value falls back to the full range instead of an empty grid.
+  const selected =
+    typeof category === "string" && CATEGORIES.some((c) => c.slug === category)
+      ? category
+      : null;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -49,30 +60,33 @@ export default function ShopPage() {
   };
 
   return (
-    <main className="pb-24 pt-28 lg:pt-32">
+    /* overflow-x-clip because the line banner breaks the gutter with a 100vw
+       full-bleed, and 100vw counts the scrollbar — without this the page
+       gained a few pixels of horizontal scroll. clip, not hidden: it does not
+       create a scroll container, so sticky/fixed children still behave. */
+    <main className="overflow-x-clip pb-24 pt-28 lg:pt-32">
       <JsonLd schema={schema} />
 
-      <section className="container-lux">
-        <Reveal>
-          <p className="eyebrow mb-5">The range</p>
-        </Reveal>
-        <Reveal delay={0.05}>
-          <h1 className="text-section">All products</h1>
-        </Reveal>
-        <Reveal delay={0.1}>
-          {/* Counted from PRODUCTS so the copy can't drift out of date as
-              lines are added — it read "Six" while nine were listed. */}
-          <p className="lede mt-5">
-            {PRODUCTS.length} research lines, each supplied in a sealed
-            fixed-volume format. Certified batches are independently assayed by
-            Janoshik Analytical and published with their batch number and
-            verified content. For laboratory research use only.
-          </p>
-        </Reveal>
-      </section>
+      {/* The visible "The range / All products" block is gone — the line
+          banner carries the page's identity now, and on the unfiltered view
+          the pills and grid speak for themselves. The heading stays in the
+          document for screen readers and the outline, naming the line in
+          view so it is not just "All products" on a filtered page. */}
+      <h1 className="sr-only">
+        {selected
+          ? `${CATEGORIES.find((c) => c.slug === selected)?.name} — Novera`
+          : "All products — Novera"}
+      </h1>
 
-      <section className="container-lux mt-10 lg:mt-14">
-        <ShopFilters products={PRODUCTS} />
+      <section className="container-lux">
+        {/* Keyed by the slug so arriving from a different line resets the
+            filter state — without it React keeps the mounted component and
+            its now-stale category. */}
+        <ShopFilters
+          key={selected ?? "all"}
+          products={PRODUCTS}
+          initialCategory={selected}
+        />
       </section>
 
       {/* Research-only notice */}

@@ -6,7 +6,6 @@
 // Content comes straight from TESTIMONIALS in lib/data.ts. No rating counts,
 // ages or customer totals are shown, because we have no data for them.
 import Image from "next/image";
-import Link from "next/link";
 import Reveal from "./Reveal";
 import { TESTIMONIALS } from "@/lib/data";
 
@@ -88,14 +87,6 @@ export default function Testimonials() {
             </li>
           ))}
         </ul>
-
-        <Reveal delay={0.1}>
-          <div className="mt-14 text-center">
-            <Link href="/shop" className="btn-lux btn-outline">
-              Shop the range
-            </Link>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

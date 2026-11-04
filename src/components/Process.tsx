@@ -1,23 +1,15 @@
 "use client";
 
-// "How each pen is prepared" — a scroll-told sequence. On desktop the left
-// column sticks while the three steps scroll past on the right: the framed
-// photograph cross-fades to match the step in view, a yellow rail fills with
-// scroll progress, and the active step brightens while the others recede.
-// On mobile it collapses to a simple stacked list with an image per step.
+// "How each pen is prepared" — the three steps read as a staggered triptych:
+// each column starts a little lower than the last, so the sequence literally
+// steps down across the page instead of being revealed one screenful at a
+// time. A measure line draws across the top of each column as it arrives;
+// that is the only authored motion here.
 //
 // The copy restates the existing WHY_US / STORAGE_LOGIC claims rather than
 // adding new ones.
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import {
-  AnimatePresence,
-  motion,
-  useInView,
-  useReducedMotion,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const EASE = [0.22, 0.61, 0.36, 1] as const;
 
@@ -27,225 +19,114 @@ const STEPS = [
     title: "Source",
     text: "Formulations are produced under tightly controlled, ISO-aligned processes so concentration stays uniform batch to batch.",
     tag: "Controlled production",
-    image: "/images/gen/about.webp",
-    alt: "A calm, daylight laboratory bench lined with glassware",
+    image: "/images/source.png",
+    alt: "A tray of sealed ALLUVI pens spanning the full range, laid out in order",
   },
   {
     no: "02",
     title: "Verify",
     text: "Every batch goes to Janoshik Analytical for independent purity and concentration analysis before it is listed.",
     tag: "Third-party assay",
-    image: "/images/gen/why-purity.webp",
-    alt: "A precision pipette above a sample vial on a lab bench",
+    image: "/images/seal.png",
+    alt: "A sealed ALLUVI Retatrutide 40 mg carton presented alongside Glow and NAD+ pens",
   },
   {
     no: "03",
     title: "Seal",
     text: "Each pen is sealed in temperature-stable, tamper-evident packaging and kept refrigerated until dispatch.",
     tag: "Cold-chain sealed",
-    image: "/images/gen/why-packaging.webp",
-    alt: "A sealed vial held in an insulated, foam-lined carton",
+    image: "/images/verify.png",
+    alt: "A gloved hand lifting a sealed ALLUVI Tesamorelin pen from a laboratory refrigerator held at 4°C",
   },
 ];
 
-/** One step on the right-hand track; reports itself when it reaches mid-screen. */
-function Step({
-  step,
-  index,
-  active,
-  onActive,
-}: {
-  step: (typeof STEPS)[number];
-  index: number;
-  active: boolean;
-  onActive: (i: number) => void;
-}) {
-  const ref = useRef<HTMLLIElement>(null);
-  const inView = useInView(ref, { margin: "-45% 0px -45% 0px" });
-
-  useEffect(() => {
-    if (inView) onActive(index);
-  }, [inView, index, onActive]);
-
-  return (
-    <li
-      ref={ref}
-      className={`relative pl-10 transition-opacity duration-700 lg:flex lg:min-h-[62vh] lg:flex-col lg:justify-center lg:pl-16 ${
-        active ? "opacity-100" : "lg:opacity-30"
-      }`}
-    >
-      {/* Node on the rail */}
-      <span
-        aria-hidden
-        className={`absolute left-0 top-2 grid h-[22px] w-[22px] -translate-x-1/2 place-items-center rounded-full border transition-colors duration-500 lg:top-1/2 lg:-translate-y-1/2 ${
-          active ? "border-dark bg-accent" : "border-dark/25 bg-background"
-        }`}
-      >
-        <span
-          className={`h-1.5 w-1.5 rounded-full transition-colors duration-500 ${
-            active ? "bg-dark" : "bg-dark/25"
-          }`}
-        />
-      </span>
-
-      {/* Mobile image (desktop uses the sticky frame) */}
-      <div className="relative mb-6 aspect-[4/3] overflow-hidden bg-background-secondary lg:hidden">
-        <Image
-          src={step.image}
-          alt={step.alt}
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
-
-      <div className="flex items-baseline gap-5">
-        <span
-          aria-hidden
-          className="font-serif text-[clamp(4rem,7vw,7.5rem)] italic leading-[0.8] text-transparent [-webkit-text-stroke:1px_var(--ink)]"
-        >
-          {step.no}
-        </span>
-        <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-copper">
-          {step.tag}
-        </span>
-      </div>
-
-      <h3 className="mt-5 font-serif text-[clamp(2rem,3vw,2.75rem)] leading-none tracking-[-0.015em] text-dark">
-        <span className="sr-only">Step {step.no}: </span>
-        {step.title}
-      </h3>
-      <p className="mt-4 max-w-[440px] text-[0.9375rem] leading-relaxed text-muted">
-        {step.text}
-      </p>
-    </li>
-  );
-}
+// The descent. Written out rather than computed so Tailwind sees the classes.
+const DROP = ["lg:mt-0", "lg:mt-20", "lg:mt-40"];
 
 export default function Process() {
   const reduce = useReducedMotion();
-  const [active, setActive] = useState(0);
-  const trackRef = useRef<HTMLOListElement>(null);
-
-  // Rail fill follows the steps track through the viewport.
-  const { scrollYProgress } = useScroll({
-    target: trackRef,
-    offset: ["start 55%", "end 55%"],
-  });
-  const fill = useSpring(scrollYProgress, { stiffness: 120, damping: 24 });
-
-  const current = STEPS[active];
 
   return (
-    <section id="process" className="section-pad bg-background-secondary">
+    <section id="process" className="section-band section-pad bg-background-secondary">
       <div className="container-lux">
-        <div className="grid gap-14 lg:grid-cols-12 lg:gap-10">
-          {/* Sticky narrative column */}
-          <div className="lg:col-span-5">
-            <div className="lg:sticky lg:top-[150px]">
-              <p className="flex items-center gap-3 text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-copper">
-                <span aria-hidden className="h-px w-8 bg-copper" />
-                Three deliberate steps
-              </p>
-              <h2 className="mt-5 font-serif text-[clamp(2.5rem,4.6vw,4.5rem)] leading-[0.95] tracking-[-0.02em] text-dark">
-                How each pen <br className="hidden lg:block" />
-                is{" "}
-                <span className="relative isolate inline-block italic">
-                  prepared
-                  {/* Yellow highlighter swipe under the key word */}
-                  <motion.span
-                    aria-hidden
-                    initial={reduce ? false : { scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    viewport={{ once: true, margin: "-20% 0px" }}
-                    transition={{ duration: 0.9, ease: EASE, delay: 0.2 }}
-                    className="absolute inset-x-[-0.08em] bottom-[0.08em] -z-10 h-[0.32em] origin-left bg-accent"
-                  />
-                </span>
-              </h2>
-              <p className="mt-6 max-w-[420px] text-[0.9375rem] leading-relaxed text-muted">
-                Three deliberate steps between the lab bench and the sealed pen
-                — so nothing about the product is left to chance.
-              </p>
-
-              {/* Framed photo that follows the active step (desktop) */}
-              <div className="relative mt-10 hidden aspect-[16/11] max-h-[46vh] w-full overflow-hidden bg-background lg:block">
-                <AnimatePresence initial={false} mode="popLayout">
-                  <motion.div
-                    key={current.image}
-                    initial={reduce ? false : { opacity: 0, scale: 1.06 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={reduce ? undefined : { opacity: 0 }}
-                    transition={{ duration: 0.9, ease: EASE }}
-                    className="absolute inset-0"
-                  >
-                    <Image
-                      src={current.image}
-                      alt={current.alt}
-                      fill
-                      sizes="40vw"
-                      className="object-cover"
-                    />
-                  </motion.div>
-                </AnimatePresence>
-
-                {/* Step counter chip */}
-                <div className="absolute bottom-0 left-0 z-10 flex items-center gap-3 bg-accent px-4 py-3 text-dark">
-                  <span className="font-serif text-[1.5rem] italic leading-none">
-                    {current.no}
-                  </span>
-                  <span className="h-4 w-px bg-dark/30" aria-hidden />
-                  <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.2em]">
-                    {current.title}
-                  </span>
-                </div>
-
-                {/* Segment progress across the top */}
-                <div className="absolute inset-x-4 top-4 z-10 flex gap-1.5" aria-hidden>
-                  {STEPS.map((s, i) => (
-                    <span
-                      key={s.no}
-                      className="h-[3px] flex-1 overflow-hidden bg-white/50"
-                    >
-                      <span
-                        className={`block h-full bg-dark transition-transform duration-700 ${
-                          i <= active ? "scale-x-100" : "scale-x-0"
-                        } origin-left`}
-                      />
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Steps track with a filling rail */}
-          <div className="relative lg:col-span-6 lg:col-start-7">
-            <div
-              aria-hidden
-              className="absolute bottom-0 left-0 top-0 w-px bg-dark/15"
-            />
-            <motion.div
-              aria-hidden
-              style={{ scaleY: reduce ? 1 : fill }}
-              className="absolute bottom-0 left-0 top-0 w-[2px] -translate-x-[0.5px] origin-top bg-accent"
-            />
-            <ol
-              ref={trackRef}
-              className="flex flex-col gap-16 lg:gap-0"
-            >
-              {STEPS.map((step, i) => (
-                <Step
-                  key={step.no}
-                  step={step}
-                  index={i}
-                  active={active === i}
-                  onActive={setActive}
-                />
-              ))}
-            </ol>
-          </div>
+        <div className="grid gap-x-10 gap-y-7 lg:grid-cols-12">
+          <h2 className="font-serif text-[clamp(2.5rem,5.06vw,4.5rem)] leading-[0.95] tracking-[-0.02em] text-dark lg:col-span-7">
+            How every Novera pen <br className="hidden lg:block" />
+            is{" "}
+            <span className="relative isolate inline-block italic">
+              prepared
+              {/* Yellow swipe under the key word — a static mark, so the
+                  measure lines below stay the section's one moving part. */}
+              <span
+                aria-hidden
+                className="absolute inset-x-[-0.08em] bottom-[0.08em] -z-10 h-[0.32em] bg-accent"
+              />
+            </span>
+          </h2>
+          <p className="max-w-[420px] self-end text-[0.9375rem] leading-relaxed text-muted lg:col-span-4 lg:col-start-9">
+            Three deliberate steps between the lab bench and the sealed pen —
+            so nothing about the product is left to chance.
+          </p>
         </div>
+
+        <ol className="mt-14 grid gap-x-10 gap-y-16 lg:grid-cols-3">
+          {STEPS.map((step, i) => (
+            <li key={step.no} className={`group ${DROP[i]}`}>
+              {/* Each column opens on its own measure: a node, then a rule
+                  that draws to the column's full width. Staggered, the three
+                  rules are what makes the descent read as one sequence. */}
+              <div className="flex items-center gap-3">
+                <span
+                  aria-hidden
+                  className="h-[9px] w-[9px] shrink-0 rounded-full bg-dark"
+                />
+                <motion.span
+                  aria-hidden
+                  initial={reduce ? false : { scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true, margin: "-15% 0px" }}
+                  transition={{ duration: 0.8, ease: EASE, delay: i * 0.12 }}
+                  className="h-px flex-1 origin-left bg-dark/20"
+                />
+              </div>
+
+              <p
+                aria-hidden
+                className="mt-7 font-serif text-[clamp(3rem,4.4vw,4rem)] italic leading-[0.8] text-transparent [-webkit-text-stroke:1px_var(--ink)]"
+              >
+                {step.no}
+              </p>
+
+              <h3 className="mt-5 font-serif text-[clamp(1.75rem,2.42vw,2.25rem)] leading-none tracking-[-0.015em] text-dark">
+                <span className="sr-only">Step {step.no}: </span>
+                {step.title}
+              </h3>
+
+              <p className="mt-4 text-[0.9375rem] leading-relaxed text-muted">
+                {step.text}
+              </p>
+
+              {/* 4:5 on desktop is the native shape of two of the three
+                  shots, so they are not cropped at all. Stacked on a phone,
+                  three 4:5 frames eat most of the scroll — square is the
+                  compromise: it trims 20% off a portrait rather than 4:3's
+                  40%, and the square shot fits it exactly. */}
+              <div className="relative mt-8 aspect-square overflow-hidden bg-background lg:aspect-[4/5]">
+                <Image
+                  src={step.image}
+                  alt={step.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 38vw"
+                  className="img-grade img-hover object-cover"
+                />
+              </div>
+
+              <p className="mt-4 text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-copper">
+                {step.tag}
+              </p>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
